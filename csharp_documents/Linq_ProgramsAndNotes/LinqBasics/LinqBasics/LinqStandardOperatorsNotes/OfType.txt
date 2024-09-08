@@ -1,0 +1,8 @@
+﻿*	The OfType operator filters the collection based on the ability to cast an element in a 
+    collection to a specified type.
+
+*   The Where operator filters the collection based on a predicate function.
+
+*   The OfType operator filters the collection based on a given type.
+
+*   Where and OfType extension methods can be called multiple times in a single LINQ query.

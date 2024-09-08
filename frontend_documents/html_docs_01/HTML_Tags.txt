@@ -1,0 +1,115 @@
+<hr>
+-----
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal 
+rule.
+The <hr> element is used to separate content (or define a change) in an HTML page.
+
+<br>
+-----
+The HTML <br> element defines a line break.
+Use <br> if you want a line break (a new line) without starting a new paragraph.
+The <br> tag is an empty tag, which means that it has no end tag.
+
+<pre>
+------
+The HTML <pre> element defines preformatted text.
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it 
+preserves both spaces and line breaks.
+
+<b> and <strong>
+-----------------
+The HTML <b> element defines bold text, without any extra importance.
+The HTML <strong> element defines text with strong importance. The content inside is typically 
+displayed in bold.
+
+<i> and <em>
+-----------------
+The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is 
+typically displayed in italic.
+
+The <i> tag is often used to indicate a 
+* technical term
+* a phrase from another language
+* a thought
+* a ship name, etc.
+
+<small>
+---------------
+The HTML <small> element defines smaller text.
+
+<mark>
+---------------
+The HTML <mark> element defines text that should be marked or highlighted.
+
+<del>
+---------------
+The HTML <del> element defines text that has been deleted from a document. Browsers will usually 
+strike a line through deleted text.
+
+<ins>
+---------------
+The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually 
+underline inserted text.
+
+<sub>
+---------------
+The HTML <sub> element defines subscript text. 
+Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller 
+font. 
+Subscript text can be used for chemical formulas, like H2O.
+
+<sup>
+----------------
+The HTML <sup> element defines superscript text. 
+Superscript text appears half a character above the normal line, and is sometimes rendered in a 
+smaller font. 
+Superscript text can be used for footnotes, like WWW[1.
+
+
+<blockquote>
+----------------
+The HTML <blockquote> element defines a section that is quoted from another source.
+Browsers usually indent <blockquote> elements.
+
+<q>
+----------------
+The HTML <q> tag defines a short quotation.Browsers normally insert quotation marks around the 
+quotation.
+
+<abbr>
+----------------
+The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", 
+"ATM".
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+Tip: Use the global title attribute to show the description for the abbreviation/acronym when you 
+     mouse over the element. 
+
+<address>
+----------------
+The HTML <address> tag defines the contact information for the author/owner of a document or an 
+article.
+The contact information can be an email address, URL, physical address, phone number, social media 
+handle, etc.
+The text in the <address> element usually renders in italic.
+Browsers will always add a line break before and after the <address> element.
+
+<cite>
+---------------
+The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, 
+a painting, a sculpture, etc.).
+Note: A person's name is not the title of a work.
+The text in the <cite> element usually renders in italic.
+
+<bdo>
+---------------
+BDO stands for Bi-Directional Override.
+The HTML <bdo> tag is used to override the current text direction.
+
+<picture> element
+-------------------
+The HTML <picture> element allows you to display different pictures for different devices or 
+screen sizes.
+The HTML <picture> element gives web developers more flexibility in specifying image resources.
+The <picture> element contains one or more <source> elements, each referring to different images 
+through the srcset attribute. 
+This way the browser can choose the image that best fits the current view and/or device.

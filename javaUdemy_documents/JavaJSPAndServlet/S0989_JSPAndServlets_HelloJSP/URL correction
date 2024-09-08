@@ -1,0 +1,21 @@
+The URL is 
+
+1: http://localhost:8080/Hello_Servlets/HelloServlet
+
+
+2: http://localhost:8080/S0989_JSPAndServlets_HelloJSP/HelloJSP
+
+3: 
+HTML file :  http://localhost:8080/S0989_JSPAndServlets_HelloJSP/index.html
+ 
+			 http://localhost:8080/S0989_JSPAndServlets_HelloJSP/
+			 
+4:
+JSP file  :  http://localhost:8080/S0989_JSPAndServlets_HelloJSP/HelloJSP.jsp
+
+			 http://localhost:8080/S0989_JSPAndServlets_HelloJSP/ -> You get output as Hello World
+			 
+			 
+5:
+this is a another java file
+http://127.0.0.1:8080/S0989_JSPAndServlets_HelloJSP/			

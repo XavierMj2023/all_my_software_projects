@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            .cube{
+                 /*This represents the dimensions for white area space for the cube*/
+                 /* This represents the distance from upper to lower face  or vice-versa of the cube */
+                width:    60px;
+                height:   60px;
+                
+                /* Position of a cube */
+                position: absolute;
+
+                 /*To check what div is responsible for or role for*/
+                 /* background-color: aliceblue; */
+
+                /*This represents the white area space for the cube*/
+                top: 50%;
+                left: 50%;
+
+                /*Specifies how nested elements are rendered in 3d space*/
+                transform-style: preserve-3d;
+
+                /*This shows the rotation of a cube for given degree*/
+
+                /* transform: rotateX() rotateY() rotateZ(); */
+                   transform: rotateX(240deg) rotateY(-5deg) rotateZ(-155deg);
+            }
+
+            .side{
+                /* This is the plane width -left side of the plane streching out*/
+                /* Negative values not accepted */
+                /* This represents the width and height of upper and lower face*/
+                width:100%;
+
+                /*This is the plane height */
+                height:100%;
+
+                /* This is for the plane-  To check what div is responsible for or role for -div -side*/ 
+                /* background-color: aqua; */
+
+                /* Doubt */
+                top:  0;
+                left: 0;
+
+                /* Hides the part of the plane */
+                position: absolute;
+
+                /* Border Radius of the face side edge */
+                /* border-radius: 2%; */
+            }
+
+            .top{
+                /*Top view */
+                background: aqua;
+                /* Moving an element from its current posistion on z axis */
+                /* This is translating the top view of the cube from current posistion */
+                transform: translateZ(-60px);
+            }
+            /*This is the background color for the side that is visible to the user*/
+            .front{
+                /* To the user sitting and watching from the left side */
+                background:red;
+                /* This is for the side of the cube */
+                transform: rotateX(90deg);
+                /* If does not mention this it will be floating inside the cube */
+                transform-origin: bottom;
+            }
+
+            .left{
+                /* This is the width of the left side of the cube */
+                width: 60px;
+                /* To the user sitting and watching from the right side */
+                background: grey;
+                 /* This is for the side of the cube */
+                transform:  translateZ(-60px) rotateY(90deg);
+                 /* If does not mention this it will overlapping with (.top) div section */
+                 /* left    -standing on the  edge of the cube  (.top)*/
+                 /* right   -original posistion  */
+                 /* top     -standing on the  face of the cube  (.top)*/
+                transform-origin: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="cube">
+
+            <div class="side top"></div>
+
+            <div class="side left"></div>
+
+            <div class="side front"></div>
+        </div>
+    </body>
+</html>

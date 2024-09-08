@@ -1,0 +1,30 @@
+﻿*   LINQ includes generation operators : 
+
+    DefaultIfEmpty
+    
+    Empty 
+    
+    Range
+
+    Repeat. 
+
+*   The Empty, Range & Repeat methods are not extension methods for IEnumerable or IQueryable 
+
+*   But they are simply static methods defined in a static class Enumerable.
+
+*   Method	                             Description
+    ---------------------------------------------------------------------------
+    Empty	                             Returns an empty collection
+
+    Range	                             Generates collection of IEnumerable<T> type with 
+                                         specified number of elements with sequential values, 
+                                         starting from first element.
+
+    Repeat	                             Generates a collection of IEnumerable<T> type with 
+                                         specified number of elements and each element contains 
+                                         same specified value.
+    ---------------------------------------------------------------------------
+*   Range
+    ---------------------------------------------------------------------------
+    The Range() method returns a collection of IEnumerable<T> type with specified number of elements 
+    and sequential values starting from the first element.

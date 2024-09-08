@@ -1,0 +1,36 @@
+---------------------------------------
+scope = "application"
+---------------------------------------
+The value will be available to the entire application.
+
+browser 1 -> getProperty -> displayed
+
+	     setProperty -> executed
+
+             getProperty -> Values updated
+
+
+browser 2 -> getProperty -> Values updated
+
+	     setProperty -> Without calling, gets updated
+
+
+---------------------------------------
+scope = "session"
+---------------------------------------
+
+browser 1 -> getProperty -> displayed
+
+	     setProperty -> executed
+
+             getProperty -> Values updated
+
+
+browser 2 -> getProperty -> displayed
+
+	     setProperty -> executed
+
+	     getProperty -> Values updated
+---------------------------------------
+
+

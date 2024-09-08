@@ -1,0 +1,5 @@
+﻿Write two programs Sin and Cos that compute sin x and cos x using the Taylor
+series expansions as shown below...
+
+Note - Convert angle x to an angle between -2 PI and 2 PI using the following logic
+x = x % (2 * Math.PI);

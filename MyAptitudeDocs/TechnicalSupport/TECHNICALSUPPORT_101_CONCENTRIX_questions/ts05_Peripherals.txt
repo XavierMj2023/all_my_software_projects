@@ -1,0 +1,52 @@
+--------------------------------------------------------------------------------------------------------
+Peripherals
+--------------------------------------------------------------------------------------------------------
+Peripherals are external devices connected to a computer to enhance its functionality. 
+
+----------------------------------------------------
+Here are some common peripherals:
+----------------------------------------------------
+Input Devices:
+----------------------------------------------------
+Keyboard		: 	For text input and executing commands.
+Mouse			: 	For navigating the user interface and executing commands.
+Touchpad		: 	A built-in pointing device, mainly on laptops.
+Trackball		: 	An alternative pointing device.
+Scanner			: 	Converts physical documents into digital format.
+Microphone		: 	For audio input.
+
+----------------------------------------------------
+Output Devices:
+----------------------------------------------------
+Monitor			: 	Displays visual output from the computer.
+Printer			: 	Produces physical copies of digital documents and images.
+Speakers		: 	Output sound.
+Headphones		: 	Personal audio output device.
+
+----------------------------------------------------
+Storage Devices:
+----------------------------------------------------
+External Hard Drive	: 	Provides additional storage and backup capabilities.
+USB Flash Drive		: 	Portable storage device for data transfer.
+Optical Drive		: 	Reads and writes CDs, DVDs, and Blu-ray discs (less common in modern setups).
+
+----------------------------------------------------
+Network Devices:
+----------------------------------------------------
+Modem			: 	Connects to the internet through a phone line or cable.
+Router			: 	Distributes internet connection to multiple devices.
+Network Switch		: 	Connects multiple devices within a local network.
+
+----------------------------------------------------
+Other Peripherals:
+----------------------------------------------------
+Webcam			: 	For video conferencing and recording.
+Game Controller		: 	For gaming purposes.
+Docking Station		: 	Expands connectivity options for laptops.
+External GPU		: 	Enhances graphics performance for laptops.
+----------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Connectors and peripherals collectively enhance a computer's functionality and expand its capabilities, making them essential components of a modern computing setup.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+

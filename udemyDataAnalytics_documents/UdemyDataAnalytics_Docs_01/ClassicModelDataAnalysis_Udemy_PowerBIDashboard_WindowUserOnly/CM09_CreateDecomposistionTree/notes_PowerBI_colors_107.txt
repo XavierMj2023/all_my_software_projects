@@ -1,0 +1,5 @@
+#212529 - Canvas Background
+
+#272B2F - Rectangle Shapes
+
+#196266 - Color - common

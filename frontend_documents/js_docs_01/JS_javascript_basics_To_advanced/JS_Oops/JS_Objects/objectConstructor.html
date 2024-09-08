@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object Constructor</title>
+</head>
+<body>
+    <h1>Object Constructor</h1>
+    <hr/>
+    <p>It is considered good practice to name constructor functions with an upper-case first letter.</p>
+    <p>
+        Sometimes we need a "blueprint" for creating many objects of the same "type".
+        The way to create an "object type", is to use an object constructor function.
+    </p>
+    <p>
+        Objects of the same type are created by calling the constructor function with the new keyword.
+    </p>
+    <p id="displayData"></p>
+    <script>
+        //Object Constructor
+        function Data(myName, color, age, gender){
+            console.log(this); //Data
+            this.myName = myName;
+            this.color = color;
+            this.age = age;
+            this.gender = gender;
+        }
+        const obj1 = new Data("Manoj", "Red", 23, "Male");
+        const obj2 = new Data("Manj",  "Red", 24, "Male");
+        document.getElementById("displayData").innerHTML = obj1.myName + " " +obj2.myName;
+    </script>
+</body>
+</html>

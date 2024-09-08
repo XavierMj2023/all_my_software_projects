@@ -1,0 +1,44 @@
+*   Server-Sent Events (SSE) allow a web page to get updates from a server.
+
+*   Server-Sent Events - One Way Messaging
+    --------------------------------------
+    A server-sent event is when a web page automatically gets updates from a server.
+
+    This was also possible before, but the web page would have to ask if any updates were 
+    available. 
+    
+    With server-sent events, the updates come automatically.
+
+*   Examples: Facebook/Twitter updates, stock price updates, news feeds, sport results,...
+
+*   EventSource object --> It is used to receive server-sent event notifications.
+
+*   Check Server-Sent Events Support
+    ---------------------------------------
+    if(typeof(EventSource) !== "undefined") {
+        // Yes! Server-sent events support!
+        // Some code.....
+    } else {
+        // Sorry! No server-sent events support..
+    }
+
+*   For the example above to work, you need a server capable of sending data updates (like PHP 
+    or ASP).
+
+*   The server-side event stream syntax is simple. 
+
+*   Set the "Content-Type" header to "text/event-stream". Now you can start sending event 
+    streams.
+
+*   Events	                                    Description
+    -----------------------------------------------------------
+    onopen	                                    When a connection to the server is opened
+    onmessage	                                When a message is received
+    onerror	                                    When an error occurs
+
+*   STEPS
+    ------------
+    -> Set the "Content-Type" header to "text/event-stream"
+    -> Specify that the page should not cache
+    -> Output the data to send (Always start with "data: ")
+    -> Flush the output data back to the web page

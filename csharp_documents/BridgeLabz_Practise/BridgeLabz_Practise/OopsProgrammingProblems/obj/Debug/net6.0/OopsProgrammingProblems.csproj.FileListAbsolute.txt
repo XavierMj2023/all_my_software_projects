@@ -1,0 +1,17 @@
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\bin\Debug\net6.0\OopsProgrammingProblems.exe
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\bin\Debug\net6.0\OopsProgrammingProblems.deps.json
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\bin\Debug\net6.0\OopsProgrammingProblems.runtimeconfig.json
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\bin\Debug\net6.0\OopsProgrammingProblems.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\bin\Debug\net6.0\OopsProgrammingProblems.pdb
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\OopsProgrammingProblems.csproj.AssemblyReference.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\OopsProgrammingProblems.GeneratedMSBuildEditorConfig.editorconfig
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\OopsProgrammingProblems.AssemblyInfoInputs.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\OopsProgrammingProblems.AssemblyInfo.cs
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\OopsProgrammingProblems.csproj.CoreCompileInputs.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\OopsProgrammingProblems.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\refint\OopsProgrammingProblems.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\OopsProgrammingProblems.pdb
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\OopsProgrammingProblems.genruntimeconfig.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\ref\OopsProgrammingProblems.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\obj\Debug\net6.0\OopsProgrammingProblems.csproj.CopyComplete

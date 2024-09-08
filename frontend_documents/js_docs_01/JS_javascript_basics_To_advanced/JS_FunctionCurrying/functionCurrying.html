@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function Currying</title>
+    </head>
+    <body>
+        <h1>FUNCTION CURRYING DEMO</h1>
+        <p>-----------------------------------</p>
+        <h4>Curried Version with Case 1</h4>
+        <p>-----------------------------------</p>
+        <p id="funCurry1"></p>
+        <p>-----------------------------------</p>
+        <h4>Curried Version with Case 2</h4>
+        <p>-----------------------------------</p>
+        <p id="funCurry2"></p>
+        <script>
+
+            let co1 = document.getElementById("funCurry1");
+            let co2 = document.getElementById("funCurry2");
+
+            const users = [
+                {
+                    name : 'Harry',
+                    age : 30,
+                    gender : 'M',
+                    nation : "India"
+                },
+                {
+                    name : 'Charlotte',
+                    age : 30,
+                    gender : 'F',
+                    nation : "UK"
+                },
+                {
+                    name : 'Mandy',
+                    age : 40,
+                    gender : 'F',
+                    nation : "UK"
+                },
+                {
+                    name : 'Manjula',
+                    age : 30,
+                    gender : 'F',
+                    nation : "UK"
+                },
+            ];
+
+            //Original Function with multiple arguments
+            function filterByProperty(array, property, value){
+                return array.filter(item => item[property] === value);
+            }
+
+            //Curried Version
+            function curriedsfilterByProperty(property){
+                return function(value){
+                    return function(array){
+                       return array.filter(item => item[property] === value);
+                    };
+                };
+            }
+
+            const filterByGender = curriedsfilterByProperty('gender');
+            const filterByNationality = curriedsfilterByProperty('nation');
+            
+            //Case 1:
+            const UKUsers = filterByNationality('UK')(users);
+            for(let val in UKUsers){
+                co1.innerHTML += `UK Users : ${UKUsers[val].name}`+"<br/>";
+            }
+
+            //Case 2:
+            const femaleUsers = filterByGender('F')(users);
+            for(let val in UKUsers){
+                co2.innerHTML += `Female User : ${femaleUsers[val].name}`+"<br/>";
+            }
+        </script>
+    </body>
+</html>

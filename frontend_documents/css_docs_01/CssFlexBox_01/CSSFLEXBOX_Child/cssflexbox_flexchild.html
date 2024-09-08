@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX</title>
+    <link rel="stylesheet" href="../CSSFLEXBOX_Child/cssflexbox_flexchild.css">
+</head>
+<body>
+    <!-- 
+        The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure 
+        without using float or positioning.
+    -->
+
+    <!--
+        Flexbox Elements - To start using the Flexbox model, you need to first define a flex container.
+
+        A Flexible Layout must have a parent element with the display property set to flex.
+        Direct child elements(s) of the flexible container automatically becomes flexible items.
+    -->
+
+    <h1 style="text-align: center;">FLEX CHILD</h1>
+
+    <!--
+        The flex-order property specifies the order of the flex items.
+        The first flex item in the code does not have to appear as the first item in the layout.
+        The order value must be a number, default value is 0.
+    -->
+    <br/>
+
+    <h4>ORDER : It specifies the order of the flex items.</h4>
+    <div class="flex-container">
+        <div style="order: 3;">1</div>
+        <div style="order: 4;">2</div>
+        <div style="order: 2;">3</div>
+        <div style="order: 1;">4</div>
+    </div>
+
+    <!--
+        The flex-grow property specifies how much a flex item will grow relative to the rest of the 
+        flex items.
+        The value must be a number, default value is 0
+    -->
+
+    <h4>FLEX GROW : It specifies how much a flex item will grow relative to the rest of the flex items.</h4>
+    <div class="flex-container">
+        <div style="flex-grow: 2;">1</div>
+        <div style="flex-grow: 2;">2</div>
+        <div style="flex-grow: 8;">3</div>
+        <div style="flex-grow: 6;">4</div>
+    </div>
+
+    <!--
+        The flex-shrink property specifies how much a flex item will shrink relative to the rest of the
+        flex items.
+        The value must be a number, default value is 1.
+    -->
+
+    <h4>FLEX SHRINK : It specifies how much a flex item will shrink relative to the rest of the flex items.</h4>
+    <div class="flex-container">
+        <div style="flex-grow: 2;">1</div>
+        <div style="flex-shrink: 0;">2</div>
+        <div style="flex-shrink: 0;">3</div>
+        <div style="flex-grow: 2;">4</div>
+    </div>
+
+    <!--
+        The flex-basis property specifies the initial length of a flex item.
+    -->
+
+    <h4>FLEX BASIS : It specifies the initial length of a flex item.</h4>
+    <div class="flex-container">
+       <div>1</div>
+       <div>2</div>
+       <div style="flex-basis: 120px;">3</div>
+       <div style="flex-basis: 100px;">4</div>
+    </div>
+
+     <!--
+        The align-self property specifies the alignment for the selected item inside the flexible container.
+        The align-self property overrides the default alignment set by the container's align-items property.
+    -->
+
+    <h4>ALIGN SELF : It  specifies the alignment for the selected item inside the flexible container.</h4>
+    <div class="flex-container sam1">
+       <div style="align-self: flex-start;">1</div>
+       <div>2</div>
+       <div style="align-self:center;">3</div>
+       <div>4</div>
+    </div>
+
+    <!--
+        The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.
+    -->
+
+    <h4>FLEX : The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties.</h4>
+    <div class="flex-container">
+       <div>1</div>
+       <div style="flex: 5 2 120px;">2</div>
+       <div>3</div>
+    </div>
+
+</body>
+</html>

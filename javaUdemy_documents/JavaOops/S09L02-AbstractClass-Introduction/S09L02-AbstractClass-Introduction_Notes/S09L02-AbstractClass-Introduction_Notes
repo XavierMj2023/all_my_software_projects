@@ -1,0 +1,33 @@
+*	Interface provides complete abstraction.
+
+*	Abstraction only show the declaration and implementation is done somewhere 
+	else.
+	
+*	Implementation and Abstract Method as well.
+
+*	Prefix class with keyword abstract is called Abstract Class.
+
+*	In Abstract Class we can have implementation,properties ,Abstract Methods 
+	and variables.
+
+*	When to make use of Interfaces and Abstract Classes?
+
+	Answer lies between relationship . 
+	
+	Relationship between inherited classes is Is-A Relationship.
+	
+	A Vegan is a Person.
+	A Non Vegan is a Person
+	
+	Between Classes --> Is A Relationship --> Abstract Classes --> If there is a requirement.
+	
+	Relationship between interface and classe is Can Relationship.
+	
+	Between Class and Interface --> Can Relationship --> Interfaces --> If there is a requirement.
+	
+	
+*	Multiple Inheritance is not supported in java.
+
+*		
+	
+	

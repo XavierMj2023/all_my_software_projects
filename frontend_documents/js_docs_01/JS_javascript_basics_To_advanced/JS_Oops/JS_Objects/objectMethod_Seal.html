@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object Method Seal</title>
+</head>
+<body>
+    <h1>Object Method - Seal</h1>
+    <p id="create1"></p>
+    <script>
+        //eg  1
+        const obj1 = {data : "processing"};
+        const obj2 = Object.seal(obj1);
+
+        obj2.data = "pending";
+
+        console.log(obj2.data);
+
+        //eg 2
+        const user = {username : "metatag", password : "1998"};
+        const newuser = Object.seal(user);
+        newuser.password = "**";
+        newuser.active = true;
+        console.log(newuser);
+    </script>
+</body>
+</html>

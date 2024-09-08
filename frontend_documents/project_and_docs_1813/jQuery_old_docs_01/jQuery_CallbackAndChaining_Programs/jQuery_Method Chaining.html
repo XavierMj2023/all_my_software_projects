@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JQUERY METHOD CHAINING</title>
+    <link rel="stylesheet" href="../jQueryLinkWithCss/animate.css" />
+    <script src="../jQuery_Files/node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <button>Click Me for Method Chaining</button>
+    <p id="pmetchain">jQuery Method Chaining</p><br /><br />
+    <script>
+        $("document").ready(function () {
+            $("button").click(function () {
+        // $("#pmetchain").css("color", "red").slideDown(2000).slideUp(2000);---->Error can't slidedown
+                $("#pmetchain").css("color", "red")
+                    .slideUp(2000)
+                    .slideDown(2000);
+            })
+
+            //or
+
+            //$("button").click(function () {
+           //    $("#pmetchain").css("color", "red").slideDown(2000).slideUp(2000);
+           //})
+        });
+    </script>
+</body>
+</html>
+
+
+
+ 
+

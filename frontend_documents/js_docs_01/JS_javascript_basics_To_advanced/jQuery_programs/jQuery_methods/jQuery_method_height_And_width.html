@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css" />
+    <style>
+        div{
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <div></div>
+    <button class="b2">Get all the details of the div</button>
+
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Property Value (in px)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>height</td>
+            <td class="height"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>width</td>
+            <td class="width"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>innerheight</td>
+            <td class="innerheight"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>innerwidth</td>
+            <td class="innerwidth"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>outerheight</td>
+            <td class="outerheight"></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>outerwidth</td>
+            <td class="outerwidth"></td>
+        </tr>
+    </table>
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    --> 
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".b2").click(function(){
+             //height
+             var hei = $("div").height();
+
+             //width
+             var wid = $("div").width();
+
+             //innerheight
+             var innerheight = $("div").innerHeight();
+
+             //innerwidth
+             var innerwidth = $("div").innerWidth();
+
+             //outerheight
+             var outerheight = $("div").outerHeight();
+
+             //outerwidth
+             var outerwidth = $("div").outerWidth();
+
+             //getting values
+             $(".height").text(hei);   
+
+             $(".width").text(wid); 
+
+             $(".innerheight").text(innerheight); 
+
+             $(".innerwidth").text(innerwidth); 
+
+             $(".outerheight").text(outerheight); 
+
+             $(".outerwidth").text(outerwidth); 
+            });
+        });
+    </script>
+</body>
+
+</html>

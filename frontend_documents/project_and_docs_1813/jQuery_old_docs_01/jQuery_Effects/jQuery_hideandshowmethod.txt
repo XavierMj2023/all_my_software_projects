@@ -1,0 +1,15 @@
+﻿With jQuery, you can hide and show HTML elements with the hide() and show() methods.
+
+Syntax:
+---------------------------------
+$(selector).hide(speed,callback);
+
+$(selector).show(speed,callback);
+
+
+
+The optional speed parameter specifies the speed of the hiding/showing, and can take the following
+values: "slow", "fast", or milliseconds.
+
+The optional callback parameter is a function to be executed after the hide() or show() method 
+completes.

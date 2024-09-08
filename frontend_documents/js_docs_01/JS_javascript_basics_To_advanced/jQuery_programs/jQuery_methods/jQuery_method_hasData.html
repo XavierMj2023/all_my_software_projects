@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css" />
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <div></div>
+    <button id="b1">Attach Data</button>
+    <button id="b3">Remove Data</button>
+    <button id="b2">Get Data</button>
+    <button id="b4">Check Data</button>
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("div").data("Mourner", "Ravi");
+            });
+            $("#b2").click(function () {
+                var moun = $("div").data("Mourner");
+                alert(moun);
+            });
+            $("#b3").click(function () {
+                $("div").removeData("Mourner");
+            });
+            $("#b4").click(function () {
+                if(jQuery.hasData($("div")[0])){
+                    alert("Data");
+                }else{
+                    alert("No Data");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

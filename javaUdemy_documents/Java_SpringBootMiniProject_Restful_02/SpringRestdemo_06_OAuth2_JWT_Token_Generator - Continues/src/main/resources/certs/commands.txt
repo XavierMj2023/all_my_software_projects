@@ -1,0 +1,20 @@
+->  This Command will generate the key pair PEM file 
+
+    openssl genrsa -out keypair.pem 2048
+
+
+
+->  This command will give us the public key
+
+    openssl rsa -in keypair.pem -pubout -out public.pem
+
+    
+
+->  This command will convert key value pair and give us private key based on the algorithm an which is not encrypted as well.
+
+    openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt -in keypair.pem -out private.pem
+
+
+->  URl - ubuntu 
+
+    cd src/main/resources/certs

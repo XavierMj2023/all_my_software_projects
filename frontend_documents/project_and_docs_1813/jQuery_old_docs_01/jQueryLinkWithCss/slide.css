@@ -1,0 +1,23 @@
+﻿body {
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: 1px solid #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+#panup, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: 1px solid #c3c3c3;
+}
+#panup {
+    padding: 50px;
+}

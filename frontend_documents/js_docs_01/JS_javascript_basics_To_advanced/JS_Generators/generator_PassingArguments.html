@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Generators</title>
+    </head>
+    <body>
+        <script>
+            //function generator(): Generator<never, void, unknown>
+            function* twoWaygenerator(){
+                const value = yield "Please Provide a value";
+                yield `You Provided : "${value}`;
+            }
+            const gen = twoWaygenerator();
+
+            console.log(gen.next());
+            console.log(gen.next(42));
+            console.log(gen.next());
+        </script>
+    </body>
+</html>

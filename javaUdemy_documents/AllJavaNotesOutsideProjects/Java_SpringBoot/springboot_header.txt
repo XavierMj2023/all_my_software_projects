@@ -1,0 +1,26 @@
+<span sec:authorize="hasRole('ROLE_ADMIN')">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin">Admin</a>
+                            </li>
+                        </span>
+
+                        <!--Make 2nd change-->
+                        <span sec:authorize="hasAuthority('ACCESS_ADMIN_PANEL')">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin">Admin</a>
+                            </li>
+                        </span>
+
+                        <!--Make 3rd change-->
+                        <span sec:authorize="hasAnyRole('ROLE_ADMIN','ROLE_EDITOR')">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/editor">Editor</a>
+                            </li>
+                        </span>
+
+                         <!-- Making 4th Change -->
+                         <span sec:authorize="isAuthenticated()">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/logout">Logout</a>
+                            </li>
+                        </span>

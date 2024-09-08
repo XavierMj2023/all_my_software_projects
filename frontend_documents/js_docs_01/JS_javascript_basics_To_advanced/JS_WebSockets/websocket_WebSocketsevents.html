@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sockets</title>
+</head>
+
+<body>
+    <script>
+        const socket = new WebSocket("wss://demo.piesocket.com/v4/channel_123?api_key=VCXCEuvhGcBDP7XhiJJUDvR1e1D3eiVjgZ9VRiaV&notify_self");
+        console.log(socket);
+
+        socket.addEventListener('open', (event) => {
+            //Connection is open
+        });
+
+        socket.addEventListener('message', (event) => {
+            const message = event.data;
+            console.log(event);
+            console.log(message);
+            //Handle Incoming Messages
+        });
+
+        socket.addEventListener('error', (event) => {
+            console.log("Websocket Error : " + event);
+        });
+
+        socket.addEventListener('close', (event) => {
+            if (event.wasClean) {
+                console.log(
+                    "Connection Closed successfully!..",
+                    code = `${event.code}`,
+                    reason = `${event.reason}`
+                );
+            } else {
+                console.log("Connection abrutply closed!..");
+            }
+        });
+    </script>
+</body>
+
+</html>

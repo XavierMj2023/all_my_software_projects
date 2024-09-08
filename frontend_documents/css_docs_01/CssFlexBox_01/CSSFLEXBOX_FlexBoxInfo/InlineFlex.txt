@@ -1,0 +1,2 @@
+Flexbox layout can also use display: inline-flex property to create an inline-level flex container,
+allowing elements to be aligned and distributed within it.

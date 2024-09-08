@@ -1,0 +1,15 @@
+The set does not allow duplicate values. -> True
+
+Element in a set can be retrieved by using the index of element. -> False
+
+Set is sorted by …………ordering. -> Natural
+
+A ..................... maintains the order of elements in which they are being added. -> LinkedHashSet
+
+Queue follows ……………….pattern. -> FIFO
+
+Elements can be inserted at the start and end of the Dequeue. -> True
+
+A map cannot contain duplicate keys. -> True
+
+A ..................... does not guarantee any order. -> HashSet

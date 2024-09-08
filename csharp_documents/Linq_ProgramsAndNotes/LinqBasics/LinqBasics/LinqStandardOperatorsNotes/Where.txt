@@ -1,0 +1,34 @@
+﻿Filtering operators in LINQ filter the sequence (collection) based on some given criteria.
+
+The following table lists all the filtering operators available in LINQ.
+
+Filtering Operators					Description
+------------------------------------------------
+Where								Returns values from the collection based on a predicate 
+									function.
+
+OfType								Returns values from the collection based on a specified type. 
+									However, it will depend on their ability to cast to a 
+									specified type.
+
+* Where Operator
+  ---------------
+
+* The Where operator (Linq extension method) filters the collection based on a given criteria 
+  expression and returns a new collection. 
+
+* The criteria can be specified as lambda expression or Func delegate type.
+
+* The Where extension method has following two overloads. Both overload methods accepts a 
+  Func delegate type parameter. 
+
+* One overload required Func<TSource,bool> input parameter.
+
+* Second overload method required Func<TSource, int, bool> input parameter where int is for 
+  index.
+
+* Unlike the query syntax, you need to pass whole lambda expression as a predicate function 
+  instead of just body expression in LINQ method syntax.
+
+* As mentioned above, the Where extension method also have second overload that includes index 
+  of current element in the collection. You can use that index in your logic if you need.

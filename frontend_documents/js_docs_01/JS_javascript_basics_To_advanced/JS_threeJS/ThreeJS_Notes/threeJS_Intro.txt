@@ -1,0 +1,12 @@
+Three.js is a cross-browser JavaScript library and application programming interface used to 
+create and display animated 3D computer graphics in a web browser using WebGL. 
+
+The source code is hosted in a repository on GitHub. 
+
+With Three.js, developers can create everything from simple 3D models to complex interactive 
+scenes and games, all within the browser environment.
+
+Used for creating and displaying 3d computer graphics in a web browser.
+
+It provides a wide range of tools and features for building immersive 3d experiences on the 
+web including rendering, lightning, textures, animations and interaction.

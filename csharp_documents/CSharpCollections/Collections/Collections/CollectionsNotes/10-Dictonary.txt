@@ -1,0 +1,61 @@
+﻿if(cities.TryGetValue("Delhi",out string res))
+				{
+					Console.WriteLine($"Key : {0} ; Value :{1}", "Delhi", res);
+				}
+------------------------------------------------------------------------------------------
+
+C# - Dictionary<TKey, TValue>
+
+------------------------------------------------------------------------------------------
+
+The Dictionary<TKey, TValue> is a generic collection that stores key-value pairs in no particular order.
+
+------------------------------------------------------------------------------------------
+
+Dictionary Characteristics
+
+------------------------------------------------------------------------------------------
+Dictionary<TKey, TValue> stores key-value pairs.
+
+Comes under System.Collections.Generic namespace.
+
+Implements IDictionary<TKey, TValue> interface.
+
+Keys must be unique and cannot be null.
+
+Values can be null or duplicate.
+
+Values can be accessed by passing associated key in the indexer e.g. myDictionary[key]
+
+Elements are stored as KeyValuePair<TKey, TValue> objects.
+
+------------------------------------------------------------------------------------------
+Creating a Dictionary
+------------------------------------------------------------------------------------------
+You can create the Dictionary<TKey, TValue> object by passing the type of keys and values it can store.
+
+------------------------------------------------------------------------------------------
+Access Dictionary Elements
+------------------------------------------------------------------------------------------
+The Dictionary can be accessed using indexer.
+Specify a key to get the associated value. 
+You can also use the ElementAt() method to get a KeyValuePair from the specified index.
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+Update Dictionary
+------------------------------------------------------------------------------------------
+Update the value of a key by specifying a key in the indexer. 
+It will throw the KeyNotFoundException if a key does not exist in the dictionary, therefore use the ContainsKey() 
+method before accessing unknown keys.
+
+------------------------------------------------------------------------------------------
+Remove Elements in Dictionary
+------------------------------------------------------------------------------------------
+The Remove() method deletes an existing key-value pair from a dictionary. 
+The Clear() method deletes all the elements of the dictionary.
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------

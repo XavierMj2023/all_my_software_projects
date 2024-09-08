@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* This is the selector which we apply styling for the body only */
+    background-image: radial-gradient(black,silver,black);
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+    background-position-x:center ;
+    /* background-color: black; */
+}
+
+#container{
+    /* This is for the container */
+    position:absolute;
+    left: 50%;
+     /* The div element is moving right */
+    top:  50%;   
+    /* The div element is moving down */
+    
+    /* box area is inside container */    /*border: 1px solid yellow;*/
+}
+
+#box-area{
+    /* This is the selector that we apply styling for all sides of the cube or box area  */
+    /* 2 div when position is same it overlaps */
+    position: relative;
+    /* background-color:red; */
+    /* border: 1px solid blue; */
+    transform-style: preserve-3d;
+    transform: rotate3d(1,1,0,0deg);
+    animation: rotate 3s linear infinite;
+}
+
+ .box{
+   /* <div id="box-front" class="box"> */
+
+   /* For all the boxess */
+   /* Overlapping with this border: 1px solid blue;*/
+   /* For all the boxes and also overlapping */
+   position: absolute;
+   width: 200px;
+   height:200px;
+   border: 1px solid black;
+   /* Originally This is for the front div of the cube or box area or box*/
+   /* background-color:brown; */
+}
+
+/* A cube has six flat faces, or surfaces. Each face of a cube is shaped like a square.
+   The sides of each face are called edges. A cube has 12 edges. */
+
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate3d(0,0,0,0);
+    }
+
+    100%{
+        transform: rotate3d(1,1,0,360deg);
+    }
+}
+
+        /*--------------------- BOX POSITION------------------------------- */
+
+/* This is for the front div of the cube or box area or box */
+ 
+#box-front {
+    transform: translateX(-100px) translateY(-100px) translateZ(100px);
+    }
+
+/* This is for the back div of the cube or box area or box */
+#box-back {
+    transform: translateX(-100px) translateY(-100px) translateZ(-100px);
+    }
+
+/* This is for the right div of the cube or box area or box */
+#box-right {
+    transform: translateY(-100px) rotateY(90deg);
+    }
+
+/* This is for the left div of the cube or box area or box */
+
+#box-left {
+    transform: translateY(-100px) translateX(-200px) rotateY(90deg);
+    }
+
+
+/* This is for the top div of the cube or box area or box */
+ #box-top {
+    transform: translateX(-100px) translateY(-200px) rotateX(90deg);
+    }
+
+/* This is for the bottom div of the cube or box area or box */
+#box-bottom {
+    transform: translateX(-100px) rotateX(90deg);
+    }
+
+
+.grid-container{
+    /* <div class="grid-container bg-front"> */
+    height: 100%;
+    display: grid;
+    grid-template-areas:'1 2 3';
+    grid-gap: 0px;
+    padding: 0px;
+}
+
+.grid-container>div{
+    border: 5px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0px;
+    font-size: 30px;
+}
+
+        /*--------- BOX COLOR---------------------------------------------- */
+.bg-bottom{
+    background-color: blue;
+}
+
+.bg-top{
+    background-color:red;
+}
+
+.bg-left{
+    background-color: rebeccapurple;
+}
+
+.bg-right{
+    background-color: orange;
+}
+
+.bg-front{
+    background-color:white;
+}
+
+.bg-back{
+    background-color: green;
+}

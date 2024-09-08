@@ -1,0 +1,8 @@
+﻿//Collection Intializer Syntax
+		SortedList<string, string> cities = new SortedList<string, string>()
+									{
+										{"London", "UK"},
+										{"New York", "USA"},
+										{ "Mumbai", "India"},
+										{"Johannesburg", "South Africa"}
+									};

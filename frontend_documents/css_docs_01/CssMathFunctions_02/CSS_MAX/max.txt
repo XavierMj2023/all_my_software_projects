@@ -1,0 +1,32 @@
+------------------------------------------------
+The max() Function
+------------------------------------------------
+The max() function uses the largest value, from a comma-separated list of values, as the 
+property value.
+
+------------------------------------------------
+CSS Syntax
+------------------------------------------------
+max(value1, value2, ...)
+------------------------------------------------
+
+------------------------------------------------
+Value	                    Description
+------------------------------------------------
+value1, value2, ...	        Required. A list of comma-separated values - where the largest value is
+                            chosen
+------------------------------------------------
+
+The CSS max() function is quite versatile and powerful, allowing you to set a property value to 
+the largest (maximum) value from a given list of values. 
+
+It's particularly useful in responsive design, enabling you to adapt your layouts to 
+different screen sizes and conditions without having to resort to media queries for every 
+minor adjustment.
+------------------------------------------------
+
+In this example, the width of div will be the larger of either 300px or 50% of the 
+viewport width. 
+
+This ensures that the div won't become smaller than 300px even on very small screens, but it can 
+grow larger on bigger screens.

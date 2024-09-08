@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Closures</title>
+</head>
+<body>
+    <h1>Javascript Closures</h1>
+    <hr/>
+    <p id="closu1"></p>
+    <p id="closu4"></p>
+    <script>
+        let closeId1 = document.getElementById("closu1");
+        let closeId4 = document.getElementById("closu4");
+       
+        const counter = () => {
+            let value = 0;
+            //counter function returns two anonymous functions stored
+            //in a object and those function will have access to variable
+            //value after counter() finishes executation.
+            return{
+                print : () => value,
+                increment : () => value++,
+            }
+        }
+
+        const count = counter();
+        closeId1.innerHTML = count.print();
+        count.increment();
+        count.increment();
+        closeId4.innerHTML = count.print();
+    </script>
+</body>
+</html>

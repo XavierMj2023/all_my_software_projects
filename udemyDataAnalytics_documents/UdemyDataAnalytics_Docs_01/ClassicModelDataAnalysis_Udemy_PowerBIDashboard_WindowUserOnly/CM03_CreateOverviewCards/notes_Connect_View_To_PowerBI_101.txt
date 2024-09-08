@@ -1,0 +1,45 @@
+Steps to connect Power BI
+--------------------------
+1. URL : https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads
+
+2. Go to Microsoft Power BI desktop section
+
+3. Click download
+
+4. Click Get data from other sources
+
+5. On Home -> Get Data -> Click More -> Click Database -> MYSQL database
+
+6. Check if you have the connector
+
+7. If yes proceed with below steps
+
+   In MySQL Workbench -> Right Click -> Copy Connection string to clipboard
+
+   Enter Server : root@127.0.0.1:3306 -> remove root@ -> 127.0.0.1:3306
+
+   Enter Database : classicmodels
+
+8. From here, it may ask your login credentials.
+
+9. Click on the View
+
+10. Load the data -> By clicking on the load button.
+
+11. Page Information -> Name -> Sales Overview
+
+    Canvas Setting   -> Type -> Custom
+ 
+			Height -> 900px
+
+			Width -> 1500px
+
+    Canvas Background -> #212529 - Canvas Background
+
+			 #272B2F - Rectangle Shapes
+
+			 Transparency - 0%
+
+    
+
+

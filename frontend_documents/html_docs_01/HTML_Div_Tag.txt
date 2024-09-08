@@ -1,0 +1,33 @@
+*   The div tag is known as Division tag. 
+
+*   The div tag is used in HTML to make divisions of content in the web page like (text, images, 
+    header, footer, navigation bar, etc). 
+    
+*   Div tag has both open (<div>) and closing (</div>) tag and it is mandatory to close the tag. 
+
+*   The Div is the most usable tag in web development because it helps us to separate out data in
+    the web page and we can create a particular section for particular data or function in the 
+    web pages.
+
+*   Div tag is Block level tag.
+
+*   It is a generic container tag.
+
+*   It is used to group various tags of HTML so that sections can be created and styles can be 
+    applied to them.
+
+*   As we know Div tag is block-level tag, the div tag contains entire width. Hence, every div 
+    tag will start from a new line, and not the same line.
+
+*   Inside div tag, we can put more than one HTML element and can group them together and apply 
+    CSS for them. 
+    
+*   Div tag can be used for creating a layout of web pages.
+
+*   The <div> element is often used as a container for other HTML elements.
+
+*   The <div> element has no required attributes, but style, class and id are common.
+
+*   When used together with CSS, the <div> element can be used to style blocks of content.
+
+*   Generic Container - It's a container with no special purpose.

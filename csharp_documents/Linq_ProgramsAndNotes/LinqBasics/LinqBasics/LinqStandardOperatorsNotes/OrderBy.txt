@@ -1,0 +1,61 @@
+﻿Sorting Operators: OrderBy & OrderByDescending
+-----------------------------------------------
+
+A sorting operator arranges the elements of the collection in ascending or descending order. 
+
+LINQ includes following sorting operators.
+
+Sorting Operator							Description
+---------------------------------------------------------------------------------------------
+OrderBy										Sorts the elements in the collection based on 
+											specified fields in ascending or decending order.
+
+OrderByDescending							Sorts the collection based on specified fields in 
+											descending order. 
+											Only valid in method syntax.
+
+ThenBy										Only valid in method syntax. 
+											Used for second level sorting in ascending order.
+
+ThenByDescending							Only valid in method syntax. 
+											Used for second level sorting in descending order.
+
+Reverse										Only valid in method syntax. 
+											Sorts the collection in reverse order.
+----------------------------------------------------------------------------------------------
+
+OrderBy sorts the values of a collection in ascending or descending order. 
+
+It sorts the collection in ascending order by default because ascending keyword is optional here. 
+
+Use descending keyword to sort collection in descending order.
+
+
+----------------------------------------------------------------------------------------------
+
+Order By in Method Syntax
+--------------------------
+
+OrderBy extension method has two overloads. 
+
+First overload of OrderBy extension method accepts the Func delegate type parameter. 
+So you need to pass the lambda expression for the field based on which you want to sort the 
+collection.
+
+The second overload method of OrderBy accepts object of IComparer along with Func delegate type to 
+use custom comparison for sorting.
+
+----------------------------------------------------------------------------------------------
+Method syntax does not allow the decending keyword to sorts the collection in decending order. 
+Use OrderByDecending() method for it.
+----------------------------------------------------------------------------------------------
+
+LINQ includes five sorting operators: 
+OrderBy, OrderByDescending, ThenBy, ThenByDescending and Reverse
+
+LINQ query syntax does not support OrderByDescending, ThenBy, ThenByDescending and Reverse. 
+
+It only supports 'Order By' clause with 'ascending' and 'descending' sorting direction.
+
+LINQ query syntax supports multiple sorting fields seperated by comma whereas you have to use 
+ThenBy & ThenByDescending methods for secondary sorting.

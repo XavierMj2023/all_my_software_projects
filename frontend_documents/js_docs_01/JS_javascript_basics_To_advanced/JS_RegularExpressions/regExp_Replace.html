@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+</head>
+
+<body>
+    <h1>JS Regular Expression</h1>
+    <hr />
+    <script>
+      
+        //This is the text
+        const txt4 = "Color is Black and code is 8 ";
+
+        //Which number to replace?
+        const regex4 = /\d+/g;
+
+        //Use matchAll() to match the given text
+        const numFind = txt4.replace(regex4, "?");
+
+        console.log(numFind);
+
+    </script>
+</body>
+
+</html>

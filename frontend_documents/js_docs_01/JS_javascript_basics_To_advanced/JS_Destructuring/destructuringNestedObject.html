@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Destructuring</title>
+    </head>
+    <body>
+        <script>
+            const myObj = {
+                name : "CodeBustler",
+                age : 27,
+                address : {
+                    city : "Gulbarga",
+                    state : "Goa"
+                }
+            };
+
+            //Destructuring
+            const{name, age, address : {city, state}} = myObj;
+            
+            console.log(name);//CodeBustler
+            console.log(age);//27
+            console.log(city);//Gulbarga
+            console.log(state);//Goa
+        </script>
+    </body>
+</html>

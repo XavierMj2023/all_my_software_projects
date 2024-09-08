@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css"/>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <h1>Head 1</h1>
+    <p>Para 1</p>
+    <h2>Head 2</h2>
+    <p>Para 2</p>
+    <p>Para 3</p>
+    <h3>Head 3</h3>
+    <p>Para 4 </p>
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+         $(document).ready(function () {
+             // Select the next <p> element immediately following the <h2> element
+            $("h2 + p").css("color", "blue");
+        });
+    </script>
+</body>
+
+</html>

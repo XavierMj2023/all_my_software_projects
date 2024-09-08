@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selectors</title>
+    <link rel="stylesheet" href="../javascript_jQuery_css/jquerycss.css" />
+</head>
+
+<body>
+    <p>jQuery hidden</p>
+    <code style="display: none;">
+        hidden
+    </code>
+    <hr />
+
+    <p>jQuery visible</p>
+    <a href="#">Link Visible</a>
+    <hr />
+
+    <p>jQuery parent > child</p>
+    <ul class="test">
+        <li>List item</li>
+        <li>List item
+            <ul>
+                <li>Nested list item (will not have border)</li>
+            </ul>
+        </li>
+        <li>List item</li>
+    </ul>
+    <hr />
+
+    <p>jQuery ancestor-descendant</p>
+    <form>
+        <label for="name">Child of form:</label>
+        <input name="name" id="name">
+
+        <fieldset>
+            <label for="newsletter">Grandchild of form, child of fieldset:</label>
+            <input name="newsletter" id="newsletter">
+        </fieldset>
+    </form>
+    <hr />
+
+    <p>jQuery animated</p>
+    <input type="button" id="btna1" value="Click to move using animated" />
+    <div id="box"></div>
+    <hr />
+
+    <p>jQuery first</p>
+    <button class="bfirst">First Select</button>
+    <p class="fir">101</p>
+    <p class="fir">102</p>
+    <p class="fir">103</p>
+    <hr />
+
+    <p>jQuery last</p>
+    <button class="blast">Last Select</button>
+    <p class="las">101</p>
+    <p class="las">102</p>
+    <p class="las">103</p>
+    <hr />
+
+    <table border="1">
+        <tr>
+            <th>Company</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>reliance</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>flipkart</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>walmart</td>
+            <td>American</td>
+        </tr>
+    </table>
+    <hr />
+
+    <p>jQuery parent</p>
+    <div class="ancestors">div (great-great-grandparent)
+        <div style="width:500px;">div (great-grandparent)
+            <ul>ul (grandparent)
+                <li>li (direct parent)
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr />
+
+    <p>jQuery contains</p>
+    <h3>Sally in Texas</h3>
+    <hr />
+
+    <p>jQuery input and button</p>
+    <h4 id="GFG"></h4>
+    <button id="clkbtn" type="button">
+        Bold button
+    </button>
+    <hr />
+
+    <p>jQuery first-child and [attribute!=value]</p>
+    <div>
+        <h2 id="sid2">GeeksforGeeks</h2>
+        <h2>Learning Platform</h2>
+        <h2>GeeksforGeeks</h2>
+        <h2 id="sid2">Learning Platform 1</h2>
+        <h2 id="sid">GeeksforGeeks</h2>
+        <h2 id="sid2">Learning Platform 2</h2>
+    </div>
+    <hr />
+
+    <p>jQuery nth-child</p>
+    <h1>This is a heading in body</h1>
+
+    <p>The first paragraph in body.</p>
+    <p>The second paragraph in body (and the 3rd child element in body).</p>
+
+    <div style="border:1px solid;">
+        <span>This is a span element in div</span>
+        <p>The first paragraph in div.</p>
+        <p>The second paragraph in another div (and the 3rd child element in this div).</p>
+        <p>The last paragraph in div.</p>
+    </div><br>
+
+    <div style="border:1px solid;">
+        <p>The first paragraph in another div.</p>
+        <p>The second paragraph in another div.</p>
+        <p>The last paragraph in another div (and the 3rd child element in this div).</p>
+    </div>
+    <hr />
+
+    <p>jQuery element ~ siblings and element + next</p>
+    <div>
+        <h4 id="sid">GeeksforGeeks</h4>
+        <h4 id="sid2">Learning Platform</h4>
+        <h4>First Child Selector</h4>
+    </div>
+    <h5>GeeksforGeeks</h5>
+    <h5>GeeksforGeeks</h5>
+    <h5>GeeksforGeeks</h5>
+    <h5>GeeksforGeeks</h5>
+    <hr />
+
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="../jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../javascript_jQuery_js/jQuery_Selectors.js"></script>
+</body>
+
+</html>

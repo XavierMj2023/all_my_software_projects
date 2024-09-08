@@ -1,0 +1,80 @@
+﻿Partitioning Operators: Skip & SkipWhile
+------------------------------------------
+Partitioning operators split the sequence (collection) into two parts and return one of the parts.
+
+Method						Description
+--------------------------------------------------------------------------------------------------------
+Skip						Skips elements up to a specified position starting from the first element in
+							a sequence.
+
+SkipWhile					Skips elements based on a condition until an element does not satisfy the 
+							condition. 
+							If the first element itself doesn't satisfy the condition, it then skips 0 
+							elements and returns all the elements in the sequence.
+
+Take						Takes elements up to a specified position starting from the first element in 
+							a sequence.
+
+TakeWhile					Returns elements from the first element until an element does not satisfy 
+							the condition. 
+							If the first element itself doesn't satisfy the condition then returns an 
+							empty collection.
+
+---------------------------------------------------------------------------------------------------------
+
+Skip()
+------------
+The Skip() method skips the specified number of element starting from first element and returns rest of 
+the elements.
+
+The Skip & SkipWhile operator is Not Supported in C# query syntax. 
+
+However, you can use Skip/SkipWhile 
+method on a query variable or wrap whole query into brackets and then call Skip/SkipWhile.
+
+Position not index
+
+---------------------------------------------------------------------------------------------------------
+SkipWhile()
+------------
+As the name suggests, the SkipWhile() extension method in LINQ skip elements in the collection till the 
+specified condition is true. 
+
+It returns a new collection that includes all the remaining elements once the specified condition 
+becomes false for any element.
+
+The SkipWhile() method has two overload methods. 
+
+One method accepts the predicate of Func<TSource, bool> type and other overload method accepts the 
+predicate Func<TSource, int, bool> type that pass the index of an element.
+
+---------------------------------------------------------------------------------------------------------
+
+Take()
+------------
+The Take() extension method returns the specified number of elements starting from the first element.
+
+Take & TakeWhile operator is Not Supported in C# query syntax. 
+
+However, you can use Take/TakeWhile method on query variable or wrap whole query into brackets and 
+then call Take/TakeWhile().
+
+---------------------------------------------------------------------------------------------------------
+
+TakeWhile()
+------------
+
+The TakeWhile() extension method returns elements from the given collection until the specified 
+condition is true. 
+
+If the first element itself doesn't satisfy the condition then returns an empty collection.
+
+The TakeWhile method has two overload methods. 
+
+One method accepts the predicate of Func<TSource, bool> type and the 
+
+other overload method accepts the predicate Func<TSource, int, bool> type that passes the index of 
+element.
+
+---------------------------------------------------------------------------------------------------------
+

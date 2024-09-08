@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css"/>
+    <style>
+        ul li{
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ul>
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+         $(document).ready(function() {
+            // Select all even child elements
+            $("li:nth-child(even)").css("background-color", "gray");
+            
+            // Select all odd child elements
+            $("li:nth-child(odd)").css("background-color", "blue");
+        });
+    </script>
+</body>
+
+</html>

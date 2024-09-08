@@ -1,0 +1,1 @@
+Average Sales Value per Order = SUM('classicmodels sales_data_for_power_bi'[sales_value])/DISTINCTCOUNT('classicmodels sales_data_for_power_bi'[orderNumber])

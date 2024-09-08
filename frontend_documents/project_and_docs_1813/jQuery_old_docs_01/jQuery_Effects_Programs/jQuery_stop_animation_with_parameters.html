@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JQUERY STOP METHOD</title>
+    <link rel="stylesheet" href="../jQueryLinkWithCss/stop.css" />
+    <script src="../jQuery_Files/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $("document").ready(function () {
+            $("#start").click(function () {
+                $("div").animate({ left: '500px' }, 5000);
+                $("div").animate({ fontSize: '8em' }, 5000);
+            });
+
+            $("#stop").click(function () {
+                $("div").stop();
+            });
+
+            $("#stop2").click(function () {
+                $("div").stop(true);
+            });
+
+            $("#stop3").click(function () {
+                $("div").stop(true, true);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>The "Start" button starts the animation.</p>
+    <p>
+        The "Stop" button stops the current active animation, but allows the queued
+        animations to be performed afterwards.
+    </p>
+    <p>
+        The "Stop all" button stops the current active animation and clears the
+        animation queue; so all animations on the element is stopped.
+    </p>
+    <p>The "Stop but finish" rushes through the current active animation, then it stops.</p>
+
+    <br /><br /><br />
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="stop2">Stop all</button>
+    <button id="stop3">Stop but finish</button>
+
+    <div>MANDI</div>
+</body>
+</html>

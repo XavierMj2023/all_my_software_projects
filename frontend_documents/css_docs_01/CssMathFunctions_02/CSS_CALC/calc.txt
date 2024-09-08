@@ -1,0 +1,48 @@
+----------------------------------------------------------
+The calc() Function
+----------------------------------------------------------
+The calc() function performs a calculation to be used as the property value.
+----------------------------------------------------------
+
+----------------------------------------------------------
+CSS Syntax
+----------------------------------------------------------
+calc(expression)
+----------------------------------------------------------
+
+----------------------------------------------------------
+Value	                  Description
+----------------------------------------------------------
+expression	              Required. A mathematical expression. The result will be used as the 
+                          value.
+                          The following operators can be used: + - * /
+----------------------------------------------------------
+
+----------------------------------------------------------
+CALC EXAMPLE :
+----------------------------------------------------------
+To display the output of the calc function within the div box as content, you cannot directly show 
+the result of the CSS calc function in HTML content because calc is a CSS function used for 
+calculating values to be used as part of CSS property values, not for generating content that can 
+be displayed inside an HTML element.
+
+However, you can illustrate the effect of the calc function by dynamically changing the size or 
+position of an element and then explaining or demonstrating that change. 
+
+Since your CSS uses calc to adjust the width of .div1, you can visually show this effect, but to 
+display the calculated width as text inside the div, you'll need a bit of JavaScript to compute and 
+display this information.
+
+----------------------   ------------------------------------
+
+The JavaScript code uses window.onload to ensure the script runs after the page has 
+fully loaded. 
+
+It then calculates the width of .div1 using offsetWidth and displays this value inside the <span> 
+with the id pixelValue.
+
+The window.onresize function ensures that if the user resizes the window, the displayed width 
+value updates accordingly.
+
+This approach directly demonstrates the effect of your CSS calc function by dynamically showing 
+the resulting width inside the div.

@@ -1,0 +1,30 @@
+In JS, Asynchronous refers to ability to perform tasks independently from the main program 
+flow.
+
+It allows code to intiate operations and continue running other tasks without waiting for 
+them to finish.
+
+It includes
+-> Fetching Data from servers
+-> Reading/Writing lines
+-> Making API Calls
+
+To handle asynchronous operations, JS provides mechanisms like
+-> Callbacks :  Function executed after an asynchronous operation completes.
+
+-> Promises  :  Represent future values and allow chaining multiple asynchronous operations.
+
+-> Async/Await : Provide a more consise and synchronous-like way to write asynchronous code.
+
+It improves
+-> Program Responsivness
+-> Prevent Blocking
+
+It is mainly used with the Promises.
+
+When a long running task needs to be performed without blocking the main thread of 
+executation.
+-> Network requests.
+-> Accesing a Database
+That time Async/Await is used.
+

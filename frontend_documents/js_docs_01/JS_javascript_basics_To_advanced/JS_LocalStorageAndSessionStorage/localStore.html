@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage JS</title>
+</head>
+<body>
+    <h1>Local Storage JS</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        let p1 = document.getElementById("p1");
+        let p2 = document.getElementById("p2");
+
+        //Set an Item in Local Storage
+        localStorage.setItem('username', 'Manu');
+
+        //Retrieve an Item from Local storage
+        const storeItem =  localStorage.getItem('username');
+        p1.innerHTML = storeItem;
+        console.log(storeItem);//Manu
+
+        //Remove an item from local storage
+        localStorage.removeItem('username');
+
+        const removedItem = localStorage.getItem('username');
+        if(removedItem == null){
+            p2.innerHTML = 'The Item has been removed';
+        }
+        console.log(removedItem);//null
+    </script>
+</body>
+</html>

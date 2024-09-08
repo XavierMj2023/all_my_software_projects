@@ -1,0 +1,20 @@
+*	Java Interfaces
+---------------------------------------------
+
+* 	Interfaces help us to standardize our application.
+
+*	We can apply some rules or regulations in our classed ,which help us to standardize our 
+	application.
+
+*	Help us in concept Of Polymorphism
+
+*	Only have declaration ,not defination.
+
+*	@Override - Annotation - Methods are Overidden from the Interface Phone in the above
+							 program.
+							 
+*	 Method Signature not important not the access specifier.
+
+*	 Recommended thing and heavy usage.
+
+*	 Interface provides complete abstraction.

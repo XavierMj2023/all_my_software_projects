@@ -1,0 +1,15 @@
+*   ABSOLUTE URL    
+    --------------------
+    Links to an external image that is hosted on another website. 
+    
+    Example: src="https://www.w3schools.com/images/img_girl.jpg"
+
+*   RELATIVE URL
+    --------------------
+    Links to an image that is hosted within the website. 
+    Here, the URL does not include the domain name. 
+    If the 
+    URL begins without a slash ---->    It will be relative to the current page.
+    URL begins with a slash    ---->    It will be relative to the domain.
+
+    It is almost always best to use relative URLs. They will not break if you change domain.

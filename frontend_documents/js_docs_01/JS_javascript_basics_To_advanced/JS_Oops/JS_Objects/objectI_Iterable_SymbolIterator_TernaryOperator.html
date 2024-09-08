@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Iterables</title>
+    </head>
+    <body>
+        <h1>Object Iterables</h1>
+        <hr/>
+        <p id="demo"></p>
+        <script>
+          let numbers = [1, 2, 3];
+
+          numbers[Symbol.iterator]  = function(){
+            let nextValue = 10;
+            return{
+                next:function(){
+                    nextValue++;
+                    return{
+                        //TernaryOperator
+                        done : nextValue > 15 ? true :false,
+                        value : nextValue
+                    }
+                }
+            }
+          }
+          // Iterate over myNumbers using for...of loop
+          for(const xg of numbers){
+                console.log(xg);
+            }
+        </script>
+    </body>
+</html>

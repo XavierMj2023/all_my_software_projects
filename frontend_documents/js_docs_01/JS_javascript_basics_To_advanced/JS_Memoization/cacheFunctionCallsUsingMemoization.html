@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cache Function Calls Using Memoization</title>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border-collapse: collapse;
+            border: 2px solid black;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        // Define function using ES6
+        const memoize = (fn) => { };
+
+        // Declare an initial cache object
+        const memoize1 = (fn) => {
+            let cache = {};
+        };
+
+        // Add Logic
+        const memoize2 = (fn) => {
+            let cache = {};
+            return (n) => {
+                if (n in cache) {          // Check if the result for n is already in the cache
+                    return cache[n];       // Return the cached result
+                } else {
+                    let result = fn(n);    // Call the original function with n
+                    cache[n] = result;     // Store the result in the cache
+                    return result;         // Return the result
+                }
+            }
+        };
+
+        // Add Logic - Example
+        const memoize3 = (fn) => {
+            let cache = {};
+            return (...args) => {
+                let cacheKey = args.map(n => n.toString() + '+').join('');
+                if (cacheKey in cache) {          // Check if the result for n is already in the cache
+                    return cache[cacheKey];       // Return the cached result
+                } else {
+                    let result = args.reduce((acc, curr) => fn(acc, curr), 0);    // Call the original function with n
+                    cache[cacheKey] = result;     // Store the result in the cache
+                    return result;         // Return the result
+                }
+            }
+        };
+
+        // Memoizer function
+        const add = (a, b) => a + b;
+        const memoizeadd = memoize3(add);
+
+        // Executing Function
+        let output1 = memoizeadd(10, 20, 30, 40);
+        let output2 = memoizeadd(1, 2, 3, 4);
+        let output3 = memoizeadd(5, 10);
+        let output4 = memoizeadd(1, 2, 3, 4); // This should return the cached result
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("output1").innerText = output1;
+            document.getElementById("output2").innerText = output2;
+            document.getElementById("output3").innerText = output3;
+            document.getElementById("output4").innerText = output4;
+        });
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Output</th>
+            <th>Others</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Define Function using ES6</td>
+            <td>const memoize = (fn) => {};</td>
+            <td id="def">
+                <script>
+                    let def = document.getElementById("def");
+                    def.innerText = memoize.toString();
+                </script>
+            </td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Declare Initial cache object</td>
+            <td>
+                const memoize1 = (fn) => {
+                let cache = {};
+                };
+            </td>
+            <td id="def2">
+                <script>
+                    let def2 = document.getElementById("def2");
+                    def2.innerText = memoize1.toString();
+                </script>
+            </td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Add Logic</td>
+            <td>
+                const memoize2 = (fn) => {
+                let cache = {};
+                return (n) => {
+                if (n in cache) { return cache[n]; } else {
+                let result = fn(n); cache[n] = result; return result;
+                }
+                }
+                };
+            </td>
+            <td id="def3">
+                <script>
+                    let def3 = document.getElementById("def3");
+                    def3.innerText = memoize2.toString();
+                </script>
+            </td>
+            <td>NA</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Memoize Add Function Example</td>
+            <td>
+                const memoize3 = (fn) => {
+                let cache = {};
+                return (...args) => {
+                let cacheKey = args.map(n => n.toString() + '+').join('');
+                if (cacheKey in cache) { return cache[cacheKey]; } else {
+                let result = args.reduce((acc, curr) => fn(acc, curr), 0);
+                cache[cacheKey] = result; return result;
+                }
+                }
+                };
+            </td>
+            <td>
+                <div id="output1"></div>
+                <div id="output2"></div>
+                <div id="output3"></div>
+                <div id="output4"></div>
+            </td>
+            <td>NA</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

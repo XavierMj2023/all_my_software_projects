@@ -1,0 +1,15 @@
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\bin\Debug\net6.0\LogicalProgramming.exe
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\bin\Debug\net6.0\LogicalProgramming.deps.json
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\bin\Debug\net6.0\LogicalProgramming.runtimeconfig.json
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\bin\Debug\net6.0\LogicalProgramming.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\bin\Debug\net6.0\LogicalProgramming.pdb
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\obj\Debug\net6.0\LogicalProgramming.csproj.AssemblyReference.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\obj\Debug\net6.0\LogicalProgramming.GeneratedMSBuildEditorConfig.editorconfig
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\obj\Debug\net6.0\LogicalProgramming.AssemblyInfoInputs.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\obj\Debug\net6.0\LogicalProgramming.AssemblyInfo.cs
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\obj\Debug\net6.0\LogicalProgramming.csproj.CoreCompileInputs.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\obj\Debug\net6.0\LogicalProgramming.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\obj\Debug\net6.0\refint\LogicalProgramming.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\obj\Debug\net6.0\LogicalProgramming.pdb
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\obj\Debug\net6.0\LogicalProgramming.genruntimeconfig.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\LogicalProgramming\obj\Debug\net6.0\ref\LogicalProgramming.dll

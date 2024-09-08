@@ -1,0 +1,128 @@
+/* A Flexible Layout must have a parent element with the display property set to flex. */
+.flex-container{
+    display: flex;
+    background-color: dodgerblue;
+}
+/* Flex Items of flex container modifications */
+.flex-container > div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
+}
+/* The flex-direction property defines in which direction the container wants to stack the flex items.*/
+.sam1{
+    flex-direction: column;
+    width: 50%;
+}
+.sam2{
+    flex-direction: column-reverse;
+    width: 50%;
+}
+.sam3{
+    flex-direction: row;
+    width: 50%;
+}
+.sam4{
+    flex-direction: row-reverse;
+    width: 50%;
+}
+/*The flex-wrap property specifies whether the flex items should wrap or not.*/
+.sam5{
+    flex-wrap: wrap;
+}
+.sam6{
+    flex-wrap: nowrap;
+}
+.sam7{
+    flex-wrap: wrap-reverse;
+}
+/* The Flex Flow is a shorthand property for the flex-direction and the flex-wrap properties. */
+.sam8{
+    flex-flow: row wrap;
+}
+/* JUSTIFY CONTENT :  It aligns the flex items at the center of the container */
+.sam9{
+    justify-content: center;
+    width: 50%;
+}
+.sam10{
+    justify-content: flex-start;
+    width: 50%;
+}
+.sam11{
+    justify-content: flex-end;
+    width: 50%;
+}
+.sam12{
+    justify-content: space-around;
+    width: 50%;
+}
+.sam13{
+    justify-content: space-between;
+    width: 50%;
+}
+.sam14{
+    justify-content: space-evenly;
+    width: 50%;
+}
+/* The align-items property is used to align the flex items */
+.sam15{
+    align-items: center;
+    width: 50%;
+}
+.sam16{
+    align-items: flex-start;
+    width: 50%;
+}
+.sam17{
+    align-items: flex-end;
+    width: 50%;
+}
+.sam18{
+    align-items: stretch;
+    width: 50%;
+}
+.sam19{
+    align-items: baseline;
+    width: 50%;
+}
+/* The align-content property is used to align the flex lines.*/
+.sam20{
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 50%;
+    
+}
+.sam21{
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 50%;
+}
+.sam22{
+    flex-wrap: wrap;
+    align-content: stretch;
+    width: 50%;
+}
+.sam23{
+    flex-wrap: wrap;
+    align-content: center;
+    width: 50%;
+}
+.sam24{
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 50%;
+}
+.sam25{
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: 50%;
+}
+/* Perfect Centering - Set both the justify-content and align-items properties to center 
+                       and the flex item will be perfectly centered*/
+.perfectcenter{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}

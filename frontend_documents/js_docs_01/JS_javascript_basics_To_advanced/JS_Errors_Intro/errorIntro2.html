@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Errors</title>
+    </head>
+    <body>
+        <p id="result"></p>
+        <script>
+           var re = document.getElementById("result");
+           let num = 1;
+           try{
+            num.toPrecision(500);
+           }catch(err){
+            re.innerHTML = err.name + " : " +err.message;
+           }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+﻿*	Aggregation Operators
+	----------------------
+*	The aggregation operators perform mathematical operations like Average, Aggregate, Count, Max, Min 
+	and Sum, on the numeric property of the elements in the collection.
+
+	Method								Description
+	-------------------------------------------------
+	Aggregate							Performs a custom aggregation operation on the values in the 
+										collection.
+
+	Average								calculates the average of the numeric items in the collection.
+
+	Count								Counts the elements in a collection.
+
+	LongCount							Counts the elements in a collection.
+
+	Max									Finds the largest value in the collection.
+
+	Min									Finds the smallest value in the collection.
+
+	Sum									Calculates sum of the values in the collection.
+	-------------------------------------------------
+
+*	Aggregate
+	----------
+
+*	Aggregate operator is Not Supported with query syntax in C# or VB.Net.
+
+*	As per the above figure, first item of strList "One" will be pass as s1 and rest of the items will 
+	be passed as s2. 
+	
+*	The lambda expression (s1, s2) => s1 + ", " + s2 will be treated like s1 = s1 + ", " + s1 where s1 
+	will be accumulated for each item in the collection. 
+	
+*	Thus, Aggregate method will return comma separated string.
+
+*	Average
+	----------
+
+*	Average extension method calculates the average of the numeric items in the collection. 
+
+*	Average method returns nullable or non-nullable decimal, double or float value.
+
+*	You can specify an int, decimal, double or float property of a class as a lambda expression of which
+	you want to get an average value.
+
+*	Count
+	----------
+
+*	C# Query Syntax doesn't support aggregation operators. 
+
+*	However, you can wrap the query into brackets and use an aggregation functions.

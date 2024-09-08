@@ -1,0 +1,155 @@
+Option Explicit
+
+
+
+Private Sub cmdDelete_Click()
+
+    If Selected_List = 0 Then
+    
+        MsgBox "No row is selected.", vbOKOnly + vbInformation, "Delete"
+        Exit Sub
+        
+    End If
+    
+    Dim i As VbMsgBoxResult
+    
+    i = MsgBox("Do you want to delete the selected record?", vbYesNo + vbQuestion, "Delete")
+    
+    If i = vbNo Then Exit Sub
+    
+    Dim row As Long
+    
+    row = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 0) + 1
+    
+    ThisWorkbook.Sheets("Database").Rows(row).Delete
+    
+    Call Reset
+    
+    'Auto-save the workbook'
+    ThisWorkbook.Save
+    
+    ' Display a message box indicating successful data submission and save
+    MsgBox "Data has been deleted and the workbook has been auto-saved."
+
+
+
+End Sub
+
+Private Sub cmdEdit_Click()
+
+    
+    If Selected_List = 0 Then
+    
+        MsgBox "No row is selected.", vbOKOnly + vbInformation, "Edit"
+        Exit Sub
+        
+    End If
+    
+    Me.txtRowNumber.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 0) + 1
+
+    'Assign the value
+    
+    frmDataEntry.txtDB.Value = Format(Me.lstDatabase.List(Me.lstDatabase.ListIndex, 2), "dd-mmm-yyyy")
+    
+    frmDataEntry.cmbActivity.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 3)
+    
+    frmDataEntry.TstartTime.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 4)
+    
+    frmDataEntry.TendTime.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 5)
+    
+    frmDataEntry.txtComments.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 7)
+    
+    frmDataEntry.cmdSubmit.Caption = "Update"
+    
+    MsgBox "Please make the required changes and click on update to save."
+
+End Sub
+
+
+Private Sub cmdReset_Click()
+
+    Dim i As VbMsgBoxResult
+    
+    i = MsgBox("Do you want to reset the form?", vbYesNo + vbQuestion, "Reset Form")
+    
+    If i = vbNo Then Exit Sub
+    
+    Call Reset_Form
+    
+
+
+End Sub
+
+Private Sub cmdSubmit_Click()
+
+    Dim i As VbMsgBoxResult
+    
+    i = MsgBox("Do you want to submit the data?", vbYesNo + vbQuestion, "Submit Data")
+    
+    If i = vbNo Then Exit Sub
+    
+    If ValidEntry = True Then
+    
+        Call Submit_Data
+    
+    End If
+    
+
+End Sub
+
+Private Sub imgCalendar_BeforeDragOver(ByVal Cancel As MSForms.ReturnBoolean, ByVal Data As MSForms.DataObject, ByVal X As Single, ByVal Y As Single, ByVal DragState As MSForms.fmDragState, ByVal Effect As MSForms.ReturnEffect, ByVal Shift As Integer)
+
+End Sub
+
+Private Sub imgCalendar_Click()
+
+    Application.ScreenUpdating = False
+    
+    Dim sDate As String
+    
+    On Error Resume Next
+    
+    sDate = MyCalendar.DatePicker(Me.txtDB)
+    
+    Me.txtDB.Value = Format(sDate, "dd-mmm-yyyy")
+    
+    On Error GoTo 0
+    
+    Application.ScreenUpdating = True
+
+End Sub
+
+Private Sub txtDOB_DblClick(ByVal Cancel As MSForms.ReturnBoolean)
+
+    Application.ScreenUpdating = False
+    
+    Dim sDate As String
+    
+    On Error Resume Next
+    
+    sDate = MyCalendar.DatePicker(Me.txtDOB)
+    
+    Me.txtDOB.Value = Format(sDate, "dd-mmm-yyyy")
+    
+    On Error GoTo 0
+    
+    Application.ScreenUpdating = True
+
+End Sub
+
+
+
+Private Sub UserForm_Initialize()
+
+    ' Initialize the DateTime TextBox in Indian format (DD-MM-YYYY HH:MM:SS)
+    With Me.txtDateTime
+        .Value = Format(Now, "DD-MM-YYYY HH:MM:SS")
+        .Enabled = False
+        .BackColor = &H8000000F ' White
+        .ForeColor = &H80000012 ' Black
+    End With
+    
+    ' Other initialization code
+    Call Reset_Form
+    
+End Sub

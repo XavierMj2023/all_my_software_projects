@@ -1,0 +1,22 @@
+http://localhost:8080/JSPForms_FormsUnderJSP/submit.jsp?
+
+name=Manoj&
+
+gender=male&
+
+language=English&language=Hindi&language=French
+
+&country=Fiji
+
+------------------------------------------------------------------------
+When you try to change in the URL, the value in the URL also gets changed. If you change name to John.
+------------------------------------------------------------------------
+http://localhost:8080/JSPForms_FormsUnderJSP/submit.jsp?
+
+name=John&
+
+gender=male&
+
+language=English&language=Hindi&
+
+language=French&country=Fiji

@@ -1,0 +1,73 @@
+*   Every HTML element has a default display value, depending on what type of element it is.
+    There are two display values: 
+    1.block
+    2.inline
+
+*   Block-level Elements
+    --------------------------
+    A block-level element always starts on a new line, and the browsers automatically add some space 
+    (a margin) before and after the element.
+
+    A block-level element always takes up the full width available (stretches out to the left and 
+    right as far as it can).
+
+    Two commonly used block elements are: <p> and <div>.
+
+    Block level elements take up as much space as possible by default. 
+    
+    Each block level element will start a new line on the page, stacking down the page. 
+    
+    In addition to stacking vertically, block level elements will also take up as much horizontal 
+    space as possible.
+
+    They consume the entire width available irrespective of their sufficiency.
+    
+    They always start in a new line and have top and bottom margins. 
+    
+    It does not contain any other elements next to it.
+
+    Eg:
+    p element
+    -------------------------------------------
+    Each new paragraph tag will appear on its own line vertically. 
+    Paragraphs with longer content will stretch all the way to the edge of the page.
+
+    Here are the block-level elements in HTML:
+    --------------------------------------------
+    <address>   <article>   <aside> <blockquote> <canvas>   <dd>    <div>   <dl>    <dt>    <fieldset>
+    
+    <figcaption>    <figure>    <footer>    <form>  <h1>-<h6>   <header>    <hr>    <li>    <main>
+    
+    <nav>   <noscript>  <ol>    <p> <pre>   <section>   <table> <tfoot> <ul>    <video>
+
+
+*   Inline Elements
+    ------------------------
+    An inline element does not start on a new line.An inline element only takes up as much width as 
+    necessary.
+
+    An inline element cannot contain a block-level element.
+
+    Inline elements display in a line. 
+    
+    They do not force the text after them to a new line.
+
+    Inline elements occupy only enough width that is sufficient to it and allows other elements next to
+    it which are inline.
+    
+    Inline elements don’t start from a new line and don’t have top and bottom margins as block 
+    elements have.
+
+    Eg:
+    An anchor (or link) is an example of an inline element. 
+    You can put several links in a row, and they will display in a line.
+
+    Here are the inline elements in HTML:
+    --------------------------------------
+    <a> <abbr>  <acronym>   <b> <bdo>   <big>   <br>    <button>    <cite>  <code>  <dfn>   <em>  <i>
+    
+    <img>   <input> <kbd>   <label> <map>   <object>    <output>    <q>     <samp>  <script>
+    
+    <select>    <small> <span>  <strong>    <sub>   <sup>   <textarea>  <time>
+    
+    <tt>    <var>

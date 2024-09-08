@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS This keyword</title>
+    </head>
+    <body>
+        <h4>Event Handler</h4>
+        <p id="one"></p>
+        <p id="two"></p>
+        <p id="three"></p>
+        <button id="display">Click to get Value of this</button>
+        <script>
+            let one = document.getElementById("one");
+            let two = document.getElementById("two");
+
+            let btn = document.querySelector("button");
+
+            btn.addEventListener("click", function(){
+               one.innerHTML = "Button Clicked!.."
+               two.innerHTML = this; 
+            });
+        </script>
+    </body>
+</html>

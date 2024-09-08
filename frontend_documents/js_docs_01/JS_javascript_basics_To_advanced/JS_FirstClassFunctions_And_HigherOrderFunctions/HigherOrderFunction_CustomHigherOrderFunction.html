@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class Functions</title>
+</head>
+
+<body>
+    <script>
+        // Initialize an array of strings
+        const arrstr = ["Java", "C", "JS"];
+
+        // Define a function mapForEach that takes an array and a function
+        function mapForEach(arr, fn) {
+            // Initialize an empty array to store the results
+            const newarr = [];
+
+            // Iterate over each element of the input array
+            for (let i = 0; i < arr.length; i++) {
+                // Apply the given function to the current element and push the result to newarr
+                newarr.push(fn(arr[i]));
+            }
+
+            // Return the array containing the results
+            return newarr;
+        }
+
+        // Call mapForEach with arrstr and a function
+        const lenarr = mapForEach(arrstr, function (item) {
+            // Log each item to the console
+            console.log(item);
+            // Return the length of each item
+            return item.length;
+        });
+
+        // Log lenarr to the console
+        console.log(lenarr);
+
+        // Write lenarr to the document
+        document.write(lenarr);
+    </script>
+
+</body>
+
+</html>

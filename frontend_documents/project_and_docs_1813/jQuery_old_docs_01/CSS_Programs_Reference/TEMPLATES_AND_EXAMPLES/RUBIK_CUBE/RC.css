@@ -1,0 +1,11 @@
+#cube-viewport{
+    perspective: 800;
+    perspective-origin: 50% 200px;    
+}
+ 
+#cube{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    transform-style: preserve-3d;
+}

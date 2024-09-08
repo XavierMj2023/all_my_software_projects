@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Functions Local</h1>
+
+    <p><b>Outside myFunction() carName is undefined.</b></p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        let text = "Outside: " + typeof carName;
+        document.getElementById("demo1").innerHTML = text;
+
+        function myFunction() {
+            //Local to the function - Accessed from within the function.
+            let carName = "Volvo";
+            let text = "Inside: " + typeof carName + " " + carName;
+            document.getElementById("demo2").innerHTML = text;
+        }
+
+        myFunction();
+    </script>
+
+</body>
+
+</html>

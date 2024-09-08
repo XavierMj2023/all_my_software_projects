@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops - First Class</title>
+</head>
+
+<body>
+    <script>
+        //Inheritance
+        class Animal {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            makeSound() {
+                return (
+                    `Some Nice sound made!..`
+                )
+            }
+        }
+
+        class Dog extends Animal {
+            constructor(name, age, breed) {
+                super(name, age);
+                this.breed = breed;
+            }
+            makeSound(){
+                return 'Woo!..'
+            }
+        }
+
+        class Cat extends Animal {
+            constructor(name, age, weight) {
+                super(name, age);
+                this.weight = weight;
+            }
+            makeSound(){
+                return 'meow!..'
+            }
+        }
+
+        const myDog = new Dog('Rex', 2, 'German Sheperd');
+        const myCat = new Cat('Rea', 5, '5KG');
+
+        document.write(myDog.makeSound()+"<br/>");
+        document.write(myCat.makeSound());
+    </script>
+</body>
+
+</html>

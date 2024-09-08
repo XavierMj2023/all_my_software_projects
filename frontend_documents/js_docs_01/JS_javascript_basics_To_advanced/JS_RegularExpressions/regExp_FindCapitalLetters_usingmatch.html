@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+</head>
+
+<body>
+    <h1>JS Regular Expression</h1>
+    <hr />
+    <script>
+
+        //Eg 5 - Find Capital Letters
+
+        //This is the text
+        const txt5 = "People often Write hello world while HELLO WORLD programming";
+
+        //Which string to find?
+        const regex5 = /[A-Z]/g;
+
+        //Use matchAll() to match the given text
+        const results3 = txt5.match(regex5);
+
+        console.log(results3); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Classes Intro</title>
+    </head>
+    <body>
+        <h2>Classes Introduction</h2>
+        <p id="res"></p>
+        <script>
+            class Car{
+                constructor(name, year){
+                    this.name = name;
+                    this.year = year;
+                }
+                age(x){
+                    return x - this.year;
+                }
+            }
+            const date = new Date();
+            let year = date.getFullYear();
+
+            const myCar = new Car("Fo", 2017);
+
+            document.getElementById("res").innerHTML = myCar.age(year);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+------------------------------------------------------------------------------------------------------------------------
+SMPS (Switched-Mode Power Supply)
+------------------------------------------------------------------------------------------------------------------------
+An SMPS (Switched-Mode Power Supply) is an electronic power supply that uses a switching regulator to efficiently convert electrical power. 
+
+It is widely used in various electronic devices, including computers, to provide stable and reliable power to different components.
+
+
+------------------------------------------------------------------------------------------------------------------------
+Key Functions of SMPS
+------------------------------------------------------------------------------------------------------------------------
+Power Conversion	: Converts high voltage AC (Alternating Current) from the mains supply to lower voltage DC (Direct Current) needed by electronic components.
+
+Voltage Regulation	: Maintains a consistent output voltage despite variations in input voltage or load conditions.
+
+Efficiency		: Operates at high efficiency by switching components on and off rapidly, reducing energy loss.
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+Components of SMPS
+------------------------------------------------------------------------------------------------------------------------
+AC Input			: Receives high voltage AC power from the mains supply.
+Rectifier and Filter		: Converts AC power to unregulated DC power and smooths out the fluctuations.
+High-Frequency Transformer	: Steps down the DC voltage to desired levels.
+Switching Regulator		: Controls the switching of transistors to regulate output voltage.
+Output Rectifier and Filter	: Converts high-frequency AC back to DC and smooths the output voltage.
+Control Circuit			: Monitors output voltage and adjusts the switching regulator to maintain stable output.
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+Working Principle of SMPS
+------------------------------------------------------------------------------------------------------------------------
+AC to DC Conversion		: The AC input is rectified to DC using a rectifier.
+High-Frequency Switching	: The DC voltage is converted to high-frequency AC using a high-frequency oscillator or switching transistors.
+Voltage Transformation		: The high-frequency AC is passed through a transformer to step down or step up the voltage as needed.
+Rectification and Filtering	: The transformed AC voltage is rectified back to DC and filtered to provide a smooth and stable output voltage.
+Feedback and Control		: The control circuit continuously monitors the output voltage and adjusts the switching frequency or duty cycle to maintain the desired output voltage.
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+Advantages of SMPS
+------------------------------------------------------------------------------------------------------------------------
+High Efficiency			: SMPS operates at high efficiency (typically 70-90%) due to minimal energy loss during the switching process.
+Compact Size			: The use of high-frequency transformers allows for smaller and lighter power supply units.
+Better Regulation		: Provides stable output voltage even with varying input voltage or load conditions.
+Heat Dissipation		: Generates less heat compared to linear power supplies, reducing the need for extensive cooling solutions.
+
+------------------------------------------------------------------------------------------------------------------------
+Applications of SMPS
+------------------------------------------------------------------------------------------------------------------------
+Computers and Servers		: Provides stable power to motherboard, CPU, GPU, storage devices, and peripherals.
+Telecommunication Equipment	: Powers network devices like routers, switches, and base stations.
+Consumer Electronics		: Used in TVs, gaming consoles, audio equipment, and more.
+Industrial Equipment		: Powers machinery, automation systems, and control devices.
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+SMPS in Computers
+------------------------------------------------------------------------------------------------------------------------
+In a computer system, the SMPS performs the following functions:
+------------------------------------------------------------------------------------------------------------------------
+Power Conversion		: Converts 110V/220V AC from the wall outlet to various DC voltages required by computer components (e.g., 3.3V, 5V, 12V).
+Voltage Regulation		: Ensures that each component receives a stable voltage, crucial for reliable operation.
+Protection			: Includes overvoltage, overcurrent, and short-circuit protection to prevent damage to computer components.
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+Example of SMPS in Action
+------------------------------------------------------------------------------------------------------------------------
+Scenario			: Turning on a Desktop Computer
+Power On			: You press the power button on your desktop.
+AC Input			: The SMPS receives AC power from the mains supply.
+Rectification and Filtering	: The AC power is converted to unregulated DC power and smoothed out.
+High-Frequency Switching	: The unregulated DC is converted to high-frequency AC using switching transistors.
+Voltage Transformation		: The high-frequency AC is stepped down by the transformer to the desired voltage levels.
+Rectification and Filtering	: The stepped-down AC is converted back to DC and filtered to provide stable output voltages (e.g., 3.3V, 5V, 12V).
+Power Distribution		: The SMPS supplies these stable DC voltages to the motherboard, CPU, GPU, storage devices, and other peripherals.
+Feedback Control		: The SMPS control circuit monitors the output and adjusts the switching to maintain stable voltages.
+
+------------------------------------------------------------------------------------------------------------------------
+Summary
+------------------------------------------------------------------------------------------------------------------------
+An SMPS (Switched-Mode Power Supply) is an efficient and reliable power supply unit used in computers and other electronic devices 
+to convert high voltage AC to stable low voltage DC. It ensures that all components receive the necessary power with high 
+efficiency and minimal energy loss, contributing to the overall stability and performance of the system.
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------
+

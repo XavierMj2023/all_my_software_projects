@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SLIDE UP METHOD</title>
+    <link rel="stylesheet" href="../jQueryLinkWithCss/slide.css" />
+    <script src="../jQuery_Files/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $("document").ready(function () {
+            $("#flip").click(function () {
+                $("#panup").slideUp("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="flip">Click to slide up panel</div>
+    <div id="panup">Hello world</div>
+</body>
+</html>

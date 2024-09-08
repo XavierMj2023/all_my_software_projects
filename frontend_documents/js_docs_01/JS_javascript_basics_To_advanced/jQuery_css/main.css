@@ -1,0 +1,57 @@
+/* jquery - selector - animated */
+.divy {
+    padding: 12px;
+    height: 12px;
+    width: 12px;
+    border: 1px solid red;
+    background-color: red;
+}
+
+/* jquery - method - prop */
+#division1 {
+    width: 250px;
+    padding: 10px;
+    height: 130px;
+    border: 2px solid green;
+}
+
+table,
+tr,
+td,
+th {
+    border-collapse: collapse;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+table {
+    margin-top: 15px;
+}
+
+/*jQuery - method - addClass*/
+.addClassStyle {
+    border: 1px solid black;
+    color: pink;
+    background-color: black;
+}
+
+.addCurving {
+    padding: 45px;
+}
+
+/*jQuery - method - scrollTop*/
+.scrollTop {
+    border: 1px solid black;
+    width: 100px;
+    height: 150px;
+    overflow: auto
+}
+/*jQuery - method - css*/
+.styleGet{
+    border: 1px solid black;
+    width: 50px;
+}
+textarea{
+    height: 160px;
+    width: 270px;
+}

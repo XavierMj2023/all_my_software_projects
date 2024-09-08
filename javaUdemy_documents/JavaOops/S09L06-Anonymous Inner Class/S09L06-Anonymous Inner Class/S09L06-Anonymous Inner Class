@@ -1,0 +1,79 @@
+Inner Classes are classes within another class.
+
+Eg : Real Life -> Car (Class) -> Consist Of Engine(Class) -> Components(Properties)
+
+Useful : Non Static Inner Classes.
+
+Doubt ? Door.java --> door.getLock().setLock(false);
+
+There are many types of classes:-
+
+Member Inner Class -> Non Static Class inside a Non Static Class
+
+Local Inner Class -> It is a class which is inside a scope of a block.Block can be a method as well.Scope 
+					 limited to the code block only.
+					 
+Anonymous Inner Class -> Nameless Class inside a class.As no name to the inner class,we can only use once in
+						 lifetime.
+						 
+Non Static Nested Class -> Known as Inner Class branch --> Instance of Non Static Inner Class contain
+														   Instance of Inner Class
+														   (Instance inside instance)
+														   
+Static Nested Class -> No Static Class need to accessed using object or an instance->Directly Access
+
+
+Nested Classes -> Why? -> To Depict the real life scenario better.
+
+Command Line Argument --> Help us in passing the value from outside the application.
+
+Command Line Argument
+------------------------
+Small Arrow beside the Run button -> Run Configurations -> Arguments Tab -> Pass in simple text(test) ->
+Apply ->Run
+
+Anonymous Object
+-------------------------
+Anonymous means Nameless
+
+Anonymous Object ->	Limited ; Making use of the object only once -> new Door().isLocked(args[0])
+
+
+Doubt ? -> Cannot have 2 public Class in a single file.
+
+Sol1 : Put Door.java inside same file location as Shop.java  //worked
+
+Sol2 : Create a Lock Class where Door.java file is present.
+
+----------------------------------------------------------------------------------------------------------
+
+Advantages of Inner Classes
+
+----------------------------------------------------------------------------------------------------------
+
+Better Real life depiction -> Real Life -> Car (Class) -> Consist Of Engine(Class) -> Components(Properties)
+
+
+Inner class can be used only by outer class -> InnerClass can access method and properties of outer class,nothing else
+
+										    -> OuterClass acts as a normal class.
+										   
+											-> InnerClass to be restricted to outer class only.
+											
+-> Real Life -> Car (Class) -> Consist Of Engine(Class) -> Components(Properties)
+
+							-> Consist of External Entities like Driver to interact with but Engine need to interact.
+							   Needs to be a part of a Car.
+							   
+Easy Access -> Inner Object is implicitly available inside outer object.
+
+			-> Inner Object is implicitly available to outer object,No worry about creating inner object explicitly.
+			
+			-> As soon as we make use of outer object, we know that the inner object is available to us and we can 
+			   easily access the inner object as well.
+							
+
+
+
+													   
+							    

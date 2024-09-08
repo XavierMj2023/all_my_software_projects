@@ -1,0 +1,51 @@
+﻿C# - Hashtable
+--------------------------------------------------
+The Hashtable is a non-generic collection that stores key-value pairs, similar to generic Dictionary<TKey, TValue> 
+collection. 
+
+It optimizes lookups by computing the hash code of each key and stores it in a different bucket internally and then
+matches the hash code of the specified key at the time of accessing values.
+--------------------------------------------------
+
+--------------------------------------------------
+Hashtable Characteristics
+--------------------------------------------------
+Hashtable stores key-value pairs.
+
+Comes under System.Collections namespace.
+
+Implements IDictionary interface.
+
+Keys must be unique and cannot be null.
+
+Values can be null or duplicate.
+
+Values can be accessed by passing associated key in the indexer e.g. myHashtable[key]
+
+Elements are stored as DictionaryEntry objects.
+
+--------------------------------------------------
+Creating a Hashtable
+--------------------------------------------------
+The Hashtable collection can include all the elements of Dictionary
+
+--------------------------------------------------
+Update Hashtable
+--------------------------------------------------
+You can retrieve the value of an existing key from the Hashtable by passing a key in indexer. 
+
+The Hashtable is a non-generic collection, so you must type cast values while retrieving it.
+
+--------------------------------------------------
+Remove Elements in Hashtable
+--------------------------------------------------
+The Remove() method removes the key-value that match with the specified in the Hashtable. 
+
+It throws the KeyNotfoundException if the specified key not found in the Hashtable, so check for an existing key 
+using the ContainsKey(Key) method before removing.
+
+Use the Clear() method to remove all the elements in one shot.
+
+--------------------------------------------------
+
+--------------------------------------------------

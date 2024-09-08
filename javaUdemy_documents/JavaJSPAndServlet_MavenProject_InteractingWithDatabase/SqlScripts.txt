@@ -1,0 +1,35 @@
+----------------------------------------------------------
+Create Schema Studyeasy
+----------------------------------------------------------
+
+----------------------------------------------------------
+Create Table users:
+----------------------------------------------------------
+
+CREATE TABLE `studyeasy`.`users` (
+  `user_id` INT NOT NULL,
+  `username` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  PRIMARY KEY (`user_id`));
+
+----------------------------------------------------------
+
+----------------------------------------------------------
+Insert values into Table users:
+----------------------------------------------------------
+
+INSERT INTO `studyeasy`.`users` (`user_id`, `username`, `email`) VALUES ('1', 'manoj', 'manojsheikh@gmail.com');
+INSERT INTO `studyeasy`.`users` (`user_id`, `username`, `email`) VALUES ('2', 'studyeasy', 'studyeasy.org');
+
+----------------------------------------------------------
+
+
+----------------------------------------------------------
+Adding Auto Increment for the table Users
+----------------------------------------------------------
+ALTER TABLE `studyeasy`.`users` 
+CHANGE COLUMN `user_id` `user_id` INT NOT NULL AUTO_INCREMENT ;
+
+----------------------------------------------------------
+
+

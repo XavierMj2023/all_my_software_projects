@@ -1,0 +1,409 @@
+Option Explicit
+
+'Code to Reset and Initialize the form
+
+Sub Reset_Form()
+
+    Dim iRow As Long
+    
+    With frmDataEntry
+    
+        .txtStudentName.Value = ""
+        .txtStudentName.BackColor = vbWhite
+        
+        .txtFatherName.Value = ""
+        .txtFatherName.BackColor = vbWhite
+        
+        .txtDOB.Value = ""
+        .txtDOB.BackColor = vbWhite
+        
+        .optFemale.Value = False
+        .optMale.Value = False
+        
+        .txtMobile.Value = ""
+        .txtMobile.BackColor = vbWhite
+        
+        .txtEmail.Value = ""
+        .txtEmail.BackColor = vbWhite
+        
+        .txtRowNumber.Value = ""
+        
+        .txtImagePath.Value = ""
+        
+        .txtAddress.Value = ""
+        .txtAddress.BackColor = vbWhite
+        
+        .imgStudent.Picture = LoadPicture(vbNullString)
+        
+        .cmdSubmit.Caption = "Submit"
+        
+        .cmbCourse.BackColor = vbWhite
+        
+        'Dynamic range based on support sheet
+        
+        shSupport.Range("A2", shSupport.Range("A" & Rows.Count).End(xlUp)).Name = "Dynamic"
+        
+        
+        .cmbCourse.RowSource = "Dynamic"
+        
+        .cmbCourse.Value = ""
+        
+        'assigning rowsource to lstDatabase listbox
+        
+        .lstDatabase.ColumnCount = 12
+        
+        .lstDatabase.ColumnHeads = True
+        
+        .lstDatabase.ColumnWidths = "40,80,80,40,45,70,80,0,0,0,0"
+        
+        'identify the last non-blank row in database sheet
+        
+        iRow = shDatabase.Range("A" & Rows.Count).End(xlUp).row
+        
+        If iRow > 1 Then
+        
+            .lstDatabase.RowSource = "Database!A2:L" & iRow
+        
+        
+        Else
+        
+            .lstDatabase.RowSource = "Database!A2:L2"
+        
+        End If
+        
+    
+    
+    End With
+
+
+End Sub
+
+
+
+Sub CreateFolder()
+
+
+    Dim strFolder As String
+    
+    strFolder = ThisWorkbook.Path & Application.PathSeparator & "Images"
+    
+    If Dir(strFolder, vbDirectory) = "" Then
+    
+        MkDir strFolder
+        
+    End If
+
+
+End Sub
+
+
+Function GetImagePath() As String
+
+    GetImagePath = ""
+    
+    With Application.FileDialog(msoFileDialogFilePicker)
+    
+        .AllowMultiSelect = False
+        
+        .Filters.Add "Images", "*.gif;*.jpg;*.jpeg"
+        
+        If .Show <> 0 Then
+        
+        
+            GetImagePath = .SelectedItems(1)
+        
+        End If
+    
+    End With
+   
+End Function
+
+
+Sub LoadImage()
+
+     Dim imgSourcePath As String ' To store the path of selected image
+     
+     Dim imgDestination As String 'To store the destination path to create the copy of selected image
+     
+     imgSourcePath = Trim(GetImagePath())
+     
+     Call CreateFolder
+    
+     imgDestination = ThisWorkbook.Path & "\Images\" & frmDataEntry.txtStudentName & _
+     "." & Split(imgSourcePath, ".")(UBound(Split(imgSourcePath, ".")))
+
+
+    FileCopy imgSourcePath, imgDestination
+    
+    frmDataEntry.imgStudent.PictureSizeMode = fmPictureSizeModeStretch
+    
+    frmDataEntry.imgStudent.Picture = LoadPicture(imgDestination)
+    
+    frmDataEntry.txtImagePath.Value = imgDestination
+
+End Sub
+
+
+Function ValidEmail(email As String) As Boolean
+
+
+    Dim oRegEx As Object
+    
+    Set oRegEx = CreateObject("VBScript.RegExp")
+    
+    With oRegEx
+    
+        .Pattern = "^[\w-\.]{1,}\@([\da-zA-Z-]{1,}\.){1,}[\da-zA-Z-]{2,3}$"
+        
+        ValidEmail = .test(email)
+    
+    
+    End With
+    
+    Set oRegEx = Nothing
+
+
+End Function
+
+
+Function ValidEntry() As Boolean
+
+
+    ValidEntry = True
+    
+    With frmDataEntry
+    
+        'Default Color
+        
+        .txtStudentName.BackColor = vbWhite
+        .txtFatherName.BackColor = vbWhite
+        .txtDOB.BackColor = vbWhite
+        .txtMobile.BackColor = vbWhite
+        .txtEmail.BackColor = vbWhite
+        .txtAddress.BackColor = vbWhite
+        .cmbCourse.BackColor = vbWhite
+        
+        'Validating Student's Name
+        
+        If Trim(.txtStudentName.Value) = "" Then
+        
+            MsgBox "Please enter student's name.", vbOKOnly + vbInformation, "Student's Name"
+            .txtStudentName.BackColor = vbRed
+            .txtStudentName.SetFocus
+            
+            ValidEntry = False
+            Exit Function
+        
+        
+        End If
+        
+        'Validating Fathers's Name
+        
+        If Trim(.txtFatherName.Value) = "" Then
+        
+            MsgBox "Please enter Father's name.", vbOKOnly + vbInformation, "Father's Name"
+            .txtFatherName.BackColor = vbRed
+            .txtFatherName.SetFocus
+            
+            ValidEntry = False
+            Exit Function
+        
+        
+        End If
+        
+        'Validating DOB
+        
+        If Trim(.txtDOB.Value) = "" Then
+        
+            MsgBox "DOB is blank. Please select DOB from Calendar control.", vbOKOnly + vbInformation, "DOB"
+            .txtDOB.BackColor = vbRed
+            .txtDOB.SetFocus
+            
+            ValidEntry = False
+            Exit Function
+            
+        End If
+        
+        
+        'Validating Gender
+        
+        If .optFemale.Value = False And .optMale.Value = False Then
+        
+            MsgBox "Please select Gender.", vbOKOnly + vbInformation, "Gender"
+            ValidEntry = False
+            Exit Function
+        
+        End If
+        
+        
+        
+        
+        'Validating Course
+        
+        If Trim(.cmbCourse.Value) = "" Then
+        
+            MsgBox "Please select Course name from drop-down.", vbOKOnly + vbInformation, "Course Name"
+            .cmbCourse.BackColor = vbRed
+            .cmbCourse.SetFocus
+            
+            ValidEntry = False
+            Exit Function
+        
+        
+        End If
+        
+        
+        'Validating Mobile Number
+        
+        If Trim(.txtMobile.Value) = "" Or Len(.txtMobile.Value) < 10 Or Not IsNumeric(.txtMobile.Value) Then
+        
+            MsgBox "Please enter a valid mobile number.", vbOKOnly + vbInformation, "Mobile Number"
+            .txtMobile.BackColor = vbRed
+            .txtMobile.SetFocus
+            
+            ValidEntry = False
+            Exit Function
+        
+        
+        End If
+        
+        
+        
+        'Validating Email
+        
+        If ValidEmail(.txtEmail.Value) = False Then
+        
+            MsgBox "Please enter a valid email ID.", vbOKOnly + vbInformation, "Email ID"
+            .txtEmail.BackColor = vbRed
+            .txtEmail.SetFocus
+            
+            ValidEntry = False
+            Exit Function
+        
+        
+        End If
+        
+        
+         'Validating Address
+        
+        If Trim(.txtAddress.Value) = "" Then
+        
+            MsgBox "Please enter Address.", vbOKOnly + vbInformation, "Address"
+            .txtAddress.BackColor = vbRed
+            .txtAddress.SetFocus
+            
+            ValidEntry = False
+            Exit Function
+        
+        
+        End If
+        
+        
+        'Validating Image
+        
+        If .imgStudent.Picture Is Nothing Then
+        
+            MsgBox "Please upload the PP Size Photo.", vbOKOnly + vbInformation, "Picture"
+            ValidEntry = False
+            Exit Function
+            
+        
+        End If
+        
+    
+    End With
+
+
+End Function
+
+
+
+
+Sub Submit_Data()
+
+    Dim iRow As Long
+    
+    If frmDataEntry.txtRowNumber.Value = "" Then
+    
+    
+        iRow = shDatabase.Range("A" & Rows.Count).End(xlUp).row + 1
+        
+    Else
+    
+        iRow = frmDataEntry.txtRowNumber.Value
+        
+    End If
+
+
+    With shDatabase.Range("A" & iRow)
+    
+    
+        .Offset(0, 0).Value = "=Row()-1"
+        
+        .Offset(0, 1).Value = frmDataEntry.txtStudentName.Value
+        
+        .Offset(0, 2).Value = frmDataEntry.txtFatherName.Value
+        
+        .Offset(0, 3).Value = frmDataEntry.txtDOB.Value
+        
+        .Offset(0, 4).Value = IIf(frmDataEntry.optFemale.Value = True, "Female", "Male")
+        
+        .Offset(0, 5).Value = frmDataEntry.cmbCourse.Value
+        
+        .Offset(0, 6).Value = frmDataEntry.txtMobile.Value
+        
+        .Offset(0, 7).Value = frmDataEntry.txtEmail.Value
+        
+        .Offset(0, 8).Value = frmDataEntry.txtAddress.Value
+        
+        .Offset(0, 9).Value = frmDataEntry.txtImagePath.Value
+        
+        .Offset(0, 10).Value = Application.UserName
+        
+        .Offset(0, 11).Value = Format([Now()], "DD-MMM-YYYY HH:MM:SS")
+        
+    
+    
+    End With
+    
+    
+    Call Reset_Form
+    
+    Application.ScreenUpdating = True
+    
+    MsgBox "Data Submitted Successfully!"
+
+End Sub
+
+
+Function Selected_List() As Long
+
+    Dim i As Long
+    
+    Selected_List = 0
+    
+    If frmDataEntry.lstDatabase.ListCount < 1 Then Exit Function
+    
+    For i = 0 To frmDataEntry.lstDatabase.ListCount - 1
+    
+    
+        If frmDataEntry.lstDatabase.Selected(i) = True Then
+        
+            Selected_List = i + 1
+            
+            Exit For
+        
+        End If
+
+    
+    Next i
+
+    
+End Function
+
+
+Sub Show_Form()
+
+    frmDataEntry.Show
+
+End Sub

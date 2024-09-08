@@ -1,0 +1,3 @@
+﻿int Count<TSource>();
+
+int Count<TSource>(Func<TSource, bool> predicate);

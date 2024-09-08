@@ -1,0 +1,5 @@
+<a href="<%=request.getContextPath()%>/SiteController?action=login">
+	<h1>Login</h1> 
+</a>
+
+Invalid location of tag (h1).

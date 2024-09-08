@@ -1,0 +1,6 @@
+split duration and rename it as duration_type
+
+data section -> click filter -> it will add each column filter dropdown
+
+if you do not want filter -> just unclick it.
+

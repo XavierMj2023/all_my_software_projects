@@ -1,0 +1,2 @@
+﻿Write a program “PrintInitials” that takes initials as input and prints the initials using
+nine rows of asterisks like the one below.

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Javscript Nested Function</h1>
+    <script>
+       function hypoTensue(a, b){
+            function square(x){
+                return x * x;
+            }
+            return Math.sqrt(square(a)+square(b));
+       }
+       function second(){
+        var result = hypoTensue(2,4);
+        document.write(result);
+       }
+    </script>
+
+    <button onclick="second()">Call</button>
+</body>
+
+</html>

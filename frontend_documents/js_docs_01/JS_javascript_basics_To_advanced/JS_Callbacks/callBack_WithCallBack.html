@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS CallBacks</title>
+</head>
+
+<body>
+    <p id="data"></p>
+    <script>
+        function myDisplay(data) {
+            document.getElementById("data").innerHTML = data;
+        }
+        function myCal(num1, num2, myCallBack) {
+           let sum = num1 + num2;
+           myCallBack(sum);
+        }
+        myCal(5, 14, myDisplay);
+    </script>
+</body>
+
+</html>

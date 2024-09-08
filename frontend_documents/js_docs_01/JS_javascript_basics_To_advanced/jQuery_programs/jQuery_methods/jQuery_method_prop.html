@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css" />
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <div id="div1" class="checker">Div 1</div>
+    <button class="getbtn">Get Property</button>
+
+    <div id="div2" class="">Div 2</div>
+    <button class="setbtn">Set Property</button>
+
+    <div class="div3">Div 1</div>
+    <button class="toggleBtn">Toggle Button State</button>
+    <button class="targetBtn" disabled>Target Button</button>
+
+    <div>Div 4</div>
+    <button class="tbtn">Set multiple targets for input field</button>
+    <input/>
+
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    --> 
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        //get property of the div 1
+        $(document).ready(function () {
+            $(".getbtn").click(function(){
+               var storeProp = $("#div1").prop("class");
+               alert(storeProp);//checker
+            });
+        });
+        //set property of the div 2
+        $(document).ready(function () {
+            $(".setbtn").click(function(){
+               var div2 = $("#div2");
+               div2.prop("class", "div2");
+               //get property
+               var getVal = div2.prop("class");
+               alert(getVal);//div2
+            });
+        });
+        //set property of the div 3 using function
+        $(document).ready(function () {
+            $(".toggleBtn").click(function(){
+                $(".targetBtn").prop("disabled", function(index, currentvalue){
+
+                    console.log(currentvalue)//false ; after click -> becomes true
+                    console.log(index);//0
+
+                    return !currentvalue;
+                });
+                console.log("Target Button Disabled:", $(".targetBtn").prop("disabled"));
+            });
+        });
+        // //Set multiple properties and values:
+        $(document).ready(function () {
+            $(".tbtn").click(function(){
+                var bt = $("input");
+                bt.prop({
+                    type : "text",
+                    value : "hero",
+                    name : "hero",
+                    id : "hero",
+                    disabled : true
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

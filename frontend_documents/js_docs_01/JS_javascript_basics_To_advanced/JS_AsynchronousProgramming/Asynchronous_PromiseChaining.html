@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Asynchronous Programming</title>
+</head>
+
+<body>
+    <script>
+       let promi = new Promise(function(resolve, reject){
+            resolve("Promise resolved <br/>");
+       });
+       promi
+       .then(function successValue(result){
+            document.write(result);
+        })
+        .then(function successValue1(){
+            document.write("You can call multiple functions this way");
+        })
+    </script>
+</body>
+
+</html>

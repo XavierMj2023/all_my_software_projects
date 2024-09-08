@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* This is for background image */
+                .full-box{
+                    background-color: black;
+                }
+            /* This is for background image of the inner box */    
+                div.box1{
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    width: 600px;
+                    border: 1px solid black;
+                    background-image: url(../IMAGES_FOR_CSS/Image002.jpeg);
+                    border-radius: 50px;
+                }
+            /* This is for the box contains that consist of input types */
+                div.box2{
+                    border: 5px solid black;
+                    margin: auto;
+                    width: 200px;
+                    padding: 30px;
+                    background-color:black;
+                    color: wheat;
+                    border-radius: 70px;
+                }
+
+                #div1
+                {
+                    position: relative;
+                    height: 180px;
+                    width: 200px;
+                    margin-left: auto;
+                    margin-right:auto;
+                    display: block;
+                    padding:10px;
+                    border: 1px solid;
+                    background-image: url(../IMAGES_FOR_CSS/Image002.jpeg);
+                }
+
+                #div2
+                {
+                    padding:50px;
+                    position: absolute;
+                    border: 1px solid black;
+                    background-color: red;
+                    transform: rotate(45deg);
+                    transform-origin:20% 40%;
+                }
+
+                #para{
+                    border: 2px solid black;
+                    margin: auto;
+                    width: 350px;
+                }
+
+                .center-result{
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block;
+                        border: 1px solid whitesmoke;
+                        text-align: center;
+                }
+    </style>
+
+    <script>
+        function changeRot(value)
+        {
+            document.getElementById('div2').style.transform=
+            "rotate(" + value + "deg)";
+            document.getElementById('persp').innerHTML=value + "deg";
+        }
+
+        function changeOrg()
+        {
+            var x=document.getElementById('ox').value;
+            var y=document.getElementById('oy').value;
+            document.getElementById('div2').style.transformOrigin=
+            x + '% ' + y + '%';
+            document.getElementById('origin').innerHTML=
+            x + "% " + y + "%";      
+        }
+    </script>
+
+    </head>
+
+    <body>
+        <div class="full-box">
+             <div class="box1">
+                <p id="para" style="text-align:center">
+                    Rotate the Box and 
+                try changing its X-axis and Y-axis:</p>
+
+        <div id="div1">
+            <div id="div2">HELLO</div>
+        </div>
+
+        <br>
+
+        <div class="box2">
+            Rotate:
+            <input type="range" min="-360" max="360" value="45" onchange="changeRot(this.value)" />
+            transform: rotate
+            (<span id="persp">45deg</span>);
+            <hr>
+            <p >Transform-Origin:</p>
+            <hr>
+            1 :transform: rotateX
+             <input type="range" min="-100" max="200" value="20" onchange="changeOrg()"id="ox">
+             
+             <br><br>
+
+            2 :transform: rotateY
+            <input type="range" min="-100" max="200" value="40" onchange="changeOrg()"id="oy">
+
+            <br><br>
+            <div class="center-result">
+                The Values Of  X and  Y axis are:
+                <!-- in Rotate are: -->
+                <br>
+                <span id="origin">&nbsp;20%  40%</span>
+            </div>
+            
+        </div>
+    </div>
+</div>
+       
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Iterables</title>
+    </head>
+    <body>
+        <h1>Object Iterables</h1>
+        <hr/>
+        <h4>Symbol Iterator - It can use for of</h4>
+        <p>
+            When you start a for...of loop over myNumbers, JavaScript internally checks if 
+            myNumbers is iterable by checking if it has a Symbol.iterator property.
+            <br/><br/>
+            If myNumbers has a Symbol.iterator property, JavaScript accesses it to retrieve an 
+            <br/><br/>
+            iterator object.
+            <br/><br/>
+            The iterator object returned by myNumbers[Symbol.iterator] is then used by the 
+            <br/><br/>
+            for...of loop to iterate over the elements/values of myNumbers.
+            <br/><br/>
+            Each iteration of the loop calls the iterator's next() method to retrieve the next value, and the loop continues until the iterator indicates that the iteration is complete (i.e., when the done property of the iterator's result is true).
+        </p>
+        <p id="demo"></p>
+        <script>
+            // Define an empty string to store output
+            let text = "";
+            
+            // Create an empty object
+            const myNumbers = {};
+            
+            // Assign an iterator function to the Symbol.iterator property of myNumbers object
+            myNumbers[Symbol.iterator] = function(){
+                let n = 0; // Initialize a variable to hold the value
+                let done = false; // Initialize a variable to track if iteration is done
+                return {
+                    // Define next method for the iterator
+                    next() {
+                        n += 6; // Increment value by 6
+                        if(n == 60){ // Check if value reaches 60
+                            done = true; // Set done to true if it reaches 60
+                        }
+                        // Return an object with value and done properties
+                        return {
+                            value : n, // Current value
+                            done  : done // Flag indicating if iteration is complete
+                        }
+                    }
+                };
+            }
+
+            // Iterate over myNumbers using for...of loop
+            for(const xg of myNumbers){
+                text += xg + "<br/>"; // Append each value to the text variable with line breaks
+            }
+
+            // Write the result to the document
+            document.write(text);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+﻿Sorting Operators: OrderBy & OrderByDescending
+-----------------------------------------------
+
+A sorting operator arranges the elements of the collection in ascending or descending order. 
+
+LINQ includes following sorting operators.
+
+Sorting Operator							Description
+---------------------------------------------------------------------------------------------
+OrderBy										Sorts the elements in the collection based on 
+											specified fields in ascending or decending order.
+
+OrderByDescending							Sorts the collection based on specified fields in 
+											descending order. 
+											Only valid in method syntax.
+
+ThenBy										Only valid in method syntax. 
+											Used for second level sorting in ascending order.
+
+ThenByDescending							Only valid in method syntax. 
+											Used for second level sorting in descending order.
+
+Reverse										Only valid in method syntax. 
+											Sorts the collection in reverse order.
+----------------------------------------------------------------------------------------------
+OrderByDescending sorts the collection in descending order.
+
+OrderByDescending is valid only with the Method syntax. 
+
+It is not valid in query syntax because the query syntax uses ascending and descending attributes
+as shown above.
+
+----------------------------------------------------------------------------------------------
+Method syntax does not allow the decending keyword to sorts the collection in decending order. 
+Use OrderByDecending() method for it.
+----------------------------------------------------------------------------------------------
+LINQ includes five sorting operators: 
+OrderBy, OrderByDescending, ThenBy, ThenByDescending and Reverse
+
+LINQ query syntax does not support OrderByDescending, ThenBy, ThenByDescending and Reverse. 
+
+It only supports 'Order By' clause with 'ascending' and 'descending' sorting direction.
+
+LINQ query syntax supports multiple sorting fields seperated by comma whereas you have to use 
+ThenBy & ThenByDescending methods for secondary sorting.

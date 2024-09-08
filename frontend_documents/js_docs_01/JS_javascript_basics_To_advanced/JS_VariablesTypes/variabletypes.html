@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS VARIABLE TYPES</title>
+    <style>
+        h3 {
+            text-align: center;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            padding: 20px;
+            font-size: 20px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>VARIABLE TYPES</h3>
+    <br />
+    <h4><ins>Variables Types</ins></h4>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>Let</td>
+            <td>
+                <ul>
+                    <li>The let keyword was introduced in ES6 (2015).</li>
+                    <br />
+                    <li>Variables declared with let have Block Scope.</li>
+                    <br />
+                    <li>Variables declared with let must be Declared before use.</li>
+                    <br />
+                    <li>Variables declared with let cannot be Redeclared in the same scope.</li>
+                    <br />
+                    <li>
+                        The let keyword in JavaScript is used to declare block-scoped
+                        variables, potentially limiting the scope of a variable to the block,
+                        statement, or expression in which it is used.
+                    </li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Scope</td>
+            <td>
+                <ul>
+                    <li>JavaScript had Global Scope and Function Scope.</li>
+                    <br />
+                    <li>
+                        ES6 introduced the two new JavaScript keywords: let and const.
+                        These two keywords provided Block Scope in JavaScript.
+                    </li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Let Example 1</td>
+            <td>
+                <ul>
+                    <li>Variables declared inside a { } block cannot be accessed from outside the block</li>
+                    <li>
+                        <p>{</p>
+                        <p>&nbsp;let x = 2;</p>
+                        <p>}</p>
+                        <p>// x can NOT be used here</p>
+                    </li>
+                </ul>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Let Example 2 - No Redeclare</td>
+            <td>
+                <ul>
+                    <li>Variables defined with let can not be redeclared.</li>
+                    <br />
+                    <li>You can not accidentally redeclare a variable declared with let.</li>
+                    <br />
+                    <li>
+                        Eg:
+                        <p>let x = "John Bravo";</p>
+                        <p>let x = 2;</p>
+                    </li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Let Example 3 - Let Hoisting</td>
+            <td>
+                <ul>
+                    <li>
+                        Variables defined with let or const are also hoisted to the top of the block, but not initialized
+                    </li>
+                    <br />
+                    <li>Using a let or const variable before it is declared will result in a ReferenceError.</li>
+                    <br />
+                    <li>
+                        Eg:
+                        <p>carModel = "Vivo La Rasa";</p>
+                        <p>let carModel = "Viva";</p>
+                    </li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Var</td>
+            <td>
+                <ul>
+                    <li>Variables declared with <b>var</b> have Global Scope.</li>
+                    <br />
+                    <li>Variables defined with var can be redeclared.</li>
+                    <br />
+                    <li>
+                        Variables declared with var are either function-scoped or globally
+                        scoped if declared outside any function.
+                    </li>
+                    <br />
+                    <li>
+                        <p>
+                            If var is used inside a function, the variable is function-scoped.
+                        </p>
+                        <p>
+                            If var is used outside of any function, it declares a global variable
+                        </p>
+                    </li>
+                    <li>
+                        Variables declared with var are hoisted, which means they are moved to the top of
+                        their enclosing scope (function or global) before code execution.
+                        However, only the declaration is hoisted, not the initialization.
+                        Accessing the variable before the declaration results in undefined.
+                    </li>
+                    <br />
+                    <li>
+                        Within its scope, a variable declared with var can be re-declared without
+                        causing an error, which can lead to potential bugs if not carefully
+                        managed.
+                    </li>
+                    <br />
+                    <li>
+                        Redeclaring a JavaScript variable with var is allowed anywhere in a
+                        program.
+                    </li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Var Example - Var Hoisting</td>
+            <td>
+                <ul>
+                    <li>
+                        Variables defined with var are hoisted to the top and can be initialized at any time.
+                    </li>
+                    <br />
+                    <li>
+                        However, only the declaration is hoisted, not the initialization. If you try to use a variable
+                        before it is declared and initialized, its value will be undefined.
+                    </li>
+                    <br />
+                    <li>
+                        Eg:
+                        <p>carModel = "Vivo La Rasa";</p>
+                        <p>var carModel;</p>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                Even though the assignment appears before the declaration in the code, the variable
+                carName is already declared (due to hoisting) by the time the assignment happens.
+                Therefore, the code works without throwing a ReferenceErro
+                and carName ends up being "Vivo La Rasa".
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Const</td>
+            <td>
+                <ul>
+                    <li>The const keyword was introduced in ES6 (2015).</li><br />
+                    <li>Variables defined with const cannot be Redeclared</li><br />
+                    <li>Variables defined with const cannot be Reassigned.</li><br />
+                    <li>Variables defined with const have Block Scope.</li><br />
+                    <li>JavaScript const variables must be assigned a value when they are declared.</li>
+                </ul>
+            </td>
+            <td>
+                Eg:
+                <p>const PI = 3.14899; // This is Correct</p>
+                <br/>
+                <p> // This is Wrong</p>
+                <p>const PI;</p>      
+                <p>PI = 31.4899;</p>   
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>When to use Const?</td>
+            <td>
+                Always declare a variable with const when you know that the value should not be changed.
+            </td>
+            <td>
+                <ul>
+                    Use const when you declare:
+                    <li>
+                        A new Array
+                    </li>
+                    <li>
+                        A new Object
+                    </li>
+                    <li>
+                        A new Function
+                    </li>
+                    <li>
+                        A new RegExp
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

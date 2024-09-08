@@ -1,0 +1,698 @@
+2024-08-16 18:17:22,764 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 17.0.11 with PID 14140 (D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI\target\classes started by Lenovo in D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI)
+2024-08-16 18:17:22,773 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-16 18:17:22,793 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-16 18:17:24,525 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-16 18:17:24,661 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 115 ms. Found 2 JPA repository interfaces.
+2024-08-16 18:17:25,850 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-08-16 18:17:25,876 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-08-16 18:17:25,878 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-16 18:17:26,042 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-08-16 18:17:26,047 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3166 ms
+2024-08-16 18:17:26,109 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-16 18:17:26,503 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-08-16 18:17:26,507 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-16 18:17:26,525 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-08-16 18:17:26,740 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-16 18:17:26,874 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-16 18:17:26,959 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-16 18:17:27,443 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-16 18:17:27,522 [WARN] org.hibernate.dialect.Dialect [main] HHH000511: The 2.1.210 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-08-16 18:17:27,533 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-16 18:17:28,612 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-16 18:17:28,670 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16 18:17:29,976 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-16 18:17:30,016 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2024-08-16 18:17:31,125 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-08-16 18:17:31,145 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 8.898 seconds (process running for 9.404)
+2024-08-16 18:18:09,801 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-16 18:18:09,801 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-08-16 18:18:09,810 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 9 ms
+2024-08-16 18:18:11,111 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-9] Init duration for springdoc-openapi is: 412 ms
+2024-08-16 18:18:31,558 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] ]
+2024-08-16 18:18:48,894 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] ]
+2024-08-16 18:21:21,364 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] ]
+2024-08-16 18:22:01,839 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 17.0.11 with PID 18636 (D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI\target\classes started by Lenovo in D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI)
+2024-08-16 18:22:01,842 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-16 18:22:01,843 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-16 18:22:03,196 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-16 18:22:03,304 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+2024-08-16 18:22:04,288 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-08-16 18:22:04,309 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-08-16 18:22:04,310 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-16 18:22:04,442 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-08-16 18:22:04,443 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2520 ms
+2024-08-16 18:22:04,492 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-16 18:22:04,842 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-08-16 18:22:04,845 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-16 18:22:04,855 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-08-16 18:22:05,075 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-16 18:22:05,214 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-16 18:22:05,307 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-16 18:22:05,933 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-16 18:22:06,032 [WARN] org.hibernate.dialect.Dialect [main] HHH000511: The 2.1.210 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-08-16 18:22:06,049 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-16 18:22:07,682 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-16 18:22:07,753 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16 18:22:09,736 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-16 18:22:09,792 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2024-08-16 18:22:11,506 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-08-16 18:22:11,533 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 10.208 seconds (process running for 10.683)
+2024-08-16 18:22:31,217 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-16 18:22:31,219 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-08-16 18:22:31,222 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2024-08-16 18:22:32,386 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-8] Init duration for springdoc-openapi is: 641 ms
+2024-08-16 18:22:37,798 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] ]
+2024-08-16 18:22:47,323 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+2024-08-16 18:23:03,131 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+2024-08-16 18:26:43,413 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+2024-08-16 18:27:32,010 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] ]
+2024-08-16 18:30:30,471 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 17.0.11 with PID 10564 (D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI\target\classes started by Lenovo in D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI)
+2024-08-16 18:30:30,473 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-16 18:30:30,474 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-16 18:30:32,022 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-16 18:30:32,127 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 100 ms. Found 2 JPA repository interfaces.
+2024-08-16 18:30:33,126 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-08-16 18:30:33,143 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-08-16 18:30:33,143 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-16 18:30:33,247 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-08-16 18:30:33,247 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2680 ms
+2024-08-16 18:30:33,302 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-16 18:30:33,778 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-08-16 18:30:33,778 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-16 18:30:33,807 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-08-16 18:30:34,192 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-16 18:30:34,292 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-16 18:30:34,359 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-16 18:30:34,872 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-16 18:30:34,969 [WARN] org.hibernate.dialect.Dialect [main] HHH000511: The 2.1.210 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-08-16 18:30:34,995 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-16 18:30:36,880 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-16 18:30:36,975 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16 18:30:39,058 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-16 18:30:39,113 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2024-08-16 18:30:40,900 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-08-16 18:30:40,931 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 11.02 seconds (process running for 11.548)
+2024-08-16 18:31:10,061 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-16 18:31:10,067 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-08-16 18:31:10,070 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+2024-08-16 18:31:11,327 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-5] Init duration for springdoc-openapi is: 530 ms
+2024-08-16 18:31:19,431 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] ]
+2024-08-16 18:31:42,300 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+2024-08-16 18:34:42,285 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 17.0.11 with PID 13132 (D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI\target\classes started by Lenovo in D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI)
+2024-08-16 18:34:42,285 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-16 18:34:42,302 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-16 18:34:43,694 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-16 18:34:43,796 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2024-08-16 18:34:45,239 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-08-16 18:34:45,272 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-08-16 18:34:45,274 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-16 18:34:45,533 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-08-16 18:34:45,535 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3150 ms
+2024-08-16 18:34:45,627 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-16 18:34:46,355 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-08-16 18:34:46,361 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-16 18:34:46,395 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-08-16 18:34:46,781 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-16 18:34:46,971 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-16 18:34:47,065 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-16 18:34:47,940 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-16 18:34:48,061 [WARN] org.hibernate.dialect.Dialect [main] HHH000511: The 2.1.210 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-08-16 18:34:48,075 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-16 18:34:49,869 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-16 18:34:49,946 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16 18:34:51,800 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-16 18:34:51,859 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2024-08-16 18:34:53,332 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-08-16 18:34:53,393 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 11.621 seconds (process running for 12.106)
+2024-08-16 18:35:12,921 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-16 18:35:12,922 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-08-16 18:35:12,926 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2024-08-16 18:35:13,907 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-6] Init duration for springdoc-openapi is: 528 ms
+2024-08-16 18:35:18,856 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] ]
+2024-08-16 18:38:56,641 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+2024-08-16 18:40:31,441 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] ]
+2024-08-16 18:52:49,580 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 17.0.11 with PID 1480 (D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI\target\classes started by Lenovo in D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI)
+2024-08-16 18:52:49,588 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-16 18:52:49,590 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-16 18:52:51,507 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-16 18:52:51,638 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2024-08-16 18:52:52,870 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-08-16 18:52:52,890 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-08-16 18:52:52,890 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-16 18:52:53,055 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-08-16 18:52:53,056 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3372 ms
+2024-08-16 18:52:53,130 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-16 18:52:53,704 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-08-16 18:52:53,706 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-16 18:52:53,731 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-08-16 18:52:53,994 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-16 18:52:54,161 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-16 18:52:54,270 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-16 18:52:54,858 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-16 18:52:54,976 [WARN] org.hibernate.dialect.Dialect [main] HHH000511: The 2.1.210 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-08-16 18:52:54,999 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-16 18:52:56,332 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-16 18:52:56,409 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16 18:52:57,603 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-16 18:52:57,645 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2024-08-16 18:52:58,954 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-08-16 18:52:58,971 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 10.177 seconds (process running for 10.838)
+2024-08-16 18:53:10,874 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-16 18:53:10,874 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-08-16 18:53:10,874 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2024-08-16 18:53:11,896 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-8] Init duration for springdoc-openapi is: 570 ms
+2024-08-16 18:53:24,015 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.studyeasy.SpringRestdemo.payload.auth.album.AlbumViewDTO> org.studyeasy.SpringRestdemo.controller.AlbumController.addAlbum(org.studyeasy.SpringRestdemo.payload.auth.album.AlbumPayloadDTO,org.springframework.security.core.Authentication) with 2 errors: [Field error in object 'albumPayloadDTO' on field 'name': rejected value [null]; codes [NotBlank.albumPayloadDTO.name,NotBlank.name,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.name,name]; arguments []; default message [name]]; default message [must not be blank]] [Field error in object 'albumPayloadDTO' on field 'description': rejected value [null]; codes [NotBlank.albumPayloadDTO.description,NotBlank.description,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [albumPayloadDTO.description,description]; arguments []; default message [description]]; default message [must not be blank]] ]
+2024-08-16 18:53:49,822 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-08-16 18:55:07,946 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 17.0.11 with PID 9400 (D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI\target\classes started by Lenovo in D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI)
+2024-08-16 18:55:07,953 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-16 18:55:07,954 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-16 18:55:09,524 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-16 18:55:09,714 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 159 ms. Found 2 JPA repository interfaces.
+2024-08-16 18:55:11,174 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-08-16 18:55:11,196 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-08-16 18:55:11,196 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-16 18:55:11,320 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-08-16 18:55:11,320 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3257 ms
+2024-08-16 18:55:11,395 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-16 18:55:11,800 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-08-16 18:55:11,800 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-16 18:55:11,815 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-08-16 18:55:12,021 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-16 18:55:12,136 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-16 18:55:12,203 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-16 18:55:12,702 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-16 18:55:12,790 [WARN] org.hibernate.dialect.Dialect [main] HHH000511: The 2.1.210 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-08-16 18:55:12,811 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-16 18:55:14,172 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-16 18:55:14,238 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16 18:55:15,684 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-16 18:55:15,777 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2024-08-16 18:55:17,835 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-08-16 18:55:17,880 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 10.697 seconds (process running for 11.266)
+2024-08-16 18:55:18,051 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-16 18:55:18,053 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-08-16 18:55:18,058 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 4 ms
+2024-08-16 18:55:20,276 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-2] Init duration for springdoc-openapi is: 975 ms
+2024-08-16 18:55:29,289 [DEBUG] org.studyeasy.SpringRestdemo.controller.AlbumController [http-nio-8080-exec-4] ADD_ALBUM_ERROR: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null
+2024-08-16 18:55:53,174 [DEBUG] org.studyeasy.SpringRestdemo.controller.AlbumController [http-nio-8080-exec-1] ADD_ALBUM_ERROR: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null
+2024-08-16 18:56:02,312 [DEBUG] org.studyeasy.SpringRestdemo.controller.AlbumController [http-nio-8080-exec-3] ADD_ALBUM_ERROR: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null
+2024-08-16 18:59:21,844 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 17.0.11 with PID 18808 (D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI\target\classes started by Lenovo in D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_25_SpringBootAuthController_BuildAddAlbumAPI)
+2024-08-16 18:59:21,849 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-16 18:59:21,850 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-16 18:59:23,519 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-16 18:59:23,657 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 123 ms. Found 2 JPA repository interfaces.
+2024-08-16 18:59:24,818 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-08-16 18:59:24,840 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-08-16 18:59:24,843 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-16 18:59:24,991 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-08-16 18:59:24,992 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3047 ms
+2024-08-16 18:59:25,043 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-16 18:59:25,376 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-08-16 18:59:25,379 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-16 18:59:25,395 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-08-16 18:59:25,614 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-16 18:59:25,703 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-16 18:59:25,778 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-16 18:59:26,306 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-16 18:59:26,389 [WARN] org.hibernate.dialect.Dialect [main] HHH000511: The 2.1.210 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-08-16 18:59:26,407 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-16 18:59:27,836 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-16 18:59:27,917 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16 18:59:29,330 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-16 18:59:29,368 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2024-08-16 18:59:30,461 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-08-16 18:59:30,477 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 9.295 seconds (process running for 9.803)
+2024-08-16 18:59:38,471 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-16 18:59:38,472 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-08-16 18:59:38,474 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2024-08-16 18:59:39,590 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-7] Init duration for springdoc-openapi is: 501 ms
+2024-08-16 19:01:16,590 [DEBUG] org.studyeasy.SpringRestdemo.controller.AlbumController [http-nio-8080-exec-4] ADD_ALBUM_ERROR: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null
+2024-08-16 19:28:23,304 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 17.0.11 with PID 14276 (D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_26_SpringBootAuthController_BuildListAlbumAPI\target\classes started by Lenovo in D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_26_SpringBootAuthController_BuildListAlbumAPI)
+2024-08-16 19:28:23,321 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-16 19:28:23,321 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-16 19:28:25,305 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-16 19:28:25,449 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 126 ms. Found 2 JPA repository interfaces.
+2024-08-16 19:28:26,595 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-08-16 19:28:26,611 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-08-16 19:28:26,611 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-16 19:28:26,752 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-08-16 19:28:26,752 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3323 ms
+2024-08-16 19:28:26,820 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-16 19:28:27,275 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-08-16 19:28:27,275 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-16 19:28:27,275 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-08-16 19:28:27,543 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-16 19:28:27,699 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-16 19:28:27,776 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-16 19:28:28,338 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-16 19:28:28,402 [WARN] org.hibernate.dialect.Dialect [main] HHH000511: The 2.1.210 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-08-16 19:28:28,423 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-16 19:28:29,614 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-16 19:28:29,669 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16 19:28:31,243 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-16 19:28:31,293 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2024-08-16 19:28:32,363 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-08-16 19:28:32,387 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 9.654 seconds (process running for 10.223)
+2024-08-16 19:28:47,605 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-16 19:28:47,605 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-08-16 19:28:47,605 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2024-08-16 19:28:48,678 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-5] Init duration for springdoc-openapi is: 579 ms
+2024-08-16 19:29:03,753 [DEBUG] org.studyeasy.SpringRestdemo.controller.AlbumController [http-nio-8080-exec-3] ADD_ALBUM_ERROR: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null
+2024-08-16 19:29:09,407 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null
+	at org.studyeasy.SpringRestdemo.controller.AlbumController.albums(AlbumController.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:128)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-08-16 19:30:56,614 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null
+	at org.studyeasy.SpringRestdemo.controller.AlbumController.albums(AlbumController.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:128)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-08-16 19:34:37,929 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null
+	at org.studyeasy.SpringRestdemo.controller.AlbumController.albums(AlbumController.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:128)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-08-16 19:35:04,024 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "authentication" is null
+	at org.studyeasy.SpringRestdemo.controller.AlbumController.albums(AlbumController.java:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:128)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-08-16 19:39:48,861 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 17.0.11 with PID 11216 (D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_26_SpringBootAuthController_BuildListAlbumAPI\target\classes started by Lenovo in D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBootMiniProject_Restful_02\SpringRestdemo_26_SpringBootAuthController_BuildListAlbumAPI)
+2024-08-16 19:39:48,862 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-16 19:39:48,862 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-16 19:39:50,623 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-16 19:39:50,761 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 118 ms. Found 2 JPA repository interfaces.
+2024-08-16 19:39:51,976 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-08-16 19:39:52,009 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2024-08-16 19:39:52,009 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-16 19:39:52,159 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2024-08-16 19:39:52,159 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3207 ms
+2024-08-16 19:39:52,211 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-08-16 19:39:52,597 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-08-16 19:39:52,597 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-08-16 19:39:52,618 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-08-16 19:39:52,809 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-16 19:39:52,954 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-16 19:39:53,029 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-08-16 19:39:53,477 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-16 19:39:53,578 [WARN] org.hibernate.dialect.Dialect [main] HHH000511: The 2.1.210 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-08-16 19:39:53,591 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-16 19:39:54,892 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-16 19:39:54,975 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16 19:39:56,091 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-16 19:39:56,132 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2024-08-16 19:39:57,175 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path '/'
+2024-08-16 19:39:57,190 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 9.018 seconds (process running for 9.672)

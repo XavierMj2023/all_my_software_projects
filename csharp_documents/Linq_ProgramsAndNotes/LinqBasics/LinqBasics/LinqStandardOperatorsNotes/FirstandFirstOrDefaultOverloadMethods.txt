@@ -1,0 +1,7 @@
+﻿public static TSource First<TSource>(this IEnumerable<TSource> source);
+
+public static TSource First<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate);
+
+public static TSource FirstOrDefault<TSource>(this IEnumerable<TSource> source);
+
+public static TSource FirstOrDefault<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate);

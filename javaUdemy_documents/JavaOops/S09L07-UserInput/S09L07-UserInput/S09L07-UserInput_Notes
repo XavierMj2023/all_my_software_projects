@@ -1,0 +1,37 @@
+The Scanner class in Java is a part of the java.util package.
+
+It is used for reading input from various sources, such as the keyboard or files. 
+
+It provides methods for parsing and processing different types of data, including text and primitive data types like 
+integers, floats, and strings.
+
+java.util.Scanner
+-----------------------
+We import the java.util.Scanner class.
+
+Scanner object
+----------------
+We create a Scanner object that reads input from the standard input (keyboard) using System.in.
+
+We prompt the user to enter their name.
+
+scanner.nextLine()
+--------------------
+We use scanner.nextLine() to read a line of text entered by the user.
+
+We display a greeting using the input.
+
+scanner.close()
+-------------------
+Finally, we close the Scanner using scanner.close() to release the associated resources.
+
+The Scanner class provides various methods to read different types of data, including nextInt(), nextDouble(), 
+nextBoolean(), etc., which allow you to read specific data types from the input. 
+
+It's a versatile tool for handling user input in Java applications.
+
+
+next()
+--------------
+It will wait until we give valid input.
+

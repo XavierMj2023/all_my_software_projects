@@ -1,0 +1,2 @@
+﻿Get Attributes - attr()
+The jQuery attr() method is used to get attribute values.

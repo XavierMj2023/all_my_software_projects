@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+</head>
+
+<body>
+    <h1>JS Regular Expression</h1>
+    <hr />
+    <script>
+        //Eg 4 - Case Sensitive
+
+        //This is the text
+        const txt4 = "People often write hello world while HELLO WORLD programming";
+
+        //Which string to find?
+        const regex4 = /hello world/gi;
+
+        //Use matchAll() to match the given text
+        const results2 = [...txt4.matchAll(regex4)];
+
+        results2.forEach(res => {
+            console.log(res);
+        });
+
+    </script>
+</body>
+
+</html>

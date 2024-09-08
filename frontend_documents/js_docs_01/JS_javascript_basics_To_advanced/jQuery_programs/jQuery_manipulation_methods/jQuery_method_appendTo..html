@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="../../jQuery_css/main.css" />
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <h1>jQuery Method Append To</h1>
+    <button>Append To Text</button>
+    <p>Status : </p>
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="../../jQuery_main_folder/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("<span>Apppended To</span>").appendTo("p");
+            });
+        });
+    </script>
+</body>
+
+</html>

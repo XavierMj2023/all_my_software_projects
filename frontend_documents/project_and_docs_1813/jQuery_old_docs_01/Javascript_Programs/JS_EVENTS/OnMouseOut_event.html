@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html>
+        <style>
+            p{
+                color:blue;
+            }
+        </style>
+        <body>
+  
+            <p onmouseover="Mouseover()" onmouseout="Mouseout()" 
+             id="demoofMouseOver">My Name is Blue and when mouse over me i become red</p>
+
+            <script>
+                function Mouseover()
+                {
+                    document.getElementById("demoofMouseOver").style.color="Red";
+                }
+                function Mouseout()
+                {
+                    document.getElementById("demoofMouseOver").style.color="Blue";
+                }
+            </script>
+        </body>
+    </html>
+

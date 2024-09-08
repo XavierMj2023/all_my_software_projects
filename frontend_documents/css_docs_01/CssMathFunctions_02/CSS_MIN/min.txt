@@ -1,0 +1,21 @@
+------------------------------------------------
+The min() Function
+------------------------------------------------
+The min() function uses the smallest value, from a comma-separated list of values, as the 
+property value.
+
+------------------------------------------------
+CSS Syntax
+------------------------------------------------
+min(value1, value2, ...)
+------------------------------------------------
+
+------------------------------------------------
+Value	                    Description
+------------------------------------------------
+value1, value2, ...	        Required. A list of comma-separated values - where the smallest value is
+                            chosen
+------------------------------------------------
+In this example, the width of div will be the smaller of either 500px or 50% of the viewport width. 
+This ensures that the div won't become larger than 500px even on very large screens but can 
+shrink if the viewport is narrower than 50%.

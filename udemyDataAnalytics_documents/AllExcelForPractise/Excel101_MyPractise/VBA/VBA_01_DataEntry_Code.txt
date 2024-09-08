@@ -1,0 +1,83 @@
+Sub EnterData()
+
+Dim Form As Worksheet
+Dim Database As Worksheet
+
+Set Form = ThisWorkbook.Sheets("Form")
+Set Database = ThisWorkbook.Sheets("Database")
+
+'''''''''Validation'''''''
+
+If Form.Range("F5").Value = True Then
+    MsgBox "Please Enter the Candidate Name", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("F6").Value = True Then
+    MsgBox "Please Enter the Valid Mobile Number", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("F7").Value = True Then
+    MsgBox "Please Enter the Valid Email ID", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("J10").Value > 0 Then
+    MsgBox "This email already exists!..", vbCritical
+    Exit Sub
+End If
+
+'''''''''''''''''''''''''''''''''''''''''''''''''
+
+''''Fixing while I am trying to insert the data the data keeps on updating in the same row no matter how much I make entry''''
+Dim last_row As Long
+
+' Find the last row with data in column A of the Database sheet
+last_row = Database.Cells(Database.Rows.Count, "A").End(xlUp).Row
+
+' Add 1 to the last row to get the next available row
+last_row = last_row + 1
+
+'''''''''''''''''''''''''''''''''''''''''''''''''
+
+'''''''Data Insertion to Database'''''''''''''''''''''''''''''''''
+
+Database.Range("A" & last_row).Value = Form.Range("D5").Value
+Database.Range("B" & last_row).Value = Form.Range("D6").Value
+Database.Range("C" & last_row).Value = Form.Range("D7").Value
+Database.Range("D" & last_row).Value = Form.Range("D8").Value
+Database.Range("E" & last_row).Value = Form.Range("D9").Value
+Database.Range("F" & last_row).Value = Form.Range("D10").Value
+
+'''''''Certifications''''
+
+Database.Range("G" & last_row).Value = Form.Range("J6").Value
+Database.Range("H" & last_row).Value = Form.Range("K6").Value
+Database.Range("I" & last_row).Value = Form.Range("L6").Value
+
+'''''''Gender'''''''''''''
+Database.Range("J" & last_row).Value = Form.Range("J8").Value
+
+'''''''Apply borders to the inserted data'''''''
+
+' Set the range to which borders will be applied
+Set newRange = Database.Range("A" & lastRow & ":F" & lastRow)
+
+' Apply borders to the inserted row
+    With newRange.Borders
+        .LineStyle = xlContinuous
+        .Weight = xlThin
+        .ColorIndex = xlAutomatic
+    End With
+
+'''''''Form Operations after success fill'''
+Form.Range("D5:D7").ClearContents
+Form.Range("J5:L5").Value = False
+
+
+MsgBox "Data has been submitted"
+
+
+End Sub
+

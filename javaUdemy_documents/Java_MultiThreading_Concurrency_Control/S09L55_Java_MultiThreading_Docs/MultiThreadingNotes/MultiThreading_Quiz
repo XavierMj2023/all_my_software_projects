@@ -1,0 +1,38 @@
+In …………….state, a thread is ready to run. -> Runnable
+
+In ………………. state, a thread is running.    -> Running
+
+In Multi-threading, Synchronized elements can't be ran by multiple threads simultaneously. -> True
+
+A synchronized block can be used to perform synchronization on a specific block. -> True
+
+In Java, the value of the volatile variable can be cached. -> False
+
+In Java, Which method wakes up all the waiting threads on the same object. -> notifyAll()
+
+An interrupt is an indication to a thread that it should stop current operation and do something else. -> True
+
+---------------------------------------------------------------------------------------------------------
+
+The join() method is used to hold the execution of the currently running thread until the specified thread is finished execution. -> true
+
+This is the correct option. 
+
+In Java, the join() method is used to hold the execution of the currently running thread until the specified thread has finished 
+executing. 
+
+When a thread calls join() on another thread, it waits for that thread to complete before resuming its own execution. 
+
+This allows for synchronization between threads and ensures that certain operations are completed in a specific order.
+
+---------------------------------------------------------------------------------------------------------
+
+ThreadPoolExecutor class allows to set the maximum pool size. -> True
+
+The ……...... method creates a fixed size thread pool based on the value passed. -> newFixedThreadPool(int)
+
+CountDownLatch enables one or more threads to wait until a set of operations is completed by a thread. -> true
+
+Threads are waiting for each other to release the resources for an indefinite time; the condition is called.............. -> Deadlock
+
+

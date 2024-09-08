@@ -1,0 +1,7 @@
+Add Department Component
+---------------------------
+
+ng g c department
+
+--------------------------------
+

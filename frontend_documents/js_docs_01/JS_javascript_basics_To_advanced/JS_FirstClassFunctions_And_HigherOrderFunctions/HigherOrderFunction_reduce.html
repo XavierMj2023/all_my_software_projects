@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class Functions</title>
+</head>
+<body>
+    <script>
+       const pers = [1, 2, 3, 4, 5];
+       const sum = pers.reduce(function(acc, current){
+            return acc + current;
+       },5);
+       document.write(sum);
+    </script>
+</body>
+</html>

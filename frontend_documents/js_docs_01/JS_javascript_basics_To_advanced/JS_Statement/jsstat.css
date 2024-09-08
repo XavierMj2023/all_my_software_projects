@@ -1,0 +1,21 @@
+h2{
+    text-align: center;
+}
+p{
+    font-size: 25px;
+}
+table,tr,th,td{
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.comment-table{
+    border: 1px solid black;
+    background-color: black;
+    color: yellow;
+    font-size: 25px;
+}
+.tdclass{
+    font-size: 18px;
+}

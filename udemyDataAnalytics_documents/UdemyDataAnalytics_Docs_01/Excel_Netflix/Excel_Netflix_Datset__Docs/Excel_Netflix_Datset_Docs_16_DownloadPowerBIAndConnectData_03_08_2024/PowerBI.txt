@@ -1,0 +1,26 @@
+power BI
+------------------------------------
+
+URL : https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads
+
+Go to Microsoft Power BI desktop section
+
+Click download
+
+Click Get data from other sources
+
+On Home -> Get Data -> Click More -> Click Database -> MYSQL database
+
+Check if you have the connector
+
+If yes proceed with below steps
+
+Enter Server : 127.0.0.1:3306
+
+Enter Database : netflix_data
+
+Load the data -> By clicking on the load button.
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css" />
+    <style>
+        div{
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <div></div>
+    <button id="b1">Get Height of Div</button>
+    <p></p>
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    --> 
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //get
+            $("#b1").click(function(){
+               var p = $("p");
+               var hei  = $("div").height();
+               p.text("The Height is : "+hei +"px");
+            });
+        });
+    </script>
+</body>
+
+</html>

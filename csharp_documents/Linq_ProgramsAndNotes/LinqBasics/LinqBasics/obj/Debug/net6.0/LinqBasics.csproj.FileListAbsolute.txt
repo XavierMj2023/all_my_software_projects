@@ -1,0 +1,15 @@
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\bin\Debug\net6.0\LinqBasics.exe
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\bin\Debug\net6.0\LinqBasics.deps.json
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\bin\Debug\net6.0\LinqBasics.runtimeconfig.json
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\bin\Debug\net6.0\LinqBasics.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\bin\Debug\net6.0\LinqBasics.pdb
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\obj\Debug\net6.0\LinqBasics.csproj.AssemblyReference.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\obj\Debug\net6.0\LinqBasics.GeneratedMSBuildEditorConfig.editorconfig
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\obj\Debug\net6.0\LinqBasics.AssemblyInfoInputs.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\obj\Debug\net6.0\LinqBasics.AssemblyInfo.cs
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\obj\Debug\net6.0\LinqBasics.csproj.CoreCompileInputs.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\obj\Debug\net6.0\LinqBasics.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\obj\Debug\net6.0\refint\LinqBasics.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\obj\Debug\net6.0\LinqBasics.pdb
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\obj\Debug\net6.0\LinqBasics.genruntimeconfig.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\Linq\LinqBasics\LinqBasics\obj\Debug\net6.0\ref\LinqBasics.dll

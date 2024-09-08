@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Iterables</title>
+    </head>
+    <body>
+        <h1>Object Iterables</h1>
+        <hr/>
+        <h4>Home made Iterable</h4>
+        <p id="demo"></p>
+        <script>
+            function myNumbers() {
+                let n = 0;
+                return {
+                    next: function() {
+                        n += 6;
+                        return {
+                            value : n, 
+                            done  : false
+                        };
+                    }
+                };
+            }
+
+            // Create Iterable
+            const n = myNumbers();
+            console.log("n value :")
+            console.log(n);
+            console.log(n.next().value);//6
+            console.log(n.next().value);//12
+            console.log(n.next().value);//18
+
+            document.getElementById("demo").innerHTML = n.next().value;//24
+        </script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+Average Sales Value per Order = SUM('classicmodels sales_data_for_power_bi'[sales_value])/DISTINCTCOUNT('classicmodels sales_data_for_power_bi'[orderNumber])
+
+
+Net Profit = SUM('classicmodels sales_data_for_power_bi'[sales_value]) - SUM('classicmodels sales_data_for_power_bi'[cost_of_sales])
+
+
+Selected Metric = switch(
+SELECTEDVALUE('Table'[NumberId]),1,sum('classicmodels sales_data_for_power_bi'[sales_value])
+,2,(sum('classicmodels sales_data_for_power_bi'[sales_value]) - SUM('classicmodels sales_data_for_power_bi'[cost_of_sales])),
+sum('classicmodels sales_data_for_power_bi'[sales_value]))

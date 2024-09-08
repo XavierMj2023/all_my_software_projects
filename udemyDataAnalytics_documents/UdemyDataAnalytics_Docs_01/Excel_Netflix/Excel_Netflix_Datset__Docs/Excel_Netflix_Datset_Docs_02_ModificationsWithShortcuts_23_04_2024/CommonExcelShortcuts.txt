@@ -1,0 +1,29 @@
+Ctrl + Shift + End/Right Arrow 	-> To the end of the column
+
+Ctrl + Home/Left Arrow 	       	-> To the start of the column
+
+shift + arrow keys
+
+ctrl + Uparrow/DownArrow
+
+ctrl + leftArrow/RightArrow
+
+ctrl + pageup/pagedown -> error
+
+ctrl + a
+
+ctrl + b -> All bold
+
+ctrl + c -> copy
+
+ctrl + s -> save
+
+ctrl + u -> underline
+
+ctrl + v -> paste
+
+ctrl + c/x -> cut selected cell
+
+ctrl + w -> close workbook
+
+ctrl + y / ctrl + z -> undo and redo

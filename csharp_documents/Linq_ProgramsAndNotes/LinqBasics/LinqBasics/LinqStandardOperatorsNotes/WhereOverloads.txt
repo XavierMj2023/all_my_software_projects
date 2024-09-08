@@ -1,0 +1,5 @@
+﻿public static IEnumerable<TSource> Where<TSource>(this IEnumerable<TSource> source, 
+                                                    Func<TSource, bool> predicate);
+
+public static IEnumerable<TSource> Where<TSource>(this IEnumerable<TSource> source, 
+                                                  Func<TSource, int, bool> predicate);

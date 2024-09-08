@@ -1,0 +1,11 @@
+﻿CreatePdf is an action method that generates a PDF file.
+
+Initializes a MemoryStream to work with the PDF content.
+
+Defines the file name for the PDF using the current date and time.
+
+Creates a new iTextSharp Document specifying its size and margins.
+
+Gets a PdfWriter instance and links it to the MemoryStream without closing the stream.
+
+Opens the document and creates a PdfPTable with 5 columns.

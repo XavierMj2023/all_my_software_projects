@@ -1,0 +1,71 @@
+﻿*	Quantifier Operators
+	----------------------
+*	The quantifier operators evaluate elements of the sequence on some condition and return a boolean 
+	value to indicate that some or all elements satisfy the condition.
+
+*	Operator												Description
+	---------------------------------------------------------------------
+	All														Checks if all the elements in a sequence 
+														    satisfies the specified condition
+
+	Any														Checks if any of the elements in a sequence 
+														    satisfies the specified condition
+
+	Contains												Checks if the sequence contains a specific 
+															element
+
+*	All
+	------
+	The All operator evalutes each elements in the given collection on a specified condition and 
+	returns True if all the elements satisfy a condition.
+
+*	Quantifier operators are Not Supported with C# query syntax.
+
+*	Any
+	------
+	Any checks whether any element satisfy given condition or not.
+
+
+*	Contains
+	-----------
+	The Contains operator checks whether a specified element exists in the collection or not and 
+	returns a boolean.
+
+	The Contains() extension method has following two overloads. 
+
+	The first overload method requires a value to check in the collection .
+	The second overload method requires additional parameter of IEqualityComparer type for custom 
+	equalality comparison.
+
+*	As mentioned above, the Contains() extension method requires a value to check as a input parameter. 
+	Type of a value must be same as type of generic collection.
+
+*	As mentioned above, the Contains() extension method requires a value to check as a input parameter. 
+	Type of a value must be same as type of generic collection. 
+	
+	The following example of Contains checks whether 10 exists in the collection or not. 
+	Please notice that int is a type of generic collection
+
+	Works well with primitive data types. However, it will not work with a custom class.
+
+*	As you can see in the above example, Contains returns false even if "Bill" exists in the 
+	studentList. 
+	
+	This is because the Contains extension method only compares reference of an object but not the 
+	actual values of an object. 
+	
+	So to compare values of the student object, you need to create a class by implementing 
+	IEqualityComparer interface, that compares values of two Student objects and returns boolean.
+
+*	All, Any & Contains are quantifier operators in LINQ.
+
+	All checks if all the elements in a sequence satisfies the specified condition.
+
+	Any check if any of the elements in a sequence satisfies the specified condition
+
+	Contains operator checks whether specified element exists in the collection or not.
+
+	Use custom class that derives IEqualityOperator with Contains to check for the object in the 
+	collection.
+
+	All, Any & Contains are not supported in query syntax in C# or VB.Net.

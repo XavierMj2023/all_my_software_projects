@@ -1,0 +1,17 @@
+The SpeechSynthesisUtterance interface of the -> Web Speech API -> represents a speech request. 
+
+It contains the content the speech service should read and information about how to read it 
+(e.g. language, pitch and volume.)
+
+EventTarget <- SpeechSynthesisUtterance
+
+Web Speech API
+--------------------------------------------
+
+It enable web developers to incorporate speech recognition and synthesis into their web pages. 
+
+It enables developers to use scripting to generate text-to-speech output and to use speech 
+recognition as an input for forms, continuous dictation and control. 
+
+The JavaScript API allows web pages to control activation and timing and to handle results and
+alternatives.

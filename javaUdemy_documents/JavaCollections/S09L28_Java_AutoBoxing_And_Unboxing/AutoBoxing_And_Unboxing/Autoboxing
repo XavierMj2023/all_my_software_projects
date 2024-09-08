@@ -1,0 +1,4 @@
+So the auto boxing concept is where we need not to do anything extra to add 
+values or manipulate anything.
+We can directly use the primitive values in our array list, or maybe in any 
+collections data type,

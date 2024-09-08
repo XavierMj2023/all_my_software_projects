@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator JS</title>
+</head>
+
+<body>
+    <h1>Rest Operator</h1>
+    <p></p>
+    <script>
+        var q1 = document.querySelector("p");
+        function logDate(format, ...value){
+            console.log( new Date(), format, value);
+        }
+        q1.innerHTML= logDate("DD/MM/YYYY", "ignored", "value");
+    </script>
+</body>
+
+</html>

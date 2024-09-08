@@ -1,0 +1,13 @@
+.div1{
+    border: 1px solid black;
+    background-color: yellow;
+    margin: auto; /* Centers the div */
+    padding: 20px;
+    text-align: center;
+}
+/*The min() function uses the smallest value, from a comma-separated list of values, as the 
+property value.*/
+/*Have to give space between expression or else not proper output displayed */
+.div1{
+    width: min(500px, 50%);
+}

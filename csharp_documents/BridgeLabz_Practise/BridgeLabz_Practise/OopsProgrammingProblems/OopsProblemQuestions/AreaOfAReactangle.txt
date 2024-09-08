@@ -1,0 +1,14 @@
+﻿Write a program to compute the area of a rectangle 
+
+by 
+
+Creating a class name 'Rectangle' having two methods. 
+
+First method named as 'setDim' takes length and breadth of the rectangle as parameters 
+
+The second method named as 'getArea' returns the area of the rectangle. 
+
+Length and breadth of rectangle are entered through the keyboard.
+
+Plan creating 2 rectangle objects, provide dimensions of them and then check
+which one has the higher area.

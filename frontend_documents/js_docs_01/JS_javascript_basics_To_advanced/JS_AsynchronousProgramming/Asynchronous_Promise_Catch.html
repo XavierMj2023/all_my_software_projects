@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Asynchronous Programming</title>
+</head>
+
+<body>
+    <script>
+       let promi = new Promise(function(resolve, reject){
+            reject("Promise Rejected <br/>");
+       });
+
+       // executes when promise is resolved successfully
+       promi
+       .then(function successValue(result){
+            document.write(result);
+        })
+
+        // executes if there is an error
+        .catch(function errorValue(result){
+            document.write(result);
+        })
+    </script>
+</body>
+
+</html>

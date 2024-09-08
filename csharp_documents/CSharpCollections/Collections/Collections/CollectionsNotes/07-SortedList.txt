@@ -1,0 +1,69 @@
+﻿C# - SortedList<TKey, TValue
+-----------------------------------
+The SortedList<TKey, TValue>, and SortedList are collection classes that can store key-value pairs that are sorted by
+the keys based on the associated IComparer implementation. 
+
+For example, if the keys are of primitive types, then sorted in ascending order of keys.
+
+C# supports generic and non-generic SortedList. 
+
+It is recommended to use generic SortedList<TKey, TValue> because it performs faster and less error-prone than the 
+non-generic SortedList.
+
+-----------------------------------
+SortedList Characteristics
+-----------------------------------
+SortedList<TKey, TValue> is an array of key-value pairs sorted by keys.
+
+Sorts elements as soon as they are added. 
+
+Sorts primitive type keys in ascending order 
+	  object keys based on IComparer<T>.
+
+Comes under System.Collection.Generic namespace.
+
+A key must be unique and cannot be null.
+
+A value can be null or duplicate.
+
+A value can be accessed by passing associated key in the indexer mySortedList[key]
+
+Contains elements of type KeyValuePair<TKey, TValue>
+
+It uses less memory than SortedDictionary<TKey,TValue>.
+
+It is faster in the retrieval of data once sorted, whereas SortedDictionary<TKey, TValue> is faster in insertion and
+removing key-value pairs.
+
+-----------------------------------
+Creating a SortedList
+-----------------------------------
+The Add() method is used to add a single key-value pair in a SortedList. 
+Keys cannot be null or duplicate. If found, it will throw a run-time exception. 
+Values can be duplicate and null if the type is nullable.
+
+Use the collection-initializer syntax to initialize a SortedList with multiple key-value pairs at the time of 
+instantiating
+
+------------------------------------
+Accessing SortedList
+------------------------------------
+Specify a key in the indexer sortedList[key], to get or set a value in the SortedList.
+
+------------------------------------
+ContainsKey() or TryGetValue()
+------------------------------------
+If Throw a KeyNotFoundException because specified key 10 does not exist in a sortedlist. 
+To prevent this exception, use ContainsKey() or TryGetValue() methods
+
+------------------------------------
+Keys and Values properties
+------------------------------------
+Use Keys and Values properties if you want to iterate a SortedList using a for loop
+
+------------------------------------
+Remove Elements from SortedList
+------------------------------------
+Use the Remove(key) and RemoveAt(index) methods to remove key-value pairs from a SortedList.
+
+------------------------------------

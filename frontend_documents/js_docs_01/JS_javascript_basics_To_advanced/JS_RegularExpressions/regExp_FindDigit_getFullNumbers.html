@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+</head>
+
+<body>
+    <h1>JS Regular Expression</h1>
+    <hr />
+    <script>
+        //Find digit in a string
+
+        //This is the text
+        const txt4 = "Around 20 years ago, there were 5 boys and 6 girls who lived in a village ";
+
+        //Which number to find?
+        const regex4 = /\d+/g;
+
+        //Use matchAll() to match the given text
+        const numFind = txt4.match(regex4);
+
+        console.log(numFind);
+
+    </script>
+</body>
+
+</html>

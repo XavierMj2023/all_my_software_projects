@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JQUERY STOP METHOD</title>
+    <link rel="stylesheet" href="../jQueryLinkWithCss/stop.css" />
+    <script src="../jQuery_Files/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $("document").ready(function () {
+            $("#flip").click(function () {
+              //$("#panel").slideDown();
+                $("#panel").slideDown(5000);
+            });
+            $("#stop").click(function () {
+                $("#panel").stop();
+            })
+        });
+    </script>
+</head>
+<body>
+    <button id="stop">Stop sliding</button>
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello Duniya</div>
+</body>
+</html>

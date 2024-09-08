@@ -1,0 +1,6 @@
+Error 1:
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from String to int
+
+	at org.studyeasy.Hello.main(Hello.java:18)

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Errors</title>
+    </head>
+    <body>
+        <label for="numy">Label</label>
+        <input type="text" id="numy"/><br/>
+        <input type="submit" value="Test" id="test" onclick="testNumber()"/>
+        <p id="result"></p>
+        <script>
+            function testNumber(){
+                var res = document.getElementById("result");
+                var txt = document.getElementById("numy").value;
+                res.innerHTML = "";
+                try{
+                    if(txt.trim() == "") throw "Empty";
+                    if(isNaN(txt)) throw "Not a number";
+                    txt = Number(txt);
+                    if(txt > 10) throw "High";
+                    if(txt < 5) throw "Low"; 
+                }
+                catch(err){
+                    res.innerHTML = "Input : "+err;
+                }
+            }
+        </script>
+    </body>
+</html>

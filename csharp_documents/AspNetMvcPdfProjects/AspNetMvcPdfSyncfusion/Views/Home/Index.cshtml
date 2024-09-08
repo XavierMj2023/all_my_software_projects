@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@{Html.BeginForm("CreatePDFDocument", "Home", FormMethod.Get);
+    {
+        <div>
+            <input type="submit" value="Generate PDF Document" style="width:230px;height:27px;color:white;background-color:black;border-radius:8px;" />
+        </div>
+    }
+    Html.EndForm();
+}

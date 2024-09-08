@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+</head>
+
+<body>
+    <h1>JS Regular Expression</h1>
+    <hr />
+    <script>
+      
+        //This is the text
+        const txt4 = "It is a huge big big place of a big world ";
+
+        //Which number to replace?
+        const regex4 = /big/g;
+
+        //Use matchAll() to match the given text
+        const numFind = txt4.search(regex4);
+
+        console.log(numFind);//13
+
+    </script>
+</body>
+
+</html>

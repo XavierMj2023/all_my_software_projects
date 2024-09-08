@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Call Apply Bind with this</title>
+    </head>
+    <body>
+        <h4>JS Call Apply Bind with this</h4>
+        <p id="one"></p>
+        <p id="two"></p>
+        <script>
+          
+           let one = document.getElementById("one");
+           let two = document.getElementById("two");
+
+           const person = {
+            fullName : function(location, rollNo){
+                return `${this.firstName} ${this.lastName}
+                        from ${location}, RollNo ${rollNo}`
+            }
+           };
+           const person1 = {
+            firstName : "Arjun",
+            lastName : "Navnoor"
+           }
+           const person2 = {
+            firstName : "Tejun",
+            lastName : "Noor"
+           }
+
+           let p1det = person.fullName.bind(person1, "Mumbai", 32);
+           let p2det = person.fullName.bind(person2, "Mumbaj", 34);
+
+           console.log(p1det());
+           console.log(p2det());
+
+           one.innerHTML = p1det();
+           two.innerHTML = p2det();
+        </script>
+    </body>
+</html>

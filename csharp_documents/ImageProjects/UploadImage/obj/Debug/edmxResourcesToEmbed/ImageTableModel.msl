@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Upload_Image_DBModelStoreContainer" CdmEntityContainer="Upload_Image_DBEntities">
+    <EntitySetMapping Name="Image_Table">
+      <EntityTypeMapping TypeName="Upload_Image_DBModel.Image_Table">
+        <MappingFragment StoreEntitySet="Image_Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

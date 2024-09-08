@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flex-container-1{
+                display: flex;
+                flex-wrap: wrap;
+                background-color: Blue;
+            }
+
+            .flex-container-2{
+                display: flex;
+                flex-wrap: nowrap;
+                background-color: Blue;
+            }
+
+            .flex-container-1> div {
+                background-color: wheat;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+
+            .flex-container-2> div {
+                background-color: wheat;
+                width: 100px;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+<body>
+
+    <h3 style="text-align:center">Try resizing the browser window</h3>
+
+    <h3>flex-wrap: wrap; </h3>
+    <div class="flex-container-1">
+        <div> 1</div>
+        <div> 2</div>
+        <div> 3</div>  
+        <div> 4</div>
+        <div> 5</div>
+        <div> 6</div>  
+        <div> 7</div>
+        <div> 8</div>
+        <div> 9</div> 
+        <div> M</div> 
+        <div> A</div> 
+        <div> N</div> 
+        <div> O</div> 
+        <div> J</div> 
+    </div>
+
+    <hr>
+    <br><br>
+
+    <h3>flex-wrap: nowrap; </h3>
+    <div class="flex-container-2">
+        <div> 1</div>
+        <div> 2</div>
+        <div> 3</div>  
+        <div> 4</div>
+        <div> 5</div>
+        <div> 6</div>  
+        <div> 7</div>
+        <div> 8</div>
+        <div> 9</div> 
+        <div> M</div> 
+        <div> A</div> 
+        <div> N</div> 
+        <div> O</div> 
+        <div> J</div> 
+    </div>
+      
+</body>
+</html>
+
+

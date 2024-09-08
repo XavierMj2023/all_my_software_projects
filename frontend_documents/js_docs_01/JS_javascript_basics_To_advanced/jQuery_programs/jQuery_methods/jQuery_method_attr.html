@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css" />
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <div id="div1" class="checker">Div 1</div>
+    <button class="getbtn">Get Property</button>
+
+    <div id="div2" class="">Div 2</div>
+    <button class="setbtn">Set Property</button>
+    
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    --> 
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        //get property of the div 1
+        $(document).ready(function () {
+            $(".getbtn").click(function(){
+               var storeProp = $("#div1").attr("class");
+               alert(storeProp);//checker
+            });
+        });
+        //set property of the div 2
+        $(document).ready(function () {
+            $(".setbtn").click(function(){
+               var div2 = $("#div2");
+               div2.attr("class", "div2");
+               //get property
+               var getVal = div2.attr("class");
+               alert(getVal);//div2
+            });
+        });
+        
+    </script>
+</body>
+</html>

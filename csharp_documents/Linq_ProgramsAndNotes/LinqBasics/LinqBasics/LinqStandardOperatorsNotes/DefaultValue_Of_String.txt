@@ -1,0 +1,1 @@
+﻿null is a default value of string.

@@ -1,0 +1,16 @@
+*   Never Skip the End Tag
+    -----------------------
+    Some HTML elements will display correctly, even if you forget the end tag.
+    However, never rely on this.
+    Unexpected results and errors may occur if you forget the end tag.
+
+*   HTML is Not Case Sensitive.
+    --------------------------
+    HTML tags are not case sensitive: <P> means the same as <p>.
+    The HTML standard does not require lowercase tags, but 
+    ~ W3C recommends lowercase in HTML,  
+    ~ Demands lowercase for stricter document types like XHTML.
+
+*   Comments are not displayed by the browser, but they can help document your HTML source code
+
+*   A link does not have to be text. A link can be an image or any other HTML element

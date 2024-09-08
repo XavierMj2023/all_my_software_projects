@@ -1,0 +1,85 @@
+*   HTML images are defined with the <img> tag.
+
+*   The source file (src)
+    Alternative text (alt)
+    Width
+    Height
+
+*   Images can improve the design and the appearance of a web page.
+
+*   The HTML <img> tag is used to embed an image in a web page.
+
+*   Images are not technically inserted into a web page; images are linked to web pages. 
+    
+*   The <img> tag creates a holding space for the referenced image.The <img> tag is empty, it contains 
+    attributes only, and does not have a closing tag.
+
+*   The <img> tag has two required attributes:
+    src     -   Specifies the path to the image
+    alt     -   Specifies an alternate text for the image
+
+*   Syntax: <img src="url" alt="alternatetext">
+
+*   Example
+    <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+*   If you have your images in a sub-folder, you must include the folder name in the src attribute.
+    To point to an image on another server, you must specify an absolute (full) URL in the src 
+    attribute.
+
+*   HTML allows animated GIFs.
+
+*   Common Image Formats
+    Here are the most common image file types, which are supported in all browsers (Chrome, Edge, 
+    Firefox, Safari, Opera):
+
+    Abbreviation	                            File Format	File Extension
+        APNG	                                Animated Portable Network Graphics  	.apng
+
+        GIF	                                    Graphics Interchange Format	            .gif
+
+        ICO         	                        Microsoft Icon	                        .ico, .cur
+
+        JPEG	                                Joint Photographic Expert Group image	.jpg, 
+                                                                                        .jpeg, 
+                                                                                        .jfif, 
+                                                                                        .pjpeg, 
+                                                                                        .pjp
+
+        PNG	                                    Portable Network Graphics	            .png
+
+        SVG	                                    Scalable Vector Graphics	            .svg
+
+*   <picture> element
+    -------------------
+    The HTML <picture> element allows you to display different pictures for different devices or 
+    screen sizes.
+    The HTML <picture> element gives web developers more flexibility in specifying image resources.
+    The <picture> element contains one or more <source> elements, each referring to different images 
+    through the srcset attribute. 
+    This way the browser can choose the image that best fits the current view and/or device.
+    Each <source> element has a media attribute that defines when the image is the most suitable.
+    Always specify an <img> element as the last child element of the <picture> element. 
+    The <img> element is used by browsers that do not support the <picture> element, or if none of the 
+    <source> tags match.
+    Eg:
+    -----
+    <picture>
+        <source media="(min-width: 650px)" srcset="img_food.jpg">
+        <source media="(min-width: 465px)" srcset="img_car.jpg">
+        <img src="img_girl.jpg">
+    </picture>
+
+*  When to use the Picture Element?
+   -------------------------------
+    There are two main purposes for the <picture> element:
+
+    1. Bandwidth
+    If you have a small screen or device, it is not necessary to load a large image file. 
+    The browser will use the first <source> element with matching attribute values, and ignore any of 
+    the following elements.
+
+    2. Format Support
+    Some browsers or devices may not support all image formats. 
+    By using the <picture> element, you can add images of all formats, and the browser will use the 
+    first format it recognizes, and ignore any of the following elements.

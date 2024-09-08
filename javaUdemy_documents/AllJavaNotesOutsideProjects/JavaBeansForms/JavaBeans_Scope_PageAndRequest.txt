@@ -1,0 +1,36 @@
+---------------------------------------
+scope = "page"
+---------------------------------------
+browser 1 -> getProperty -> displayed
+
+	     setProperty with values displayed in the page -> executed : The values are displayed.
+
+             getProperty -> Values not updated
+
+
+browser 2 -> getProperty -> displayed
+
+	     setProperty with values displayed in the page -> executed : The values are displayed.
+
+             getProperty -> Values not updated
+
+
+---------------------------------------
+scope = "request"
+---------------------------------------
+It is similar to Page scope.
+Request -> Based on your request object.
+Request can be forwarded but Page cannot be forwarded.
+
+
+---------------------------------------
+
+<%
+ request.getRequestDispatcher("getPropertyScope_Request.jsp").forward(request, response);
+%>
+---------------------------------------
+
+---------------------------------------
+
+---------------------------------------
+

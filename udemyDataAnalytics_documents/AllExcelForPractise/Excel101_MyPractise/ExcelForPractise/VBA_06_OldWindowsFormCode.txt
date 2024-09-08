@@ -1,0 +1,109 @@
+Option Explicit
+Sub Reset()
+
+Dim iRow As Long
+
+iRow = WorksheetFunction.CountA(Sheets("Database_Dec_Diary").Range("A:A")) ' identifying the last row
+
+With DataEntryForm
+
+    .dataAct.Value = ""
+    .dataStart.Value = ""
+    .dataEnd.Value = ""
+    .dataCom.Value = ""
+
+    .dataEntryCount.Value = ""
+
+
+    .DecDatabase.ColumnCount = 5
+    .DecDatabase.ColumnHeads = True
+
+    .DecDatabase.ColumnWidths = "30,60,75,50,60"
+
+    If iRow > 1 Then
+
+        .DecDatabase.RowSource = "Database_Dec_Diary!A2:E2" & iRow
+    Else
+
+        .DecDatabase.RowSource = "Database_Dec_Diary!A2:E2"
+
+    End If
+
+End With
+
+End Sub
+
+
+Sub Submit()
+
+    Dim sh As Worksheet
+    Dim iRow As Long
+    
+    Dim randomID As Long
+    
+    Randomize ' Initialize random number generator
+    randomID = Int((9999 - 1000 + 1) * Rnd + 1000) ' Generates a 4-digit random number
+    
+    ' Increment the generated number
+    Dim incrementedID As Long
+    incrementedID = randomID + 1 ' Increment by 1
+
+    Set sh = ThisWorkbook.Sheets("Database_Dec_Diary")
+
+    If DataEntryForm.dataEntryCount.Value = "" Then
+    
+        iRow = [Counta(Database_Dec_Diary!A:A)] + 1
+        
+    Else
+    
+        iRow = DataEntryForm.dataEntryCount.Value
+        
+    End If
+
+    With sh
+
+        .Cells(iRow, 1) = [Text(Now(), "DD-MM-YYYY HH:MM:SS")]
+
+        .Cells(iRow, 2) = DataEntryForm.dataAct.Value
+
+        .Cells(iRow, 3) = DataEntryForm.dataStart.Value
+        
+        .Cells(iRow, 4) = DataEntryForm.dataEnd.Value
+        
+        .Cells(iRow, 5) = DataEntryForm.dataCom.Value
+
+
+End With
+
+End Sub
+
+Sub Show_Form2()
+
+      DataEntryForm.Show
+      
+End Sub
+
+Function Selected_List() As Long
+
+
+    Dim i As Long
+    
+    Selected_List = 0
+    
+    For i = 0 To DataEntryForm.DecDatabase.ListCount - 1
+    
+        If DataEntryForm.DecDatabase.Selected(i) = True Then
+        
+            Selected_List = i + 1
+            Exit For
+            
+        End If
+        
+    Next i
+    
+End Function
+
+Private Sub Workbook_BeforeClose(Cancel As Boolean)
+    ' Save the workbook before closing
+    ThisWorkbook.Save
+End Sub

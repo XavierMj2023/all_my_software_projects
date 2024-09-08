@@ -1,0 +1,64 @@
+*   href
+    -------------------
+    The <a> tag defines a hyperlink. 
+    The href attribute specifies the URL of the page the link goes to:
+    Ex:
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+*   src
+    -------------------
+    The src attribute specifies the path to the image to be displayed.
+    Ex:
+    <img src="img_girl.jpg">
+
+*   width  and height
+    --------------------
+    Specify the width and height of the image (in pixels).
+
+*   alt
+    -------------------
+    Specifies an alternate text for an image, if the image for some reason cannot be displayed.
+    This can be due to 
+    . Slow connection
+    . Error in the src attribute
+    . If the user uses a screen reader
+
+*   style
+    -------------------
+    It is used to add styles to an element, such as color, font, size, and more.
+    Ex:
+    <p style="color:red;">This is a red paragraph.</p>
+
+*   lang
+    --------------------
+    You should always include the lang attribute inside the <html> tag, to declare the language 
+    of the Web page. 
+    This is meant to assist search engines and browsers.
+    Country codes can also be added to the language code in the lang attribute. 
+    So, 
+    The first two characters --> define the language of the HTML page.
+    The last  two characters --> define the country.
+
+    Eg:
+    <html lang="en-US">
+
+*   title
+    --------------------
+    It defines some extra information about an element.
+    The value of the title attribute will be displayed as a tooltip when you mouse over the 
+    element.
+
+    Eg:
+    <p title="Tooltip">This</p>
+
+*   target
+    --------------------
+    By default, the linked page will be displayed in the current browser window. 
+    To change this, you must specify another target for the link.
+    It specifies where to open the linked document.
+    It can have one of the following values:
+
+    _self       -       Default. Opens the document in the same window/tab as it was clicked
+    _blank      -       Opens the document in a new window or tab
+    _parent     -       Opens the document in the parent frame
+    _top        -       Opens the document in the full body of the window

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ON METHOD</title>
+    <script src="../jQuery_Files/node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <!--Only One Event-->
+    <h4>This is the H4 Heading and some magic is done with the paragraph.Find Out?</h4>
+    <p class="one_event">Hey Magic is here!Observe</p>
+
+    <!--Multiple Events-->
+    <h4>This is the H4 Heading and some magic is done with the paragraph.Find Out?</h4>
+    <p class="m_events">Hey Magic is here!Observe</p>
+    <script>
+        $(".one_event").on("click", function () {
+            $(this).hide();
+        });
+        ///* background-color: yellow; */
+        $(".m_events").on({
+            mouseenter: function () {
+                $(this).css("background-color", "pink");
+            },
+            mouseleave: function () {
+                $(this).css("background-color", "yellow");
+                //Once Mouse Entered in <p> : it remains yellow even after mouse leaves from
+                //<p>
+            },
+            click: function () {
+                $(this).css("background-color", "green");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿In C#, the ArrayList is a non-generic collection of objects whose size increases dynamically. 
+
+It is the same as Array except that its size increases dynamically.
+
+An ArrayList can be used to add unknown data where you don't know the types and the size of the data.
+
+Create an ArrayList
+-----------------------
+The ArrayList class included in the System.Collections namespace. 
+
+Create an object of the ArrayList using the new keyword.
+
+---------------------------------------------------
+Adding Elements in ArrayList
+---------------------------------------------------
+Use the Add() method or object initializer syntax to add elements in an ArrayList.
+An ArrayList can contain multiple null and duplicate values.
+
+---------------------------------------------------
+AddRange(ICollection c)
+---------------------------------------------------
+Use the AddRange(ICollection c) method to add an entire Array, HashTable, SortedList, ArrayList, BitArray, Queue
+and Stack in the ArrayList.
+
+---------------------------------------------------
+Accesing Element
+---------------------------------------------------
+The ArrayList class implements the IList interface. So, elements can be accessed using indexer, in the same way 
+as an array.
+Index starts from zero and increases by one for each subsequent element.
+An explicit casting to the appropriate types is required, or use the var variable.
+
+---------------------------------------------------
+Inserting Element
+---------------------------------------------------
+Use the Insert() method to insert an element at the specified index into an ArrayList.
+
+Signature: void Insert(int index, Object value)
+
+Use the InsertRange() method to insert a collection in an ArrayList at the specfied index.
+
+Signature: Void InsertRange(int index, ICollection c)
+
+---------------------------------------------------
+Removing Element
+---------------------------------------------------
+Use the Remove(), RemoveAt(), or RemoveRange methods to remove elements from an ArrayList.
+
+---------------------------------------------------
+Check Element 
+---------------------------------------------------
+Use the Contains() method to determine whether the specified element exists in the ArrayList or not.
+It returns true if exists otherwise returns false.

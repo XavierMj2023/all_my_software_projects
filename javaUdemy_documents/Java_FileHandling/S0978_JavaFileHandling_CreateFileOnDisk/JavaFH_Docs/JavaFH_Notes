@@ -1,0 +1,14 @@
+When it come to the Java File Handling, it handles as a Stream.
+
+It can be output/input/error stream.
+
+In java, stream are automatically created for us. All streams are attached with console.
+
+System.out -> Output stream
+
+System.in -> Input stream
+
+System.err -> Error stream
+
+If we do not give complete path, it will use the existing path which is nothing but your 
+current project.

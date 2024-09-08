@@ -1,0 +1,4 @@
+﻿Write a program to find common elements between two arrays (string
+values). Save the common values in another new array
+
+Linq Standard Operators - Intersect

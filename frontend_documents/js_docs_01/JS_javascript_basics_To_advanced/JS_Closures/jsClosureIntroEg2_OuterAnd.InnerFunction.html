@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Closures</title>
+</head>
+<body>
+    <h1>Javascript Closures</h1>
+    <hr/>
+    <p id="closu"></p>
+    <script>
+        let closeId = document.getElementById("closu");
+        
+        //Closures Eg 2
+        //The closure has 3 scope chains:
+        //1.Its own scope
+        //2.outer function's scope
+        //3.global scope
+
+        let city = "New york";
+        function outer(temp){
+            const te = (5/9)*(temp-32);
+            function inner(){
+                //As we can see Inner function has an access to outer function
+                //and global scope variables
+                closeId.innerHTML = `Today in ${city} is ${te}C`;
+            }
+            return inner;
+        }
+        const weather = outer(68);
+        weather();
+        console.dir(weather);
+    </script>
+</body>
+</html>

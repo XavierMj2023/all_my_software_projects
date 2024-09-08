@@ -1,0 +1,63 @@
+﻿1.Download Bootstrap
+
+2.Create Database - Create Database EBillDB;
+
+3.Create Tables - Create Table tbl_BillDetails
+				  (
+					Id int primary key identity,
+					CustomerName varchar(255),
+					MobileNumber varchar(255),
+					Address varchar(255),
+					TotalAmt int
+				  );
+
+				  Create Table tbl_BillItems
+				  (
+					Id int primary key identity,
+					ProductName varchar(255),
+					Price int,
+					Quantity int,
+					Billid int foreign key references tbl_BillDetails(Id)
+				  );
+
+4.Stored Procedure
+
+spt_saveEBillDetails
+--------------------------
+create procedure spt_saveEBillDetails
+@CustomerName varchar(255),
+@MobileNumber varchar(255),
+@Address varchar(255),
+@TotalAmt int,
+@Id int output
+as
+begin
+insert into tbl_BillDetails(CustomerName,MobileNumber,Address,TotalAmt)
+values(@CustomerName,@MobileNumber,@Address,@TotalAmt);
+
+select @Id = SCOPE_IDENTITY();
+end
+
+spt_getAllEBillDetails
+--------------------------
+
+create procedure spt_getAllEBillDetails
+as
+begin
+select * from tbl_BillDetails;
+end
+
+spt_getEBillDetails
+--------------------------
+
+create procedure spt_getEBillDetails
+@Id int
+as
+begin
+select d.Id as 'BillId', d.CustomerName,d.MobileNumber,d.Address,d.TotalAmt,
+i.Id as 'ItemId',i.ProductName,i.Price,i.Quantity
+from tbl_BillDetails d inner join tbl_BillItems i
+on d.Id = i.BillId
+where d.Id = @Id;
+end
+

@@ -1,0 +1,6 @@
+﻿public static IOrderedEnumerable<TSource> OrderBy<TSource, TKey>(this IEnumerable<TSource> source, 
+            Func<TSource, TKey> keySelector);
+
+public static IOrderedEnumerable<TSource> OrderBy<TSource, TKey>(this IEnumerable<TSource> source, 
+            Func<TSource, TKey> keySelector, 
+            IComparer<TKey> comparer);

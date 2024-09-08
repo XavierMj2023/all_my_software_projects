@@ -1,0 +1,10 @@
+﻿You can also toggle between hiding and showing an element with the toggle() method.
+
+Syntax:
+
+$(selector).toggle(speed,callback);
+
+
+The optional speed parameter can take the following values: "slow", "fast", or milliseconds.
+
+The optional callback parameter is a function to be executed after toggle() completes.

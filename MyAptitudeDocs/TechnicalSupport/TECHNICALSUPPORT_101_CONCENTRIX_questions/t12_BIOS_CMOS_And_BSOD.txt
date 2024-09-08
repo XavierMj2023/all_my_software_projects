@@ -1,0 +1,127 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Firmware
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Firmware is a type of software that provides low-level control for a device's specific hardware. It is stored on non-volatile memory chips, 
+such as ROM, EEPROM, or flash memory, within the device. 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+BIOS (Basic Input/Output System)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+What is BIOS?
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Definition	: 	BIOS is firmware stored on a chip on the motherboard. It is the first software that runs when you start your computer.
+
+Function	: 	Initializes and tests hardware components during the Power-On Self-Test (POST), loads the bootloader or operating system, and 				provides a set of low-level routines for the operating system and hardware.
+
+Configuration	: 	Allows users to configure hardware settings, such as system time, boot order, and hardware components.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+CMOS (Complementary Metal-Oxide-Semiconductor)
+----------------------------------------------------------------------------------------------------
+What is CMOS?
+----------------------------------------------------------------------------------------------------
+Definition	: CMOS is a technology used for constructing integrated circuits, including the memory that stores BIOS settings.
+
+Function	: Stores system settings and configuration information such as date and time, boot sequence, and hardware settings. These settings are 			  maintained using a small battery on the motherboard.
+
+Battery		: The CMOS battery ensures that settings are retained even when the computer is powered off.
+----------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------
+BSOD (Blue Screen of Death)
+----------------------------------------------------------------------------------------------------
+What is BSOD?
+----------------------------------------------------------------------------------------------------
+Definition	: BSOD is an error screen displayed by the Windows operating system when it encounters a critical system error that it 
+		  cannot recover from.
+
+Function	: Indicates a fatal system error, often caused by hardware issues, driver problems, or software conflicts. 
+		  The screen provides an error code and message to help diagnose the issue.
+
+----------------------------------------------------------------------------------------------------
+How to Resolve BSOD (Blue Screen of Death)
+----------------------------------------------------------------------------------------------------
+Resolving a BSOD involves identifying the cause and taking appropriate steps to fix the underlying issue. Here are some steps to resolve BSOD:
+
+----------------------------------------------------------------------------------------------------
+Note the Error Message and Code:
+----------------------------------------------------------------------------------------------------
+The BSOD screen displays a stop code and sometimes additional information. Take note of this as it can help identify the problem.
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Restart Your Computer:
+----------------------------------------------------------------------------------------------------
+Sometimes, a simple restart can resolve a temporary issue.
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Boot into Safe Mode:
+----------------------------------------------------------------------------------------------------
+Booting into Safe Mode loads only essential drivers and can help isolate the problem.
+Press F8 (or Shift + F8 for some systems) during startup to access the Advanced Boot Options and select Safe Mode.
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Check for Hardware Issues:
+----------------------------------------------------------------------------------------------------
+RAM		: Run a memory test to check for faulty RAM (use Windows Memory Diagnostic or MemTest86).
+Hard Drive	: Use tools like CHKDSK to check for disk errors.
+Connections	: Ensure all hardware components are properly connected.
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Update or Roll Back Drivers:
+----------------------------------------------------------------------------------------------------
+Update		: Ensure all hardware drivers are up to date, especially graphics, network, and storage drivers.
+Roll Back	: If the BSOD occurred after a recent driver update, roll back to the previous driver version.
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Check for Software Issues:
+----------------------------------------------------------------------------------------------------
+Updates		: Ensure Windows is fully updated with the latest patches and updates.
+Uninstall	: If the BSOD started after installing new software, uninstall it to see if the issue resolves.
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Scan for Malware:
+----------------------------------------------------------------------------------------------------
+Use a reputable antivirus or antimalware tool to scan for and remove any malicious software.
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Use System Restore:
+----------------------------------------------------------------------------------------------------
+If the BSOD started recently, use System Restore to revert the system to a previous state before the issue occurred.
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Check System Logs:
+----------------------------------------------------------------------------------------------------
+Use Event Viewer to check system logs for errors and warnings that might provide clues to the cause of the BSOD.
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Reinstall Windows:
+----------------------------------------------------------------------------------------------------
+As a last resort, if none of the above steps resolve the issue, consider reinstalling Windows to ensure a clean system environment.
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Summary
+----------------------------------------------------------------------------------------------------
+BIOS		: Firmware that initializes and tests hardware during startup and loads the operating system.
+CMOS		: Memory that stores BIOS settings, powered by a small battery on the motherboard.
+BSOD		: Error screen indicating a critical system error in Windows.
+Resolving BSOD	: Involves noting the error code, checking for hardware and software issues, updating or rolling back drivers, scanning for 
+		  malware, using System Restore, and potentially reinstalling Windows.
+
+
+
+
+

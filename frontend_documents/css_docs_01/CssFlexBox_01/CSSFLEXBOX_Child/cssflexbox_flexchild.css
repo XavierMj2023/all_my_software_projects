@@ -1,0 +1,29 @@
+.flex-container{
+    display: flex;
+    background-color: dodgerblue;
+}
+/* Flex Items of flex container modifications */
+.flex-container > div{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 25px;
+}
+/* The flex-order property specifies the order of the flex items. */
+
+
+/* The flex-grow property specifies how much a flex item will grow relative to the rest of the 
+   flex items.*/
+
+
+/* The flex-shrink specifies how much a flex item will shrink relative to the rest of the flex items*/
+
+
+
+/* The flex-basis property specifies the initial length of a flex item.*/
+
+
+/* The align-self property specifies the alignment for the selected item inside the flexible container.*/
+.sam1{
+    height: 200px;
+}

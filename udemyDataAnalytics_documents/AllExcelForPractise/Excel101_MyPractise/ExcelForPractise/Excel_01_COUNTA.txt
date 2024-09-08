@@ -1,0 +1,12 @@
+The COUNTA function in Excel counts the number of cells in a range that are not empty. 
+
+It stands for "count all." 
+
+Unlike COUNT, which only counts numeric values, COUNTA counts all non-empty cells, including text, numbers, dates, logical values (TRUE/FALSE), errors, and empty strings ("").
+
+-----------------------------------
+Here's how you can use COUNTA:
+-----------------------------------
+=COUNTA(A1:A10)
+-----------------------------------
+This formula will count all non-empty cells in the range A1.

@@ -1,0 +1,12 @@
+Introduction To Cookies
+--------------------------------------
+
+
+Read and Write Cookies
+--------------------------------------
+Whenever we check the cookies it will be in the form of list. 
+
+//It wil give all the available cookies in the available URL.
+Cookie[] cookies = request.getCookies();
+
+

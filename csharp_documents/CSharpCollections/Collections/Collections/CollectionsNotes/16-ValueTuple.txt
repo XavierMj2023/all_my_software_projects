@@ -1,0 +1,33 @@
+﻿C# - ValueTuple
+---------------------------------
+C# 7.0 (.NET Framework 4.7) introduced the ValueTuple structure, which is a value type representation of the Tuple.
+
+The ValueTuple is only available in .NET Framework 4.7. 
+
+If you don't see ValueTuple in your project, then you need to install the ValueTuple. (.NET Framework 4.7 or higher, 
+or .NET Standard Library 2.0 or higher already includes ValueTuple.)
+
+To install the ValueTuple package,
+
+->	Right-click on the project in the solution explorer 
+
+->	Select Manage NuGet Packages... This will open the NuGet Package Manager. 
+
+->	Click the Browse tab
+
+->	Search for ValueTuple in the search box
+
+->	Select the System.ValueTuple package
+
+---------------------------------
+ValueTuple Initialization
+---------------------------------
+It is easy to create and initialize the ValueTuple. 
+
+It can be created and initialized using parentheses () and specifying the values in it.
+
+The ValueTuple can also be initialized by specifying the type of each element.
+
+-----------------------------------------------
+Note that we have not used var in the above tuple initialization statement; instead, we provided the type of each 
+member values inside the brackets.

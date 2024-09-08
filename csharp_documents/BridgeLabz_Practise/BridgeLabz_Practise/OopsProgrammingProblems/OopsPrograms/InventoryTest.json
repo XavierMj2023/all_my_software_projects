@@ -1,0 +1,17 @@
+[
+    {
+        "Name": "Item1",
+        "Quantity": 10,
+        "PricePerItem": 5.99
+    },
+    {
+        "Name": "Item2",
+        "Quantity": 5,
+        "PricePerItem": 12.50
+    },
+    {
+        "Name": "Item3",
+        "Quantity": 20,
+        "PricePerItem": 2.99
+    }
+]

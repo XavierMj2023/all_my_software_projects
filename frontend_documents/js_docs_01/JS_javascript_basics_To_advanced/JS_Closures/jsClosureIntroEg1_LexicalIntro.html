@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Closures</title>
+</head>
+<body>
+    <h1>Javascript Closures</h1>
+    <hr/>
+    <p id="closu"></p>
+    <script>
+        let closeId = document.getElementById("closu");
+        function createDiscount(discount){
+            return function(price){
+                return price-price*(discount/100);
+            };
+        }
+        let summerSale = createDiscount(20);
+        closeId.innerHTML = summerSale(100);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("Hello world");
+	} 
+	
+Answer : console
+
+
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().println("Hello World");
+	} 
+
+Answer : web browser
+
+
+Rearrange the servlet life cycle in correct order
+
+1 Creates the instance of the servlet class
+
+2 Loads the servlet class
+
+3 call the servlet service() method
+
+4 call the servlet init() method
+
+5 call the servlet destroy() method
+
+
+Answer : 2 1 4 3 5
+
+
+<body>
+<%!int a=25; %>
+<%=a*25+10 %>
+</body>
+
+Answer : 635
+
+
+

@@ -1,0 +1,15 @@
+Static variable has an independent memory location or in other words, they have a single copy in memory.
+
+They are not dependent on object.
+
+As a result, when we are making change using a single object, the changes are getting reflected in other objects as 
+well.
+
+Because that specific variable is shared between all of these objects.
+
+Static elements needs to be like accessed in a static method.
+
+Simply make use of the name of the class dot name of your method and that's it.--> For--> Static 
+
+Doubt?: public static class TestStaticTest {} invalid modifier - static 
+

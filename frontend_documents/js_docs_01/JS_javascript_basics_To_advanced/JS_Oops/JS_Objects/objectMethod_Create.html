@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object Method Create</title>
+</head>
+<body>
+    <h1>Object Method - Create</h1>
+    <p id="create1"></p>
+    <script>
+        const person = {
+            isHuman : false,
+            printIntroduction : function(){
+                console.log(`My Name is ${this.name}. Am I Human ? ${this.isHuman}`);
+            }
+        };
+        const me = Object.create(person);
+        me.name = "Mami";
+        me.isHuman = true;
+        
+        me.printIntroduction();
+        
+        person.printIntroduction();
+    </script>
+</body>
+</html>

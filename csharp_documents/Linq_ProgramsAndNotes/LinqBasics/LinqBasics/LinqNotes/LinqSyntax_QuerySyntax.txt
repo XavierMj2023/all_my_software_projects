@@ -1,0 +1,30 @@
+﻿LINQ Query Syntax
+------------------
+*	There are two basic ways to write a LINQ query to IEnumerable collection or IQueryable data 
+	sources.
+
+1.	Query Syntax 
+
+	Query Expression Syntax
+
+2.	Method Syntax 
+
+	Method Extension Syntax 
+  
+	Fluent
+
+*	Query Syntax
+
+	Query syntax is similar to SQL (Structured Query Language) for the database. It is defined 
+	within the C# or VB code.
+
+	LINQ Query Syntax:
+	--------------------------------------------------------------------
+	from <range variable> in <IEnumerable<T> or IQueryable<T> Collection>
+
+	<Standard Query Operators> <lambda expression>
+
+	<select or groupBy operator> <result formation>
+	--------------------------------------------------------------------
+
+	Implicitly typed variable - var - It can be used to hold the result of the LINQ query.

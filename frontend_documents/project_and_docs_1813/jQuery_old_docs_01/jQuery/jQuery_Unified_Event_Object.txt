@@ -1,0 +1,6 @@
+﻿jQuery Unified Event Object
+-----------------------------
+
+It is a way for jQuery to unify a set of event information across different browsers :,that gets passed in
+as argument.
+

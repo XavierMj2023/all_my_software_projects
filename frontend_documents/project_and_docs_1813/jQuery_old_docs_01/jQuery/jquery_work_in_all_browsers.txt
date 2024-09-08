@@ -1,0 +1,8 @@
+﻿Will jQuery work in all browsers?
+---------------------------------------
+
+The jQuery team knows all about cross-browser issues, and 
+
+they have written this knowledge into the jQuery library. 
+
+jQuery will run exactly the same in all major browsers.

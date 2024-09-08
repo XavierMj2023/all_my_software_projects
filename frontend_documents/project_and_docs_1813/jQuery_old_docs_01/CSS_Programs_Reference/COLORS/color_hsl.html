@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            
+            <style>
+
+               .eg1{
+                   color: hsl(hue, saturation, lightness);              /*default value  ;  Error Syntax*/
+               }
+
+               .eg2{                                                    /* <!--hue=0    saturation=0%  lightness=0%--> */
+                   color: hsl(0,0% ,0%);
+               }
+
+               .eg3{                                                    /* <!--hue=120  saturation=0%  lightness=0%-->*/
+                   color: hsl(120,0% ,0%);
+               }
+
+               .eg4{
+                   color: hsl(240,0% ,0%);                            /* <!--hue=240  saturation=0%  lightness=0%-->*/
+               }
+
+               .eg5{
+                   color: hsl(360,0% ,0%);                            /* <!--hue=360  saturation=0%  lightness=0%-->*/
+               }
+
+               .eg6{
+                   color: hsl(120,100% ,80%);                         /* <!--hue=120  saturation=100%  lightness=20%--> Try to change the lightness value between 0 to 100% */
+               }
+            </style>
+
+        </head>
+
+        <body>
+            <p class="eg1">This is p1</p> <br>           <!--default hsl-->
+
+            <p class="eg2">This is p2</p> <br>           <!--hue=0    saturation=0%  lightness=0%-->
+
+            <p class="eg3">This is p3</p> <br>           <!--hue=120  saturation=0%  lightness=0%-->
+
+            <p class="eg4">This is p4</p> <br>           <!--hue=240  saturation=0%  lightness=0%-->
+
+            <p class="eg5">This is p5</p> <br>           <!--hue=360  saturation=0%  lightness=0%-->
+
+            <p class="eg6">This is p6</p>                <!--hue=120  saturation=100%  lightness=20%-->
+         </body>
+</html>

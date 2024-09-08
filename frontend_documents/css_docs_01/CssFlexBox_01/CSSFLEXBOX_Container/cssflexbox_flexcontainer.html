@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX</title>
+    <link rel="stylesheet" href="../CSSFLEXBOX_Container/cssflexbox_flexcontainer.css">
+</head>
+<body>
+    <!-- 
+        The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure 
+        without using float or positioning.
+    -->
+
+    <!--
+        Flexbox Elements - To start using the Flexbox model, you need to first define a flex container.
+
+        A Flexible Layout must have a parent element with the display property set to flex.
+        Direct child elements(s) of the flexible container automatically becomes flexible items.
+    -->
+
+    <h1 style="text-align: center;">FLEX CONTAINER AND FLEXBOX</h1>
+
+    <h4>FLEXBOX -  A Flexible Layout must have a parent element with the display property set to flex.</h4>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <!--
+        The flex-direction property defines in which direction the container wants to stack the flex items.
+    -->
+    <br/>
+
+    <h4>FLEX DIRECTION - COLUMN : The column value stacks the flex items vertically (from top to bottom).</h4>
+    <div class="flex-container sam1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>FLEX DIRECTION - COLUMN REVERSE : The column value stacks the flex items vertically (from bottom to top).</h4>
+    <div class="flex-container sam2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>FLEX DIRECTION - ROW :  stacks the flex items horizontally (from left to right)</h4>
+    <div class="flex-container sam3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>FLEX DIRECTION - ROW REVERSE:  stacks the flex items horizontally (from right to left)</h4>
+    <div class="flex-container sam4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <!--
+        The flex-wrap property specifies whether the flex items should wrap or not.
+        Try resizing the browser window.
+    -->
+
+    <h4>FLEX WRAP - WRAP: It specifies that the flex items will wrap if necessary</h4>
+    <p> Try resizing the browser window.</p>
+    <div class="flex-container sam5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <h4>FLEX WRAP - NOWRAP: It specifies that the flex items will not wrap. It is default</h4>
+    <p> Try resizing the browser window.</p>
+    <div class="flex-container sam6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <h4>FLEX WRAP - WRAP-REVERSE: It specifies that the flexible items will wrap if necessary, in reverse order</h4>
+    <p> Try resizing the browser window.</p>
+    <div class="flex-container sam7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+     <!--
+        The flex-flow property is a shorthand property for setting both the flex-direction 
+        and flex-wrap properties.
+        Try resizing the browser window.
+    -->
+
+    <h4>FLEX FLOW: It is a shorthand property for the flex-direction and the flex-wrap properties.</h4>
+    <p> Try resizing the browser window.</p>
+    <div class="flex-container sam8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <!--
+        The justify-content property is used to align the flex items
+    -->
+    <h4>JUSTIFY CONTENT : CENTER :- It aligns the flex items at the center of the container</h4>
+    <div class="flex-container sam9">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>JUSTIFY CONTENT : FLEX-START :- It aligns the flex items at the beginning of the container (this is default)</h4>
+    <div class="flex-container sam10">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>JUSTIFY CONTENT : FLEX-END :- It  aligns the flex items at the end of the container</h4>
+    <div class="flex-container sam11">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>JUSTIFY CONTENT : SPACE AROUND :- It  displays the flex items with space before, between, and after the lines</h4>
+    <div class="flex-container sam12">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>JUSTIFY CONTENT : SPACE BETWEEN :- It  displays the flex items with space between the lines</h4>
+    <div class="flex-container sam13">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>JUSTIFY CONTENT : SPACE EVENLY :- Items will have equal space around them</h4>
+    <div class="flex-container sam14">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <!--
+        The align-items property is used to align the flex items
+    -->
+
+    <h4>ALIGN ITEMS : CENTER :- It aligns the flex items in the middle of the container</h4>
+    <div class="flex-container sam15" style="height: 200px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>ALIGN ITEMS : FLEX-START :- It aligns the flex items at the top of the container</h4>
+    <div class="flex-container sam16" style="height: 200px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>ALIGN ITEMS : FLEX-END :- It aligns the flex items at the bottom of the container</h4>
+    <div class="flex-container sam17" style="height: 200px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>ALIGN ITEMS : STRECH :- It stretches the flex items to fill the container (this is default).</h4>
+    <div class="flex-container sam18" style="height: 200px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h4>ALIGN ITEMS : BASELINE :- It aligns the flex items such as their baselines aligns.</h4>
+    <div class="flex-container sam19" style="height: 200px;">
+        <div><h1>1</h1></div>
+        <div><h6>2</h6></div>
+        <div><h3>3</h3></div>  
+        <div><small>4</small></div>  
+    </div>
+
+    <!--
+        The align-content property is used to align the flex lines.
+    -->
+
+    <h4>ALIGN CONTENT : SPACE-BETWEEN :- It displays the flex lines with equal space between them.</h4>
+    <div class="flex-container sam20" style="height: 400px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <h4>ALIGN CONTENT : SPACE-AROUND :- It displays the flex lines with space before, between, and after them.</h4>
+    <div class="flex-container sam21" style="height: 400px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <h4>ALIGN CONTENT : STRECH :- It  stretches the flex lines to take up the remaining space (this is default).</h4>
+    <div class="flex-container sam22" style="height: 400px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <h4>ALIGN CONTENT : CENTER :- It displays the flex lines in the middle of the container:</h4>
+    <div class="flex-container sam23" style="height: 400px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <h4>ALIGN CONTENT : FLEX-START :- It displays the flex lines at the start of the container.</h4>
+    <div class="flex-container sam24" style="height: 400px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <h4>ALIGN CONTENT : FLEX-END :- It displays the flex lines at the end of the container.</h4>
+    <div class="flex-container sam25" style="height: 400px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <!--
+        Perfect Centering
+         Set both the justify-content and align-items properties to center
+         and the flex item will be perfectly centered
+    -->
+
+    <h4>PERFECT CENTERING</h4>
+    <div class="flex-container perfectcenter" style="height: 300px;">
+        <div>1</div>
+    </div>
+</body>
+</html>

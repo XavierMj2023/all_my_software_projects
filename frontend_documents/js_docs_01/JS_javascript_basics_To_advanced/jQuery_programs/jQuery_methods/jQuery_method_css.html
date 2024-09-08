@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css"/>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <textarea class="txet"></textarea>
+    <div class="styleGet">I am Div</div>
+    <button class="getSProp">Get Style Properties</button>
+    <button class="setSProp">Set Style Properties</button>
+    <button class="mulProp">Set Multiple Style Properties</button>
+    <br/>
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Place Jquery Code here
+
+            //Get Style properties
+            $(".getSProp").click(function(){
+                var element = $(".styleGet");
+                var properties = ["height", "width", "border", "color", "background-color"];
+                var propertiesText = "";
+
+                properties.forEach(function(property) {
+                    var value = element.css(property);
+                    propertiesText += property + ": " + value + "\n";
+                });
+
+                $(".txet").val(propertiesText);
+            });
+
+             //Set Style properties
+             $(".setSProp").click(function(){
+                var element = $(".styleGet");
+
+                //set property
+                $(".styleGet").css("background-color", "pink");
+            });
+
+            //Set Multiple Style properties
+            $(".mulProp").click(function(){
+                var element = $(".styleGet");
+
+                //set property
+                $(".styleGet").css(
+                    {
+                        "background-color": "pink",
+                        "height" : "50px"
+                    }
+                );
+            });
+        });
+    </script>
+</body>
+
+</html>

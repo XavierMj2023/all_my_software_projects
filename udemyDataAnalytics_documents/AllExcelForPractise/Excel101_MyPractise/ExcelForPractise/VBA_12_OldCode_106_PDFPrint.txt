@@ -1,0 +1,33 @@
+Private Sub dataPrint_Click()
+
+     Dim ws As Worksheet
+    Dim fileSaveName As Variant
+
+    ' Unhide the "Database" sheet temporarily
+    ThisWorkbook.Sheets("Database_Dec_Diary").Visible = xlSheetVisible
+
+    ' Set the worksheet
+    Set ws = ThisWorkbook.Sheets("Database_Dec_Diary") ' Replace with your sheet's name
+
+    ' Prompt the user to select a file name and location
+    fileSaveName = Application.GetSaveAsFilename( _
+                    FileFilter:="PDF Files (*.pdf), *.pdf", _
+                    Title:="Save As PDF")
+    
+    ' Check if the user canceled or provided a file name
+    If fileSaveName <> False Then
+        ' Export the sheet to PDF
+        ws.ExportAsFixedFormat Type:=xlTypePDF, _
+                               Filename:=fileSaveName, _
+                               Quality:=xlQualityStandard, _
+                               IncludeDocProperties:=True, _
+                               IgnorePrintAreas:=False, _
+                               OpenAfterPublish:=True
+    Else
+        MsgBox "Export canceled."
+    End If
+
+    ' Hide the "Database" sheet again after PDF generation
+    ThisWorkbook.Sheets("Database_Dec_Diary").Visible = xlSheetHidden
+
+End Sub

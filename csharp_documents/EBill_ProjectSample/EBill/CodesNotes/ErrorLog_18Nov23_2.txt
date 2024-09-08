@@ -1,0 +1,44 @@
+﻿select d.Id as 'BillId', d.CustomerName,d.MobileNumber,d.Address,d.TotalAmt,
+i.Id as ItemId,i.ProductName,i.Price,i.Quantity
+from tbl_BillDetails d inner join tbl_BillItems i
+on d.Id = i.BillId
+where d.Id = @Id;
+end
+GO
+
+Here for ItemId ,you should put single quote 'ItemId'
+
+select d.Id as 'BillId', d.CustomerName,d.MobileNumber,d.Address,d.TotalAmt,
+i.Id as 'ItemId',i.ProductName,i.Price,i.Quantity
+from tbl_BillDetails d inner join tbl_BillItems i
+on d.Id = i.BillId
+where d.Id = @Id;
+end
+GO
+---------------------------------------------------------------------------------------
+create procedure spt_getAllEBillDetails
+@Id int
+as
+begin
+select d.Id as 'BillId', d.CustomerName,d.MobileNumber,d.Address,d.TotalAmt,
+i.Id as 'ItemId',i.ProductName,i.Price,i.Quantity
+from tbl_BillDetails d inner join tbl_BillItems i
+on d.Id = i.BillId;
+where d.Id = @Id;
+end
+
+
+On this line -->  d.Id = i.BillId; --> ; should be removed
+
+
+create procedure spt_getAllEBillDetails
+@Id int
+as
+begin
+select d.Id as 'BillId', d.CustomerName,d.MobileNumber,d.Address,d.TotalAmt,
+i.Id as 'ItemId',i.ProductName,i.Price,i.Quantity
+from tbl_BillDetails d inner join tbl_BillItems i
+on d.Id = i.BillId
+where d.Id = @Id;
+end
+---------------------------------------------------------------------------------------

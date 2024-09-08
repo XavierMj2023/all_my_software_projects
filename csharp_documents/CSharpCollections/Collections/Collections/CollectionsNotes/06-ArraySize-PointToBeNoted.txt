@@ -1,0 +1,7 @@
+﻿//Array With No Size : Error : CS1586: Array creation must have array size or array initializer
+
+//string[] cities = new string[];
+
+
+
+string[] cities = new string[3] { "Mumbai", "London", "New York" };

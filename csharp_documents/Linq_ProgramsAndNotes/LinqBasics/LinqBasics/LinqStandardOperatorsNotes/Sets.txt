@@ -1,0 +1,74 @@
+﻿Set Operator
+----------------------------------------------------------
+The following table lists all Set operators available in LINQ.
+
+Set Operators					Usage
+----------------------------------------------------------
+Distinct						Returns distinct values from a collection.
+
+Except							Returns the difference between two sequences, which means the elements 
+								of one collection that do not appear in the second collection.
+
+Intersect						Returns the intersection of two sequences, which means elements that 
+								appear in both the collections.
+
+Union							Returns unique elements from two sequences, which means unique elements 
+								that appear in either of the two sequences
+
+----------------------------------------------------------
+
+Distinct
+----------------------------------------------------------
+The Distinct extension method returns a new collection of unique elements from the given collection.
+
+The Distinct extension method doesn't compare values of complex type objects. 
+
+You need to implement IEqualityComparer<T> interface in order to compare the values of complex types. 
+
+In the following example, StudentComparer class implements IEqualityComparer<Student> to compare 
+Student< objects
+
+The Distinct operator is Not Supported in C# Query syntax. 
+
+However, you can use Distinct method of query variable or wrap whole query into brackets and then call 
+Distinct().
+
+----------------------------------------------------------
+
+Except
+----------------------------------------------------------
+The Except() method requires two collections. 
+
+It returns a new collection with elements from the first collection which do not exist in the 
+second collection (parameter collection).
+
+The Except operator is Not Supported in C# & VB.Net Query syntax. 
+
+However, you can use Distinct method on query variable or wrap whole query into brackets and then call 
+Except().
+----------------------------------------------------------
+
+Intersect
+----------------------------------------------------------
+
+The Intersect extension method requires two collections. 
+
+It returns a new collection that includes common elements that exists in both the collection.
+
+The Intersect operator is Not Supported in C# & VB.Net Query syntax. 
+
+However, you can use the Intersect method on a query variable or wrap whole query into brackets and then
+call Intersect().
+
+----------------------------------------------------------
+
+Union
+----------------------------------------------------------
+
+The Union extension method requires two collections and returns a new collection that includes 
+distinct elements from both the collections.
+
+The Union operator is Not Supported in C# & VB.Net Query syntax.
+
+However, you can use Union method on query variable or wrap whole query into brackets and then call 
+Union().

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Opeartor</title>
+</head>
+
+<body>
+    <script>
+        const array1 = [1, 2, 3];
+        const array2 = [4, 5, 6];
+
+        // Combining arrays
+        const combinedArray = [...array1, ...array2]; // [1, 2, 3, 4, 5, 6]
+
+        // Passing array elements as arguments to a function
+        function sum(a, b, c) {
+            return a + b + c;
+        }
+
+        const result = sum(...array1); // equivalent to sum(1, 2, 3), result will be 6
+
+    </script>
+</body>
+
+</html>

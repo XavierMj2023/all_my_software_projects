@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GET ATTRIBUTE HTML</title>
+    <script src="../jQuery_Files/node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+    <button>Show href Value</button>
+    <script>
+        $("document").ready(function () {
+            $("button").click(function () {
+                alert("Text is : " + $('#w3s').attr("href"))
+            });
+        });
+    </script>
+</body>
+</html>

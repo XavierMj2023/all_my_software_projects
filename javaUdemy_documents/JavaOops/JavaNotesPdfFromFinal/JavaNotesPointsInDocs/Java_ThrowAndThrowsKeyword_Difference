@@ -1,0 +1,51 @@
+Difference between throw and throws keyword
+------------------------------------------------
+
+In Java, throw and throws are related keywords, but they are used in different contexts and serve different purposes.
+
+------------------------------------------------
+
+throw keyword:
+------------------------------------------------
+
+The throw keyword is used to explicitly throw an exception in a program.
+It is used within the body of a method to indicate that an exceptional situation has occurred, and a specific exception object is being 
+thrown.
+
+The syntax is: throw someExceptionObject;
+
+Example:
+------------------------------------------------
+
+public void exampleMethod() {
+    if (someCondition) {
+        throw new SomeException("An exceptional situation occurred");
+    }
+    // rest of the method
+}
+------------------------------------------------
+
+throws keyword:
+------------------------------------------------
+
+The throws keyword is used in the method signature to declare that a method may throw one or more types of exceptions.
+It is used when you want to specify that a method might propagate certain exceptions to the calling method, and the calling method is 
+responsible for handling those exceptions or declaring them as well.
+
+The syntax is: void methodName() throws SomeException1, SomeException2, ...;
+
+
+Example:
+------------------------------------------------
+
+public void exampleMethod() throws SomeException {
+    // method implementation that may throw SomeException
+}
+------------------------------------------------
+Summary
+------------------------------------------------
+When a method is declared with throws, it means that the method may throw exceptions of the specified types, and the caller should handle 
+these exceptions or declare them in its own throws clause.
+
+In summary, throw is used to explicitly throw an exception within a method, while throws is used in the method signature to declare the 
+types of exceptions that a method might throw.

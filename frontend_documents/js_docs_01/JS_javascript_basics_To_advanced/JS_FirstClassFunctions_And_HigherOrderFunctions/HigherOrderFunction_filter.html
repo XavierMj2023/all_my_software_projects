@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Class Functions</title>
+</head>
+<body>
+    <script>
+        const persons = [{
+                name : "M",
+                age : 15
+            },
+            {
+                name : "M",
+                age : 18
+            }
+        ];
+        const filterAge = persons.filter(person => person.age > 15);
+        document.write(filterAge);
+        console.log(filterAge);
+    </script>
+</body>
+</html>

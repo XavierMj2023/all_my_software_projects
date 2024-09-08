@@ -1,0 +1,53 @@
+﻿Write a program PowerOf2 that takes a command-line argument n and prints a
+table of the powers of 2 that are less than or equal to 2^n.
+
+Console.ReadLine(): 
+--------------------------
+This function is used to read a line of text input from the user via the console
+					(command line).
+
+int.TryParse(Console.ReadLine(), out int n): 
+----------------------------------------------------
+This line attempts to parse the user's input as an integer and store it in the variable n. 
+
+The out keyword indicates that n will be assigned a value if the parsing is successful.
+
+!int.TryParse(...): 
+--------------------------
+The ! (not) operator is used to invert the result of the int.TryParse function. 
+
+If the parsing is successful (i.e., the user's input is a valid integer), the result is true, 
+and !true is false. 
+
+If the parsing fails (e.g., the user enters non-numeric text), the result is false, and 
+!false is true.
+
+n < 0: 
+--------------------------
+This condition checks if the parsed integer n is less than 0.
+It ensures that n is a non-negative integer.
+
+If either of the conditions in steps 3 or 4 is true, it means that the input is not a valid 
+non-negative integer,
+and the following message is displayed: "Invalid input.
+
+Please provide a valid non-negative integer value for n."
+
+return;:
+--------------------------
+If the input is invalid, the program exits early by using the return statement. 
+This means that it won't proceed to calculate and display the powers of 2, as the input is not 
+valid for that purpose.
+
+--------------------------
+--------------------------
+--------------------------
+
+In summary, this code block is responsible for obtaining the user's input, checking if it's a valid 
+non-negative integer, and handling the case when the input is invalid by displaying an error message 
+and exiting the program.
+
+
+
+
+

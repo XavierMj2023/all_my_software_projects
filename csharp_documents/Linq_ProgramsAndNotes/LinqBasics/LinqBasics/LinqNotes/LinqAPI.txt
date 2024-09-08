@@ -1,0 +1,30 @@
+﻿*	We can write LINQ queries for the classes that implement IEnumerable<T> or IQueryable<T> 
+	interface. 
+	
+*	System.Linq
+	-----------
+	The System.Linq namespace includes the classes and interfaces require for LINQ 
+	queries.
+
+*	LINQ queries uses extension methods for classes that implement IEnumerable or IQueryable 
+	interface.
+
+*	The Enumerable and Queryable are two static classes that contain extension methods to write 
+	LINQ queries.
+
+*	Use System.Linq namespace to use LINQ.
+
+*	LINQ api includes two main static class Enumerable & Queryable.
+
+*	The static Enumerable class includes extension methods for classes that implements the 
+	IEnumerable<T> interface.
+
+*	IEnumerable<T> type of collections are in-memory collection like List, Dictionary, SortedList,
+	Queue, HashSet, LinkedList.
+
+*	The static Queryable class includes extension methods for classes that implements the 
+	IQueryable<T> interface.
+
+*	Remote query provider implements e.g. Linq-to-SQL, LINQ-to-Amazon etc.
+
+*	Implicitly typed variable - var can be used to hold the result of the LINQ query.

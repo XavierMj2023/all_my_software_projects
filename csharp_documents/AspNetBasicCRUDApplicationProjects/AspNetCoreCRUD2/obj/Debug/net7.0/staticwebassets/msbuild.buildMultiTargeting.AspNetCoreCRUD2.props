@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AspNetCoreCRUD2.props" />
+</Project>

@@ -1,0 +1,62 @@
+﻿Grouping Operators: GroupBy & ToLookup
+---------------------------------------
+
+*	The grouping operators do the same thing as the GroupBy clause of SQL query. 
+
+*	The grouping operators create a group of elements based on the given key. 
+
+*	This group is contained in a special type of collection that implements an 
+	IGrouping<TKey,TSource> interface where 
+
+	TKey is a key value, on which the group has been formed 
+	TSource is the collection of elements that matches with the grouping key value.
+
+*	Grouping Operators						Description
+	---------------------------------------------------------------------------
+	GroupBy									The GroupBy operator returns groups of elements based 
+											on some key value. 
+											Each group is represented by IGrouping<TKey, TElement> 
+											object.
+
+	ToLookup								ToLookup is the same as GroupBy.
+
+											The only difference is the execution of GroupBy is 
+											deferred whereas ToLookup execution is immediate.
+
+    ---------------------------------------------------------------------------
+
+*	GroupBy
+	--------
+	The GroupBy operator returns a group of elements from the given collection based on some key 
+	value. 
+
+	Each group is represented by IGrouping<TKey, TElement> object. 
+
+	Also, the GroupBy method has eight overload methods, so you can use appropriate extension 
+	method based on your requirement in method syntax.
+
+	Note:
+	A LINQ query can end with a GroupBy or Select clause.
+
+	The result of GroupBy operators is a collection of groups. 
+	
+	For example, GroupBy returns IEnumerable<IGrouping<TKey,Student>> from the Student collection.
+
+*	GroupBy in Method Syntax
+	----------------------------
+	The GroupBy() extension method works the same way in the method syntax. 
+	Specify the lambda expression for key selector field name in GroupBy extension method.
+
+*	ToLookup
+	--------------
+	ToLookup is the same as GroupBy; the only difference is GroupBy execution is deferred, 
+	whereas ToLookup execution is immediate. 
+	
+	Also, ToLookup is only applicable in Method syntax and not supported in the query syntax.
+
+*	GroupBy & ToLookup return a collection that has a key and an inner collection based on a key 
+	field value.
+
+	The execution of GroupBy is deferred whereas that of ToLookup is immediate.
+
+	A LINQ query syntax can be end with the GroupBy or Select clause.

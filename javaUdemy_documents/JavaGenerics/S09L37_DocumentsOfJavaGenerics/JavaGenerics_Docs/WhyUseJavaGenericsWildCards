@@ -1,0 +1,6 @@
+Why Use Java Generics WildCards
+---------------------------------------
+
+If your are classes not generic classes and you want to add some restriction
+based in some type of data, in those kind of scenarios we can actually use WildCrads.
+

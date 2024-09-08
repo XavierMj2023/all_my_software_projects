@@ -1,0 +1,29 @@
+﻿*	Projection Operators: Select, SelectMany
+	------------------------------------------
+
+*	There are two projection operators available in LINQ. 1) Select 2) SelectMany
+
+
+*	Select
+	---------
+	The Select operator always returns an IEnumerable collection which contains elements based on a 
+	transformation function. 
+	It is similar to the Select clause of SQL that produces a flat result set.
+
+*	Select in Query Syntax
+	-----------------------
+	LINQ query syntax must end with a Select or GroupBy clause.
+
+*	The select operator can be used to formulat the result as per our requirement. 
+
+*	It can be used to return a collection of custom class or anonymous type which includes properties as
+	per our need.
+
+*	Select in Method Syntax
+	-------------------------
+	The Select operator is optional in method syntax.However, you can use it to shape the data.
+	
+*	SelectMany
+	--------------
+	The SelectMany operator projects sequences of values that are based on a transform function and 
+	then flattens them into one sequence.

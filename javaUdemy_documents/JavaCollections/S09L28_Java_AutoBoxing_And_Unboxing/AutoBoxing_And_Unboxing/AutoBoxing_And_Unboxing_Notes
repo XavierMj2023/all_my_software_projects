@@ -1,0 +1,27 @@
+Integer in the code is the wrapper class.
+
+ArrayList<Integer> numbersList = new ArrayList<>();
+
+
+So in here in our last video we were making use of this integer wrapper class, 
+the built in integer wrapper class.
+
+And we also started with the int wrapper.
+
+Now whenever we create a wrapper, wrapper is a very simple class where we have 
+int pardon me, where we have a primitive data type.
+
+And for handling the primitive data type we have firstly a constructor and we also
+have the getter and setter.
+
+So let's generate getters and setters as well.
+
+All right.
+
+So this is our wrapper.
+
+And this is very simple.
+
+But as soon as we make use of our manual user defined wrapper our user defined 
+wrapper the ID will start complaining and it will no longer accept the values 
+automatically.

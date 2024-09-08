@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Call Apply Bind with this</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>JS Call Apply Bind with this</h4>
+    <div id="gate"></div>
+    <script>
+        const pers = {
+            gate: 126,
+            add: "Palace Grounds",
+            displayDetail : function(){
+                let tio = document.getElementById("gate");
+                tio.innerHTML = this.gate + " "+this.add;
+            },
+        }
+        setTimeout(pers.displayDetail.bind(pers), 2000);
+    </script>
+</body>
+
+</html>

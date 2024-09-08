@@ -1,0 +1,6 @@
+<jsp:forward page="forward.jsp"></jsp:forward>
+
+request.getRequestDispatcher("forward.jsp").forward(request, response);
+
+Forward  ->  It will just forward the request.
+Redirect ->  It will change the entire URL

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Variables</title>
+    <link rel="stylesheet" href="../JS_Variables/jsvar.css" />
+</head>
+
+<body>
+    <h1>JS VARIABLES TERMINOLOGIES</h1>
+    <br />
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Details</th>
+            <th>Other Details</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tip</td>
+            <td>
+                It is considered good programming practice to always declare variables before use.
+            </td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Undeclared Variables</td>
+            <td>
+                <img src="../JS_Variables/JS_UndeclaredVariables.png" alt="jsundeclare" />
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Declaring a JavaScript Variable</td>
+            <td>
+                <ul>
+                    <li>
+                        Creating a variable in JavaScript is called "declaring" a variable.
+                    </li>
+                    <br />
+                    <li>
+                        You declare a JavaScript variable with the var or the let keyword.
+                    </li>
+                    <br />
+                    <li>
+                        After the declaration, the variable has no value (technically it is undefined).
+                    </li>
+                    <br />
+                    <li>
+                        To assign a value to the variable, use the equal sign.(=)
+                    </li>
+                    <br />
+                    <li>
+                        You can also assign a value to the variable when you declare it.
+                    </li>
+                    <br />
+                    <li>
+                        It's a good programming practice to declare all variables at the beginning of a script
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td> Creating a variable in JavaScript is called "declaring" a variable.</td>
+                        <td>
+                            <ul>
+                                <li>var carName;</li>
+                                or
+                                <li>let carName;</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>To assign a value to the variable, use the equal sign.</td>
+                        <td>
+                            carName = "Volvo";
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>You can also assign a value to the variable when you declare it.</td>
+                        <td>let carName = "Volvo";</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            It's a good programming practice to declare all variables at the beginning of a script.
+                        </td>
+                        <td>
+                            <img src="../JS_Variables/JS_VariablesDeclared.png" alt="jsdv" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>One Statement, Many Variables</td>
+            <td>
+                You can declare many variables in one statement.
+                Start the statement with let and separate the variables by comma.
+                <br /><br />
+                Eg: let person = "John Doe", carName = "Volvo", price = 200;
+                <br /><br />
+                A declaration can span multiple lines.
+                <br /><br />
+                Eg:
+                <p>let person = "John Doe",</p>
+                <p>carName = "Volvo",</p>
+                <p>price = 200;</p>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Redeclare the Variable</td>
+            <td>
+                <li>
+                    If you re-declare a JavaScript variable declared with var, it will not lose its value.
+                </li>
+                <li>
+                    You cannot re-declare a variable declared with let or const.
+                </li>
+            </td>
+            <td>
+                <p>
+                    var carName = "Volvo";
+                </p>
+                <p>
+                    var carName;
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Putting Number in quotes</td>
+            <td>
+                If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+            </td>
+            <td>
+                let x = 2 + 3 + "5"; //55
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>JavaScript Dollar Sign $</td>
+            <td>
+                <ul>
+                    <li>The dollar sign is treated as a letter in JavaScript names.</li>
+                    <li>
+                        Using the dollar sign is not very common in JavaScript, 
+                        but professional programmers often use it as an alias for the main function
+                        in a JavaScript library.
+                    </li>
+                    <li>
+                        In the JavaScript library jQuery, for instance, the main function $ is used 
+                        to select HTML elements. 
+                    </li>
+                    <li>
+                        In jQuery $("p"); means "select all p elements".
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <p>let $$$ = 2;</p>
+                <p>let $myMoney = 5;</p>
+                <p>document.getElementById("demo").innerHTML = $$$ + $myMoney;</p> 
+                <p>O/p :- 7</p>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>JS Underscore</td>
+            <td>
+                JavaScript treats underscore as a letter, identifiers containing _ are valid variable names
+            </td>
+            <td>
+                <p>let _lastName = "Johnny";</p>
+                <p>let _x = 2;</p>
+            </td>
+        </tr>
+    </table>
+    <script src="../JS_Variables/jsvar.js"></script>
+</body>
+
+</html>

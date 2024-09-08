@@ -1,0 +1,59 @@
+﻿Write a program that takes a range of numbers as input and outputs the Prime
+Numbers in that range.
+
+Trial Division Algorithm
+-------------------------
+function IsPrime(n)
+    if n <= 1
+        return false
+    if n <= 3
+        return true
+    if n is divisible by 2 or 3
+        return false
+
+    for i from 5 to sqrt(n) in increments of 6
+        if n is divisible by i or (i + 2)
+            return false
+
+    return true
+---------------------------------------------------------------
+In this pseudocode:
+---------------------------------------------------------------
+We first check for some base cases: 
+
+If n is less than or equal to 1, it's not prime. 
+
+If n is 2 or 3, it's prime. 
+
+If n is divisible by 2 or 3, it's not prime.
+---------------------------------------------------------------
+We then start a loop from 5 and increment by 6 in each iteration. This is an optimization because all
+prime numbers greater than 3 can be represented as 6k ± 1 for some integer k. 
+
+So, we only need to check numbers of the form 6k ± 1.
+
+Within the loop, we check if n is divisible by i or i + 2. If it is, n is not prime.
+
+Finally, if none of the divisions within the loop results in a whole number quotient, 
+we conclude that n is prime.
+
+This method is relatively efficient for small to moderate-sized numbers, 
+but it becomes less efficient for very large numbers. 
+
+More advanced primality tests like the Miller-Rabin primality test are used for larger numbers.
+
+---------------------------------------------------------------
+Video Link :- https://www.youtube.com/watch?v=Ku2ZF9wpIac
+---------------------------------------------------------------
+
+Return statement is used to exit the IsPrime method and return a boolean value.
+
+----------------------------------------------------------------------------
+Logical Table of OR
+----------------------------------------------------------------------------
+|  A  |  B  |  A || B  |
+| --- | --- | ------- |
+|  T  |  T  |    T    |
+|  T  |  F  |    T    |
+|  F  |  T  |    T    |
+|  F  |  F  |    F    |

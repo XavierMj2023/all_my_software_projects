@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Detach Example</title>
+    <link rel="stylesheet" href="../../jQuery_css/main.css" />
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="cloneBtn">Clone Text</button>
+    <button id="detachBtn">Detach Paragraph</button>
+    <p id="original">val detach</p>
+    <h5></h5>
+
+    <script src="../../jQuery_main_folder/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var detachedElement;
+
+            // Clone the original paragraph
+            $("#cloneBtn").click(function () {
+                $("#original").clone().appendTo("h5");
+            });
+
+            // Detach the original paragraph
+            $("#detachBtn").click(function () {
+                detachedElement = $("#original").detach();
+            });
+        });
+    </script>
+</body>
+
+</html>

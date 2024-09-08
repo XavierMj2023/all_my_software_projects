@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Destructuring</title>
+    </head>
+    <body>
+        <script>
+            const myObj = {
+                name : "CodeBustler"
+            };
+
+            //Destructuring
+            const{name, age = 27} = myObj;
+            
+            console.log(name);//CodeBustler
+            console.log(age);//27
+        </script>
+    </body>
+</html>

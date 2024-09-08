@@ -1,0 +1,58 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+To Run App -> Right Click -> SpringStarterApllication.java -> Run Java
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+spring.datasource.url=jdbc:h2:file:C:/Users/dinit/db/blogdb
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Command Prompt Code
+--------------------------------------------------------------------------------------------------------------------------------------------
+PS D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBoot_MiniProject_01\SpringStarterMVCProject_06_AddingModels> & 'C:\Users\dinit\.vscode\extensions\redhat.java-1.31.0-win32-x64\jre\17.0.11-win32-x86_64\bin\java.exe' '@C:\Users\dinit\AppData\Local\Temp\cp_b09kg28rkw68knw9420ofd87j.argfile' 'org.studyeasy.SpringStarter.SpringStarterApplication' 
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2024-06-15T11:38:33.055+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.s.S.SpringStarterApplication           : Starting SpringStarterApplication using Java 17.0.11 with PID 20784 (D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBoot_MiniProject_01\SpringStarterMVCProject_06_AddingModels\target\classes started by Lenovo in D:\RECYCLE BIN EXTRAS\ONLY_DOCS\JavaUdemy\Java_SpringBoot_MiniProject_01\SpringStarterMVCProject_06_AddingModels)
+2024-06-15T11:38:33.059+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.s.S.SpringStarterApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-06-15T11:38:33.142+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-15T11:38:33.143+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-15T11:38:34.089+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-15T11:38:34.131+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 0 JPA repository interfaces.
+2024-06-15T11:38:34.892+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-15T11:38:34.914+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-15T11:38:34.916+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-15T11:38:34.991+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-15T11:38:34.993+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1848 ms
+2024-06-15T11:38:35.042+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-15T11:38:35.315+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/Users/dinit/db/blogdb user=ADMIN
+2024-06-15T11:38:35.317+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-15T11:38:35.332+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db-console'. Database available at 'jdbc:h2:file:C:/Users/dinit/db/blogdb'
+2024-06-15T11:38:35.519+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-15T11:38:35.630+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] org.hibernate.Version                
+    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-15T11:38:35.700+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-15T11:38:36.082+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-15T11:38:36.159+05:30  WARN 20784 --- [SpringStarter] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-15T11:38:36.981+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-15T11:38:37.023+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-15T11:38:37.111+05:30  WARN 20784 --- [SpringStarter] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-15T11:38:37.654+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-15T11:38:37.701+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-15T11:38:37.717+05:30  INFO 20784 --- [SpringStarter] [  restartedMain] o.s.S.SpringStarterApplication           : Started SpringStarterApplication in 5.19 seconds (process running for 5.814)
+2024-06-15T11:38:48.728+05:30  INFO 20784 --- [SpringStarter] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-15T11:38:48.730+05:30  INFO 20784 --- [SpringStarter] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-15T11:38:48.734+05:30  INFO 20784 --- [SpringStarter] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+

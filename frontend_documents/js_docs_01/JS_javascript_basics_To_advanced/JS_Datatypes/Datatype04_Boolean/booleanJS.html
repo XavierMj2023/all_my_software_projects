@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Js DataType Demonstartion</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            padding: 2px;
+            font-size: 15px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Datatypes Demonstartion</h1>
+    <hr />
+    <ul>
+        <li>
+            JavaScript is a dynamic type language, means you don't need to specify type of the
+            variable because it is dynamically used by JavaScript engine.
+        </li>
+        <br />
+        <li>
+            There are two types of data types in JavaScript.
+            <ol>
+                <br />
+                <li>Primitive data type</li>
+                <li>Non-primitive (reference) data type</li>
+            </ol>
+        </li>
+        <br/>
+        <li>
+            JavaScript has dynamic types. 
+            This means that the same variable can be used to hold different data types.
+        </li>
+    </ul>
+    <hr />
+    <table>
+        <tr>
+            <th>No</th>
+            <th>DataType Name</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Boolean</td>
+            <td>
+                <ul>
+                    <li>
+                        Booleans are a fundamental data type in programming that represents two possible values: true or false. 
+                    </li><br/>
+                    <li>
+                        These values are commonly used in decision-making and conditional statements.
+                    </li><br/>
+                    <li>
+                        Booleans are often used in conditional testing.
+                    </li><br/>
+                    <li>
+                        In JavaScript, you can convert other types of values into boolean values using the Boolean() function.
+                    </li><br/>
+                    <li>
+                        The conversion rules for different types of values are as follows.
+                        <br/>
+                        <p>
+                            1 : Strings: An empty string (“") will be converted to false, and any other string will be converted to true.
+                        </p>
+                        <p>
+                            2 : Numbers: Zero (0) and NaN (Not a Number) will be converted to false, and any other number will be converted to true.
+                        </p>
+                        <p>
+                            3 : Objects: All objects, including arrays and functions, will be converted to true.
+                        </p>
+                        <p>
+                            4 : Undefined: Undefined will be converted to false.
+                        </p>
+                    </li><br/>
+                    <li>
+                        The Boolean value of an expression is the basis for all JavaScript comparisons and conditions
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <p>let trueValue  = true;</p><br/>
+                <p>let falseValue = false;</p>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <h4>Boolean</h4>
+    <hr />
+    <p>This is an example 1 of Boolean - True Value: <span id="booleg1"></span> </p>
+    <p>This is an example 2 of Boolean - False Value: <span id="booleg2"></span> </p>
+    <p>
+        This is an example 3 of Boolean - 
+        You can use the Boolean() function to find out if an expression (or a variable) Boolean(10 < 9) is : .
+        <span id="booleg3"></span>
+    </p>
+    <p>This is an example 4 of Boolean - Booleans as Objects : <span id="booleg4"></span></p>
+
+    <hr/>
+    <p>
+        This is an example 5 of Boolean
+        Comparing two JavaScript objects always return false.<br/>
+        The 1st object is : let x = new Boolean(false);<br/>
+        The 2nd object is : let y = new Boolean(false);<br/>
+        After comparing these 2 objects is : <span id="booleg5"></span>
+    </p>
+    <hr/>
+
+    <p>
+        This is an example 6 of Boolean -<br/>
+        An empty string (“") will be converted to false, and any other string will be converted to true.
+        <br/><br/>
+        Example : let emptyStrBool1 = "";
+        <br/><br/>
+        <span id="booleg6"></span>
+    </p>
+
+    <hr/>
+
+    <p>
+        This is an example 7 of Boolean -<br/>
+        An empty string (“") will be converted to false, and any other string will be converted to true.
+        <br/><br/>
+        Example : let emptyStrBool2 = "Manoj";
+        <br/><br/>
+        <span id="booleg7"></span>
+    </p>
+
+    <hr/>
+
+    <p>
+        This is an example 8 of Boolean -<br/>
+        Numbers: Zero (0) and NaN (Not a Number) will be converted to false, and any other number will be converted to true.
+        <br/><br/>
+        Example : let numBool = 0;
+        <br/><br/>
+        <span id="booleg8"></span>
+    </p>
+
+    <hr/>
+
+    <p>
+        This is an example 9 of Boolean -<br/>
+        Numbers: Zero (0) and NaN (Not a Number) will be converted to false, and any other number will be converted to true.
+        <br/><br/>
+        Example : let nanBool = NaN;
+        <br/><br/>
+        <span id="booleg9"></span>
+    </p>
+
+    <hr/>
+
+    <p>
+        This is an example 10 of Boolean -<br/>
+        Numbers: Zero (0) and NaN (Not a Number) will be converted to false, and any other number will be converted to true.
+        <br/><br/>
+        Example : let nBool = 34;
+        <br/><br/>
+        <span id="booleg10"></span>
+    </p>
+
+    <hr/>
+
+    <p>
+        This is an example 11 of Boolean -<br/>
+        Numbers: Zero (0) and NaN (Not a Number) will be converted to false, and any other number will be converted to true.
+        <br/><br/>
+        Example : let nMinusZero = -0;
+        <br/><br/>
+        <span id="booleg11"></span>
+    </p>
+
+    <hr/>
+
+    <p>
+        This is an example 12 of Boolean -<br/>
+        Undefined will be converted to false.
+        <br/><br/>
+        Example : let undBool;
+        <br/><br/>
+        <span id="booleg12"></span>
+    </p>
+</body>
+<script src="../Datatype04_Boolean/booleanJS.js"></script>
+
+</html>

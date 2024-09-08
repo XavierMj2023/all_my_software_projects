@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functional Chaining</title>
+    </head>
+    <body>
+        <p></p>
+        <script>
+            let p = document.querySelector("p");
+
+            //Define an Object with intial properties
+            let person = {
+                firstName : "Alice",
+                lastName : "Hunter",
+                age : 30,
+                id : 1234,
+
+                //Method to set the first name
+                setFirstName : function(firstName){
+                    this.firstName = firstName;
+                    console.log(this);
+                    return this; // Return an object itself for chaining
+                },
+
+                 //Method to set the last name
+                 setLastName : function(lastName){
+                    this.lastName = lastName;
+                    console.log(this);
+                    return this; // Return an object itself for chaining
+                },
+
+                 //Method to set the age
+                 setAge : function(age){
+                    this.age = age;
+                    console.log(this);
+                    return this; // Return an object itself for chaining
+                },
+
+                 //Method to display person's information
+                 displayInfo : function(){
+                    console.log(this);
+                    p.innerHTML = `Name : ${this.firstName} ${this.lastName}, Age: ${this.age}`;
+                    return this; // Return an object itself for chaining
+                }
+            };
+
+            //Chain methods calls to modify and display's person's information.
+            console.log(person.setFirstName("Aliza").setLastName("Uvarus").setAge(24).displayInfo());
+
+
+        </script>
+    </body>
+</html>

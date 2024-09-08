@@ -1,0 +1,25 @@
+﻿*	There is only one equality operator: SequenceEqual. 
+
+*	The SequenceEqual method checks whether the 
+
+    1.number of elements
+    
+    2.value of each element 
+    
+    3.order of elements in two collections are equal or not.
+
+*   If the collection contains elements of primitive data types then it compares the values and 
+    number of elements, 
+    
+*   Whereas collection with complex type elements, checks the references of the objects. 
+
+*   So, if the objects have the same reference then they considered as equal otherwise they are 
+    considered not equal.
+
+*   If the order of elements are not the same then SequenceEqual() method returns false.
+
+*   The SequenceEqual method compares the number of items and their values for primitive data types.
+
+*   The SequenceEqual method compares the reference of objects for complex data types.
+
+*   Use IEqualityComparer class to compare two colection of complex type using SequenceEqual method.

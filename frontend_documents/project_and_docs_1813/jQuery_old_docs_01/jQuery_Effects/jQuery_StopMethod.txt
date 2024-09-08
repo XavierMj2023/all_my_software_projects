@@ -1,0 +1,19 @@
+﻿The jQuery stop() method is used to stop an animation or effect before it is finished.
+
+The stop() method works for all jQuery effect functions, including sliding, fading and custom 
+animations.
+
+Syntax:
+$(selector).stop(stopAll,goToEnd);
+
+The optional stopAll parameter specifies whether also the animation queue should be cleared or 
+not. 
+Default is false.
+It means that only the active animation will be stopped, allowing any queued animations to be 
+performed afterwards.
+
+The optional goToEnd parameter specifies whether or not to complete the current animation 
+immediately. Default is false.
+
+So, by default, the stop() method kills the current animation being performed on the selected 
+element.

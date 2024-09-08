@@ -1,0 +1,29 @@
+﻿Write a method to check if two strings are equal or not.
+
+If the second string’s size is more than the first it returns -1. 
+
+Else 
+
+it compares character by character.
+
+If
+equals it returns 0. 
+
+Else it 
+
+returns the position wrt the first character where the difference is found.
+
+
+Write a method to check if two strings are equal or not. If the second string’s size
+is more than the first it returns -1. Else it compares character by character. If
+equals it returns 0. Else it returns the position wrt the first character where the
+difference is found.
+
+The line int minLen = Math.Min(len1, len2); 
+-------------------------------------------------
+It is used to calculate the minimum length between the two input strings, str1 and str2. 
+
+It's necessary because when comparing the strings character by character, you want to make sure you 
+don't go beyond the length of the shorter string to prevent index out-of-range errors.
+
+-------------------------------------------------

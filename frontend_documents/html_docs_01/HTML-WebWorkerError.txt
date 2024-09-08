@@ -1,0 +1,16 @@
+WebWorker.js:
+8 
+Uncaught DOMException: Failed to construct 'Worker': 
+Script at 
+'file:///C:/Users/Teamishttaa/Desktop/ISHTTAA/ISHTTAA_PROJECT_002/Cloned/my_html_notes/HTML_JS/
+        WebWorkerDemo.js' 
+        
+        cannot be accessed from origin 'null'.
+
+at startCount 
+
+(file:///C:/Users/Teamishttaa/Desktop/ISHTTAA/ISHTTAA_PROJECT_002/Cloned/my_html_notes/HTML_JS/
+WebWorker.js:8:17)
+    
+at HTMLButtonElement.onclick (file:///C:/Users/Teamishttaa/Desktop/ISHTTAA/ISHTTAA_PROJECT_002/
+Cloned/my_html_notes/HTML_PROGRAMS/WebWorker.html:10:40)

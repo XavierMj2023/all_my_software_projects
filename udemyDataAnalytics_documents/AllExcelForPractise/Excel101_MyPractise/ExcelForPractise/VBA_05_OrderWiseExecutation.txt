@@ -1,0 +1,208 @@
+Sub EnterData()
+
+    Dim Form As Worksheet
+    Dim Database As Worksheet
+    Dim walkingStatus As Variant
+    Dim joggingStatus As Variant
+    Dim meditationStatus As Variant
+
+    Set Form = ThisWorkbook.Sheets("myJournalForm")
+    Set Database = ThisWorkbook.Sheets("myDayDatabase")
+
+    ' Validation for Blank Fields
+    If IsEmpty(Form.Range("C6")) Then
+        MsgBox "Please Enter the Date", vbCritical
+        Exit Sub
+    End If
+
+    If IsEmpty(Form.Range("D6")) Then
+        MsgBox "Please Enter the Login Time", vbCritical
+        Exit Sub
+    End If
+
+    If IsEmpty(Form.Range("E6")) Then
+        MsgBox "Please Enter the Sleep Time", vbCritical
+        Exit Sub
+    End If
+
+    If IsEmpty(Form.Range("F6")) Then
+        MsgBox "Please Enter the Wake Up Time", vbCritical
+        Exit Sub
+    End If
+
+    If IsEmpty(Form.Range("H6")) Then
+        MsgBox "Please Enter the Day Theme", vbCritical
+        Exit Sub
+    End If
+
+    ' Prompt and Validate Walking Status
+    walkingStatus = Form.Range("C8").Value
+    If IsEmpty(walkingStatus) Then
+        walkingStatus = InputBox("Enter Walking Status (0 or 1):")
+        If walkingStatus <> "0" And walkingStatus <> "1" Then
+            MsgBox "Walking Status must be either 0 or 1", vbCritical
+            Exit Sub
+        End If
+        Form.Range("C8").Value = walkingStatus
+    End If
+
+    ' Convert walkingStatus to numeric
+    walkingStatus = CInt(walkingStatus)
+    
+    ' Handle Walking Status
+    If walkingStatus = 0 Then
+        SetWalkingCellsToZero Form
+    Else
+        PromptWalkingValues Form
+    End If
+
+    ' Prompt and Validate Meditation Status
+    meditationStatus = Form.Range("F8").Value
+    If IsEmpty(meditationStatus) Then
+        meditationStatus = InputBox("Enter Meditation Status (0 or 1):")
+        If meditationStatus <> "0" And meditationStatus <> "1" Then
+            MsgBox "Meditation Status must be either 0 or 1", vbCritical
+            Exit Sub
+        End If
+        Form.Range("F8").Value = meditationStatus
+    End If
+
+    ' Convert meditationStatus to numeric
+    meditationStatus = CInt(meditationStatus)
+    
+    ' Handle Meditation Status
+    If meditationStatus = 0 Then
+        SetMeditationCellsToZero Form
+    Else
+        PromptMeditationValues Form
+    End If
+
+    ' Prompt and Validate Jogging Status
+    joggingStatus = Form.Range("C11").Value
+    If IsEmpty(joggingStatus) Then
+        joggingStatus = InputBox("Enter Jogging Status (0 or 1):")
+        If joggingStatus <> "0" And joggingStatus <> "1" Then
+            MsgBox "Jogging Status must be either 0 or 1", vbCritical
+            Exit Sub
+        End If
+        Form.Range("C11").Value = joggingStatus
+    End If
+
+    ' Convert joggingStatus to numeric
+    joggingStatus = CInt(joggingStatus)
+    
+    ' Handle Jogging Status
+    If joggingStatus = 0 Then
+        SetJoggingCellsToZero Form
+    Else
+        PromptJoggingValues Form
+    End If
+
+End Sub
+
+Private Sub SetWalkingCellsToZero(ByVal Form As Worksheet)
+    Form.Range("D8").Value = 0
+    Form.Range("E8").Value = 0
+End Sub
+
+Private Sub PromptWalkingValues(ByVal Form As Worksheet)
+    Dim userInputD8 As String
+    Dim userInputE8 As String
+    
+    ' Prompt user for time value for D8
+    userInputD8 = InputBox("Enter the time for Walking Initial Time (e.g., 5:30 PM):")
+    If IsDate(userInputD8) Then
+        Form.Range("D8").Value = CDate(userInputD8)
+    Else
+        MsgBox "Please enter a valid time for D8 (e.g., 5:30 PM)", vbCritical
+        Exit Sub
+    End If
+
+    ' Prompt user for numeric value for E8
+    userInputE8 = InputBox("Enter the numeric value for Walking Rounds:")
+    If IsNumeric(userInputE8) Then
+        Form.Range("E8").Value = CDbl(userInputE8)
+    Else
+        MsgBox "The value for E8 must be a number", vbCritical
+        Exit Sub
+    End If
+End Sub
+
+Private Sub SetMeditationCellsToZero(ByVal Form As Worksheet)
+    Form.Range("G8").Value = 0
+End Sub
+
+Private Sub PromptMeditationValues(ByVal Form As Worksheet)
+    Dim userInputMeditation As String
+    
+    ' Prompt user for meditation minutes
+    userInputMeditation = InputBox("Enter the meditation minutes (3 or 5):")
+    If userInputMeditation = "3" Or userInputMeditation = "5" Then
+        Form.Range("G8").Value = CDbl(userInputMeditation)
+    Else
+        MsgBox "Meditation minutes must be either 3 or 5", vbCritical
+        Exit Sub
+    End If
+End Sub
+
+Private Sub SetJoggingCellsToZero(ByVal Form As Worksheet)
+    Form.Range("D11").Value = 0
+    Form.Range("E11").Value = 0
+    Form.Range("F11").Value = 0
+    Form.Range("G11").Value = 0
+    Form.Range("H11").Value = 0
+End Sub
+
+Private Sub PromptJoggingValues(ByVal Form As Worksheet)
+    Dim userInputJ8 As String
+    Dim userInputK8 As String
+    Dim userInputL8 As String
+    Dim userInputM8 As String
+    Dim userInputN8 As String
+    
+    ' Prompt user for jogging time value
+    userInputJ8 = InputBox("Enter the time for Jogging Initial Time (e.g., 6:00 AM):")
+    If IsDate(userInputJ8) Then
+        Form.Range("D11").Value = CDate(userInputJ8)
+    Else
+        MsgBox "Please enter a valid time for J8 (e.g., 6:00 AM)", vbCritical
+        Exit Sub
+    End If
+
+    ' Prompt user for jogging calories burnt
+    userInputK8 = InputBox("Enter the numeric value for Jogging Calories Burnt:")
+    If IsNumeric(userInputK8) Then
+        Form.Range("E11").Value = CDbl(userInputK8)
+    Else
+        MsgBox "The value for K8 must be a number", vbCritical
+        Exit Sub
+    End If
+    
+    ' Prompt user for jogging kilometers
+    userInputL8 = InputBox("Enter the decimal value for Jogging Kilometers (e.g., 2.34):")
+    If IsNumeric(userInputL8) Then
+        Form.Range("F11").Value = CDbl(userInputL8)
+    Else
+        MsgBox "The value for L8 must be a decimal number", vbCritical
+        Exit Sub
+    End If
+    
+    ' Prompt user for jogging rounds
+    userInputM8 = InputBox("Enter the numeric value for Jogging Rounds:")
+    If IsNumeric(userInputM8) Then
+        Form.Range("G11").Value = CDbl(userInputM8)
+    Else
+        MsgBox "The value for M8 must be a number", vbCritical
+        Exit Sub
+    End If
+    
+    ' Prompt user for jogging total time
+    userInputN8 = InputBox("Enter the time for Jogging Total Time (e.g., 00:45:30):")
+    If IsDate(userInputN8) Then
+        Form.Range("H11").Value = CDate(userInputN8)
+    Else
+        MsgBox "Please enter a valid time for N8 (e.g., 00:45:30)", vbCritical
+        Exit Sub
+    End If
+End Sub
+

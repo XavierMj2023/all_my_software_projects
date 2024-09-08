@@ -1,0 +1,53 @@
+﻿*	With jQuery, you can create custom animations.
+
+*	Query Animations - The animate() Method
+	The jQuery animate() method is used to create custom animations.
+
+	Syntax:
+	$(selector).animate({params},speed,callback);
+
+	The required params parameter defines the CSS properties to be animated.
+
+	The optional speed parameter specifies the duration of the effect. It can take the following
+	values: "slow", "fast", or milliseconds.
+
+	The optional callback parameter is a function to be executed after the animation completes.
+
+*	By default, all HTML elements have a static position, and cannot be moved.To manipulate the 
+	position, remember to first set the CSS position property of the element to relative, fixed, 
+	or absolute.
+
+*	Notice that multiple properties can be animated at the same time.
+
+
+*	Is it possible to manipulate ALL CSS properties with the animate() method?
+	-----------------------------------------------------------------------------
+
+	Yes, almost! However, there is one important thing to remember: all property names must be 
+	camel-cased when used with the animate() method: You will need to write 
+
+	paddingLeft instead of padding-left, 
+	marginRight instead of margin-right, and 
+	...
+	so on.
+
+	Also, color animation is not included in the core jQuery library.
+	If you want to animate color, you need to download the Color Animations plugin from 
+	jQuery.com.
+
+*	It is also possible to define relative values (the value is then relative to the element's 
+	current value). This is done by putting += or -= in front of the value.
+
+*	You can even specify a property's animation value as "show", "hide", or "toggle".
+
+*	jQuery animate() - Uses Queue Functionality
+	---------------------------------------------
+
+*	By default, jQuery comes with queue functionality for animations.
+
+	This means that if you write multiple animate() calls after each other, jQuery creates an 
+
+	"internal" queue with these method calls. Then it runs the animate calls ONE by ONE.
+
+	So, if you want to perform different animations after each other, we take advantage of the 
+	queue functionality.

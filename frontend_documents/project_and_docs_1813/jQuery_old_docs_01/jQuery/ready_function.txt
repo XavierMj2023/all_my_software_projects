@@ -1,0 +1,39 @@
+﻿ready()
+---------
+It sets up an event listner for when the DOM structure of the page is fully parsed by the browser and is 
+ready to be operated on. 
+
+
+
+ready() and onload event()
+----------------------------
+Both are different.
+
+Onload()  --> It fires only after all of the page content,including images,have been loaded.
+              Depending on how many images you have ---> can take a while.
+
+ready()   --> It much earlier than Onload event.
+
+
+
+CODE EXPLAINATION:
+--------------------------
+So pass CallBack Function to the ready() and this callback function is the event handler that will be
+fired when ready event is triggererd.
+
+So the code once again calls the jQuery Function which is $.But this time it passes keyword "content" as
+argument.
+
+Indicating jQuery that we want to perform operation on the element in the page that has id of "content".
+
+append()-->appends piece of content to the tag that we passed to the jQuery function.In this case
+          <div>
+
+Eg:
+------------
+$(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide();
+            });
+        });
+

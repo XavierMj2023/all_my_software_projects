@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Opeartor</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        function addNumbers(a, b, c){
+            return a + b + c;
+        }
+        const nums = [4,7,9];
+
+        //Passing the whole array as argument to addNumbers()
+        const sum = addNumbers(...nums);
+        
+        document.querySelector("p").innerHTML = sum;
+    </script>
+</body>
+</html>

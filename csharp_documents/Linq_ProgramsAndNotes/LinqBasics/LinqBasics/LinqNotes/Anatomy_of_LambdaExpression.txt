@@ -1,0 +1,19 @@
+﻿*	C# 3.0(.NET 3.5) introduced the lambda expression along with LINQ. 
+	The lambda expression is a shorter way of representing anonymous method using some special 
+	syntax.
+
+*	Lambda Expression is a shorter way of representing anonymous method.
+
+	Lambda Expression syntax: parameters => body expression
+
+	Lambda Expression can have zero parameter.
+
+	Lambda Expression can have multiple parameters in parenthesis ().
+
+	Lambda Expression can have multiple statements in body expression in curly brackets {}.
+
+	Lambda Expression can be assigned to Func, Action or Predicate delegate.
+
+	Lambda Expression can be invoked in a similar way to delegate.
+
+*	Eg: Anonymous method checks if student is teenager or not.

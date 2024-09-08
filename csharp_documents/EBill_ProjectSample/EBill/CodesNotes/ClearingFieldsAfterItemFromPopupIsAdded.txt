@@ -1,0 +1,29 @@
+﻿  $(document).ready(function () {
+        $("#addItem").click(function () {
+            let productName = $("#productname").val();
+            let price = $("#price").val();
+            let quantity = $("#quantity").val();
+            let ItemIndex = $("#items tbody tr").length;
+            $.ajax({
+                url: "/EBill/CreateItem",
+                type: "POST",
+                data: { productName, price, quantity, ItemIndex },
+                success: function (resp) {
+                    $('#items tbody').append(resp);
+                    $("#productname").val("");
+                    $("#price").val("");
+                    $("#quantity").val("");
+                },
+                error: function (err) {
+                    alert(err)
+                }
+            })
+        })
+    })
+</script>
+
+In Create.cshtml -> Forgot to add below code
+
+                    $("#productname").val("");
+                    $("#price").val("");
+                    $("#quantity").val("");

@@ -1,0 +1,94 @@
+CSS flexbox is a layout model in CSS that provides an efficient and flexible way to arrange and 
+distribute space between items within a container. 
+
+------------------------------------------------------------------
+
+It arranges elements in a single dimension, either horizontally or vertically, within a container.
+
+------------------------------------------------------------------
+Before the flexbox model, we had 4 layout modes:
+------------------------------------------------------------------
+Block: It is used to make sections in web pages.
+Inline: It is used for text.
+Table: It is used for two-dimensional table data.
+Positioned: It is used for the explicit position of an element.
+------------------------------------------------------------------
+
+There are 2 main components of the Flexbox:
+Flex Container: The parent “div” which contains various divisions is called a flex container.
+Flex Items: The items inside the container “div” are flex items.
+
+------------------------------------------------------------------
+
+CSS Flexbox, officially known as the Flexible Box Layout, is a layout model that allows you to design 
+complex layout structures with more flexibility and less code than traditional models. 
+
+It makes it easier to design a flexible and responsive layout structure without having to use float or 
+positioning.
+
+------------------------------------------------------------------
+Core Concepts of Flexbox
+------------------------------------------------------------------
+Flex Container: 
+------------------------------------------------------------------
+The element that defines a flex context for its children. 
+By setting an element’s display property to flex (for block-level elements) or inline-flex 
+(for inline-level elements), you make it a flex container.
+
+------------------------------------------------------------------
+Flex Items: 
+------------------------------------------------------------------
+The direct children of a flex container automatically become flex items. 
+They are laid out using the flex model.
+
+------------------------------------------------------------------
+Main Axis and Cross Axis: 
+------------------------------------------------------------------
+The main axis is the primary axis along which flex items are laid out. 
+It can be either horizontal (default) or vertical, depending on the flex-direction property. 
+The cross axis is perpendicular to the main axis.
+
+------------------------------------------------------------------
+Flex Direction: 
+------------------------------------------------------------------
+This property defines the direction of the main axis and thus the direction in which flex items are laid out.
+Values can be row (default), row-reverse, column, or column-reverse.
+
+------------------------------------------------------------------
+Justify Content: 
+------------------------------------------------------------------
+This property aligns flex items along the main axis and can distribute extra space as needed. 
+Values include flex-start, flex-end, center, space-between, space-around, and space-evenly.
+
+------------------------------------------------------------------
+Align Items: 
+------------------------------------------------------------------
+This property aligns flex items along the cross axis. 
+Values include flex-start, flex-end, center, baseline, and stretch (default).
+
+------------------------------------------------------------------
+Flex Wrap: 
+------------------------------------------------------------------
+By default, flex items try to fit onto one line. 
+You can change that and allow the items to wrap as needed with this property.
+Values include nowrap (default), wrap, and wrap-reverse.
+
+------------------------------------------------------------------
+Flex Flow:
+------------------------------------------------------------------
+A shorthand property for setting both flex-direction and flex-wrap together.
+
+------------------------------------------------------------------
+Align Content:
+------------------------------------------------------------------
+This property aligns a flex container's lines within when there is extra space in the cross-axis, 
+similar to how justify-content aligns individual items within the main axis. 
+This property has no effect when items are in a single line.
+
+------------------------------------------------------------------
+Flex Grow, Flex Shrink, and Flex Basis: 
+------------------------------------------------------------------
+These properties define how a flex item will grow or shrink to fit the space available in the flex container.
+Flex grow defines the ability for a flex item to grow if necessary. 
+Flex shrink defines the ability for a flex item to shrink if necessary. 
+Flex basis defines the default size of an element before the remaining space is distributed.

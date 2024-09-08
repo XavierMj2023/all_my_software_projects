@@ -1,0 +1,140 @@
+Sub InsertCurrentDate()
+    ' Enter the current date in cell C5 of the active sheet
+    ThisWorkbook.Sheets("myJournalForm").Range("C5").Value = Date
+End Sub
+
+
+Sub EnterData()
+
+Dim Form As Worksheet
+Dim Database As Worksheet
+
+Set Form = ThisWorkbook.Sheets("myJournalForm")
+Set Database = ThisWorkbook.Sheets("myJournalForm")
+
+'''''''''Validation'''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+If Form.Range("C5").Value = True Then
+    MsgBox "Please Enter the Date Today", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("D5").Value = True Then
+    MsgBox "Please Enter the Date Entry Time", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("E5").Value = True Then
+    MsgBox "Please Enter the Sleep Time", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("F5").Value = True Then
+    MsgBox "Please Enter the Wake Up Time", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("G5").Value = True Then
+    MsgBox "Please Calculate Total Hours Slept", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("H5").Value = True Then
+    MsgBox "Please Enter the Day Theme", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("C8").Value = True Then
+    MsgBox "Please Enter Walking Status", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("D8").Value = True Then
+    MsgBox "Please Enter Walking Intial Time", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("E8").Value = True Then
+    MsgBox "Please Enter Walking Steps Taken", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("F8").Value = True Then
+    MsgBox "Please Enter Meditation Minutes", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("G8").Value = True Then
+    MsgBox "Please Enter Meditation Done", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("H8").Value = True Then
+    MsgBox "Please Enter M", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("C11").Value = True Then
+    MsgBox "Please Enter Jogging Status", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("D11").Value = True Then
+    MsgBox "Please Enter Jogging Intial Time", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("E11").Value = True Then
+    MsgBox "Please Enter Jogging Calories", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("F11").Value = True Then
+    MsgBox "Please Enter Jogging Kilometeres", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("G11").Value = True Then
+    MsgBox "Please Enter Jogging Rounds", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("H11").Value = True Then
+    MsgBox "Please Enter Jogging Time", vbCritical
+    Exit Sub
+End If
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+If Form.Range("D13").Value = True Then
+    MsgBox "Please Enter Weather", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("D15").Value = True Then
+    MsgBox "Please Enter Holiday/Event", vbCritical
+    Exit Sub
+End If
+
+If Form.Range("D16").Value = True Then
+    MsgBox "Please Write that you are thankful for", vbCritical
+    Exit Sub
+End If
+
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+' Check if wake up time is greater than sleep time
+If Form.Range("F5").Value <= Form.Range("E5").Value Then
+    MsgBox "The Wake Up Time should be greater than the Sleep Time", vbCritical
+    Exit Sub
+End If
+
+Dim selectedValue As Variant
+    
+' Get the selected value from cell D14
+selectedValue = ThisWorkbook.Sheets("myJournalForm").Range("D14").Value
+
+'''''''''''''''''''''''''''''''''''''''''''''''''
+
+End Sub
+
+

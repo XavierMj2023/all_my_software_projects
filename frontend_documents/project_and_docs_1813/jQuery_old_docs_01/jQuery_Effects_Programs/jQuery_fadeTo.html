@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FADE TO METHOD</title>
+    <link rel="stylesheet" href="../jQueryLinkWithCss/fading.css" />
+    <script src="../jQuery_Files/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $("document").ready(function () {
+            $(".fadebox").click(function () {
+                $("#div1").fadeTo("slow",0.15);
+                $("#div2").fadeTo("slow",0.4);
+                $("#div3").fadeTo("slow",0.7);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="fadebox">Click Here To Fade in/out</button>
+    <br /><br />
+    <div id="div1">
+    </div>
+    <br />
+    <div id="div2">
+    </div>
+    <br />
+    <div id="div3">
+    </div>
+</body>
+</html>

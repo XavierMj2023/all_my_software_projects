@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS CallBacks</title>
+    </head>
+    <body>
+        <script>
+            function showData(name, amt){
+                alert("Hi"+name+'\n Amt is '+amt);
+            }
+            function getData(callBack){
+                var name = prompt("Name");
+                var amt = prompt("Amt");
+                callBack(name, amt);
+            }
+            getData(showData);
+        </script>
+    </body>
+</html>

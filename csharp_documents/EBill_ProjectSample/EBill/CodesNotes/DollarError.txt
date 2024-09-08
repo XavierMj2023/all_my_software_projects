@@ -1,0 +1,7 @@
+﻿ $("#addItem").click(function () {
+            let productName = $("#productname").val();
+            let price = $("#price").val();
+            let quantity = $("#quantity").val();
+            let ItemIndex = $("#items tbody tr").length;
+
+            Faced $ Error so i was not able to add items productname and quantity

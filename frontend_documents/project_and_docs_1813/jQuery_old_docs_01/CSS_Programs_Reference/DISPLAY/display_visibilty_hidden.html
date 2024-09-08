@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .imgbox {
+                text-align: center;
+                width: 140px;
+                border: 1px solid darkgreen;
+                margin: 20px;
+                padding: 6px;
+                background-color: aqua;            
+            }
+
+            button {
+                width: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="imgbox" id="imgbox1">Box1 For Remove<br>
+
+            <img src="../IMAGES_FOR_CSS/Image_List.jpeg" style="width:75%">
+
+            <button onclick="removeElement()">Remove</button>
+
+        </div>
+<!-- ==================================================================== -->
+
+        <div class="imgbox" id="imgbox2">Box2 For Hide<br>
+
+            <img src="../IMAGES_FOR_CSS/Image002.jpeg" style="width:100%">
+
+            <button onclick="changeVisibility()">Hide</button>
+            
+        </div>
+<!-- ==================================================================== -->
+
+        <div class="imgbox">Box3 For Reset all<br>
+
+            <img src="../IMAGES_FOR_CSS/Image003.webp" style="width:80%">
+
+            <button onclick="resetElement()">Reset All</button>
+
+        </div>
+<!-- ==================================================================== -->
+
+        <script>
+            function removeElement() {
+                document.getElementById("imgbox1").style.display = "none";
+            }
+
+            function changeVisibility() {
+                document.getElementById("imgbox2").style.visibility = "hidden";
+            }
+
+            function resetElement() {
+                document.getElementById("imgbox1").style.display = "block";
+
+                // document.getElementById("imgbox2").style.display="block";
+                document.getElementById("imgbox2").style.visibility="visible";
+
+                // For the "imgbox2" : 1. the box is invisible when you click on the button.;
+                // For the "imgbox2" : 2. when said block   - it will not display but occupy space and hidden.
+                // For the "imgbox2" : 3. when said visible - it is visble.
+        }
+        </script>
+
+</body>
+</html>

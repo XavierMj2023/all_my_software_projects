@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Optional Chaining</title>
+</head>
+
+<body>
+    <p></p>
+    <script>
+        let p = document.querySelector("p");
+        const adventure = {
+            name : "Alice",
+            weapon : {
+                type : "Sword",
+                damage : 20
+            },
+            treasureChest : {
+                gold : 1000,
+                jewels : 5
+            }
+        };
+        const totalGold = adventure.treasureChest?.gold;
+        p.innerHTML = "Total Gold : "+totalGold;
+    </script>
+</body>
+
+</html>

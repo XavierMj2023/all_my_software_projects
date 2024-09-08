@@ -1,0 +1,9 @@
+Spring Framwork Notes
+-----------------------------------------------------
+
+Spring framework is a very popular framework in the world of Java.
+
+And the spring boot is actually the opinionated version of a spring framework.
+
+So overall spring framework is the foundation and spring boot is developed on top of spring framework.
+

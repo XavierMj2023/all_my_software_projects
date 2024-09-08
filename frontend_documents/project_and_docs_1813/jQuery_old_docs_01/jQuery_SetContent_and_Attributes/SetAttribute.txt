@@ -1,0 +1,13 @@
+﻿Set Attributes - attr()
+
+The jQuery attr() method is also used to set/change attribute values.
+
+The attr() method also allows you to set multiple attributes at the same time.
+
+EG:
+$("button").click(function(){
+  $("#w3s").attr({
+    "href" : "https://www.w3schools.com/jquery/",
+    "title" : "W3Schools jQuery Tutorial"
+  });
+});

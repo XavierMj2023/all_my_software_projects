@@ -1,0 +1,14 @@
+on the menu bar -> click -> data section -> text to columns
+
+option -> select delimited -> click next
+
+option -> select comma -> click next
+
+click finish
+
+rename the columns like cast_1 ; drag and increment the number
+
+
+
+
+

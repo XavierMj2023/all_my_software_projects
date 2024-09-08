@@ -1,0 +1,59 @@
+﻿C# - Stack<T>
+---------------------------------------------------------------------
+Stack is a special type of collection that stores elements in LIFO style (Last In First Out).
+
+C# includes the generic Stack<T> and non-generic Stack collection classes. 
+
+It is recommended to use the generic Stack<T> collection.
+
+Stack is useful to store temporary data in LIFO style, and you might want to delete an element after retrieving its 
+value.
+
+---------------------------------------------------------------------
+Stack<T> Characteristics
+---------------------------------------------------------------------
+Stack<T> is Last In First Out collection.
+
+It comes under System.Collection.Generic namespace.
+
+Stack<T> can contain elements of the specified type. 
+
+It provides compile-time type checking and doesn't perform boxing-unboxing because it is generic.
+
+Elements can be added using the Push() method. 
+
+Cannot use collection-initializer syntax.
+
+Elements can be retrieved using the Pop() and the Peek() methods. It does not support an indexer.
+
+---------------------------------------------------------------------
+Creating a Stack
+---------------------------------------------------------------------
+You can create an object of the Stack<T> by specifying a type parameter for the type of elements it can store. 
+
+The following example creates and adds elements in the Stack<T> using the Push() method. 
+
+Stack allows null (for reference types) and duplicate values.
+
+---------------------------------------------------------------------
+Pop
+---------------------------------------------------------------------
+The Pop() method returns the last element and removes it from a stack. 
+
+If a stack is empty, then it will throw the InvalidOperationException. 
+
+So, always check for the number of elements in a stack before calling the Pop() method.
+
+---------------------------------------------------------------------
+Peek
+---------------------------------------------------------------------
+The Peek() method returns the lastly added value from the stack but does not remove it. 
+
+Calling the Peek() method on an empty stack will throw the InvalidOperationException. 
+
+So, always check for elements in the stack before retrieving elements using the Peek() method.
+
+---------------------------------------------------------------------
+Contains
+---------------------------------------------------------------------
+Whether element exists or not

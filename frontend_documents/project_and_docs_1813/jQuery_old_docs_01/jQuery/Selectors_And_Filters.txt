@@ -1,0 +1,12 @@
+﻿* Selectors and Filters
+------------------------------
+
+* Basic Building Blocks of jQuery.
+
+* They are used to extract information from web pages.
+
+* Selectors basically work using a CSS like syntax.
+
+* Return them as a list of objects that you can further operate on using a variety of operations.
+
+* Filters are used to refine the results that come back from selectors.

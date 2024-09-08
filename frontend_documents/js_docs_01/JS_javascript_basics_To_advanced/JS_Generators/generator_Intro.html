@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Generators</title>
+    </head>
+    <body>
+        <script>
+            //function generator(): Generator<never, void, unknown>
+            function* generator(){
+                yield 1;
+                yield 2;
+                yield 3;
+            }
+            const gen = generator();
+
+            console.log(gen.next());
+            console.log(gen.next());
+            console.log(gen.next());
+            console.log(gen.next());
+        </script>
+    </body>
+</html>

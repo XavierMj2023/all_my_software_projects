@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+</head>
+
+<body>
+    <h1>JS Regular Expression</h1>
+    <hr />
+    <script>
+        //Eg 3 - Find many using matchAll
+
+        //This is the text
+        const txt3 = "People often write hello world while hello world programming";
+
+        //Which string to find?
+        const regex3 = /hello world/g;
+
+        //Use matchAll() to match the given text
+        const results = [...txt3.matchAll(regex3)];
+
+        results.forEach(res => {
+            console.log(res);
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+Quiz
+------------------------------
+What are advantages of Generics?
+
+A: Re-usability
+
+B: Stronger type checking
+
+C: Eliminate type casting statements
+
+------------------------------------------------------
+
+Identify Output
+
+class Generic<T>{
+	private T data;
+ 
+	public Generic(T data) {
+		this.data = data;
+	}
+ 
+	@Override
+	public String toString() {
+		return "Generic [data=" + data + "]";
+	}
+ 
+	public T getData() {
+		return data;
+	}
+	
+	
+}
+ 
+public class TestGenercis {
+ 
+	public static void main(String[] args) {
+ 
+		Generic<int> gData = new Generic<int>(2);
+		int data =gData.getData();
+		System.out.println("Integer value is "+data);
+		
+	}
+	
+data - 2
+	
+Answer - Type Mismatch error
+
+The Generic class uses an object as a parameter. 
+In line Generic<int> gData = new Generic<int>(2); here Instead of int, 
+wrapper class should be used	
+------------------------------------------------------
+
+In Generic methods based on the type of parameter or arguments passed, 
+the compiler executes each method call accordingly.
+
+Ans -> True
+
+------------------------------------------------------
+
+
+	

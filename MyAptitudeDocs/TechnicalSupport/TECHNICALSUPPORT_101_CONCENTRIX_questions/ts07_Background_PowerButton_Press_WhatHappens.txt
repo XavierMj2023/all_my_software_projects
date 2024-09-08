@@ -1,0 +1,181 @@
+------------------------------------------------------------------------------------------------------------------------------
+What happens in the background when you press power button?
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+When you press the power button on a computer, a series of events take place to boot the system and prepare it for use. 
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+Here's a detailed look at what happens in the background:
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+1. Power Supply Activation
+------------------------------------------------------------------------------------------------------------------------------
+Power-On		: The power button sends a signal to the power supply unit (PSU) to start delivering power to the motherboard and 
+other components.
+
+Initial Voltage Check	: The PSU performs an initial self-check to ensure it is functioning correctly and that there are no 
+power surges or other issues.
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+2. Motherboard and CPU Initialization
+------------------------------------------------------------------------------------------------------------------------------
+Power Good Signal: Once the PSU confirms stable power, it sends a "Power Good" signal to the motherboard.
+
+CPU Activation: The CPU starts up and looks for instructions to execute. It finds the address of the BIOS or UEFI firmware stored on a chip on the motherboard.
+
+------------------------------------------------------------------------------------------------------------------------------
+3. BIOS/UEFI Firmware Execution
+------------------------------------------------------------------------------------------------------------------------------
+POST (Power-On Self-Test)	: The BIOS/UEFI performs a POST to check and initialize hardware components such as the CPU, RAM, keyboard, and storage devices.
+
+Beep Codes			: If there are errors during POST, the system may produce beep codes that indicate specific issues (e.g., missing RAM, failed CPU).
+
+Hardware Initialization		: Initializes essential components and settings, including clock speeds and voltage levels.
+
+Boot Device Detection		: Identifies connected storage devices to find a bootable device.
+
+------------------------------------------------------------------------------------------------------------------------------
+4. Bootloader Process
+------------------------------------------------------------------------------------------------------------------------------
+MBR/GPT Execution		: The BIOS/UEFI looks for the Master Boot Record (MBR) or GUID Partition Table (GPT) on the selected boot device to find the bootloader.
+
+Bootloader Loading		: The bootloader (such as GRUB, Windows Boot Manager) is loaded into memory. It is responsible for loading the operating system.
+
+------------------------------------------------------------------------------------------------------------------------------
+5. Operating System Loading
+------------------------------------------------------------------------------------------------------------------------------
+Kernel Loading			: The bootloader loads the operating system kernel into memory. The kernel is the core part of the OS 
+that manages system resources.
+
+Kernel Initialization		: The kernel initializes hardware and software subsystems, setting up memory management, device drivers, and system processes.
+
+------------------------------------------------------------------------------------------------------------------------------
+6. System Processes and Services
+------------------------------------------------------------------------------------------------------------------------------
+Device Drivers			: The kernel loads device drivers, which allow the operating system to communicate with hardware 
+components like graphics cards, network adapters, and storage devices.
+
+System Services			: Essential system services and daemons are started. These include services for networking, security, 
+and system monitoring.
+
+------------------------------------------------------------------------------------------------------------------------------
+7. User Interface Initialization
+------------------------------------------------------------------------------------------------------------------------------
+Login Screen			: The graphical user interface (GUI) or command-line interface (CLI) is loaded. On GUI-based systems, this typically presents a login screen.
+
+User Session Start		: After you log in, the system loads user-specific configurations and settings, including the desktop environment and startup applications.
+
+------------------------------------------------------------------------------------------------------------------------------
+Summary of Events
+------------------------------------------------------------------------------------------------------------------------------
+Press Power Button		: Signal sent to PSU.
+PSU Activates			: Powers motherboard and components.
+CPU Starts			: Executes BIOS/UEFI firmware.
+BIOS/UEFI POST			: Checks hardware, initializes devices.
+Bootloader Launch		: MBR/GPT identifies and loads bootloader.
+OS Kernel Loads			: Kernel initializes system resources.
+Drivers and Services		: Device drivers and services start.
+Login Screen			: User interface is presented.
+User Session			: Loads user settings and desktop environment.
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+This process, from pressing the power button to reaching the login screen, usually takes just a few seconds to a couple of minutes, 
+depending on the system's hardware and software configuration.
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+Scenario: Turning on Your Desktop Computer
+------------------------------------------------------------------------------------------------------------------------------
+Step 1		: Pressing the Power Button
+------------------------------------------------------------------------------------------------------------------------------
+You		: Press the power button on the front of your desktop.
+System		: The power button sends a signal to the Power Supply Unit (PSU) to start supplying power to the computer.
+------------------------------------------------------------------------------------------------------------------------------
+Step 2		: Power Supply Activation
+------------------------------------------------------------------------------------------------------------------------------
+PSU		: Checks for stable power. Once confirmed, it sends a "Power Good" signal to the motherboard.
+Indicators	: You might hear the PSU fan start spinning, and the motherboard’s power LED lights up.
+------------------------------------------------------------------------------------------------------------------------------
+Step 3		: Motherboard and CPU Initialization
+------------------------------------------------------------------------------------------------------------------------------
+Motherboard	: Receives power and distributes it to components like the CPU and RAM.
+CPU		: Starts up and looks for the BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) firmware stored on the motherboard.
+------------------------------------------------------------------------------------------------------------------------------
+Step 4		: BIOS/UEFI Execution
+------------------------------------------------------------------------------------------------------------------------------
+BIOS/UEFI	: Runs the Power-On Self-Test (POST) to check and initialize hardware components.
+Indicators	: If everything is working, you might see the manufacturer’s logo on the screen. If there’s an issue (like missing RAM), 
+		  you might hear beep codes.
+Hardware Check	: The BIOS/UEFI verifies the CPU, RAM, keyboard, and connected storage devices.
+------------------------------------------------------------------------------------------------------------------------------
+Step 5		: Boot Device Detection
+------------------------------------------------------------------------------------------------------------------------------
+BIOS/UEFI	: Identifies connected storage devices (e.g., SSD or HDD) to find a bootable device.
+Screen		: Displays a message like “Press F2 to enter setup” or “Booting from [device].”
+------------------------------------------------------------------------------------------------------------------------------
+Step 6		: Bootloader Process
+------------------------------------------------------------------------------------------------------------------------------
+BIOS/UEFI	: Finds the Master Boot Record (MBR) or GUID Partition Table (GPT) on the boot device and loads the bootloader 
+(e.g., Windows Boot Manager).
+Bootloader	: Takes over and begins loading the operating system.
+------------------------------------------------------------------------------------------------------------------------------
+Step 7		: Operating System Loading
+Bootloader	: Loads the operating system kernel into memory.
+Screen		: Displays the OS logo (e.g., Windows logo) and a loading animation.
+Kernel		: Initializes system resources, memory management, and device drivers.
+------------------------------------------------------------------------------------------------------------------------------
+Step 8		: System Processes and Services
+------------------------------------------------------------------------------------------------------------------------------
+Kernel		: Loads device drivers for hardware components like the graphics card, network adapter, and storage devices.
+System Services	: Starts essential services like network connections, security services, and system monitoring tools.
+------------------------------------------------------------------------------------------------------------------------------
+Step 9		: User Interface Initialization
+Login Screen	: The operating system loads the graphical user interface (GUI) and presents the login screen.
+Screen		: Displays the login prompt where you can enter your username and password.
+------------------------------------------------------------------------------------------------------------------------------
+Step 10		: User Session Start
+------------------------------------------------------------------------------------------------------------------------------
+You		: Enter your username and password.
+System		: Loads your user-specific settings, desktop environment, and startup applications.
+Screen		: Shows your desktop background, icons, taskbar, and any startup programs.
+------------------------------------------------------------------------------------------------------------------------------
+Summary of Events
+------------------------------------------------------------------------------------------------------------------------------
+Press Power Button	: You press the button, and the PSU is activated.
+PSU Activates		: Powers the motherboard and components.
+CPU Starts		: Executes the BIOS/UEFI firmware.
+BIOS/UEFI POST		: Checks hardware, initializes devices.
+Bootloader Launch	: MBR/GPT identifies and loads the bootloader.
+OS Kernel Loads		: Kernel initializes system resources.
+Drivers and Services	: Device drivers and system services start.
+Login Screen		: User interface is presented.
+User Session		: Loads user settings and desktop environment.
+------------------------------------------------------------------------------------------------------------------------------
+Scenario Illustration
+------------------------------------------------------------------------------------------------------------------------------
+Press Power Button	: You press the power button on your desktop.
+Power Good Signal	: The PSU confirms stable power and the motherboard lights up.
+POST Check		: You see the manufacturer’s logo and hear a single beep indicating everything is okay.
+Boot Device		: The BIOS/UEFI finds your SSD and loads the bootloader.
+OS Loading		: The Windows logo appears, indicating the OS is loading.
+Login Screen		: The screen displays the login prompt.
+Desktop Loaded		: After entering your password, your desktop environment appears with all your settings.
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+This process typically happens in a matter of seconds to a couple of minutes, depending on your computer's hardware and 
+configuration.
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------
+

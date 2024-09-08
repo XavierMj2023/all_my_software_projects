@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Closures</title>
+</head>
+<body>
+    <h1>Javascript Closures</h1>
+    <hr/>
+    <p></p>
+    <p></p>
+    <script>
+        let para = document.querySelector("p"); 
+
+        let a = 4;
+
+        function my(){
+            return a * a;
+        }
+
+        para.innerHTML=my();
+    </script>
+</body>
+</html>

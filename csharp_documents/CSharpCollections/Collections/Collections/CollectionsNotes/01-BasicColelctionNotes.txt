@@ -1,0 +1,15 @@
+﻿*	C# includes specialized classes that store series of values or objects are called collections.
+
+*	There are two types of collections available in C#: 
+
+	1.	Non-generic collections 
+	2.	Generic collections.
+
+*	System.Collections --> namespace contains the non-generic collection types
+
+*	System.Collections.Generic -->  namespace includes generic collection types.
+
+*	In most cases, it is recommended to use the generic collections because 
+
+	:-They perform faster than non-generic collections 
+	:-They also minimize exceptions by giving compile-time errors.

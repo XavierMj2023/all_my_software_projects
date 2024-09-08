@@ -1,0 +1,20 @@
+﻿class Selector
+-----------------------
+
+* The jQuery .class selector finds elements with a specific class.
+
+* To find elements with a specific class, write a period character, followed by the name of the 
+  class:
+
+  $(".test")
+
+* Example
+
+    When a user clicks on a button, the elements with class="test" will be hidden:
+
+    Example
+    $(document).ready(function(){
+      $("button").click(function(){
+        $(".test").hide();
+      });
+    });

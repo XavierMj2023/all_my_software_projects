@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS This keyword</title>
+    </head>
+    <body>
+        <h4>Function Context</h4>
+        <p id="one"></p>
+        <p id="two"></p>
+        <p id="three"></p>
+        <script>
+            let one = document.getElementById("one");
+            let two = document.getElementById("two");
+            let three = document.getElementById("three");
+            
+            function sayHello(){
+                console.log(this);
+                one.innerHTML = `Hello ${this.name}`;
+            }
+            sayHello();
+
+            //------------------------------------------------------
+
+            function sayHello2(){
+                console.log(this);
+                two.innerHTML = `Hello ${this.name}`;
+            }
+            const person = {
+                name : "Imitaz",
+                greet2 : sayHello2
+            };
+
+            person.greet2();
+
+             //------------------------------------------------------
+
+             function Person(name){
+                console.log(this);
+                this.name = name;
+             }
+             const person3 = new Person("Imaran");
+             three.innerHTML = person3.name;
+        </script>
+    </body>
+</html>

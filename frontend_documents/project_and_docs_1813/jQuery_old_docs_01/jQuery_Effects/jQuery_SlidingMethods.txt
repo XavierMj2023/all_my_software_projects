@@ -1,0 +1,52 @@
+﻿The jQuery slide methods slide elements up and down.
+
+jQuery Sliding Methods
+--------------------------
+With jQuery you can create a sliding effect on elements.jQuery has the following slide methods:
+
+	slideDown()
+	slideUp()
+	slideToggle()
+
+   *	slideDown()
+		--------------
+		The jQuery slideDown() method is used to slide down an element.
+		
+		Syntax:
+		$(selector).slideDown(speed,callback);
+
+		The optional speed parameter specifies the duration of the effect. It can take the 
+		following values: "slow", "fast", or milliseconds.
+
+		The optional callback parameter is a function to be executed after the sliding completes.
+
+
+
+   *	slideUp()
+		--------------
+		The jQuery slideUp() method is used to slide up an element.
+
+		Syntax:
+		$(selector).slideUp(speed,callback);
+
+		The optional speed parameter specifies the duration of the effect. It can take the 
+		following values: "slow", "fast", or milliseconds.
+
+		The optional callback parameter is a function to be executed after the sliding completes.
+
+
+
+   *	slideToggle()
+		--------------
+		The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.
+
+		If the elements have been slid down, slideToggle() will slide them up.
+
+		If the elements have been slid up, slideToggle() will slide them down.
+
+		Syntax:
+		$(selector).slideToggle(speed,callback);
+
+		The optional speed parameter can take the following values: "slow", "fast", milliseconds.
+
+		The optional callback parameter is a function to be executed after the sliding completes.

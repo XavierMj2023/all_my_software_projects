@@ -1,0 +1,97 @@
+﻿while (true)
+			{
+				try
+				{
+					var dataList = new ArrayList();
+
+					Console.WriteLine("Enter a String to test whether it accept or not:");
+					string input = Console.ReadLine();
+
+					Console.WriteLine("Enter a Integer to test whether it accept or not:");
+					int inputnum = int.Parse(Console.ReadLine());
+
+					Console.WriteLine("Enter a Boolean Value to test whether it accept or not:");
+					bool binputnum = bool.Parse(Console.ReadLine());
+
+					Console.WriteLine("Enter a Float Value to test whether it accept or not:");
+					double finputnum = double.Parse(Console.ReadLine());
+
+					if (input == "done" || inputnum.ToString() == "done" || binputnum.ToString() == "done" || finputnum.ToString() == "done")
+					{
+						break;
+					}
+
+					//Adding empty value and null value
+					dataList.Add(null);
+					dataList.Add(" ");
+
+					dataList.Add(input);
+					dataList.Add(inputnum);
+					dataList.Add(finputnum);
+					dataList.Add(binputnum);
+
+					// Displaying the entered data and their types in a table format
+					Console.WriteLine("\nEntered data with types:");
+					Console.WriteLine("------------------------------------------------------------");
+					Console.WriteLine("|Data \t| Type");
+					Console.WriteLine("------------------------------------------------------------");
+
+					for (int i = 0; i < dataList.Count; i++)
+					{
+						Console.WriteLine($"| {dataList[i]} \t| {dataList[i].GetType()}");
+					}
+
+					Console.WriteLine("------------------------------------------------------------");
+				}
+				catch(Exception e) 
+				{ 
+					Console.WriteLine("Error is : "+e.Message);
+				}
+				finally
+				{
+					Console.WriteLine("Please enter correctly");
+				}
+			}
+		}
+		-------------------------------------------------------------------------------------
+
+		while (true)
+				{
+					switch (defaultValue)
+					{
+						case 0: break;
+						case 1: Console.WriteLine("Enter the Number of Elements to be entered");
+								int noOfEles = int.Parse(Console.ReadLine());
+								if (noOfEles == 0) 
+								{
+									break;
+								}
+								else
+								{
+									for (var i = 0; i < dataList.Count; i++)
+									{
+										Console.WriteLine("Enter The element to be added");
+										var eleadd = Console.ReadLine();
+										dataList.Add(eleadd);
+										// Displaying the entered data and their types in a table format
+										Console.WriteLine("\nEntered data with types:");
+										Console.WriteLine("------------------------------------------------------------");
+										Console.WriteLine("|Data \t| Type");
+										Console.WriteLine("------------------------------------------------------------");
+
+										for (int ity = 0; ity < dataList.Count; i++)
+										{
+											Console.WriteLine($"| {dataList[ity]} \t| {dataList[ity].GetType()}");
+										}
+
+										Console.WriteLine("------------------------------------------------------------");
+									}
+								}
+								break;
+						}
+				}
+				--------------------------------------------------------------------
+
+				//Adding empty value and null value
+					dataList.Add(null);
+					dataList.Add(" ");

@@ -1,0 +1,124 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Solving an internet issue can involve several steps, but here are three of the most effective and commonly recommended steps to troubleshoot and resolve basic internet connectivity problems:
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Step 1: Check Physical Connections and Restart Devices
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Verify Physical Connections:
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Cables		: Ensure that all cables (Ethernet, coaxial, power) are securely connected to your modem, router, and computer.
+
+Lights		: Check the indicator lights on your modem and router. Typically, there should be a solid power light, a solid or blinking internet light, and activity lights for connected devices.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Restart Devices:
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Modem and Router	: Unplug the power cables from both your modem and router. Wait for about 30 seconds, then plug the modem back in first. Wait until the modem is fully powered on (all relevant lights are stable), then plug in the router.
+
+Computer or Device	: Restart your computer or the device experiencing connectivity issues.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Step 2: Diagnose Network and Software Settings
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Network Settings:
+
+Wi-Fi			: Ensure your device is connected to the correct Wi-Fi network and that the network is not set to "public" if it should be private.
+IP Address		: Check if your device is receiving a proper IP address. 
+			  On Windows, you can use the Command Prompt with the command -> ipconfig /all. 			  
+			  On macOS, use the Terminal with the command ->  ifconfig.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+>ipconfig/all
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : Lenovo
+   Primary Dns Suffix  . . . . . . . :
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Physical Address. . . . . . . . . : D8-3B-BF-23-EF-11
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Local Area Connection* 10:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Physical Address. . . . . . . . . : DA-3B-BF-23-EF-10
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Description . . . . . . . . . . . : Intel(R) Wireless-AC 9560 160MHz
+   Physical Address. . . . . . . . . : D8-3B-BF-23-EF-10
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   IPv6 Address. . . . . . . . . . . : 2405:201:d013:c0a6:d6f:bed0:48b6:c6fc(Preferred)
+   Temporary IPv6 Address. . . . . . : 2405:201:d013:c0a6:905f:e3c5:fd7c:bd43(Preferred)
+   Link-local IPv6 Address . . . . . : fe80::d1f1:3233:c575:a828%10(Preferred)
+   IPv4 Address. . . . . . . . . . . : 192.168.29.216(Preferred)
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Wednesday, June 5, 2024 7:49:54 PM
+   Lease Expires . . . . . . . . . . : Sunday, June 9, 2024 6:02:36 PM
+   Default Gateway . . . . . . . . . : fe80::aada:cff:fed4:2883%10
+                                       192.168.29.1
+   DHCP Server . . . . . . . . . . . : 192.168.29.1
+   DHCPv6 IAID . . . . . . . . . . . : 114834367
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-29-7F-78-07-D8-3B-BF-23-EF-10
+   DNS Servers . . . . . . . . . . . : 2405:201:d013:c0a6::c0a8:1d01
+                                       192.168.29.1
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Software Settings:
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Network Adapter		: Disable and then enable your network adapter. On Windows, go to Network Connections, right-click your adapter, and select "Disable," then "Enable."
+
+Firewall and Antivirus	: Ensure that your firewall or antivirus software is not blocking your internet connection. Temporarily disable them to see if the issue is resolved.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Step 3: Test and Reset Network Configurations
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Ping and Connectivity Tests:
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Ping Test		: Use the command prompt or terminal to ping a reliable website (e.g., ping google.com). If you get responses, the connection to the 			  internet is likely working, but there might be other issues.
+
+Traceroute		: Run a traceroute to identify where the connection might be failing (e.g., tracert google.com on Windows, traceroute google.com on macOS).
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Reset Network Configurations:
+----------------------------------------------------------------------------------------------------------------------------------------------------
+DNS Settings		: Change your DNS settings to use a public DNS server like Google’s (8.8.8.8 and 8.8.4.4).
+
+Network Reset		: On Windows, you can perform a network reset to reinstall network adapters and set networking components back to their default settings. Go to Settings > Network & Internet > Status > Network reset.
+
+Router Reset		: As a last resort, reset your router to factory settings. Note that this will erase all custom settings, so you may need to reconfigure your network afterward.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Additional Tips:
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Check for Service Outages	: Sometimes, the issue is with your Internet Service Provider (ISP). Check their website or contact their support to see if there are any known outages.
+
+Update Firmware and Drivers	: Ensure that your modem/router firmware and network adapter drivers are up-to-date.
+
+Try a Different Device		: If possible, connect a different device to your network to see if the issue is specific to one device.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+By following these three steps, you can address most common internet connectivity issues efficiently. If the problem persists, contacting your ISP for further assistance may be necessary.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+

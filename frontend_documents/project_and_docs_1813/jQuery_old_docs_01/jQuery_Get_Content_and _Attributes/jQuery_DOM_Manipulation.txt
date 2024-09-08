@@ -1,0 +1,16 @@
+﻿jQuery contains powerful methods for changing and manipulating HTML elements and attributes.
+
+jQuery DOM Manipulation
+--------------------------
+One very important part of jQuery is the possibility to manipulate the DOM.
+
+jQuery comes with a bunch of DOM related methods that make it easy to access and manipulate 
+elements and attributes.
+
+DOM => Document Object Model
+
+The DOM defines a standard for accessing HTML and XML documents:
+
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows 
+programs and scripts to dynamically access and update the content, structure, and style of a 
+document."

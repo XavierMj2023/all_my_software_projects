@@ -1,0 +1,72 @@
+﻿*   The joining operators joins the two sequences (collections) and produce a result.
+
+*   Joining Operators	                Usage
+    -------------------------------------------
+    Join	                            The Join operator joins two sequences (collections) based 
+                                        on a key and returns a resulted sequence.
+
+
+    GroupJoin	                        The GroupJoin operator joins two sequences based on keys 
+                                        and returns groups of sequences. 
+                                        
+                                        It is like Left Outer Join of SQL.
+
+*   Join
+    ------
+    The Join operator operates on two collections, inner collection & outer collection. 
+    It returns a new collection that contains elements from both the collections which satisfies 
+    specified expression. 
+    It is the same as inner join of SQL.
+
+*   Join in Method Syntax
+    ----------------------
+    As you can see in the first overload method takes five input parameters (except the first 
+    'this' parameter): 
+    1) outer 
+    2) inner 
+    3) outerKeySelector 
+    4) innerKeySelector 
+    5) resultSelector.
+
+*   Join in Query Syntax
+    --------------------------
+    Join operator in query syntax works slightly different than method syntax. 
+    
+    It requires outer sequence, inner sequence, key selector and result selector. 
+    
+    'on' keyword is used for key selector where left side of 'equals' operator is outerKeySelector 
+     and right side of 'equals' is innerKeySelector.
+
+    Syntax:
+    -------
+    from ... in outerSequence
+
+            join ... in innerSequence  
+
+            on outerKey equals innerKey
+
+            select ...
+
+*   Use the equals operator to match key selector in query syntax. == is not valid.
+ 
+*   Points to Remember :
+
+    Join and GroupJoin are joining operators.
+
+    Join is like inner join of SQL. 
+    It returns a new collection that contains common elements from two collections whose keys 
+    matches.
+
+    Join operates on two sequences inner sequence and outer sequence and produces a result sequence.
+
+    Join query syntax:
+    -------------------
+    from... in outerSequence
+    join... in innerSequence 
+    on  outerKey equals innerKey
+    select ...
+
+
+    == is not valid.
+    ------------------
+    Error : CS0744 ,CS1525 ,CS1937

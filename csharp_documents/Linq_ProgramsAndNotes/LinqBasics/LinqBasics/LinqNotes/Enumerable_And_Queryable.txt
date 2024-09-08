@@ -1,0 +1,22 @@
+﻿*	The Enumerable class includes extension methods for the classes that implement IEnumerable<T> 
+	interface.
+
+*	The Queryable class includes extension methods for classes that implement IQueryable<t> 
+	interface. 
+
+*	The IQueryable<T> interface is used to provide querying capabilities against a specific data 
+	source where the type of the data is known. 
+	
+	Example: 
+	---------
+	Entity Framework api implements IQueryable<T> interface to support LINQ queries 
+	with underlaying databases such as MS SQL Server.
+
+	Also, there are APIs available to access third party data; 
+	
+	Example:
+	---------
+	LINQ to Amazon provides the ability to use LINQ with Amazon web services to search for books 
+	and other items. 
+	
+	This can be achieved by implementing the IQueryable interface for Amazon.

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS This keyword</title>
+    </head>
+    <body>
+        <h4>This used inside method of object</h4>
+        <p id="two"></p>
+        <p id="three"></p>
+        <script>
+            let two = document.getElementById("two");
+            let three = document.getElementById("three");
+            //Object
+            const personalDetails = {
+                qualifierId : 120899,
+                age : 25,
+                letterOfId : function(){
+                    two.innerHTML = this;
+                    three.innerHTML = `My Current Id is ${this.qualifierId}`;
+                }
+            };
+            personalDetails.letterOfId();
+        </script>
+    </body>
+</html>

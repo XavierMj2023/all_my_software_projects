@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS CallBacks</title>
+</head>
+
+<body>
+    <p id="data"></p>
+    <script>
+        function myDisplay(data) {
+            document.getElementById("data").innerHTML = data;
+        }
+        function call() {
+            myDisplay("Call 1");
+        }
+        function call2(){
+            myDisplay("Call 2");
+        }
+        call();
+        call2();
+    </script>
+</body>
+
+</html>

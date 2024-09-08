@@ -1,0 +1,22 @@
+column name : year after 2010
+
+=If(E8 > 2010 , 1, 0)
+
+--------------------------------
+
+column name : after 2010 - over 2 hrs
+
+=If(And(E8 > 2010 , G2 > 120) 1, 0)
+
+double click on the corner button when you want to drag and add values
+
+--------------------------------
+
+
+column name : tv pg and non pg 
+
+=If(or(F2 = "TV-PG" , F2 = "PG") 1, 0)
+
+--------------------------------
+
+

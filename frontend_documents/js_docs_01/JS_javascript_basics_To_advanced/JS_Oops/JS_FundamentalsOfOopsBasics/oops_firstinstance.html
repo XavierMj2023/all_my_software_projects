@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops - First Class</title>
+</head>
+<body>
+    <script>
+        //First Class / Class
+        class Animal{
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+            }
+
+            getInfo(){
+                return(
+                    `The Name of the Animal is ${this.name} and age is ${this.age}`
+                )
+            }
+        }
+
+        //First Instance
+        const firstAnimal = new Animal("Rex", 23);
+        document.write(firstAnimal + "<br/>");
+        console.log(firstAnimal);
+        document.write(firstAnimal.getInfo()+"<br/>");
+
+        const secondAnimal = new Animal("Tiger", 34);
+        document.write(secondAnimal + "<br/>");
+        console.log(secondAnimal);
+        document.write(secondAnimal.getInfo());
+        
+    </script>
+</body>
+</html>

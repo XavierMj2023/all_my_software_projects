@@ -1,0 +1,8 @@
+﻿StockA, 100, 50.25
+StockB, 200, 40.50
+StockC, 50, 75.75
+StockD, 150, 76.77
+StockE, 160, 33.78
+StockF, 180, 89.79
+StockJ, 190, 34.23
+Stock123, 250, 45.75

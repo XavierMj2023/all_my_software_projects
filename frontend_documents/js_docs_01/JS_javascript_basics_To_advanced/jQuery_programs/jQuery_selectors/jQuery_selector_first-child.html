@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css"/>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <div>
+        <p>first div (should be red).</p>
+        <p>Second paragraph in the first div.</p>
+    </div>
+    <div>
+        <p>First paragraph in the second div (should be red).</p>
+        <p>Second paragraph in the second div.</p>
+    </div>
+    <span>First span outside of div (should be red).</span>
+    <span>Second span outside of div.</span>
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+          $(document).ready(function() {
+            // Select all first child elements of their parent
+            $("p:first-child").css("color", "red");
+        });
+    </script>
+</body>
+
+</html>

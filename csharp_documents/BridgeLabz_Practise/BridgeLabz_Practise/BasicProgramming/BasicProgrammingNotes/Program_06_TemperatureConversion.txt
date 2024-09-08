@@ -1,0 +1,34 @@
+﻿Write a TemperatureConversion program, given the temperature in Fahrenheit as
+input outputs the temperature in Celsius or vice versa using the formula
+Celsius to Fahrenheit: (°C × 9/5) + 32 = °F
+Fahrenheit to Celsius: (°F − 32) x 5/9 = °C
+
+
+In C#, StringComparison.OrdinalIgnoreCase is an enumeration value that can be used as a parameter to 
+string comparison methods to perform case-insensitive comparisons. 
+
+This means that when you use StringComparison.OrdinalIgnoreCase, the comparison will be done without 
+regard to the case of the characters in the strings.
+
+Here's how you can use it in C#:
+
+string str1 = "Hello";
+string str2 = "hello";
+
+bool areEqual = string.Equals(str1, str2, StringComparison.OrdinalIgnoreCase);
+
+if (areEqual)
+{
+    Console.WriteLine("The two strings are equal (case-insensitive).");
+}
+else
+{
+    Console.WriteLine("The two strings are not equal (case-insensitive).");
+}
+
+
+In this example, StringComparison.OrdinalIgnoreCase is used in the string.
+
+Equals method to compare str1 and str2 case-insensitively. 
+
+As a result, it considers "Hello" and "hello" to be equal.

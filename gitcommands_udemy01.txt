@@ -1,0 +1,15 @@
+git add .
+
+git status
+
+git commit -m "adding ..."
+
+git push origin master
+
+git push origin master --force
+
+git push --force
+
+git push origin master --force
+
+git remote add origin https://github.com/XavierMj2023/all_my_software_projects.git

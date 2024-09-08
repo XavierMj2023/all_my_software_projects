@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+</head>
+
+<body>
+    <h1>JS Regular Expression - Validate Email</h1>
+    <hr />
+    <input type="text" value="" name="emailTest" id="emailTest" />
+    <input type="submit" value="Validate email" name="sub" onclick="validateEmail()" />
+    <p id="resu"></p>
+    <script>
+        //Validate email
+
+        function validateEmail() {
+
+            let givemail = document.getElementById("emailTest").value;
+            let printRes = document.getElementById("resu");
+
+            let email = givemail;
+            const emailEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/g;
+
+            const res = email.match(emailEx);
+            if (res) {
+                printRes.innerHTML = "Valid mail"
+                printRes.style.color = "green";
+            } else {
+                printRes.innerHTML = "Please Enter the mail again..As it is invalid!..."
+                printRes.style.color = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>

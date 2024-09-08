@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Function Arguments Length</h1>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        function my(a, b, c){
+            return arguments.length;
+        }
+        document.getElementById("demo2").innerHTML = my(4, 3, 2);//3
+
+        document.getElementById("demo3").innerHTML = my.toString();//Returns whole function with function body.
+    </script>
+
+</body>
+
+</html>

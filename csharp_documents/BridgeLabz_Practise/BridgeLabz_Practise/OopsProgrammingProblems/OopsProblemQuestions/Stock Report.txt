@@ -1,0 +1,121 @@
+﻿2. Stock Report
+---------------------
+a. Desc -> Write a program to read in Stock Names, Number of Share, Share Price.
+		   Print a Stock Report with total value of each Stock and the total value of Stock.
+
+b. I/P -> N number of Stocks, for Each Stock Read In the Share Name, Number of
+		  Share, and Share Price
+
+c. Logic -> Calculate the value of each stock and the total value
+
+d. O/P -> Print the Stock Report.
+
+e. Hint -> Create Stock and Stock Portfolio Class holding the list of Stocks read
+		   from the input file. 
+		   Have functions in the Class to calculate the value of each
+		   stock and the value of total stocks
+
+StockTest1	   20				45.96
+StockTest2	   30				45.97
+StockTest3	   40				45.98
+StockTest4	   20				45.99
+StockTest5	   50				48.60
+StockTest6	   70				46.90
+StockTest7	   80				42.95
+StockTest8	   25				44.92
+StockTest9	   28				41.91
+StockTest1A	   35				42.77
+StockTest1B	   29				43.96
+
+
+File Path : D:\RECYCLE BIN EXTRAS\ONLY_DOCS\NET\AllTheBasicCSharp\BridgeLabzPractise\BridgeLabz_Practise\OopsProgrammingProblems\OopsPrograms\StockTest.txt
+
+---------------------------------------------------------
+The general syntax for the format specifier is:  :Format
+---------------------------------------------------------
+
+The F2 is a format specifier that is used in C# to format the output of a floating-point number.
+Specifically, F2 is used to format the number as a floating-point number with two decimal places.
+
+In the context of the program, it's used to ensure that the total portfolio value is displayed with 
+exactly two decimal places, making it look more like a currency value.
+
+For example, if the total portfolio value is 1234.56789, using F2 will format it as "$1234.57."
+
+Here's a breakdown of the format specifier:
+
+F indicates a fixed-point format.
+2 specifies the number of decimal places to display. 
+In this case, it's set to 2, so two decimal places will be shown.
+
+This is a common way to format numbers in C# for display, especially when dealing with currency 
+values or any situation where you want to control the number of decimal places in the output.
+
+-------------------------------------------------------------------------------------------------------------
+
+{0, -20}: 
+This part indicates the format for the first column. Here's what each element means:
+
+{0}: 
+Refers to the first value to be displayed, which is "Stock Name" in this case.
+, 
+
+-20: 
+Specifies formatting options for this value:
+
+,: 
+Indicates that we're using formatting options.
+
+-: 
+Specifies left alignment. The text will be left-aligned within the allocated space.
+
+20: 
+Specifies a width of 20 characters for this column. It ensures that the "Stock Name" will occupy 20 
+characters, and any extra space is filled with whitespace.
+
+{1, -15}: 
+This part is similar to the first part but for the second column, which is "No of Shares". 
+It specifies left alignment within a 15-character width.
+
+{2, -15}: 
+This part is similar to the previous two parts but for the third column, which is "Share Price".
+
+{3, -15}: 
+This part is similar to the previous parts but for the fourth column, which is "Stock Value".
+
+So, the entire line is used to format the header of the table in the stock report, ensuring that each
+column has a specified width and is left-aligned within that width. 
+
+This creates a neat and organized tabular format for displaying the stock details.
+
+-----------------------------------------------------------------------------------------
+
+In C#, the "C2" format specifier is used for formatting a numeric value as a currency with two decimal 
+places.
+
+double price = 1234.5678;
+string formattedPrice = price.ToString("C2");
+Console.WriteLine(formattedPrice); // Output: $1,234.57
+
+-----------------------------------------------------------------------------------------
+Stock Report
+a. Desc -> Write a program to read in Stock Names, Number of Share, Share Price.
+Print a Stock Report with total value of each Stock and the total value of Stock.
+b. I/P -> N number of Stocks, for Each Stock Read In the Share Name, Number of
+Share, and Share Price
+c. Logic -> Calculate the value of each stock and the total value
+d. O/P -> Print the Stock Report.
+e. Hint -> Create Stock and Stock Portfolio Class holding the list of Stocks read
+from the input file. Have functions in the Class to calculate the value of each
+stock and the value of total stocks
+
+Inventory Management Problem
+a. Desc -> Extend the above program to Create InventoryManager to manage the
+Inventory. The Inventory Manager will use InventoryFactory to create Inventory
+Object from JSON. The InventoryManager will call each Inventory Object in its list
+to calculate the Inventory Price and then call the Inventory Object to return the
+JSON String. The main program will be with InventoryManager
+b. I/P -> read in JSON File
+c. Logic -> Get JSON Object in Java or NSDictionary in iOS. Create Inventory
+Object from JSON. Calculate the value for every Inventory.
+d. O/P -> Create the JSON from Inventory Object and output the JSON String.

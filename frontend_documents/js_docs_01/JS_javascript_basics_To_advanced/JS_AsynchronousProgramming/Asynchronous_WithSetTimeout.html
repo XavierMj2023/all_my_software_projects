@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Asynchronous Programming</title>
+</head>
+
+<body>
+    <p id="get"></p>
+    <script>
+        console.log("hanzala");
+        asyncJS(5000);
+        console.log("ikrama");
+        
+        function asyncJS(time){
+            for(let i = 0; i < 1000 ; i++){
+                console.log("wosqa");
+            }
+        }
+
+        function loopOver(){
+            setTimeout(loopOver, time);
+        }
+    </script>
+</body>
+
+</html>

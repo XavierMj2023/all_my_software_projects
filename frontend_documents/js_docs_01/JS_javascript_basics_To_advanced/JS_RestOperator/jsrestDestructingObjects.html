@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator JS</title>
+</head>
+
+<body>
+    <h1>Rest Operator</h1>
+    <p></p>
+    <script>
+        var q1 = document.querySelector("p");
+        const {a, b, ...rest} = {
+            a : 1,
+            b : 2,
+            c : 3,
+            d : 4 
+        };
+        q1.innerHTML= `First 2 : ${a},${b} , Rest : ${rest}`;
+    </script>
+</body>
+
+</html>

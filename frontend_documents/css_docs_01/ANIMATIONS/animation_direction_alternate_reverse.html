@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style> 
+               /* The animation code */
+            @keyframes example2 {
+                        0%  
+                         {
+                            background-color:red; 
+                            left:0px;
+                            top:0px;
+                         }
+                        25% 
+                         { 
+                            background-color:yellow;      
+                            left:200px;                     
+                            /* left: 200px; */
+                            top:0px;
+                         }
+                        50%
+                          {
+                            background-color:black; 
+                            left:200px;
+                            top:200px;
+                          }
+                        100%
+                         {
+                             background-color: green;
+                             left: 0px;
+                             top:0px;
+                          }
+                    }
+
+                        div {
+                                width: 100px;
+                                height: 100px;
+                                background-color: red;
+                                animation-name: example2;
+                                animation-duration: 8s;
+                                animation-iteration-count: infinite;
+                                animation-direction: alternate-reverse;
+                                position: relative;
+                        }
+        </style>
+    </head>
+
+     <body>
+        <div>R</div>
+    </body>
+</html>

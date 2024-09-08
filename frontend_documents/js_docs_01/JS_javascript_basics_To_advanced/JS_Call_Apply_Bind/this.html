@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Call Apply Bind with this</title>
+    </head>
+    <body>
+        <h4>JS Call Apply Bind with this</h4>
+        <p id="one"></p>
+        <script>
+            let q1 = document.querySelector("p");
+
+            const person = {
+                name : 'John',
+                greet : function(){
+                    return `Hello ${this.name}`
+                }
+            }
+
+            q1.innerHTML = person.greet();
+        </script>
+    </body>
+</html>

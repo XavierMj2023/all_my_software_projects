@@ -1,0 +1,53 @@
+﻿*   LINQ includes generation operators : 
+
+    DefaultIfEmpty
+    
+    Empty 
+    
+    Range
+
+    Repeat. 
+
+*   The Empty, Range & Repeat methods are not extension methods for IEnumerable or IQueryable 
+
+*   But they are simply static methods defined in a static class Enumerable.
+
+*   Method	                             Description
+    ---------------------------------------------------------------------------
+    Empty	                             Returns an empty collection
+
+    Range	                             Generates collection of IEnumerable<T> type with 
+                                         specified number of elements with sequential values, 
+                                         starting from first element.
+
+    Repeat	                             Generates a collection of IEnumerable<T> type with 
+                                         specified number of elements and each element contains 
+                                         same specified value.
+
+*   Empty
+    ---------------------------------------------------------------------------
+    The Empty() method is not an extension method of IEnumerable or IQueryable like other LINQ 
+    methods. 
+
+    It is a static method included in Enumerable static class. 
+
+    So, you can call it the same way as other static methods like Enumerable.Empty<TResult>(). 
+
+    The Empty() method returns an empty collection of a specified type.
+
+    Certainly, you can use the GetType() method to get the type of an object. To display the type name more clearly in your output, you can use it like this:
+    ---------------------------------------------------------------------------
+
+--> Console.WriteLine($"Int :{coll1.GetType().GetGenericArguments()[0].Name} Count : 
+                             {coll1.Count()}");
+    ---------------------------------------------------------------------------
+    Certainly, you can use the GetType() method to get the type of an object. 
+    
+    To display the type name more clearly in your output, 
+
+    In this code, coll1.GetType().GetGenericArguments()[0].Name is used to obtain the name of the 
+    generic type argument for the collection created by Enumerable.Empty<int>(). 
+    
+    This will display "Int" as the type name for the int collection.
+    ---------------------------------------------------------------------------
+

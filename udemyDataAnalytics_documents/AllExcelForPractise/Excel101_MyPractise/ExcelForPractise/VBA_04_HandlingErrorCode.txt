@@ -1,0 +1,90 @@
+ ' Handle values based on walking, jogging and meditation status
+    If Form.Range("C8").Value = 0 And Form.Range("F8").Value = 0 And Form.Range("C11") Then
+        MsgBox "Setting Values in cells to 0"
+        Form.Range("D8").Value = 0
+        Form.Range("E8").Value = 0
+        Form.Range("G8").Value = 0
+    ElseIf Form.Range("C8").Value = 1 And Form.Range("F8").Value = 0 Then
+        ' Prompt user for time value for D8
+        userInputD8 = InputBox("Enter the time for Walking Initial Time (e.g., 5:30 PM):")
+        ' Check if the input can be converted to a time
+        If IsDate(userInputD8) Then
+            Form.Range("D8").Value = CDate(userInputD8)
+        Else
+            MsgBox "Please enter a valid time for D8 (e.g., 5:30 PM)", vbCritical
+            Exit Sub
+        End If
+
+        ' Prompt user for numeric value for E8
+        userInputE8 = InputBox("Enter the numeric value for Walking Rounds:")
+        ' Ensure the input is numeric
+        If IsNumeric(userInputE8) Then
+            Form.Range("E8").Value = CDbl(userInputE8)
+        Else
+            MsgBox "The value for E8 must be a number", vbCritical
+            Exit Sub
+        End If
+
+        ' Set G8 to 0 since meditation status is 0
+        Form.Range("G8").Value = 0
+
+    ElseIf Form.Range("C8").Value = 0 And Form.Range("F8").Value = 1 Then
+        ' Set D8 and E8 to 0 since walking status is 0
+        Form.Range("D8").Value = 0
+        Form.Range("E8").Value = 0
+
+        ' Prompt user for meditation minutes
+        userInputMeditation = InputBox("Enter the meditation minutes (3 or 5):")
+        ' Ensure the input is either 3 or 5
+        If userInputMeditation = "3" Or userInputMeditation = "5" Then
+            Form.Range("G8").Value = CDbl(userInputMeditation)
+        Else
+            MsgBox "Meditation minutes must be either 3 or 5", vbCritical
+            Exit Sub
+        End If
+
+    ElseIf Form.Range("C8").Value = 1 And Form.Range("F8").Value = 1 Then
+        ' Prompt user for time value for D8
+        userInputD8 = InputBox("Enter the time for Walking Initial Time (e.g., 5:30 PM):")
+        ' Check if the input can be converted to a time
+        If IsDate(userInputD8) Then
+            Form.Range("D8").Value = CDate(userInputD8)
+        Else
+            MsgBox "Please enter a valid time for D8 (e.g., 5:30 PM)", vbCritical
+            Exit Sub
+        End If
+
+        ' Prompt user for numeric value for E8
+        userInputE8 = InputBox("Enter the numeric value for Walking Rounds:")
+        ' Ensure the input is numeric
+        If IsNumeric(userInputE8) Then
+            Form.Range("E8").Value = CDbl(userInputE8)
+        Else
+            MsgBox "The value for E8 must be a number", vbCritical
+            Exit Sub
+        End If
+
+        ' Prompt user for meditation minutes
+        userInputMeditation = InputBox("Enter the meditation minutes (3 or 5):")
+        ' Ensure the input is either 3 or 5
+        If userInputMeditation = "3" Or userInputMeditation = "5" Then
+            Form.Range("G8").Value = CDbl(userInputMeditation)
+        Else
+            MsgBox "Meditation minutes must be either 3 or 5", vbCritical
+            Exit Sub
+        End If
+    End If
+
+    
+     If Form.Range("C11").Value = 0 Then
+        MsgBox "Setting values in D8, E8, and G8 to 0"
+        Form.Range("D11").Value = 0
+        Form.Range("E11").Value = 0
+        Form.Range("F11").Value = 0
+        Form.Range("G11").Value = 0
+        Form.Range("H11").Value = 0
+        
+    End If
+
+    ' Proceed with further processing if all validations pass
+    MsgBox "All validations passed. Proceeding with further processing."

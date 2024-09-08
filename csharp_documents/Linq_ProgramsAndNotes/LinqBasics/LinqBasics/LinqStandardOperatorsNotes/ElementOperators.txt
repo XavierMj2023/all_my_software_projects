@@ -1,0 +1,81 @@
+﻿Element Operators
+------------------------
+
+*	Element operators return a particular element from a sequence (collection).
+
+*	Element Operators					Description	
+	(Methods)	
+------------------------------------------------------------------------------------------------
+	ElementAt							Returns the element at a specified index in a collection
+
+	ElementAtOrDefault					Returns the element at a specified index in a collection or a 
+										default value if the index is out of range.
+
+	First								Returns the first element of a collection, or the first element 
+										that satisfies a condition.
+
+	FirstOrDefault						Returns the first element of a collection, or the first element 
+										that satisfies a condition. 
+
+										Returns a default value if index is out of range.
+
+	Last								Returns the last element of a collection, or the last element 
+										that satisfies a condition
+
+	LastOrDefault						Returns the last element of a collection, or the last element 
+										that satisfies a condition. 
+
+										Returns a default value if no such element exists.
+
+	Single								Returns the only element of a collection, or the only element 
+										that satisfies a condition.
+
+	SingleOrDefault						Returns the only element of a collection, or the only element 
+										that satisfies a condition. 
+
+										Returns a default value if no such element exists or the 
+										collection does not contain exactly one element.
+------------------------------------------------------------------------------------------------
+*	ElementAt, ElementAtOrDefault
+	------------------------------
+
+*	ElementAt - Please note that index is a zero based index.
+
+*	ElementAtOrDefault - It will return a default value of the data type instead of throwing an error.
+
+*	Use the ElementAtOrDefault extension method to eliminate the possibility of a runtime exception.
+
+------------------------------------------------------------------------------------------------
+*	First & FirstOrDefault
+	------------------------------
+
+*	First and FirstOrDefault has two overload methods.
+
+*	Be careful while specifying condition in First() or FirstOrDefault(). 
+
+	First() will throw an exception if a collection does not include any element that satisfies the 
+	specified condition or includes null element.
+
+*	If a collection includes null element then FirstOrDefault() throws an exception while evaluting the 
+	specified condition.
+
+------------------------------------------------------------------------------------------------
+*	Last & LastOrDefault
+	------------------------------
+
+------------------------------------------------------------------------------------------------
+*	Single & SingleOrDefault
+	------------------------------
+
+*	Single() expects one and only one element in the collection.
+
+*	Single() throws an exception when it gets no element or more than one elements in the collection.
+
+*	If specified a condition in Single() and result contains no element or more than one elements then 
+	it throws an exception.
+
+*	SingleOrDefault() will return default value of a data type of generic collection if there is no 
+	elements in a colection or for the specified condition.
+
+*	SingleOrDefault() will throw an exception if there is more than one elements in a colection or for 
+	the specified condition

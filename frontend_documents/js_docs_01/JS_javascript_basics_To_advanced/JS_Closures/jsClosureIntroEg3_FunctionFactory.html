@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Closures</title>
+</head>
+<body>
+    <h1>Javascript Closures</h1>
+    <hr/>
+    <p id="closu1"></p>
+    <p id="closu2"></p>
+    <p id="closu3"></p>
+    <script>
+        let closeId1 = document.getElementById("closu1");
+        let closeId2 = document.getElementById("closu2");
+        let closeId3 = document.getElementById("closu3");
+        
+        function add(x){
+            return function(y){
+                //functon will preserve parameter x
+                return x + y;
+            }
+        }
+
+        //With each add() execution new scope was created and
+        //now addFive has access to parameter x=5 and
+        //addTen  to parameter x=10
+        const addFive = add(5);
+        const addTen = add(10);
+
+        closeId1.innerHTML = addFive(10);//15
+        closeId2.innerHTML = addTen(10);//20
+        closeId3.innerHTML = addFive(15);//20
+    </script>
+</body>
+</html>

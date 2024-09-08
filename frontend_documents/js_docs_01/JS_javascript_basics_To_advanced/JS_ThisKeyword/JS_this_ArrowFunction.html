@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS This keyword</title>
+    </head>
+    <body>
+        <h4>ArrowFunction</h4>
+        <p id="one"></p>
+        <p id="two"></p>
+        <script>
+            let one = document.getElementById("one");
+            let two = document.getElementById("two");
+
+            const summer = {
+                name : "Heat",
+                destiny : function(){
+                    const khujali = () => {
+                        two.innerHTML = `This value : ${this}`;
+                        console.log(this);
+                        one.innerHTML = `Hello ${this.name}`;
+                    };
+                    khujali();
+                }
+            };
+            
+            summer.destiny();
+        </script>
+    </body>
+</html>

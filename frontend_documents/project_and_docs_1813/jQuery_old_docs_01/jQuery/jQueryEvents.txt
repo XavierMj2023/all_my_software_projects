@@ -1,0 +1,38 @@
+﻿* jQuery is tailor-made to respond to events in an HTML page.
+
+* What are Events?
+
+  All the different visitors' actions that a web page can respond to are called events.
+
+  An event represents the precise moment when something happens.
+
+  Examples:
+  1:	moving a mouse over an element
+  2:	selecting a radio button
+  3:	clicking on an element
+
+  The term "fires/fired" is often used with events. 
+  Example: "The keypress event is fired, the moment you press a key".
+
+  Here are some common DOM events:
+
+  Mouse Events		Keyboard Events			Form Events			Document/Window Events
+
+	click				keypress				submit				load
+	dblclick			keydown					change				resize
+	mouseenter			keyup					focus				scroll
+	mouseleave	 		blur					unload
+
+  jQuery Syntax For Event Methods
+	In jQuery, most DOM events have an equivalent jQuery method.
+
+	To assign a click event to all paragraphs on a page, you can do this:
+
+	$("p").click();
+
+	The next step is to define what should happen when the event fires. You must pass a function 
+	to the event:
+
+	$("p").click(function(){
+	  // action goes here
+	});

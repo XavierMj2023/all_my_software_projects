@@ -1,0 +1,27 @@
+Inner Classes are classes within another class.
+
+Eg : Real Life -> Car (Class) -> Consist Of Engine(Class) -> Components
+
+Useful : Non Static Inner Classes.
+
+Doubt ? Door.java --> door.getLock().setLock(false);
+
+There are many types of classes:-
+
+Member Inner Class -> Non Static Class inside a Non Static Class
+
+Local Inner Class -> It is a class which is inside a scope of a block.Block can be a method as well.Scope 
+					 limited to the code block only.
+					 
+Anonymous Inner Class -> Nameless Class inside a class.As no name to the inner class,we can only use once in
+						 lifetime.
+						 
+Non Static Nested Class -> Known as Inner Class branch --> Instance of Non Static Inner Class contain
+														   Instance of Inner Class
+														   (Instance inside instance)
+														   
+Static Nested Class -> No Static Class need to accessed using object or an instance->Directly Access
+
+
+														   
+														    

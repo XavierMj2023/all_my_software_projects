@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Iterables</title>
+    </head>
+    <body>
+        <h1>Object Iterables</h1>
+        <hr/>
+        <h4>Symbol Iterator - It can use for of</h4>
+        <p>
+            When you start a for...of loop over myNumbers, JavaScript internally checks if 
+            myNumbers is iterable by checking if it has a Symbol.iterator property.
+            <br/><br/>
+            If myNumbers has a Symbol.iterator property, JavaScript accesses it to retrieve an 
+            <br/><br/>
+            iterator object.
+            <br/><br/>
+            The iterator object returned by myNumbers[Symbol.iterator] is then used by the 
+            <br/><br/>
+            for...of loop to iterate over the elements/values of myNumbers.
+            <br/><br/>
+            Each iteration of the loop calls the iterator's next() method to retrieve the next value, and the loop continues until the iterator indicates that the iteration is complete (i.e., when the done property of the iterator's result is true).
+        </p>
+        <hr/>
+        <p><b>Normal Iteration</b</p>
+        <p id="demo1"></p>
+        <hr/>
+
+        <p><b>Iteration using Symbol.Iterator</b></p>
+        <p id="demo2"></p>
+        <hr/>
+
+        <p><b>Iteration using Symbol.Iterator with ()</b></p>
+        <p id="demo3"></p>
+        <hr/>
+
+        <p><b>Iteration using Symbol.Iterator with ()</b></p>
+        <p id="demo3"></p>
+        <hr/>
+
+        <p><b>Iteration using Symbol.Iterator with () executation</b></p>
+        <p id="demo4"></p>
+        <hr/>
+        <script>
+            let numbers = [1, 2, 3];
+            document.getElementById("demo1").innerHTML = numbers;
+
+            let numbers2 = [1, 2, 3];
+            document.getElementById("demo2").innerHTML = numbers2[Symbol.iterator];
+
+            let numbers3 = [1, 2, 3];
+            document.getElementById("demo3").innerHTML = numbers3[Symbol.iterator](); //[object Array Iterator]
+            console.log(numbers3[Symbol.iterator]());//Array Iterator
+
+            let numbers4 = [1, 2, 3];
+            let ifsn = numbers4[Symbol.iterator]();
+            console.log(ifsn.next());
+            console.log(ifsn.next());
+            console.log(ifsn.next());
+            console.log(ifsn.next());
+            console.log(ifsn.next());
+            console.log(ifsn.next());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+﻿if(cities.TryGetValue("Delhi",out string res))
+				{
+					Console.WriteLine($"Key : {0} ; Value :{1}", "Delhi", res);
+				}

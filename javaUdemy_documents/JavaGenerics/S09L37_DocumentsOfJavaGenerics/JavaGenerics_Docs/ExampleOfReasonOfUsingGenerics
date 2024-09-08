@@ -1,0 +1,23 @@
+element.add(new Data("Chaand"));
+		element.add(new Data('$'));
+		element.add(new Data(25));
+		element.add(new Data(52.65));
+		element.add(new Data(new Name("Studyeasy")));
+		
+-------------------------------------------------------------
+
+element.add(new Data(new Name("Studyeasy")));
+
+-------------------------------------------------------------
+
+No ToString()method and gives object address or no specific data
+
+-------------------------------------------------------------
+
+//Because The Object has also ToString()
+		Data x = new Data(new Name("Chaand")); 
+		System.out.println(x.getObject());
+		
+-------------------------------------------------------------
+		
+ToString()method and gives specific data

@@ -1,0 +1,15 @@
+After trimming :- Split into these columns and there respective sheet names
+---------------------------------------------------------------------------------------------
+netflix_titles_splittextintocol
+
+country
+
+listed_in
+
+cast
+
+director
+
+description
+---------------------------------------------------------------------------------------------
+

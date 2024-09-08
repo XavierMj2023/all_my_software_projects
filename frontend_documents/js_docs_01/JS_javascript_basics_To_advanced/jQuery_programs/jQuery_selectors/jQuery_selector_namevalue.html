@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css"/>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <input type="text" name="username" value="John">
+    <input type="text" name="password" value="123">
+    <input type="text" value="No name attribute">
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+         $(document).ready(function () {
+            // Select all input elements with a name attribute whose value is not "username"
+            $("input[name!='username']").css("background-color", "red");
+        });
+    </script>
+</body>
+
+</html>

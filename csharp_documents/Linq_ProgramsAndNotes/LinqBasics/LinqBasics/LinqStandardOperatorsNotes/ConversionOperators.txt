@@ -1,0 +1,64 @@
+﻿The Conversion operators in LINQ are useful in converting the type of the elements in a sequence 
+(collection). 
+
+There are three types of conversion operators: 
+
+1:	As operators (AsEnumerable and AsQueryable), 
+
+2:	To operators (ToArray, ToDictionary, ToList and ToLookup)
+
+3:	Casting operators (Cast and OfType).
+
+The following table lists all the conversion operators.
+----------------------------------------------------------
+Method											Description
+----------------------------------------------------------
+AsEnumerable									Returns the input sequence as IEnumerable<t>
+
+AsQueryable										Converts IEnumerable to IQueryable, to simulate a remote 
+												query provider
+
+Cast											Converts a non-generic collection to a generic collection
+												(IEnumerable to IEnumerable<T>)
+
+OfType											Filters a collection based on a specified type
+
+ToArray											Converts a collection to an array
+
+ToDictionary									Puts elements into a Dictionary based on key selector 
+												function
+
+ToList											Converts collection to List
+
+ToLookup										Groups elements into an Lookup<TKey,TElement>
+
+----------------------------------------------------------------------------------------------
+
+AsEnumerable & AsQueryable
+----------------------------------------------------------------------------------------------
+The AsEnumerable and AsQueryable methods cast or convert a source object to IEnumerable<T> or 
+IQueryable<T> respectively.
+
+----------------------------------------------------------------------------------------------
+
+Cast
+----------------------------------------------------------------------------------------------
+Cast does the same thing as AsEnumerable<T>. It cast the source object into IEnumerable<T>.
+
+studentArray.Cast<Student>() is the same as (IEnumerable<Student>)studentArray but Cast<Student>() is 
+more readable.
+
+----------------------------------------------------------------------------------------------
+
+To
+----------------------------------------------------------------------------------------------
+
+To Operators: ToArray(), ToList(), ToDictionary()
+
+As the name suggests, ToArray(), ToList(), ToDictionary() method converts a source object into an array,
+List or Dictionary respectively.
+
+To operators force the execution of the query. It forces the remote query provider to execute a query 
+and get the result from the underlying data source 
+
+e.g. SQL Server database.

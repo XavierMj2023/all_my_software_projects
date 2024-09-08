@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Asynchronous Programming</title>
+</head>
+
+<body>
+    <p id="get"></p>
+    <script>
+       const count = true;
+       let promi = new Promise(function(resolve, reject){
+            //Producing Code(Take some time)
+            if(count){
+                resolve("There is a Count value");
+            }else{
+                reject("There is no Count Value");
+            }
+       });
+       console.log(promi);
+       document.querySelector("p").innerHTML = promi;
+    </script>
+</body>
+
+</html>

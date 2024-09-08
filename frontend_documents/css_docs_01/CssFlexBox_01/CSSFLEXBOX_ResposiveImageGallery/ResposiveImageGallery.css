@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Spacing between images */
+}
+
+.gallery-item {
+    flex: 1 1 200px; /* Minimum initial width of 200px for each item */
+    overflow: hidden; /* Ensures the content fits within the item */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images cover the area, but are cropped if necessary */
+}
+
+/* For tablets: 3 items per row */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(33.333% - 10px); /* Adjusts the flex-basis value */
+    }
+}
+
+/* For mobile phones: 2 items per row */
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 10px); /* Adjusts the flex-basis value */
+    }
+}
+

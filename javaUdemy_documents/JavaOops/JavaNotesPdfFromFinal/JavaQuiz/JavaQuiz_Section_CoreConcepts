@@ -1,0 +1,76 @@
+Interface have abstract methods. -> True
+
+It is not mandatory to implement exact method(s) defined in interfaces. -> False
+
+In Java, Abstract class can be instantiated. -> False
+
+Multiple inheritance using class is not supported by Java. -> True
+
+A class created within class and outside method is called…………. -> Member Inner Class
+
+An anonymous object does not have object reference. -> True
+
+Which package  contains Scanner class? -> Java.util
+
+What is the  method to avoid resource leak with reference of scanner class? -> close();
+
+The static variable has an independent memory location. -> True
+
+A static class in Java, created within a class is called………. -> Static Nested Class
+----------------------------------------------------------
+
+----------------------------------------------------------
+When a variable is declared with the final keyword.
+
+Identify correct statements:
+
+A. Value can be modified.
+
+B. Value can not be initialized.
+
+C. Value is constant.
+
+----------------------------------------------------------
+Answer : C
+----------------------------------------------------------
+
+In Java, Which package is always available? -> java.lang
+
+----------------------------------------------------------
+
+-----------------------------------------------------------
+
+Identify Output
+
+class Scopetest
+    {
+        public static void main(String[] args)
+            {
+                 int number;
+                //Begining of inner block
+                {
+                    int number2 = 75;
+                    number = 56;
+                    System.out.println("Number: "+number);
+                }
+                //End of inner block
+            number2 = 2;
+        }
+}
+----------------------------------------------------------
+Output : Compile Time Error or CTE
+----------------------------------------------------------
+
+Public access modifier can make variable accessible to ……….. ->  -
+
+Private access modifier can make variable accessible in ……….. -> -
+
+Protected access modifier cannot be accessed by non-sub class in different package. -> True
+
+Finally block will execute only when exception handled. -> false
+
+The keyword ……... is used to throw an exception. -> throw
+
+Checked exceptions are checked by Java compiler and must be handled by the programmer. -> True
+
+

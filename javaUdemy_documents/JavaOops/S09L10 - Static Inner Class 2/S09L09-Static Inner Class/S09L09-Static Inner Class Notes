@@ -1,0 +1,22 @@
+S09L09-Static Inner Class
+----------------------------
+
+So A True inner class is a class where everything is a static and then only we would be able to access the testing 
+inner class method.
+
+A true static class is a class where all the elements inside the class are static, may it be methods, 
+may it be variable, and that will give us the ease to access the elements inside the static class using the static 
+way.
+
+We need not to create a object to access the elements.
+
+Properties and Variables are same.
+
+If we would like to access Outer Elements , then those needs to be static.Then Only we can achieve true inner static 
+class.
+
+If we would like to take advantage of a true static inner class, it is always good that only access the variables
+and the methods which are of a static type.
+
+If we have an inner class, inner class has the access to the private entities as well.
+

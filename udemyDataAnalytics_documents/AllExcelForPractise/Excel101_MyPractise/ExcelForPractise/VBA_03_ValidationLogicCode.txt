@@ -1,0 +1,78 @@
+---Walking------------------------------------------------------------------------------------------------
+
+If the walking status is 0 and meditation status is 0 and jogging status is 0 then cells should be 0
+
+if the walking status is 1 and meditation status is 1 and jogging status is 1 then enter the values for all cells
+
+
+If the walking status is 0 and meditation status is 0 and jogging status is 1 then enter the values for only 
+jogging cells
+
+If the walking status is 0 and meditation status is 1 and jogging status is 0 then enter the values for only 
+meditation cells
+
+If the walking status is 0 and meditation status is 1 and jogging status is 1 then enter the values for only 
+jogging and meditation cells
+
+
+If the walking status is 1 and meditation status is 0 and jogging status is 0 then enter the values for only 
+walking cells
+
+If the walking status is 1 and meditation status is 0 and jogging status is 1 then enter the values for only 
+walking and jogging cells
+
+If the walking status is 1 and meditation status is 1 and jogging status is 0 then enter the values for only 
+walking and meditation cells
+
+
+---Jogging----------------------------------------------------------------------------------------------------
+
+
+If the Jogging status is 0 and meditation status is 0 and walking status is 1 then enter the values for only 
+walking cells
+
+If the Jogging status is 0 and meditation status is 1 and walking status is 0 then enter the values for only 
+meditation cells
+
+If the Jogging status is 0 and meditation status is 1 and walking status is 1 then enter the values for only 
+meditation and walking cells
+
+
+If the Jogging status is 1 and meditation status is 0 and walking status is 0 then enter the values for only 
+Jogging cells
+
+If the Jogging status is 1 and meditation status is 0 and walking status is 1 then enter the values for only 
+walking and jogging cells
+
+If the Jogging status is 1 and meditation status is 1 and walking status is 0 then enter the values for only 
+Jogging and meditation cells
+
+
+---Meditation----------------------------------------------------------------------------------------------------
+
+
+If the meditation status is 0 and walking status is 0 and jogging status is 1 then enter the values for only 
+Jogging cells
+
+If the meditation status is 0 and walking status is 1 and jogging status is 0 then enter the values for only 
+walking cells
+
+If the meditation status is 0 and walking status is 1 and jogging status is 1 then enter the values for only 
+Jogging and walking cells
+
+
+If the meditation status is 1 and walking status is 0 and jogging status is 0 then enter the values for only 
+meditation cells
+
+If the meditation status is 1 and walking status is 0 and jogging status is 1 then enter the values for only 
+meditation and jogging cells
+
+If the meditation status is 1 and walking status is 1 and jogging status is 0 then enter the values for only 
+walking and meditation cells
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Asynchronous Programming</title>
+</head>
+
+<body>
+    <p id="get"></p>
+    <script>
+        async function display() {
+            let p = document.querySelector("p");
+            let promy = new Promise(function (resolve, reject) {
+                resolve("I Love Maggi!..");
+            });
+            p.innerHTML = await promy;
+        }
+        display();
+    </script>
+</body>
+
+</html>

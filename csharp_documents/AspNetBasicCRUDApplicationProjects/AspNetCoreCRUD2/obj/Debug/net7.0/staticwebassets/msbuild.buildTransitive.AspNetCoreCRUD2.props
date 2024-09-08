@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\AspNetCoreCRUD2.props" />
+</Project>

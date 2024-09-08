@@ -1,0 +1,4 @@
+﻿ Write a program to find the second smallest element in an integer array.
+
+ MaxValue and MinValue --> Number Properties
+

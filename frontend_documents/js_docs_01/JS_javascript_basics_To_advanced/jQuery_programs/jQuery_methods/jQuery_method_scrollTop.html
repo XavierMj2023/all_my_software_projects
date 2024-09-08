@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css"/>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <div class="scrollTop">
+        This is some text. 
+        This is some text. 
+        This is some text. 
+        This is some text. 
+        This is some text. 
+        This is some text. 
+        This is some text. 
+        This is some text. 
+        This is some text.
+    </div>
+    <br>    
+        <button class="get">Get Vertical position</button>
+        <button class="set">Set Vertical position</button>
+        <p>Move the scrollbar down and click the button again.</p>
+        
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Place Jquery Code here
+            
+            //get value
+            $(".get").click(function(){
+                var divVal = $("div").scrollTop();
+                alert(divVal);
+            });
+            //set value
+            $(".set").click(function(){
+                $("div").scrollTop(60);
+            });
+        });
+    </script>
+</body>
+
+</html>

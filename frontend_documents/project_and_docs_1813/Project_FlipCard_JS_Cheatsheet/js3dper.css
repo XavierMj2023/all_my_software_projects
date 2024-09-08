@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+}
+img{
+  height: 200px;
+  width: 300px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

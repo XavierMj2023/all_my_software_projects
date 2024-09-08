@@ -1,0 +1,14 @@
+*   The <span> element is an inline container used to mark up a part of a text, or a part of a 
+    document.
+
+*   The <span> element has no required attributes, but style, class and id are common.
+
+*   When used together with CSS, the <span> element can be used to style parts of the text.
+
+*   The <span> tag is much like the <div> element, but <div> is a block-level element and <span>
+    is an inline element.
+
+*   The span tag is used for the grouping of inline elements & this tag does not make any visual 
+    change by itself. 
+
+*   The HTML span element is a generic inline container for inline elements and content.

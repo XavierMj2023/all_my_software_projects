@@ -1,0 +1,61 @@
+﻿$(document).ready()
+--------------------
+The $(document).ready() method allows us to execute a function when the document is fully loaded.
+
+
+click()
+--------------------
+The click() method attaches an event handler function to an HTML element.The function is executed 
+when the user clicks on the HTML element.
+
+
+dblclick()
+--------------------
+The dblclick() method attaches an event handler function to an HTML element.The function is 
+executed when the user double-clicks on the HTML element.
+
+
+mouseenter()
+--------------------
+The mouseenter() method attaches an event handler function to an HTML element.The function is 
+executed when the mouse pointer enters the HTML element.
+
+
+mouseleave()
+--------------------
+The mouseleave() method attaches an event handler function to an HTML element.The function is 
+executed when the mouse pointer leaves the HTML element.
+
+
+mousedown()
+--------------------
+The mousedown() method attaches an event handler function to an HTML element.
+The function is executed, when the left, middle or right mouse button is pressed down, while the
+mouse is over the HTML element.
+
+
+mouseup()
+--------------------
+The mouseup() method attaches an event handler function to an HTML element.
+The function is executed, when the left, middle or right mouse button is released, while the mouse 
+is over the HTML element
+
+
+hover()
+--------------------
+The hover() method takes two functions and is a combination of the mouseenter() and mouseleave()
+methods.
+The first function is executed when the mouse enters the HTML element, and second function is 
+executed when the mouse leaves the HTML element.
+
+
+focus()
+--------------------
+The focus() method attaches an event handler function to an HTML form field.
+The function is executed when the form field gets focus.
+
+
+blur()
+--------------------
+The blur() method attaches an event handler function to an HTML form field.
+The function is executed when the form field loses focus

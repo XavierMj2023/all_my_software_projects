@@ -1,0 +1,14 @@
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\bin\Debug\net7.0\OopsConcepts.exe
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\bin\Debug\net7.0\OopsConcepts.deps.json
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\bin\Debug\net7.0\OopsConcepts.runtimeconfig.json
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\bin\Debug\net7.0\OopsConcepts.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\bin\Debug\net7.0\OopsConcepts.pdb
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\obj\Debug\net7.0\OopsConcepts.GeneratedMSBuildEditorConfig.editorconfig
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\obj\Debug\net7.0\OopsConcepts.AssemblyInfoInputs.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\obj\Debug\net7.0\OopsConcepts.AssemblyInfo.cs
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\obj\Debug\net7.0\OopsConcepts.csproj.CoreCompileInputs.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\obj\Debug\net7.0\OopsConcepts.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\obj\Debug\net7.0\refint\OopsConcepts.dll
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\obj\Debug\net7.0\OopsConcepts.pdb
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\obj\Debug\net7.0\OopsConcepts.genruntimeconfig.cache
+D:\RECYCLE BIN EXTRAS\ONLY_DOCS\AllCSharpBasicPrograms\OopsConceptsPrograms\OopsConcepts\obj\Debug\net7.0\ref\OopsConcepts.dll

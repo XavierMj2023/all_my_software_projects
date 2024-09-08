@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Generators</title>
+</head>
+
+<body>
+    <script>
+        //function generator(): Generator<never, void, unknown>
+        function* generatorOne(){
+            yield 1;
+            yield 2;
+        }
+        function* generatorTwo(){
+            yield 3;
+            yield 4;
+        }
+        function* composedGenerator(){
+            yield* generatorOne();
+            yield* generatorTwo();
+        }
+
+        const gen = composedGenerator();
+
+        console.log(gen.next());
+        console.log(gen.next());
+        console.log(gen.next());
+        console.log(gen.next());
+        console.log(gen.next());
+
+    </script>
+</body>
+
+</html>

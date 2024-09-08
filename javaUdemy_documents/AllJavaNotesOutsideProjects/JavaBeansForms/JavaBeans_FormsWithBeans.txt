@@ -1,0 +1,5 @@
+JAVA FORMS WITH JAVA BEANS
+-----------------------------------------------
+
+* - Wildcard character - It will do a one to one correspondence and it will just set the proper value
+                         based on the property names.

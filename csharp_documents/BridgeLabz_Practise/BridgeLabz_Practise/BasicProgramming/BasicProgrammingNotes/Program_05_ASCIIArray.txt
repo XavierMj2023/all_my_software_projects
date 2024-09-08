@@ -1,0 +1,2 @@
+﻿Write a program which converts each character of an input string as an ASCII
+value and stores each of these numbers in an array. Print that array

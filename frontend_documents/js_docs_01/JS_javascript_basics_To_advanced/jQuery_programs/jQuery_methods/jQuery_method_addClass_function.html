@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css"/>
+    <style>
+        .par_0{
+            color: red;
+        }
+        .par_1{
+            color: gray;
+        }
+        .par_2{
+            color: lightblue;
+        }
+        .par_3{
+            color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <button class="cl">Add Class</button>
+    <p>Add me some style!..</p>
+    <p>Add me some style!..</p>
+    <p>Add me some style!..</p>
+    <p>Add me some style!..</p>
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".cl").click(function(){
+                $("p").addClass(function(n){
+                    
+                    console.log(n);
+
+                    return "par_" + n;
+                });
+            })
+        });
+    </script>
+</body>
+
+</html>

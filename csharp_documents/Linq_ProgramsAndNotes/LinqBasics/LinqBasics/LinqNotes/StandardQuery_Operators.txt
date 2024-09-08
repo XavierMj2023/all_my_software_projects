@@ -1,0 +1,10 @@
+﻿*	Standard Query Operators in LINQ are actually Extension methods for the IEnumerable<T> and 
+	IQueryable<T> types. 
+
+*	They are defined in the System.Linq.Enumerable and System.Linq.Queryable classes. 
+
+*	There are over 50 standard query operators available in LINQ that provide different 
+	functionalities like filtering, sorting, grouping, aggregation, concatenation, etc.
+
+*	Standard query operators in query syntax is converted into extension methods at compile time. 
+	So both are same.

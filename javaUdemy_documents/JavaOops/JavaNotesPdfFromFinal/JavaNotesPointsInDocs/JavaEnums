@@ -1,0 +1,35 @@
+Java Enums
+---------------------------------------------------------------
+package org.studyeasy;
+
+public class Main {
+
+	//Constant Value ; Cannot be changeable
+	/*
+	public static final int COREJAVA = 1;
+	public static final int COLLECTIONS = 2;
+	public static final int GENERICS = 3;
+	public static final int JSP = 4;
+	public static final int MUILTITHREADING = 5;
+	*/
+	
+	//Arrow Notation -> = Shothand Notation ; newer notation
+	public static void main(String[] args) {
+		//int learning = 10;
+		
+		System.out.println(Learning.COLLECTIONS);
+		
+		
+		
+		/*
+		switch(learning) {
+		case COREJAVA -> System.out.println("Core Java");
+		case COLLECTIONS -> System.out.println("Collections");
+		case GENERICS -> System.out.println("Generics");
+		case JSP -> System.out.println("JSP");
+		case MUILTITHREADING -> System.out.println("Multithreading");
+	   }
+	   */
+  }
+}
+---------------------------------------------------------------

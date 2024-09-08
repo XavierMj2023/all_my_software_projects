@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+</head>
+
+<body>
+    <h1>JS Regular Expression</h1>
+    <hr />
+    <script>
+      
+        //This is the text
+        const txt4 = "Big and Large world world full of gases";
+
+        //Which number to replace?
+        const regex4 = /world/g;
+
+        let arr;
+
+        while((arr = regex4.exec(txt4))!=null){
+            console.log(`Found ${arr[0]}.Next starts at ${regex4.lastIndex}.`);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="/jQuerycss/main.css" />
+    <style>
+        .validEmail {
+            color: green;
+            background-color: greenyellow;
+        }
+
+        .invalidEmail {
+            color: red;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <label>Enter Email :</label>
+    <input type="email" id="email" class="email" value="" name="" />
+    <span class="validate"></span>
+    <input type="submit" class="sub" id="sub" value="Validate Email" />
+
+    <button class="removeClass">Remove Validations</button>
+
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="/jQuery/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".sub").click(function () {
+
+                let givemail = $("#email").val();
+                let printRes = $(".validate");
+
+                const emailEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                const res = givemail.match(emailEx);
+
+                //returns an array if the email is valid and null if it's invalid.
+                if (res) {
+                    console.log(res);
+                    printRes.text("Valid email").addClass("validEmail");
+                } else {
+                    console.log(res);
+                    printRes.text("Please enter the email again as it is invalid!").addClass("invalidEmail");
+                }
+            });
+            $(".removeClass").click(function(){
+                $(".validate").text("").removeClass("validEmail invalidEmail");
+                $("#email").val("");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS CallBacks</title>
+</head>
+
+<body>
+    <script>
+        //A function that simulates a time-consuming task
+        function heavyTask(callBack) {
+            setTimeout(() => {
+                console.log("Heavy Task finsihed!...");
+                callBack();
+            }, 2000);
+        }
+
+        //A function that is called after the heavy task is completed
+        function done(){
+            console.log("Done!..");
+        }
+
+        console.log("Starting!..");
+
+        //Calling the heavy task and passing the done function as a callback
+        heavyTask(done);
+
+        console.log("Continuing with the other work!...");
+    </script>
+</body>
+
+</html>

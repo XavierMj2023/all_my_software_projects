@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Js DataType Demonstartion</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            padding: 2px;
+            font-size: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Datatypes Demonstartion</h1>
+    <hr />
+    <ul>
+        <li>
+            JavaScript is a dynamic type language, means you don't need to specify type of the
+            variable because it is dynamically used by JavaScript engine.
+        </li>
+        <br />
+        <li>
+            There are two types of data types in JavaScript.
+            <ol>
+                <br />
+                <li>Primitive data type</li>
+                <li>Non-primitive (reference) data type</li>
+            </ol>
+        </li>
+        <br/>
+        <li>
+            JavaScript has dynamic types. 
+            This means that the same variable can be used to hold different data types.
+        </li>
+    </ul>
+    <hr />
+    <table>
+        <tr>
+            <th>No</th>
+            <th>DataType Name</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Big Int</td>
+            <td>
+                <ul>
+                    <li>
+                        They are used to store big integer values that are too big to be represented by a normal JavaScript Number. 
+                    </li><br/>
+                    <li>
+                        JavaScript integers are only accurate up to 15 digits.
+                    </li><br/>
+                    <li>
+                        To create a BigInt, append n to the end of an integer or call BigInt().
+                    </li><br/>
+                    <li>
+                        The JavaScript typeof a BigInt is "bigint".
+                    </li><br/>
+                    <li>
+                        Operators that can be used on a JavaScript Number can also be used on a BigInt
+                    </li><br/>
+                    <li>
+                        Arithmetic between a BigInt and a Number is not allowed (type conversion lose information).
+                    </li><br/>
+                    <li>
+                        A BigInt can not have decimals.
+                    </li><br/>
+                    <li>
+                        BigInt can also be written in hexadecimal, octal, or binary notation.
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <p>let x = 1234567890123456789012345n;</p><br/>
+                <p>let y = BigInt(1234567890123456789012345);</p>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <h4>Big Int</h4>
+    <hr />
+    <p>This is an example 1 of BigInt - Appending n to the end of the integer: <span id="bigeg1"></span> </p>
+
+    <p>This is an example 2 of BigInt - By Calling the BigInt(): <span id="bigeg2"></span> </p>
+
+    <p>This is an example 3 of BigInt -
+        Type Of BigInt is  :
+        <span id="bigeg3"></span>
+    </p>
+    
+</body>
+<script src="../Datatype02_BigInt/bigIntJS.js"></script>
+
+</html>

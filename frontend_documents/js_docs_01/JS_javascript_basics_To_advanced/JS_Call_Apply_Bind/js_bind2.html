@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Call Apply Bind with this</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>JS Call Apply Bind with this</h4>
+    <table id="table">
+        <tr>
+            <th>SL.No</th>
+            <th>TICKET DETAILS</th>
+            <th>DESCRIPTION</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>GATE</td>
+            <td id="gate"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ADDRESS</td>
+            <td id="add"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>STATUS and approved by</td>
+            <td id="stat"></td>
+        </tr>
+    </table>
+    <script>
+        let ga = document.getElementById("gate");
+        let ad = document.getElementById("add");
+        let st = document.getElementById("stat"); 
+
+        const member = {
+            gate: 125,
+            add: "125 Kudlu Gate",
+            status: "Pending",
+            approvedBy: "Mr Jangal"
+        };
+        const pers = {
+            gate: 126,
+            add: "126 Palace Grounds",
+            status: "Completed",
+            approvedBy: "Mr Jangu",
+            gate : function(){return this.gate;},
+            address : function(){return this.add;},
+            statappby : function(){return this.status + "<br/>" + this.approvedBy;}
+        }
+       let gatedet = pers.gate.bind(member);
+       let adddet = pers.address.bind(member);
+       let statapp = pers.statappby.bind(member);
+
+        ga.innerHTML = gatedet();
+        ad.innerHTML = adddet();
+        st.innerHTML = statapp();
+    </script>
+</body>
+
+</html>

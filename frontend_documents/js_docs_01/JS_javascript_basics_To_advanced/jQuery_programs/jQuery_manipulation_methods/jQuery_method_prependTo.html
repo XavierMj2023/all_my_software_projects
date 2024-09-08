@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="../../jQuery_css/main.css"/>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Placing HTML Code for jQuery Code demonstrartion-->
+    <h1>jQuery Method Prepend</h1>
+    <button class="prepend">Prepend</button>
+
+    <p id="prepend">Prepend</p>
+
+    <button class="prependto">Prepend To</button>
+
+    <p id="prependto">Prepend To</p>
+    <!--
+        This is the script link you have to put so jquery gets loaded first 
+        else you get error , : $ is not defined
+    -->
+    <script src="../../jQuery_main_folder/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".prepend").click(function(){
+                $("#prepend").prepend("Prepended");
+            });
+            $(".prependto").click(function(){
+                $("<b>Prepended To</b>").prependTo("#prependto");
+            });
+        });
+    </script>
+</body>
+
+</html>

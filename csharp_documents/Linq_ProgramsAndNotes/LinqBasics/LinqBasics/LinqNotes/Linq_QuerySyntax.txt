@@ -1,0 +1,24 @@
+﻿Query syntax in LINQ uses a SQL-like syntax to express queries for filtering, projecting, and 
+sorting data. 
+
+It provides a more intuitive and readable way to work with data. 
+
+Bsic Syntax 
+------------
+var queryResult = from item in source
+                  where condition
+                  select item;
+
+from:   This clause specifies the range variable (item in this case) and the data source (source) 
+        that you want to query. 
+      
+        The range variable represents individual elements from the data source.
+
+where:  This clause is used for filtering. You specify a condition that each element in the 
+        data source must meet to be included in the result. 
+      
+        Elements that don't satisfy the condition are filtered out.
+
+select: This clause is used for projecting. It defines what data or transformation of data you 
+        want to include in the result. 
+        It selects the properties or expressions you want to extract from each element.

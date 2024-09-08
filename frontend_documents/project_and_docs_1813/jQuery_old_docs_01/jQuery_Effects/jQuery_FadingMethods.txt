@@ -1,0 +1,67 @@
+﻿*	With jQuery you can fade an element in and out of visibility.jQuery has the following fade 
+	methods:
+
+	~> fadeIn()
+	~> fadeOut()
+	~> fadeToggle()
+	~> fadeTo()
+
+*	fadeIn()
+	----------------------------
+	The jQuery fadeIn() method is used to fade in a hidden element.
+
+	Syntax:
+	$(selector).fadeIn(speed,callback);
+
+	The optional speed parameter specifies the duration of the effect.It can take the following 
+	values: "slow", "fast", or milliseconds.
+
+	The optional callback parameter is a function to be executed after the fading completes.
+
+
+*	fadeOut()
+	----------------------------
+	The jQuery fadeOut() method is used to fade out a visible element.
+
+	Syntax:
+	$(selector).fadeOut(speed,callback);
+
+	The optional speed parameter specifies the duration of the effect. It can take the following 
+	values: "slow", "fast", or milliseconds.
+
+	The optional callback parameter is a function to be executed after the fading completes.
+
+
+
+*	fadeToggle()
+	----------------------------
+	The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut() methods.
+
+	If the elements are faded out, fadeToggle() will fade them in.
+
+	If the elements are faded in,  fadeToggle() will fade them out.
+
+	Syntax:
+	$(selector).fadeToggle(speed,callback);
+
+	The optional speed parameter specifies the duration of the effect. It can take the following 
+	values: "slow", "fast", or milliseconds.
+
+	The optional callback parameter is a function to be executed after the fading completes.
+
+
+
+*	fadeTo()
+	----------------------------
+	The jQuery fadeTo() method allows fading to a given opacity (value between 0 and 1).
+
+	Syntax:
+	$(selector).fadeTo(speed,opacity,callback);
+
+	The required speed parameter specifies the duration of the effect. It can take the following 
+	values: "slow", "fast", or milliseconds.
+
+	The required opacity parameter in the fadeTo() method specifies fading to a given opacity 
+	(value between 0 and 1).
+
+	The optional callback parameter is a function to be executed after the function completes.

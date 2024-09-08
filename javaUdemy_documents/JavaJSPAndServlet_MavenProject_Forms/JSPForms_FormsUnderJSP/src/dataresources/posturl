@@ -1,0 +1,3 @@
+http://localhost:8080/JSPForms_FormsUnderJSP/submit.jsp
+
+In Post, there is no posted data in the URL, because it is hidden.

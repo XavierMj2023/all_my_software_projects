@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object Method Assign</title>
+</head>
+<body>
+    <h1>Object Method - Assign</h1>
+    <p id="create1"></p>
+    <script>
+        const zodiac = {
+            element : "Water",
+            sign : "Leo"
+        };
+        const name = {
+            number : 8,
+            name : "Sena"
+        };
+        const char2 = Object.assign(zodiac, name);
+        console.log(char2);
+
+        const char3 = Object.assign(name , zodiac);
+        console.log(char3);
+    </script>
+</body>
+</html>

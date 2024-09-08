@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Unnamed Class</title>
+</head>
+<body>
+    <h3>Unnamed Class</h3>
+    <p id="unclass"></p>
+    <script>
+        var emp = class Employee{
+            constructor(id, name){
+                this.id = id;
+                this.name = name;
+            }
+        };
+        var obj = new emp(1, "Mano-San");
+        document.getElementById("unclass").innerHTML = obj.name;
+    </script>
+</body>
+</html>

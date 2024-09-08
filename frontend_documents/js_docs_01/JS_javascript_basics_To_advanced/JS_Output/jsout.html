@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JAVASCRIPT OUTPUT POSSIBILITIES</title>
+    <link rel="stylesheet" href="../JavaProgram_02_JSOutput/jsout.css" />
+</head>
+
+<body>
+    <script>
+        var val = 5 + 6;
+    </script>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 1 - Using innerHTML</h3>
+    <div id="o1"></div>
+    <script>
+        document.getElementById("o1").innerHTML = "Hi!.. I am JS InnerHTML and your id is : " + val;
+    </script>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 2 - Using document.write()</h3>
+    <script>
+        document.write("Hi!.. I am JS InnerHTML and your id is : " + val);
+    </script>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 3 - Using document.write() and deleting existing html</h3>
+    <button type="button" onclick="document.write(67 + 80)">
+        Click me to see the deleting existing html
+    </button>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 4 - Using windows.alert()</h3>
+    <button type="button" onclick=alertCall()>
+        Click to alert
+    </button>
+    <script>
+        function alertCall() {
+            alert("Hi!.. I am JS InnerHTML and your id is generated through alert box which  is : " + val);
+        }
+    </script>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 5 - Using console.log()</h3>
+    <p>Do Ctrl+Shift+I to check message in console / Right Click -> Inspect </p>
+    <button type="button" onclick="consoleCall()">Print Message in Console</button>
+    <script>
+        function consoleCall() {
+            console.log("Hi!.. I am console message and your message is  : " + val);
+        }
+    </script>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 6 - Using Print</h3>
+    <button type="button" onclick="window.print()">Print Me</button>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 7 - Using windows.prompt()</h3>
+    <button type="button" onclick="letPromptCall()">Prompt Call</button>
+    <script>
+        function letPromptCall() {
+            let userInput = window.prompt("Please Enter your Input");
+
+            if (userInput !== null) {
+                window.alert("Hello, " + userInput + "!");
+            } else {
+                window.alert("You clicked Cancel or closed the prompt.");
+            }
+        }
+    </script>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 8 - Using console.table()</h3>
+    <button type="button" onclick="letTableCall()">Table Call</button>
+    <script>
+        function letTableCall() {
+            //Array of Objects - 3 Scientists details
+            let scientists = [
+                {
+                    name: "Albert Einstein",
+                    dob: "1879-03-14",
+                    country: "Germany",
+                    contribution: "Theory of General Relativity"
+                },
+                {
+                    name: "Isaac Newton",
+                    dob: "1643-01-04",
+                    country: "England",
+                    contribution: "Laws of Motion, Universal Gravitation"
+                },
+                {
+                    name: "Galileo Galilei",
+                    dob: "1564-02-15",
+                    country: "Italy",
+                    contribution: "Law of Inertia, Heliocentrism"
+                }
+            ];
+            console.table(scientists);
+        }
+    </script>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 9 - Using windows.prompt()</h3>
+    <button type="button" onclick="letPromptCall()">Prompt Call</button>
+    <script>
+        function letPromptCall() {
+            let userInput = window.prompt("Please Enter your Input");
+
+            if (userInput !== null) {
+                window.alert("Hello, " + userInput + "!");
+            } else {
+                window.alert("You clicked Cancel or closed the prompt.");
+            }
+        }
+    </script>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 10 - Using console.error()</h3>
+    <button type="button" onclick="letConsoleErrorCall()">Console error Call</button>
+    <script>
+        function letConsoleErrorCall() {
+            let Promo = prompt("Enter the age")
+            console.log("Your age entered is : " + Promo);
+
+            //Console.Error()
+            if (Promo > 15) {
+                console.error("Age is : " + Promo + " and it is invalid!...")
+            } else if (Promo < 15) {
+                console.log("Age is : " + Promo + " and it is valid!...")
+            } else {
+                console.error("Enter a Valid age!..")
+            }
+        }
+    </script>
+
+    <h3>JAVASCRIPT OUTPUT POSSIBILITIES 11 - Using console.warn()</h3>
+    <button type="button" onclick="letConsoleWarnCall()">Console warn Call</button>
+    <script>
+        function letConsoleWarnCall() {
+            let Promo = prompt("Enter the age")
+            console.log("Your age entered is : " + Promo);
+
+            //Console.Warn()
+            if (Promo > 15) {
+                console.error("Age is : " + Promo + " and it is invalid!...")
+                console.warn("Please try to find a suitable age and you will get it!..")
+            } else if (Promo < 15) {
+                console.log("Age is : " + Promo + " and it is valid!...")
+            } else {
+                console.error("Enter a Valid age!..")
+            }
+        }
+    </script>
+</body>
+
+</html>

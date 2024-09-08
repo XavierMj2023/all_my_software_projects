@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VAR AND LET HOISTING</title>
+</head>
+<body>
+    <h1>LET HOISTING</h1>
+    <p>-------------------</p>
+    <p id="lethoist"></p>
+    <p>-------------------</p>
+    <script>
+        try{
+            document.getElementById("lethoist").innerHTML = "Accessing!..."+myLet;
+        }catch(error){
+            document.getElementById("lethoist").innerHTML = "Accessing!...You got Reference Error!";
+            console.log(myLet);
+        }
+
+        document.getElementById("lethoist").innerHTML = "After declaring and intializing!...variable";
+        //let myLet = 5;
+
+        try{
+            document.getElementById("lethoist").innerHTML = "Accessing!..."+myLet;
+        }catch(error){
+            document.getElementById("lethoist").innerHTML = "Accessing!...You got Reference Error!";
+        }
+    </script>
+
+
+    <p>------------------------------------------------------------------</p>
+
+
+    <h1>VAR HOISTING</h1>
+    <p>-------------------</p>
+    <p id="lethoist"></p>
+    <p>-------------------</p>
+    <script>
+        try{
+            document.getElementById("lethoist").innerHTML = "Accessing!..."+myVar;
+            console.log(myVar);
+        }catch(error){
+            document.getElementById("lethoist").innerHTML = "Accessing!...You got Reference Error!";
+            console.log(myVar);
+        }
+
+        document.getElementById("lethoist").innerHTML = "After declaring and intializing!...variable";
+        //var myVar = 5;
+
+        try{
+            document.getElementById("lethoist").innerHTML = "Accessing!..."+myVar;
+        }catch(error){
+            document.getElementById("lethoist").innerHTML = "Accessing!...You got Reference Error!";
+        }
+    </script>
+</body>
+</html>

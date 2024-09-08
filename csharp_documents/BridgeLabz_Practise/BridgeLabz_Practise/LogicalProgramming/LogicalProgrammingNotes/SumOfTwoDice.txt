@@ -1,0 +1,8 @@
+﻿Write a program SumOfTwoDice that prints the sum of two random integers
+between 1 and 6 (such as you might get when rolling dice).
+
+My Assumption
+---------------
+Min -> 2
+Max -> 12
+

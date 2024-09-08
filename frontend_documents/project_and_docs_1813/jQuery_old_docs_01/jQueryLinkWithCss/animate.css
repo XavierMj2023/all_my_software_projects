@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.loop {
+    background: #98bf21;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    /*set the CSS position property of the element to relative, fixed, 
+	or absolute.*/
+}

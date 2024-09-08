@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Regular Expression</title>
+</head>
+
+<body>
+    <h1>JS Regular Expression</h1>
+    <hr />
+    <script>
+        //Eg 6 - Find Capital Letters - If you want to ignore error like 'P' - Case 1
+
+        //This is the text
+        const txt6 = "People often Write hello world while HELLO WORLD programming";
+
+        //Which string to find?
+        const regex6 = /[A-OQ-Z]/g;
+
+        //Use matchAll() to match the given text
+        const results4 = txt6.match(regex6);
+
+        console.log("Case 1");
+        console.log(results4);
+
+        //---------------------------------------------------------------------------------------
+
+        //Eg 7 - Find Capital Letters - If you want to ignore error like 'P' - Case 2
+
+        //This is the text
+        const txt7 = "People often Write hello world while HELLO WORLD programming";
+
+        //Which string to find?
+        const regex7 = /(?![P])[A-Z]/g;
+
+        //Use matchAll() to match the given text
+        const results5 = txt7.match(regex7);
+
+        console.log("Case 2");
+        console.log(results5);
+
+    </script>
+</body>
+
+</html>

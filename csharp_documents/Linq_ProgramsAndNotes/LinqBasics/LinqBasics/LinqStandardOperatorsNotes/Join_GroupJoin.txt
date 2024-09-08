@@ -1,0 +1,44 @@
+﻿*	The GroupJoin operator performs the same task as Join operator except that GroupJoin returns a 
+	result in group based on specified group key. 
+	
+*	The GroupJoin operator joins two sequences based on key and groups the result by matching key 
+	and then returns the collection of grouped result and key.
+
+*	GroupJoin requires same parameters as Join. 
+
+*	GroupJoin has two overload methods.
+
+*	As you can see in the first overload method takes five input parameters (except the first 'this' 
+	parameter): 
+	1) outer 
+	2) inner 
+	3) outerKeySelector 
+	4) innerKeySelector 
+	5) resultSelector. 
+	
+*	Please notice that resultSelector is of Func delegate type that has second input parameter as 
+	IEnumerable type for inner sequence.
+
+
+*	GroupJoin in Query Syntax
+	------------------------------------
+	GroupJoin operator in query syntax works slightly different than method syntax. 
+	
+	It requires an outer sequence, inner sequence, key selector and result selector. 
+	
+	'on' keyword is used for key selector where the left side of 'equals' operator is the 
+	 outerKeySelector and the right side of 'equals' is the innerKeySelector. 
+	 
+	 Use the into keyword to create the grouped collection.
+
+	Syntax:
+	-------------
+	from ... in outerSequence
+
+	join ... in innerSequence  
+
+	on outerKey equals innerKey
+
+	into groupedCollection    
+
+	select ...

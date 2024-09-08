@@ -1,0 +1,28 @@
+﻿LINQ Syntax vs. Method Syntax
+------------------------------
+LINQ provides two primary ways to write queries. You can use 
+
+Query syntax, which resembles SQL, 
+or 
+Method syntax, which involves method chaining. 
+
+Both syntaxes are equivalent, and you can choose the one that suits your preference.
+
+LINQ simplifies data manipulation and is a significant improvement for developers, making code 
+more readable and maintainable while reducing the need to write complex loops and conditions. 
+
+It's a powerful tool in C# for working with various data sources.
+
+The foreach loop executes the query on the data source and get the result and then iterates over 
+the result set.
+
+
+Query Syntax:
+--------------
+var result = from item in source
+             where condition
+             select item;
+
+Method Syntax:
+---------------
+var result = source.Where(item => condition).Select(item => item);

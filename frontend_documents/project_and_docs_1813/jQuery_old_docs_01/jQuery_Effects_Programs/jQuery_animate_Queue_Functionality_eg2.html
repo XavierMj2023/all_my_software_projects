@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JQUERY ANIMATIONS</title>
+    <link rel="stylesheet" href="../jQueryLinkWithCss/animate.css" />
+    <script src="../jQuery_Files/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $("document").ready(function () {
+            $("button").click(function () {
+                //So Instead of $(".loop")
+                var div = $(".loop");
+                div.animate({ left:'300px' }, "slow");
+                div.animate({ fontSize:'3em' }, "slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Click Here For Animation Effect</button><br /><br />
+    <div class="loop">HI DUDES</div>
+</body>
+</html>

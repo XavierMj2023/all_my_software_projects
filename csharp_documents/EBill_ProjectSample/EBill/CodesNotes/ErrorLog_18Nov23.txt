@@ -1,0 +1,27 @@
+﻿@Html.ActionLink("View", "ViewBill", "EBill", null, new {Id = @item.Id} ,new { @class = "btn btn-sm btn-light border"})
+
+Null should not be there
+
+@Html.ActionLink("View", "ViewBill", "EBill", new {Id = @item.Id} ,new { @class = "btn btn-sm btn-light border"})
+
+
+
+---X--------------------------
+
+public BillDetail GetDetail(int Id) --> forgot to add below line
+
+cmd.CommandType = CommandType.StoredProcedure; 
+
+--------------------------
+
+ExecuteReader: CommandText property has not been initialized'
+
+public BillDetail GetDetail(int Id)
+
+SqlCommand cmd = new SqlCommand("", con); --> Add -->SqlCommand cmd = new SqlCommand("spt_getEBillDetails", con);
+
+--------------------------
+
+'Could not find stored procedure 'spt_getEBillDetails'.'
+
+[dbo].[spt_geEBillDetails] --> [dbo].[spt_getEBillDetails] 

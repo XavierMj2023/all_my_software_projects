@@ -1,0 +1,19 @@
+﻿  element Selector
+  -----------------
+
+* The jQuery element selector selects elements based on the element name.
+
+* You can select all <p> elements on a page like this:
+
+* $("p")
+
+Example
+
+When a user clicks on a button, all <p> elements will be hidden:
+
+Example
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+}); 

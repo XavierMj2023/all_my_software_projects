@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style> 
+               /* The animation code */
+            @keyframes example2 {
+                        0%  
+                         {
+                            background-color:red; 
+                            left:0px;
+                            top:0px;
+                         }
+                        25% 
+                         { 
+                            background-color:yellow;      /*This is where the animation started*/
+                            left:200px;                     /*This is moving to the right*/
+                            /* left:-200px; */
+                            top:0px;
+                         }
+                        50%
+                          {
+                            background-color:black; 
+                            left:200px;
+                            top:200px;
+                          }
+
+                        75%
+                          {
+                            background-color:purple; 
+                            left:0px;
+                            top:200px;
+                          }
+                        100%
+                         {
+                             background-color: green;
+                             left: 0px;
+                             top:0px;
+                          }
+                    }
+
+                        /* The element to apply the animation to */
+                        div {
+                                width: 100px;
+                                height: 100px;
+                                background-color: red;
+                                animation-name: example2;
+                                animation-duration: 8s;
+                                animation-delay:1s ;
+                                position: relative;
+                        }
+        </style>
+    </head>
+
+     <body>
+        <div>R</div>
+    </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s 1;
+  animation-delay: -2s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>animation-delay - Using negative values</h1>
+
+<p>Here, the animation will start as if it had already been playing for 2 seconds:</p>
+<div></div>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-delay: 10s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Change animation-delay with JavaScript</h1>
+
+<p>The animation will start 10 seconds after the page has finished loading (the delay starts counting from when the page has finished loading, not from when you click the button).</p>
+<p>Click the "Try it" button to reduce the delay of the animation to 3 seconds.</p>
+
+<button onclick="myFunction()">Try it</button>
+<div id="myDIV"></div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDIV").style.animationDelay = "3s";
+}
+</script>
+
+</body>
+</html> -->

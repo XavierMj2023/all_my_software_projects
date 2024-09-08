@@ -1,0 +1,65 @@
+﻿LINQ Method Syntax
+------------------
+*	There are two basic ways to write a LINQ query to IEnumerable collection or IQueryable data 
+	sources.
+
+1.	Query Syntax 
+
+	Query Expression Syntax
+
+2.	Method Syntax 
+
+	Method Extension Syntax 
+  
+	Fluent
+
+
+*	Method syntax (also known as fluent syntax) uses extension methods included in the Enumerable 
+	or Queryable static class, similar to how you would call the extension method of any class.
+
+	The compiler converts query syntax into method syntax at compile time.
+
+*	As name suggest, Method Syntax is like calling extension method.
+
+*	LINQ Method Syntax aka Fluent syntax because it allows series of extension methods call.
+
+*	Implicitly typed variable - var can be used to hold the result of the LINQ query.
+
+*	In C#, the term "method syntax" typically refers to a style of using LINQ 
+    to query and manipulate data in a declarative and functional way. 
+    
+    Method syntax is one of two primary syntax styles used in LINQ, the other being query syntax 
+    (which resembles SQL). 
+    
+    Method syntax relies on method chaining and lambda expressions to build queries.
+
+    Here's a basic overview of how method syntax works in C#:
+
+1.  Enumerable Methods: LINQ method syntax works with collections or sequences of data, such as 
+                        arrays, lists, or other data sources. 
+
+                        You start by calling LINQ extension methods on these sequences.
+
+2.  Method Chaining   : In method syntax, you chain multiple LINQ methods together to build a 
+                        query. 
+
+                        Each method operates on the result of the previous one, which allows you 
+                        to build complex queries step by step.
+
+3.  Lambda Expressions: You often use lambda expressions as arguments to LINQ methods. 
+
+                        Lambda expressions define the criteria or transformation applied to the 
+                        data.
+
+*   In this example, we used the `Where` method to filter even numbers 
+
+    `Select` method to double each even number. 
+    
+    The methods are chained together, creating a fluent and expressive query.
+
+    Method syntax is powerful, especially when dealing with more complex data manipulation and 
+    filtering tasks. 
+    
+    It's a core feature of LINQ in C# .
+    
+    It allows you to write concise and readable code for querying and transforming data.

@@ -1,0 +1,33 @@
+﻿EVENT HANDLING
+
+1:	What event is triggered when the DOM structure of the page is fully parsed by the browser, 
+	and is ready to be operated on?
+
+A:	$("document").ready()
+
+SELECTORS AND FILTERS
+
+2:	Selectors are used to further refine the selected content.
+
+A:	False
+
+JQUERY PROGRAM
+
+3:	This code sets the html content of an element with an ID of "target" to "This is a test" in 
+	bold.
+
+A:	$("#target").html("<b>This is a test</b>");
+
+
+EVENT HANDLING
+
+4:	Write the code that turns off the mouse over listener from a div named test.
+
+A:	$("#test").off("mousemove", onMouseOff);
+
+
+AJAX
+
+5:	With an AJAX call, what property do you set to indicate the type of data you expect back?
+
+A:	datatype

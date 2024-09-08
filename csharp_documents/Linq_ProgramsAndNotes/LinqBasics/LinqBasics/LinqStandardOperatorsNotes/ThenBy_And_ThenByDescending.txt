@@ -1,0 +1,21 @@
+﻿*	The ThenBy and ThenByDescending extension methods are used for sorting on multiple fields.
+
+*	The OrderBy() method sorts the collection in ascending order based on specified field. 
+
+*	Use ThenBy() method after OrderBy to sort the collection on another field in ascending order. 
+
+*	Linq will first sort the collection based on primary field which is specified by OrderBy 
+	method and then sort the resulted collection in ascending order again based on secondary field
+	specified by ThenBy method.
+
+*	The same way, use ThenByDescending method to apply secondary sorting in descending order.
+
+*	OrderBy and ThenBy sorts collections in ascending order by default.
+
+	ThenBy or ThenByDescending is used for second level sorting in method syntax.
+
+	ThenByDescending method sorts the collection in decending order on another field.
+
+	ThenBy or ThenByDescending is NOT applicable in Query syntax.
+
+	Apply secondary sorting in query syntax by separating fields using comma.

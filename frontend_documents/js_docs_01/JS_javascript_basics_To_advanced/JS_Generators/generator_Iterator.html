@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Generators</title>
+</head>
+
+<body>
+    <script>
+        //function generator(): Generator<never, void, unknown>
+        function* myRange(start, end, step) {
+            let current = start;
+            while (current <= end) {
+                yield current;
+                current += step;
+            }
+        }
+        const numbers = myRange(1, 10, 2);
+
+        for(const num of numbers) {
+            console.log(num);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+A desktop computer typically consists of several internal components that work together to perform computing tasks. 
+
+
+--------------------------------------------------------------------------------------------
+Here are the key internal components:
+--------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+Motherboard:
+--------------------------------------------------------------------------------------------
+The central printed circuit board (PCB) that houses the CPU, RAM, and other essential components.
+Provides connectors for other peripherals.
+
+--------------------------------------------------------------------------------------------
+Central Processing Unit (CPU):
+--------------------------------------------------------------------------------------------
+The primary processor that performs calculations and executes instructions.
+Often referred to as the brain of the computer.
+
+--------------------------------------------------------------------------------------------
+Random Access Memory (RAM):
+--------------------------------------------------------------------------------------------
+Volatile memory used to store data and instructions temporarily while the computer is on.
+Allows for quick access to data by the CPU.
+
+--------------------------------------------------------------------------------------------
+Power Supply Unit (PSU):
+--------------------------------------------------------------------------------------------
+Converts electrical power from an outlet into a usable form for the computer.
+Supplies power to all internal components.
+
+--------------------------------------------------------------------------------------------
+Storage Devices:
+--------------------------------------------------------------------------------------------
+Hard Disk Drive (HDD) or Solid State Drive (SSD):
+--------------------------------------------------------------------------------------------
+HDDs use spinning disks to read/write data magnetically.
+SSDs use flash memory for faster data access and retrieval.
+Store the operating system, applications, and data.
+
+--------------------------------------------------------------------------------------------
+Graphics Processing Unit (GPU):
+--------------------------------------------------------------------------------------------
+Handles rendering of images, video, and animations.
+Can be integrated into the CPU or installed as a separate, dedicated graphics card.
+
+--------------------------------------------------------------------------------------------
+Cooling System:
+--------------------------------------------------------------------------------------------
+CPU Cooler: Can be an air cooler or a liquid cooler to dissipate heat from the CPU.
+--------------------------------------------------------------------------------------------
+Case Fans: Help circulate air through the case to maintain optimal temperature.
+--------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+Optical Drive (optional):
+--------------------------------------------------------------------------------------------
+Used to read/write CDs, DVDs, or Blu-ray discs.
+
+--------------------------------------------------------------------------------------------
+Network Interface Card (NIC):
+--------------------------------------------------------------------------------------------
+Provides connectivity to a network, either wired (Ethernet) or wireless (Wi-Fi).
+
+--------------------------------------------------------------------------------------------
+Expansion Slots:
+--------------------------------------------------------------------------------------------
+PCI Express (PCIe) slots for additional cards such as extra GPUs, sound cards, or network cards.
+
+--------------------------------------------------------------------------------------------
+BIOS/UEFI Firmware:
+--------------------------------------------------------------------------------------------
+Firmware interface that initializes hardware during the boot process and provides runtime services for the operating system.
+
+--------------------------------------------------------------------------------------------
+Cables and Connectors:
+--------------------------------------------------------------------------------------------
+Power Cables: Connect the PSU to various components.
+--------------------------------------------------------------------------------------------
+Data Cables: Such as SATA cables for connecting storage devices to the motherboard.
+--------------------------------------------------------------------------------------------
+
+
