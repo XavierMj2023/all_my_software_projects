@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../jQuery_css/main.css" />
+    <script src="../../jQuery_main_folder/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnPrev').click(function () {
+                $('#element4').prevAll().css('background-color', 'yellow');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="element1">Element 1</div>
+    <div id="element2">Element 2</div>
+    <div id="element3">Element 3</div>
+    <div id="element4">Element 4</div>
+
+    <button id="btnPrev">Select Previous</button>
+</body>
+
+</html>

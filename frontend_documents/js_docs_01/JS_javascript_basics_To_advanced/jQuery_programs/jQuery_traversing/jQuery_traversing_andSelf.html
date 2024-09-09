@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../jQuery_css/main.css" />
+    <style>
+        p,
+        div {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .border {
+            border: 2px solid green;
+        }
+
+        .background {
+            background: green;
+        }
+    </style>
+    <script src="../../jQuery_main_folder/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").find("p").andSelf().addClass("border"); 
+            });
+        });  
+    </script>
+</head>
+
+<body>
+    <button>color</button>
+    <div> 
+        <p>This is first paragraph.</p> 
+        <p>This is second paragraph.</p> 
+    </div> 
+</body>
+
+</html>

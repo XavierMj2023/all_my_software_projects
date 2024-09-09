@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../jQuery_css/main.css" />
+    <style>
+        .siblings * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script src="../../jQuery_main_folder/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnPrev').click(function () {
+                $("p").last().css({"color": "red", "border": "2px solid red"});
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div style="border:1px solid black">
+        <p>This is a paragraph in a div.</p>
+        <p>This is a paragraph in a div.</p>
+      </div><br>
+      
+      <div style="border:1px solid black">
+        <p>This is a paragraph in another div.</p>
+        <p>This is a paragraph in another div.</p>
+      </div>
+
+    <button id="btnPrev">Select Previous</button>
+</body>
+
+</html>

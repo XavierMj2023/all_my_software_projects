@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../jQuery_css/main.css" />
+    <style>
+        .siblings * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+        #res{
+            border: 2px solid black;
+            padding: 20px;
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+    <script src="../../jQuery_main_folder/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+              $("p").not(".p").css("background-color","red")
+            });
+        });  
+    </script>
+</head>
+
+<body>
+    <button>color</button>
+    <p>Para 1</p>
+    <p class="p">Para 1</p>
+    <p class="p">Para 1</p>
+    <p>Para 1</p>
+    <p>Para 1</p>
+    <p>Para 1</p>
+</body>
+
+</html>

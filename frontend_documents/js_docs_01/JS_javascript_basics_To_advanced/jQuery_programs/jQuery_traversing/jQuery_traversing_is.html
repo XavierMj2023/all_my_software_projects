@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../jQuery_css/main.css" />
+    <style>
+        .siblings * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+    <script src="../../jQuery_main_folder/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+               if($("p").parent().is("div")){
+                    let p = $(".result");
+                    p.text("Yes, Parent DNA success!...")
+               }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div style="border:1px solid black">
+        <p>Para</p>
+    </div>
+    <button id="btnPrev">Check if I am parent</button>
+    <p class="result"></p>
+</body>
+
+</html>
