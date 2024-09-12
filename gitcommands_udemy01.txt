@@ -4,12 +4,12 @@ git status
 
 git commit -m "adding ..."
 
-git push origin master
+git push origin main
 
-git push origin master --force
+git push origin main --force
 
 git push --force
 
-git push origin master --force
+git push origin main --force
 
 git remote add origin https://github.com/XavierMj2023/all_my_software_projects.git
