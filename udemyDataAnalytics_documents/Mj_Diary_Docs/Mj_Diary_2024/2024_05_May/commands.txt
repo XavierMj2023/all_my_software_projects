@@ -1,0 +1,11 @@
+git add .
+
+git status
+
+git commit -m "adding diary matrix - 3/5/2024 - performance metrics"
+
+git push origin master
+
+https://www.calculator.net/time-duration-calculator.html
+
+git commit -m "adding and ending May Month - with all the files uploaded - updating on 4/6/2024 - No deletion danger"
