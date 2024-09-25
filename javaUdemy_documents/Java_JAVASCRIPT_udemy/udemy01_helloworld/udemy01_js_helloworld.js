@@ -1,0 +1,1 @@
+alert("Hi! I am in a sepearte JS file");
