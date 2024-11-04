@@ -1,0 +1,3 @@
+Lazy Loading
+---------------------
+Load the application first and then render or load the pages
