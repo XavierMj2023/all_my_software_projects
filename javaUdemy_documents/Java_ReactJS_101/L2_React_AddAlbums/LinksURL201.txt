@@ -1,0 +1,9 @@
+Swagger UI - http://localhost:8080/swagger-ui/index.html
+
+React - http://localhost:3000/login
+
+db-console - http://localhost:8080/db-console/login.do?jsessionid=7503669f37e2b37aa20352ef0aad4a7e
+		
+	     Username : admin
+	 
+	     Password : pass987
