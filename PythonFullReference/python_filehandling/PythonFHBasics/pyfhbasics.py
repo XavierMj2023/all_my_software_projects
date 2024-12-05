@@ -29,7 +29,7 @@ print(fileOpenDemo.read())
 print("-----------------------------------------")
 
 # If the file is located in a different location, you will have to specify the file path, like this.
-fileinOtherLoc = open("D:\\RECYCLE BIN EXTRAS\\ONLY_DOCS\\PythonFullReference\\PythonFileHandling"
+fileinOtherLoc = open("D:\\RECYCLE BIN EXTRAS\\ONLY_DOCS\\PythonFullReference\\python_filehandling"
                       "\\PythonFilesDemo"
                       "\\fileinotherloc.txt")
 print(fileinOtherLoc)

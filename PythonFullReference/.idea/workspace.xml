@@ -5,136 +5,170 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdd0d292-1b64-481d-8af2-3bef2d445d3c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/PythonFullReference.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonArrays/arrayintro.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/PythonFullReference.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBoolean/pyhtonbooleanbasics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/break_and_continue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/elif_statement.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/else_statement.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/else_without_elif_statement.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/forloop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/forloop_range.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/if_statement.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/nestedforloop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/nestedif.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/pass.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/shorthand_if_else.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/shorthand_if_or_ternary_or_conditional_expression.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/whileloop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDataTypes/python_datatypes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDataTypes/python_number_random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDates/creatingDateObject.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDates/dateintro.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDocs/Python_DataTypes.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDocs/Python_FullCourse_Basics.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDocs/Python_FullCourse_Basics_pdf.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/defaultparameter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/passlistasargument.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/positionalonlyArguments_and_keywordonlyArgument.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/pythonfunction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/pythonfunction_arbitaryfunction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/pythonfunction_arguments.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/pythonfunction_return.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/recursionfunction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonMath/mathfuncs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonModule/builtinmodule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonModule/codelibmodule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonModule/importfrommodule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonModule/pymoduledemo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_arthimetic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_assignment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_comparsion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_identity.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_logical.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_memebership.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonoperator_bitwise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonPIP/pipintro.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonPrintMethod/pyprint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonRegEx/pyregex.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonScope/functioninsidefunction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonScope/localscope.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/pyhton_stringarearray.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_checkstring.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_conactenatestring.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_escapecharacter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_modifystring.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_slicestring.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_stringlength.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonUserInput/PythonUserInput.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonDictonary/pycopydict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonDictonary/pydictchange.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonDictonary/pydictloop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonDictonary/pynesteddictonary.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonDictonary/pythdictbasics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonList/listdemo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonSets/pyset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonSets/pysetjoin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonSets/pysetloop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonTuple/pytuple.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonCheckIfExists/pycheckifexist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonCheckIfExists/removeMe2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonDeleteFolder/newlycreated/tiger.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonDeleteFolder/pydelete.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFHBasics/demofile_append.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFHBasics/demofile_overwrite.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFHBasics/pyfhbasics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFHBasics/pywritefile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFileCreation/pyfilecreate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFilesDemo/fileinotherloc.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonRemoveOrDeleteFile/pydelete.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonRemoveOrDeleteFile/removeMe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonJSON/PythonJSONAdvanced/pyjsonadvanced.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonJSON/PythonJSONBasics/pyjsonbasic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/assets/robot.obj" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/assets/robot.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/models_compressed/robot.bam" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/models_compressed/robot.bam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/robotarmy.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/robotarmy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonMiniProject_AutomationDemo1/minimouse.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_AutomationDemo1/minimouse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonMiniProject_DrawIronMan/drawIronMan.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_DrawIronMan/drawIronMan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonMiniProject_DrawIronMan/drawIronMan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_DrawIronMan/drawIronMan.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonMiniProject_LaptopNotification/laptopNotify.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_LaptopNotification/laptopNotify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonMiniProject_OlympicLogo_Using_Turtle/pyolympiclogoturtle.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_OlympicLogo_Using_Turtle/pyolympiclogoturtle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonMiniProject_Sending_Whatapp_Message/PyWhatKit_DB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_Sending_Whatapp_Message/PyWhatKit_DB.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonMiniProject_Sending_Whatapp_Message/pywhatsapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_Sending_Whatapp_Message/pywhatsapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pyclass.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pydeleteobject.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pyinitfunction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pymodifyobject.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pyobject.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pystrfunction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonInheritance/pyinheritance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonInheritance/pyinheritancewithinitfunction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonInheritance/pyinheritancewithsuperfunction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonInheritance/pyinheritancewithsuperfunction_addproperty.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonIterator/pyiteartor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonLambda/pylambda.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonObjectMethods/pyobjmethods.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonPolymorphism/pypoly.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonPolymorphism/pypolyinheritance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonSelfParameter/pythonselfparameter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonTryExcepct/pyelse.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonTryExcepct/pyfinally.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonTryExcepct/pymultipletryexcept.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonTryExcepct/pytryexcept.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonOops/PythonTryExcepct/raiseanexception.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonSelenium/LearningSelenium/pyselenuimbasic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../udemyDataAnalytics_documents/AllExcelForPractise/2023December_Design_XLSM.xlsm" beforeDir="false" afterPath="$PROJECT_DIR$/../udemyDataAnalytics_documents/AllExcelForPractise/2023December_Design_XLSM.xlsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../udemyDataAnalytics_documents/AllExcelForPractise/Excel101_MyPractise/ExcelForPractise/MyJournal_UseTemplate_106/MyManagement001.xlsm" beforeDir="false" afterPath="$PROJECT_DIR$/../udemyDataAnalytics_documents/AllExcelForPractise/Excel101_MyPractise/ExcelForPractise/MyJournal_UseTemplate_106/MyManagement001.xlsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/PythonFullReference.iml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/.idea/PythonFullReference.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonArrays/arrayintro.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonArrays/arrayintro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/PythonFullReference.iml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/.idea/PythonFullReference.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/pyBasics/python01_toCheckVersion.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/pyBasics/python01_toCheckVersion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/pyBasics/python02_comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/pyBasics/python02_comment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/pyBasics/python03_indentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/pyBasics/python03_indentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/pyBasics/python04_variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/pyBasics/python04_variable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/pyBasics/python05_print.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/pyBasics/python05_print.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBasics/pyBasics/python06_datatype.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBasics/pyBasics/python06_datatype.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonBoolean/pyhtonbooleanbasics.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonBoolean/pyhtonbooleanbasics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/break_and_continue.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/break_and_continue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/elif_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/elif_statement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/else_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/else_statement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/else_without_elif_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/else_without_elif_statement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/forloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/forloop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/forloop_range.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/forloop_range.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/if_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/if_statement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/nestedforloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/nestedforloop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/nestedif.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/nestedif.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/pass.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/pass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/shorthand_if_else.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/shorthand_if_else.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/shorthand_if_or_ternary_or_conditional_expression.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/shorthand_if_or_ternary_or_conditional_expression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonConditionalAndLoopingStatements/whileloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonConditionalAndLoopingStatements/whileloop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDataTypes/python_datatypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonDataTypes/python_datatypes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDataTypes/python_number_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonDataTypes/python_number_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDates/creatingDateObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonDates/creatingDateObject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonDates/dateintro.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonDates/dateintro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/defaultparameter.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonFunctions/defaultparameter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/passlistasargument.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonFunctions/passlistasargument.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/positionalonlyArguments_and_keywordonlyArgument.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonFunctions/positionalonlyArguments_and_keywordonlyArgument.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/pythonfunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonFunctions/pythonfunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/pythonfunction_arbitaryfunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonFunctions/pythonfunction_arbitaryfunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/pythonfunction_arguments.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonFunctions/pythonfunction_arguments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/pythonfunction_return.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonFunctions/pythonfunction_return.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonFunctions/recursionfunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonFunctions/recursionfunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonMath/mathfuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonMath/mathfuncs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonModule/builtinmodule.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonModule/builtinmodule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonModule/codelibmodule.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonModule/codelibmodule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonModule/importfrommodule.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonModule/importfrommodule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonModule/pymoduledemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonModule/pymoduledemo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_arthimetic.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonOperators/pythonopeartors_arthimetic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_assignment.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonOperators/pythonopeartors_assignment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_comparsion.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonOperators/pythonopeartors_comparsion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_identity.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonOperators/pythonopeartors_identity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_logical.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonOperators/pythonopeartors_logical.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonopeartors_memebership.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonOperators/pythonopeartors_memebership.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonOperators/pythonoperator_bitwise.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonOperators/pythonoperator_bitwise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonPIP/pipintro.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonPIP/pipintro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonPrintMethod/pyprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonPrintMethod/pyprint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonRegEx/pyregex.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonRegEx/pyregex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonScope/functioninsidefunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonScope/functioninsidefunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonScope/localscope.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonScope/localscope.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/pyhton_stringarearray.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonStrings/pyhton_stringarearray.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_checkstring.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonStrings/python_checkstring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_conactenatestring.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonStrings/python_conactenatestring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_escapecharacter.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonStrings/python_escapecharacter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_modifystring.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonStrings/python_modifystring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_slicestring.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonStrings/python_slicestring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonStrings/python_stringlength.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonStrings/python_stringlength.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/PythonUserInput/PythonUserInput.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/PythonUserInput/PythonUserInput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/py_numbers/pyNumbers_complex.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/py_numbers/pyNumbers_complex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/py_numbers/pyNumbers_float.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/py_numbers/pyNumbers_float.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/py_numbers/pyNumbers_int.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/py_numbers/pyNumbers_int.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/py_numbers/pyNumbers_typeConvert_FloatToComplex.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/py_numbers/pyNumbers_typeConvert_FloatToComplex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/py_numbers/pyNumbers_typeConvert_FloatToInt.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/py_numbers/pyNumbers_typeConvert_FloatToInt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/py_numbers/pyNumbers_typeConvert_IntToComplex.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/py_numbers/pyNumbers_typeConvert_IntToComplex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/py_numbers/pyNumbers_typeConvert_IntToFloat.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/py_numbers/pyNumbers_typeConvert_IntToFloat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/py_numbers/pyNumbets_typeConvert_Complex.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/py_numbers/pyNumbets_typeConvert_Complex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasicsPrograms/py_numbers_random/pyNumbers_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basicsprograms/py_numbers_random/pyNumbers_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonDictonary/pycopydict.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_collections/PythonDictonary/pycopydict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonDictonary/pydictchange.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_collections/PythonDictonary/pydictchange.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonDictonary/pydictloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_collections/PythonDictonary/pydictloop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonDictonary/pynesteddictonary.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_collections/PythonDictonary/pynesteddictonary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonDictonary/pythdictbasics.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_collections/PythonDictonary/pythdictbasics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonList/listdemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_collections/PythonList/listdemo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonSets/pyset.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_collections/PythonSets/pyset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonSets/pysetjoin.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_collections/PythonSets/pysetjoin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonSets/pysetloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_collections/PythonSets/pysetloop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonCollections/PythonTuple/pytuple.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_collections/PythonTuple/pytuple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/Python_DataTypes.doc" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/Python_DataTypes.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/Python_FullCourse_Basics.doc" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/Python_FullCourse_Basics.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/Python_FullCourse_Basics_pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/Python_FullCourse_Basics_pdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/notes_basics_pdf/101-python_intro.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/notes_basics_pdf/101-python_intro.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/notes_basics_pdf/102-python_toCheckPythonVersion.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/notes_basics_pdf/102-python_toCheckPythonVersion.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/notes_basics_pdf/103-python_dataTypes_input.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/notes_basics_pdf/103-python_dataTypes_input.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/notes_basics_pdf/103-python_dataTypes_output.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/notes_basics_pdf/103-python_dataTypes_output.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/notes_basics_pdf/104-python_py_numbers_01.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/notes_basics_pdf/104-python_py_numbers_01.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/notes_basics_word/101-python_intro.docx" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/notes_basics_word/101-python_intro.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/notes_basics_word/102-python_toCheckPythonVersion.docx" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/notes_basics_word/102-python_toCheckPythonVersion.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/notes_basics_word/103-python_dataTypes_Input.docx" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/notes_basics_word/103-python_dataTypes_Input.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/notes_basics_word/104-python_py_numbers_01.docx" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/notes_basics_word/104-python_py_numbers_01.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/notes_basics_word/105-python_py_casting_02.docx" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/notes_basics_word/105-python_py_casting_02.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/104-python_codeSnippetForPython.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/104-python_codeSnippetForPython.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/104-python_shortNotes_basics.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/104-python_shortNotes_basics.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/105-python_builtInMethods_cheatsheet.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/105-python_builtInMethods_cheatsheet.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/105-python_notes002A_cheatsheet.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/105-python_notes002A_cheatsheet.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/106-python_basicPrograms.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/106-python_basicPrograms.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/106-python_notes001A.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/106-python_notes001A.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/106-python_tutorial.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/106-python_tutorial.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/107-python_programmingNotes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/107-python_programmingNotes.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/107-python_programmingNotes_001.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/107-python_programmingNotes_001.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/108-python_dataStructures.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/108-python_dataStructures.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/108-python_oops001.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/108-python_oops001.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonDocs/pythonResources/108-python_programs001.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/python_docs/pythonResources/108-python_programs001.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonCheckIfExists/pycheckifexist.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonCheckIfExists/pycheckifexist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonCheckIfExists/removeMe2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonCheckIfExists/removeMe2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonDeleteFolder/newlycreated/tiger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonDeleteFolder/newlycreated/tiger.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonDeleteFolder/pydelete.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonDeleteFolder/pydelete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFHBasics/demofile_append.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonFHBasics/demofile_append.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFHBasics/demofile_overwrite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonFHBasics/demofile_overwrite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFHBasics/pyfhbasics.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonFHBasics/pyfhbasics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFHBasics/pywritefile.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonFHBasics/pywritefile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFileCreation/pyfilecreate.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonFileCreation/pyfilecreate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonFilesDemo/fileinotherloc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonFilesDemo/fileinotherloc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonRemoveOrDeleteFile/pydelete.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonRemoveOrDeleteFile/pydelete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonFileHandling/PythonRemoveOrDeleteFile/removeMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_filehandling/PythonRemoveOrDeleteFile/removeMe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonJSON/PythonJSONAdvanced/pyjsonadvanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_JSON/PythonJSONAdvanced/pyjsonadvanced.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonJSON/PythonJSONBasics/pyjsonbasic.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_JSON/PythonJSONBasics/pyjsonbasic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/assets/robot.obj" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/assets/robot.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/models_compressed/robot.bam" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/models_compressed/robot.bam" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/robotarmy.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonMiniProject_Animated3dRobotArmy/Python3dAnimatedRobotArmyWith20Lines/robotarmy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_AutomationDemo1/minimouse.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonMiniProject_AutomationDemo1/minimouse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_DrawIronMan/drawIronMan.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonMiniProject_DrawIronMan/drawIronMan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_DrawIronMan/drawIronMan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonMiniProject_DrawIronMan/drawIronMan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_LaptopNotification/laptopNotify.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonMiniProject_LaptopNotification/laptopNotify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_OlympicLogo_Using_Turtle/pyolympiclogoturtle.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonMiniProject_OlympicLogo_Using_Turtle/pyolympiclogoturtle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_Sending_Whatapp_Message/PyWhatKit_DB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonMiniProject_Sending_Whatapp_Message/PyWhatKit_DB.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonMainDirectory_MiniProject/PythonMiniProject_Sending_Whatapp_Message/pywhatsapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonMiniProject_Sending_Whatapp_Message/pywhatsapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pyclass.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonClassAndObjects/pyclass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pydeleteobject.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonClassAndObjects/pydeleteobject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pyinitfunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonClassAndObjects/pyinitfunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pymodifyobject.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonClassAndObjects/pymodifyobject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pyobject.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonClassAndObjects/pyobject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonClassAndObjects/pystrfunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonClassAndObjects/pystrfunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonInheritance/pyinheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonInheritance/pyinheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonInheritance/pyinheritancewithinitfunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonInheritance/pyinheritancewithinitfunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonInheritance/pyinheritancewithsuperfunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonInheritance/pyinheritancewithsuperfunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonInheritance/pyinheritancewithsuperfunction_addproperty.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonInheritance/pyinheritancewithsuperfunction_addproperty.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonIterator/pyiteartor.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonIterator/pyiteartor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonLambda/pylambda.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonLambda/pylambda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonObjectMethods/pyobjmethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonObjectMethods/pyobjmethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonPolymorphism/pypoly.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonPolymorphism/pypoly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonPolymorphism/pypolyinheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonPolymorphism/pypolyinheritance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonSelfParameter/pythonselfparameter.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonSelfParameter/pythonselfparameter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonTryExcepct/pyelse.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonTryExcepct/pyelse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonTryExcepct/pyfinally.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonTryExcepct/pyfinally.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonTryExcepct/pymultipletryexcept.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonTryExcepct/pymultipletryexcept.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonTryExcepct/pytryexcept.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonTryExcepct/pytryexcept.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonOops/PythonTryExcepct/raiseanexception.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_oops/PythonTryExcepct/raiseanexception.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSelenium/LearningSelenium/pyselenuimbasic.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_mini_projects/PythonSelenium/LearningSelenium/pyselenuimbasic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,15 +199,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/RECYCLE BIN EXTRAS/ONLY_DOCS/all_my_software_projects_folder/PythonFullReference/PythonBasicsPrograms_2/py_Numbers",
-    "settings.editor.selected.configurable": "preferences.fileTypes"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/RECYCLE BIN EXTRAS/ONLY_DOCS/all_my_software_projects_folder/PythonFullReference/PythonBasicsPrograms_2/py_Numbers&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\RECYCLE BIN EXTRAS\ONLY_DOCS\all_my_software_projects_folder\PythonFullReference\PythonBasicsPrograms_2\py_Numbers" />
@@ -183,11 +217,11 @@
       <recent name="D:\RECYCLE BIN EXTRAS\ONLY_DOCS\PythonFullReference\PythonOops\PythonTryExcepct" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\RECYCLE BIN EXTRAS\ONLY_DOCS\all_my_software_projects_folder\PythonFullReference\python_MiniProjects" />
       <recent name="D:\RECYCLE BIN EXTRAS\ONLY_DOCS\all_my_software_projects_folder\PythonFullReference\PythonBasicsPrograms_2\pyNumbers_Random" />
       <recent name="D:\RECYCLE BIN EXTRAS\ONLY_DOCS\all_my_software_projects_folder\PythonFullReference" />
       <recent name="D:\RECYCLE BIN EXTRAS\ONLY_DOCS\all_my_software_projects_folder\PythonFullReference\PythonMainDirectory_MiniProject" />
       <recent name="D:\RECYCLE BIN EXTRAS\ONLY_DOCS\all_my_software_projects_folder\PythonFullReference\PythonMainDirectory_backup01" />
-      <recent name="D:\RECYCLE BIN EXTRAS\ONLY_DOCS\PythonFullReference\PythonSelenium\LearningSelenium" />
     </key>
   </component>
   <component name="RunManager" selected="Python.pyNumbers_random">
