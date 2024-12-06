@@ -1,0 +1,5 @@
+Training on JS Frameworks like AngularJS and ReactJS. Worked on a Real Life Based Project namely "Partner Portal"
+Completed the Sponsored Training On POWER BI,AZURE DEVOPS,DYNAMIC 365, BUSINESS CENTRAL AND AZURE COGNITIVE SERVICES.
+Provided the Sponsored Training on ASP.NET,C# ,Angular JS ,React JS ,Microsoft SQL Server and many tools and technologies.
+Completed the Udemy Course on Complete Guide to ASP.NET Core MVC(.NET 6). Trained on Source Code Repositories like GitHub and Bitbucket.
+Trained on Data Access Technologies like Entity Framework 6 and ADO.NET. Completed the Sponsored Training on JS Frameworks like AngularJS and ReactJS. Worked on a Real Life Based Project namely "Partner Portal".

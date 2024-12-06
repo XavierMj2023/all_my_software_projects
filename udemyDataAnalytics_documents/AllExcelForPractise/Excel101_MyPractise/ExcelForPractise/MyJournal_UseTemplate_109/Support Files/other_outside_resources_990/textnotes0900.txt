@@ -1,0 +1,470 @@
+txtWakeUp - wake up
+
+title - titleOf
+
+date - txtDOB
+
+jogging tat - txtjogTata
+
+jog round - txtjogRound
+
+med - optMale 
+
+      optFemale
+
+j.e - txtAddress
+
+image - imgStudent
+
+
+Sub Edit_Data()
+    If Selected_List = 0 Then
+        MsgBox "No row is selected.", vbOKOnly + vbInformation, "Edit"
+        Exit Sub
+    End If
+    
+    Dim sGender As String
+    
+    Me.txtRowNumber.Value = Me.lstDatabase.List(Me.lstDatabase.listIndex, 0) + 1
+    
+    'Assign the value
+    frmDataEntry.txtStudentName.Value = Me.lstDatabase.List(Me.lstDatabase.listIndex, 1)
+    frmDataEntry.txtFatherName.Value = Me.lstDatabase.List(Me.lstDatabase.listIndex, 2)
+    frmDataEntry.txtDOB.Value = Format(Me.lstDatabase.List(Me.lstDatabase.listIndex, 3), "dd-mmm-yyyy")
+    sGender = Me.lstDatabase.List(Me.lstDatabase.listIndex, 4)
+    If sGender = "Female" Then
+        frmDataEntry.optFemale.Value = True
+    Else
+        frmDataEntry.optMale.Value = True
+    End If
+    
+    frmDataEntry.cmbCourse.Value = Me.lstDatabase.List(Me.lstDatabase.listIndex, 5)
+    frmDataEntry.txtMobile.Value = Me.lstDatabase.List(Me.lstDatabase.listIndex, 6)
+    frmDataEntry.txtEmail.Value = Me.lstDatabase.List(Me.lstDatabase.listIndex, 7)
+    frmDataEntry.txtAddress.Value = Me.lstDatabase.List(Me.lstDatabase.listIndex, 8)
+    frmDataEntry.imgStudent.Picture = LoadPicture(Me.lstDatabase.List(Me.lstDatabase.listIndex, 9))
+    frmDataEntry.txtImagePath.Value = Me.lstDatabase.List(Me.lstDatabase.listIndex, 9)
+    frmDataEntry.cmdSubmit.Caption = "Update"
+    
+    MsgBox "Please make the required changes and click on update to save."
+End Sub
+
+Sub LoadSelectedRowData()
+    On Error GoTo ErrorHandler
+
+    Dim selectedRow As Long
+    selectedRow = GetSelectedRow()
+
+    ' Exit if no row is selected
+    If selectedRow <= 0 Then
+        MsgBox "No row selected to load data.", vbExclamation, "Invalid Row"
+        Exit Sub
+    End If
+
+    ' Debugging: Check if ListBox is accessible
+    Debug.Print "Loading data for Row " & selectedRow + 1
+
+    ' Ensure we are referring to the correct control
+    If TypeName(dataEntryForm.myDb) <> "ListBox" Then
+        MsgBox "Data Entry Form does not contain a ListBox (myDb)."
+        Exit Sub
+    End If
+
+    ' Ensure the ListBox is enabled and not locked
+    If Not dataEntryForm.myDb.Enabled Or dataEntryForm.myDb.Locked Then
+        MsgBox "ListBox is not enabled or is locked. Please unlock it.", vbCritical
+        Exit Sub
+    End If
+
+    ' Ensure the ListBox is not in the middle of a data-binding operation
+    DoEvents ' Let any pending events complete before proceeding
+
+    ' Ensure ListBox contains data
+    If dataEntryForm.myDb.ListCount = 0 Then
+        MsgBox "No data available in the ListBox.", vbExclamation
+        Exit Sub
+    End If
+
+    ' Adjust to zero-based index for List property
+    selectedRow = selectedRow - 1 ' Convert 1-based index to 0-based index
+
+    ' Attempt to load the selected row data into the form
+    With dataEntryForm.myDb
+        If selectedRow < .ListCount Then
+            Debug.Print "ListBox Data at [" & selectedRow & ", 0]: " & .List(selectedRow, 0)
+            Debug.Print "ListBox Data at [" & selectedRow & ", 1]: " & .List(selectedRow, 1)
+            Debug.Print "ListBox Data at [" & selectedRow & ", 2]: " & .List(selectedRow, 2)
+        Else
+            MsgBox "Selected row is out of bounds."
+            Exit Sub
+        End If
+    End With
+
+    ' Load data into the edit form
+    With editDataEntryForm
+        .uid.Value = dataEntryForm.myDb.List(selectedRow, 0) ' ID
+        .udate.Value = Format(CDate(dataEntryForm.myDb.List(selectedRow, 1)), "dd-mm-yyyy hh:mm:ss") ' Date
+        .ujogTat.Value = ConvertJoggingTotalTime(dataEntryForm.myDb.List(selectedRow, 2)) ' Jogging Total Time
+        ' Load other fields...
+    End With
+
+    MsgBox "Data for Row " & selectedRow + 1 & " loaded into the form", vbInformation, "Data Loaded"
+    
+    ' Show the edit form now that the data is loaded
+    editDataEntryForm.Show
+
+    Exit Sub
+
+ErrorHandler:
+    ' Print error details to the Immediate Window (Ctrl + G in VBA)
+    Debug.Print "Error Number: " & Err.Number
+    Debug.Print "Error Description: " & Err.Description
+    MsgBox "An error occurred while loading the data. Please try again.", vbCritical, "Load Failed"
+End Sub
+
+Sub UpdateDataEntry()
+    On Error GoTo ErrorHandler
+
+    ' Validate the data before saving
+    If Not ValidateExerciseSelectionInEdit(editDataEntryForm) Then Exit Sub
+    If Not ValidateMeditationSelectionInEdit(editDataEntryForm) Then Exit Sub
+    If Not ValidateRequiredFieldsInEdit(editDataEntryForm) Then Exit Sub
+    If Not ValidateJogRoundInEdit(editDataEntryForm) Then Exit Sub
+    If Not ValidateJogTatInEdit(editDataEntryForm) Then Exit Sub
+
+    ' Format the Jogging Total Time (Convert to hh:mm:ss)
+    Dim jogTat As String
+    jogTat = ConvertJoggingTotalTime(editDataEntryForm.ujogTat.Value)
+
+    ' Ensure the selected row exists (ListIndex should be >= 0)
+    If dataEntryForm.myDb.listIndex < 0 Then
+        MsgBox "No row selected to update.", vbExclamation, "Invalid Row"
+        Exit Sub
+    End If
+
+    ' Update the selected row in the ListBox (using ListIndex)
+    With dataEntryForm.myDb
+        .List(dataEntryForm.myDb.listIndex, 2) = jogTat ' Update Jogging Total Time
+        .List(dataEntryForm.myDb.listIndex, 3) = editDataEntryForm.ujogRound.Value ' Update Jogging Round
+        .List(dataEntryForm.myDb.listIndex, 4) = IIf(editDataEntryForm.uoptExerYes.Value, "Yes", "No") ' Update Exercise
+        .List(dataEntryForm.myDb.listIndex, 5) = IIf(editDataEntryForm.uoptMedYes.Value, "Yes", "No") ' Update Medication
+        .List(dataEntryForm.myDb.listIndex, 6) = editDataEntryForm.ujde.Value ' Update Registration Entry
+        .List(dataEntryForm.myDb.listIndex, 7) = editDataEntryForm.uregEntry.Value ' Update Text Entry
+    End With
+
+    MsgBox "Data updated successfully!", vbInformation, "Update"
+
+    ' Close the edit form
+    editDataEntryForm.Hide
+    Exit Sub
+
+ErrorHandler:
+    ' Print error details to the Immediate Window (Ctrl + G in VBA)
+    Debug.Print "Error Number: " & Err.Number
+    Debug.Print "Error Description: " & Err.Description
+
+    MsgBox "An error occurred while updating the data. Please check the input values and try again.", vbCritical, "Update Failed"
+End Sub
+
+Function GetSelectedRow() As Long
+    Dim i As Long
+    Dim selectedRow As Long
+
+    selectedRow = 0
+
+    ' Assuming you have a listbox or grid named "myDb" in the form
+    If dataEntryForm.myDb.ListCount < 1 Then Exit Function
+
+    ' Loop through the list to find the selected item
+    For i = 0 To dataEntryForm.myDb.ListCount - 1
+        If dataEntryForm.myDb.Selected(i) = True Then
+            selectedRow = i + 1 ' Return the selected row index (1-based)
+            Exit For
+        End If
+    Next i
+
+    GetSelectedRow = selectedRow
+End Function
+------------------------------------------------------------------------------------------------------------
+' Load data from ListBox into frmEditDataEntry form fields
+    With frmEditDataEntry
+        ' Ensure the column indices you're accessing exist in the ListBox
+        .upid.Value = frmDataEntry.lstDatabase.List(selectedRow - 1, 0)  ' ID (Column 0)
+        
+        .txtDOB2.Value = Format(CDate(frmDataEntry.lstDatabase.List(selectedRow - 1, 1)), "dd-mmm-yyyy")  ' DATE (Column 1)
+        
+        ' Handle Wake Up Time (Column 2, assuming it's in 24-hour format decimal time)
+        .txtWakeUp2.Value = Format(TimeSerial(Int(frmDataEntry.lstDatabase.List(selectedRow - 1, 2) * 24), _
+                                                (frmDataEntry.lstDatabase.List(selectedRow - 1, 2) * 1440) Mod 60, 0), "hh:mm AM/PM")
+        
+        ' Handle Jogging Total Time (Column 4, assuming decimal time format)
+        .txtjogTata2.Value = Format(TimeSerial(Int(frmDataEntry.lstDatabase.List(selectedRow - 1, 4) * 24), _
+                                                (frmDataEntry.lstDatabase.List(selectedRow - 1, 4) * 1440) Mod 60, 0), "hh:mm AM/PM")
+        
+        ' Handle Jogging Rounds (Column 5)
+        .txtjogRound2.Value = frmDataEntry.lstDatabase.List(selectedRow - 1, 5)  ' Jogging Rounds (Column 5)
+        
+        .titleOf2.Value = frmDataEntry.lstDatabase.List(selectedRow - 1, 3)  ' Title Of The Day (Column 3)
+        
+        ' EXERCISE status (Yes/No, Column 6)
+        If frmDataEntry.lstDatabase.List(selectedRow - 1, 6) = "Yes" Then
+            .optYesE1.Value = True
+        Else
+            .optNoE1.Value = True
+        End If
+        
+        ' MEDITATION status (Yes/No, Column 7)
+        If frmDataEntry.lstDatabase.List(selectedRow - 1, 7) = "Yes" Then
+            .optYesM2.Value = True
+        Else
+            .optNoM2.Value = True
+        End If
+        
+        ' Load Image (Column 8)
+        Dim imgPath As String
+        imgPath = frmDataEntry.lstDatabase.List(selectedRow - 1, 8)
+        If Len(Dir(imgPath)) > 0 Then
+            .imgStudent2.Picture = LoadPicture(imgPath)  ' Load image if exists
+        Else
+            .imgStudent2.Picture = LoadPicture("")  ' Default image if not found
+        End If
+
+        .txtImagePath2.Value = imgPath  ' Store image path
+        
+        ' Journal Entry (Column 9)
+        .txtAddress2.Value = frmDataEntry.lstDatabase.List(selectedRow - 1, 9)  ' Journal Entry (Column 9)
+        
+        ' Change button text to "Update Now"
+        .cmdEdit2.Caption = "Update Now"
+    End With
+
+--Edit Data Entry Form---
+
+' This function retrieves the selected row number from the ListBox.
+Function GetSelectedRow() As Long
+    Dim i As Long
+    ' Loop through ListBox to find selected row
+    For i = 0 To frmDataEntry.lstDatabase.ListCount - 1
+        If frmDataEntry.lstDatabase.Selected(i) Then
+            GetSelectedRow = i + 1  ' Return 1-based index
+            Exit Function
+        End If
+    Next i
+    GetSelectedRow = 0 ' Return 0 if no row is selected
+End Function
+
+Sub Edit_Data()
+    ' Ensure a row is selected
+    Dim selectedRow As Long
+    selectedRow = GetSelectedRow()
+
+    If selectedRow = 0 Then
+        MsgBox "No row is selected.", vbOKOnly + vbInformation, "Edit"
+        Exit Sub
+    End If
+
+    ' Clear form controls before loading new data
+    ClearFormFields frmEditDataEntry
+
+    ' Load the data for the selected row
+    LoadSelectedRowData selectedRow
+
+    ' Show the edit form after data is loaded
+    frmEditDataEntry.Show
+End Sub
+
+Sub ClearFormFields(frm As Object)
+    ' Clear all textboxes
+    frm.upid.Value = ""
+    frm.txtDOB2.Value = ""
+    frm.txtWakeUp2.Value = ""
+    frm.txtjogTata2.Value = ""
+    frm.txtjogRound2.Value = ""
+    frm.titleOf2.Value = ""
+    frm.txtImagePath2.Value = ""
+    frm.txtAddress2.Value = ""
+
+    ' Clear exercise and meditation options
+    frm.optYesE1.Value = False
+    frm.optNoE1.Value = False
+    frm.optYesM2.Value = False
+    frm.optNoM2.Value = False
+
+    ' Clear image
+    frm.imgStudent2.Picture = LoadPicture("")  ' Default image
+End Sub
+
+Sub LoadSelectedRowData(selectedRow As Long)
+    On Error GoTo ErrorHandler
+
+    ' Ensure row is within bounds
+    If selectedRow <= 0 Or selectedRow > frmDataEntry.lstDatabase.ListCount Then
+        MsgBox "Invalid row selected. Please select a valid row.", vbExclamation, "Error"
+        Exit Sub
+    End If
+
+    ' Debugging: Check the ListBox columns and selected row data
+    Debug.Print "Selected Row: " & selectedRow
+    Debug.Print "Number of columns in ListBox: " & frmDataEntry.lstDatabase.ColumnCount
+
+    ' Loop through all columns and print data for debugging
+    Dim i As Integer
+    For i = 0 To frmDataEntry.lstDatabase.ColumnCount - 1
+        Debug.Print "Column " & i & ": " & frmDataEntry.lstDatabase.List(selectedRow - 1, i)
+    Next i
+
+    ' Clear form fields before loading new data
+    With frmEditDataEntry
+        .txtDOB2.Value = ""  ' Clear Date field
+        .txtWakeUp2.Value = ""  ' Clear Wake Up Time field
+        .txtjogTata2.Value = ""  ' Clear Jogging Total Time field
+        .txtjogRound2.Value = ""  ' Clear Jogging Rounds field
+        .titleOf2.Value = ""  ' Clear Title field
+        .optYesE1.Value = False  ' Clear Exercise radio buttons
+        .optNoE1.Value = False
+        .optYesM2.Value = False  ' Clear Meditation radio buttons
+        .optNoM2.Value = False
+        .imgStudent2.Picture = LoadPicture("")  ' Clear Image field
+        .txtImagePath2.Value = ""  ' Clear Image path field
+        .txtAddress2.Value = ""  ' Clear Journal Entry field
+        .cmdEdit2.Caption = "Update Now"  ' Reset button caption
+    End With
+
+    ' Load data from ListBox into frmEditDataEntry form fields
+    With frmEditDataEntry
+        ' Date (Column 1) - Ensure it's in Date format
+        Dim entryDate As Variant
+        entryDate = frmDataEntry.lstDatabase.List(selectedRow - 1, 1)
+        If IsDate(entryDate) Then
+            .txtDOB2.Value = Format(CDate(entryDate), "dd-mmm-yyyy")  ' Date (Column 1)
+        Else
+            .txtDOB2.Value = ""  ' If not a valid date, leave it empty
+        End If
+        
+        ' Handle Wake Up Time (Column 2) - Decimal time format (fraction of day)
+        Dim wakeUpTime As Double
+        wakeUpTime = frmDataEntry.lstDatabase.List(selectedRow - 1, 2) ' Wake Up Time (Column 2)
+        If IsNumeric(wakeUpTime) Then
+            .txtWakeUp2.Value = Format(TimeSerial(Int(wakeUpTime * 24), (wakeUpTime * 1440) Mod 60, 0), "hh:mm AM/PM")
+        Else
+            .txtWakeUp2.Value = ""  ' If not a valid time, leave it empty
+        End If
+        
+        ' Handle Jogging Total Time (Column 4) - Decimal time format (fraction of day)
+        Dim joggingTime As Double
+        joggingTime = frmDataEntry.lstDatabase.List(selectedRow - 1, 4) ' Jogging Time (Column 4)
+        If IsNumeric(joggingTime) Then
+            .txtjogTata2.Value = Format(TimeSerial(Int(joggingTime * 24), (joggingTime * 1440) Mod 60, 0), "hh:mm AM/PM")
+        Else
+            .txtjogTata2.Value = ""  ' If not a valid time, leave it empty
+        End If
+
+        ' Handle Jogging Rounds (Column 5) - It's a number
+        If IsNumeric(frmDataEntry.lstDatabase.List(selectedRow - 1, 5)) Then
+            .txtjogRound2.Value = frmDataEntry.lstDatabase.List(selectedRow - 1, 5)  ' Jogging Rounds (Column 5)
+        Else
+            .txtjogRound2.Value = ""  ' Clear if invalid
+        End If
+
+        ' Title (Column 3) - Should be a string
+        .titleOf2.Value = frmDataEntry.lstDatabase.List(selectedRow - 1, 3)  ' Title (Column 3)
+
+        ' EXERCISE status (Column 6) - Yes/No
+        If frmDataEntry.lstDatabase.List(selectedRow - 1, 6) = "Yes" Then
+            .optYesE1.Value = True
+        Else
+            .optNoE1.Value = True
+        End If
+
+        ' MEDITATION status (Column 7) - Yes/No
+        If frmDataEntry.lstDatabase.List(selectedRow - 1, 7) = "Yes" Then
+            .optYesM2.Value = True
+        Else
+            .optNoM2.Value = True
+        End If
+
+        ' Load Image (Column 8) - Ensure the path exists
+        Dim imgPath As String
+        imgPath = frmDataEntry.lstDatabase.List(selectedRow - 1, 8)
+        If Len(Dir(imgPath)) > 0 Then
+            .imgStudent2.Picture = LoadPicture(imgPath)  ' Load image if exists
+        Else
+            .imgStudent2.Picture = LoadPicture("")  ' Default image if not found
+        End If
+
+        .txtImagePath2.Value = imgPath  ' Store image path
+        
+        ' Journal Entry (Column 9) - Should be a string
+        .txtAddress2.Value = frmDataEntry.lstDatabase.List(selectedRow - 1, 9)  ' Journal Entry (Column 9)
+
+        ' Change button text to "Update Now"
+        .cmdEdit2.Caption = "Update Now"
+    End With
+
+    Exit Sub
+
+ErrorHandler:
+    MsgBox "Error loading data: " & Err.Description, vbCritical, "Error"
+End Sub
+
+
+' This procedure updates the ListBox with the new data from the form
+Sub UpdateDataInListBox(selectedRow As Long)
+    On Error GoTo ErrorHandler
+
+    ' Ensure row is selected
+    If selectedRow = 0 Then
+        MsgBox "No row selected.", vbExclamation, "Update Error"
+        Exit Sub
+    End If
+
+    ' Update ListBox with new data from form
+    With frmEditDataEntry
+        frmDataEntry.lstDatabase.List(selectedRow - 1, 1) = .titleOf.Value
+        frmDataEntry.lstDatabase.List(selectedRow - 1, 3) = .txtDOB.Value
+        frmDataEntry.lstDatabase.List(selectedRow - 1, 4) = .txtWakeUp.Value
+        frmDataEntry.lstDatabase.List(selectedRow - 1, 5) = .txtjogTata.Value
+        frmDataEntry.lstDatabase.List(selectedRow - 1, 6) = .txtjogRound.Value
+        frmDataEntry.lstDatabase.List(selectedRow - 1, 7) = IIf(.optYesM.Value, "Yes", "No")
+        frmDataEntry.lstDatabase.List(selectedRow - 1, 9) = .txtAddress.Value
+        frmDataEntry.lstDatabase.List(selectedRow - 1, 10) = .txtImagePath.Value
+    End With
+
+    MsgBox "Data updated successfully.", vbInformation, "Update Success"
+    Exit Sub
+
+ErrorHandler:
+    MsgBox "Error updating data.", vbCritical, "Update Error"
+End Sub
+-----------------Update/Edit button-------------------------------------
+
+Private Sub cmdEdit_Click()
+
+    If Selected_List = 0 Then
+        MsgBox "No row is selected.", vbOKOnly + vbInformation, "Edit"
+        Exit Sub
+    End If
+    
+    Me.txtRowNumber.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 0) + 1
+
+    ' Assign the value
+    frmDataEntry.txtDB.Value = Format(Me.lstDatabase.List(Me.lstDatabase.ListIndex, 2), "dd-mmm-yyyy")
+    
+    frmDataEntry.cmbActivity.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 3)
+    
+    frmDataEntry.actName.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 4)
+    
+    frmDataEntry.TstartTime.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 5)
+    
+    frmDataEntry.TendTime.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 6)
+    
+    frmDataEntry.timespent.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 7)
+    
+    frmDataEntry.txtComments.Value = Me.lstDatabase.List(Me.lstDatabase.ListIndex, 8)
+    
+    frmDataEntry.cmdSubmit.Caption = "Update"
+
+    MsgBox "Please make the required changes and click on update to save."
+
+
+End Sub
