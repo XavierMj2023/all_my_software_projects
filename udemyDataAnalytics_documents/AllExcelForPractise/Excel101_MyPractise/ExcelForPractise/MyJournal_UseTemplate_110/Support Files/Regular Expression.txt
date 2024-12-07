@@ -1,0 +1,6 @@
+
+Regular Expression Pattern
+
+"^[\w-\.]{1,}\@([\da-zA-Z-]{1,}\.){1,}[\da-zA-Z-]{2,3}$"
+
+
